@@ -1,0 +1,78 @@
+Bulbasaur > Ivysaur > Venusaur
+Charmander > Charmeleon > Charizard
+Squirtle > Wartortle > Blastoise
+Caterpie > Metapod > Butterfree
+Weedle > Kakuna > Beedrill
+Pidgey > Pidgeotto > Pidgeot
+Rattata > Raticate
+Spearow > Fearow
+Ekans > Arbok
+Pikachu > Raichu
+Sandshrew > Sandslash
+Nidoran ♀ > Nidorina > Nidoqueen
+Nidoran ♂ > Nidorino > Nidoking
+Clefairy > Clefable
+Vulpix > Ninetales
+Jigglypuff > Wigglytuff
+Zubat > Golbat
+Oddish > Gloom > Vileplume
+Paras > Parasect
+Venonat > Venomoth
+Diglett > Dugtrio
+Meowth > Persian
+Psyduck > Golduck
+Mankey > Primeape
+Growlithe  > Arcanine
+Poliwag > Poliwhirl > Poliwrath
+Abra > Kadabra > Alakazam
+Machop > Machoke > Machamp
+Bellsprout > Weepinbell > Victreebel
+Tentacool > Tentacruel
+Geodude > Graveler > Golem
+Ponyta > Rapidash
+Slowpoke > Slowbro
+Magnemite > Magneton
+Farfetch'd - exclusive to Asia; hatch from a 5km egg elsewhere
+Doduo > Dodrio
+Seel > Dewgong
+Grimer > Muk
+Shellder > Cloyster
+Gastly > Haunter > Gengar
+Onix
+Drowzee > Hypno
+Krabby > Kingler
+Voltorb > Electrode
+Exeggcute > Exeggcutor
+Cubone > Marowak
+Hitmonlee / Hitmonchan
+Lickitung
+Koffing > Weezing
+Rhyhorn > Rhydon
+Chansey
+Tangela
+Kangaskhan - exclusive to Australia/New Zealand; hatch from a 5km egg elsewhere
+Horsea > Seadra
+Goldeen > Seaking
+Staryu > Starmie
+Mr Mime - exclusive to Europe; hatch from a 10km egg elsewhere
+Scyther
+Jynx
+Electabuzz
+Magmar
+Pinsir
+Tauros - exclusive to North America; hatch from a 5km egg elsewhere
+Magikarp > Gyarados
+Lapras
+Ditto - not yet available
+Eevee > Vaporeon/Jolteon/Flareon
+Porygon
+Omanyte > Omastar
+Kabuto > Kabutops
+Aerodactyl
+Snorlax
+Articuno - not yet available
+Zapdos - not yet available
+Moltres - not yet available
+Dratini > Dragonair > Dragonite
+Mewtwo - not yet available
+Mew - not yet available
