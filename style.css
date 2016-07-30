@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* line 6, components/sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,70 +16,71 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
+/* line 27, components/sass/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
+/* line 31, components/sass/_reset.scss */
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
+/* line 34, components/sass/_reset.scss */
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
+/* line 37, components/sass/_reset.scss */
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
+/* line 40, components/sass/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  content: '';
+  content: none; }
 
+/* line 45, components/sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, components/sass/_base.scss */
 body {
   background: #b8fba8;
   /*animation: team-bg 60s infinite alternate;*/
-  background: -moz-radial-gradient(top left, ellipse cover, #ffffff 31%, #b8fba8 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%,#b8fba8 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at top left, #ffffff 31%,#b8fba8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b8fba8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-repeat:no-repeat;
+  background: -moz-radial-gradient(top left, ellipse cover, #ffffff 31%, #b8fba8 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%, #b8fba8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at top left, #ffffff 31%, #b8fba8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b8fba8',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #358998;
-  font-family: 'Lato', sans-serif;
-}
+  font-family: 'Lato', sans-serif; }
 
-@keyframes team-bg {
-  0% {
-    background-color: lightyellow;
-  }
-  50% {
-    background-color: #fed0d0;
-  }
-  100% {
-    background-color: skyblue;
-  }
-}
+/* line 13, components/sass/_base.scss */
 .wrapper {
   max-width: 80%;
   margin: 50px auto;
-  height: 100vh;
-}
+  height: 100vh; }
+
+/* line 18, components/sass/_base.scss */
 .form-row {
   text-transform: uppercase;
-  font-weight: 700;
-}
+  font-weight: 700; }
+
+/* line 22, components/sass/_base.scss */
 input {
   min-height: 25px;
   border-radius: 3px;
@@ -88,21 +89,23 @@ input {
   color: inherit;
   font-family: inherit;
   margin: 5px;
-  padding: 5px;
-}
+  padding: 5px; }
 
+/* line 33, components/sass/_base.scss */
 label.candy:before {
   content: '';
   display: block;
   width: 20px;
   height: 20px;
   border: 1px solid #c0e1b9;
-  padding-right: 5px;
-}
+  padding-right: 5px; }
+
+/* line 41, components/sass/_base.scss */
 .candy {
   color: #358998;
-  padding: 5px;
-}
+  padding: 5px; }
+
+/* line 45, components/sass/_base.scss */
 span.candy {
   border: 1px solid;
   border-color: inherit;
@@ -111,8 +114,9 @@ span.candy {
   width: 10px;
   height: 10px;
   line-height: 10px;
-  position: relative;
-}
+  position: relative; }
+
+/* line 55, components/sass/_base.scss */
 span.candy:hover:after {
   content: "How much candy do you have for this species?";
   font-family: 'Roboto Condensed', 'Lato', sans-serif;
@@ -123,10 +127,9 @@ span.candy:hover:after {
   background: rgba(255, 255, 255, 0.6);
   display: block;
   width: 150px;
-  line-height:19px;
+  line-height: 19px;
   padding: 5px;
   border-radius: 5px;
   right: -150px;
   top: -60px;
-  position: absolute;
-}
+  position: absolute; }
