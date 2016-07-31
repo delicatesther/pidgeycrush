@@ -4,24 +4,39 @@
   <title>Pidgey Crush</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+  <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="js/jquery.ui.autocomplete.html.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="components/css/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="components/css/jquery-ui.structure.min.css">
+  <link rel="stylesheet" type="text/css" href="components/css/jquery-ui.theme.min.css">
   <script src="js/pokemon.js" type="text/javascript"></script>
   <script src="js/script.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="wrapper">
+
     <form>
-      <div class= "form-row">
-        <label for="pokemon">Pokémon</label><input type="text" name="pokemon" id="pokemon" placeholder="Start typing Pokémon species" required />
-        <!-- <span>Number of candy needed for evolution:</span><span id="candyNeeded"></span> -->
-      </div>
-      <div class= "form-row">
+
+
+        <div class="ui-widget">
+          <label for="pokemonSelect">Pokémon: </label>
+          <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species">
+          <input type="hidden" id="project-id">
+          <div id="poke-img"></div>
+          <p id="pokemon-desc"></p>
+        </div>
+
+
+
         <label for="candy" class="candy"></label>
         <span class="candy">?</span>
         <input type="number" name="candy" id="candy" required />
-        <!-- <span>Number of candy needed for evolution:</span><span id="candyNeeded"></span> -->
+        <span># Candy</span><span id="candyNeeded"></span>
         <input type="checkbox" name="f1rst"><label for="f1rst">First of it's kind to evolve?</label>
+        <input type="checkbox" name="transfer"><label for="f1rst">Transfer pokémon after evolve?</label>
+
       </div>
       <p>
         You can evolve <span class="pokeNumber">0</span> <span class="pokemon">Pokémon</span> for a total of <span class="xp">0xp</span>.

@@ -3,6 +3,7 @@ function pokemon(species, candy, evolve) {
     this.candy = candy;
     this.evolve = evolve;
     this.xp = 500;
+    this.label = this.species;
 };
 
 var bulbasaur = new pokemon('bulbasaur', 25, true);
@@ -112,7 +113,7 @@ var geodude = new pokemon('geodude', 25, true);
 var graveler = new pokemon('graveler', 100, true);
 var golem = new pokemon('golem', 0, false);
 
-var pontya = new pokemon('pontya', 50, true);
+var ponyta = new pokemon('ponyta', 50, true);
 var rapidash = new pokemon('rapidash', 0, false);
 
 var slowpoke = new pokemon('slowpoke', 50, true);
@@ -121,7 +122,7 @@ var slowbro = new pokemon('slowbro', 0, false);
 var magnemite = new pokemon('magnemite', 50, true);
 var magneton = new pokemon('magneton', 0, false);
 
-var farfetch = new pokemon('farfetch', 0, false);
+var farfetchd = new pokemon('farfetch\'d', 0, false);
 
 var doduo = new pokemon('doduo', 50, true);
 var dodrio = new pokemon('dodrio', 0, false);
@@ -183,7 +184,7 @@ var seaking = new pokemon('seaking', 0, false);
 var staryu = new pokemon('staryu', 50, true);
 var starmie = new pokemon('starmie', 0, false);
 
-var mrMime = new pokemon('mrMime', 0, false);
+var mrMime = new pokemon('mr mime', 0, false);
 
 var scyther = new pokemon('scyther', 0, false);
 
@@ -201,6 +202,8 @@ var magikarp = new pokemon('magikarp', 400, true);
 var gyarados = new pokemon('gyarados', 0, false);
 
 var lapras = new pokemon('lapras', 0, false);
+
+var ditto = new pokemon('ditto', 0, false);
 
 var eevee = new pokemon('eevee', 25, true);
 var vaporeon = new pokemon('vaporeon', 0, false);
@@ -226,3 +229,5 @@ var dragonite = new pokemon('dragonite', 0, false);
 var mewtwo = new pokemon('mewtwo', 0, false);
 
 var mew = new pokemon('mew', 0, false);
+
+var pokemonArray = [bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree, weedle, kakuna, beedrill, pidgey, pidgeotto, pidgeot, rattata, raticate, spearow, fearow, ekans, arbok, pikachu, raichu, sandshrew, sandslash, nidoranF, nidorina, nidoqueen, nidoranM, nidorino, nidoking, clefairy, clefable, vulpix, ninetales, jigglypuff, wigglytuff, zubat, golbat, oddish, gloom, vileplume, paras, parasect, venonat, venomoth, diglett, dugtrio, meowth, persian, psyduck, golduck, mankey, primeape, growlithe, arcanine, poliwag, poliwhirl, poliwrath, abra, kadabra, alakazam, machop, machoke, machamp, bellsprout, weepinbell, victreebel, tentacool, tentacruel, geodude, graveler, golem, ponyta, rapidash, slowpoke, slowbro, magnemite, magneton, farfetchd, doduo, dodrio, seel, dewgong, grimer, muk, shellder, cloyster, gastly, haunter, gengar, onix, drowzee, hypno, krabby, kingler, voltorb, electrode, exeggcute, exeggcutor, cubone, marowak, hitmonlee, hitmonchan, lickitung, koffing, weezing, rhyhorn, rhydon, chansey, tangela, kangaskhan, horsea, seadra, goldeen, seaking, staryu, starmie, mrMime, scyther, jynx, electabuzz, magmar, pinsir, tauros, magikarp, gyarados, lapras, ditto, eevee, vaporeon, jolteon, flareon, porygon, omanyte, omastar, kabuto, kabutops, aerodactyl, snorlax, dratini, dragonair, dragonite, mewtwo, mew];

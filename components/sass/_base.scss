@@ -1,3 +1,9 @@
+
+
+
+
+
+
 body {
   background: #b8fba8;
   /*animation: team-bg 60s infinite alternate;*/
@@ -68,4 +74,18 @@ span.candy:hover:after {
   right: -150px;
   top: -60px;
   position: absolute;
+}
+
+.ui-autocomplete {
+  max-height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: 'Roboto Condensed', 'Lato';
+}
+
+.ui-menu-item {
+  padding: 5px;
 }
