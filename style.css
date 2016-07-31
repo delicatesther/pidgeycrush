@@ -1,72 +1,2721 @@
-/*
-Error: No files were found in the load path matching "icons/*.png". Your current load paths are: /Users/estherkool1/Documents/www/sites/pidgeycrush/images
-        on line 2 of /Users/estherkool1/Documents/www/sites/pidgeycrush/components/sass/_mixins.scss
-        from line 1 of /Users/estherkool1/Documents/www/sites/pidgeycrush/components/sass/style.scss
+/* line 1272, icons/*.png */
+.icons-sprite, .icons-abra, .icons-aerodactyl, .icons-alakazam, .icons-arbok, .icons-arcanine, .icons-beedrill, .icons-bellsprout, .icons-blastoise, .icons-bulbasaur, .icons-butterfree, .icons-candy_painted_base_color, .icons-candy_painted_highlight, .icons-candy_painted_secondary_color, .icons-candy_vector_base_color, .icons-candy_vector_highlight, .icons-candy_vector_secondary_color, .icons-caterpie, .icons-chansey, .icons-charizard, .icons-charmander, .icons-charmeleon, .icons-clefable, .icons-clefairy, .icons-cloyster, .icons-cubone, .icons-dewgong, .icons-diglett, .icons-ditto, .icons-dodrio, .icons-doduo, .icons-dragonair, .icons-dragonite, .icons-dratini, .icons-drowzee, .icons-dugtrio, .icons-eevee, .icons-ekans, .icons-electrabuzz, .icons-electrode, .icons-exeggcute, .icons-exeggcutor, .icons-farfetchd, .icons-fearow, .icons-flareon, .icons-gastly, .icons-gengar, .icons-geodude, .icons-gloom, .icons-golbat, .icons-goldeen, .icons-golduck, .icons-golem, .icons-graveler, .icons-grimer, .icons-growlithe, .icons-gyarados, .icons-haunter, .icons-hitmonchan, .icons-hitmonlee, .icons-horsea, .icons-hypno, .icons-ivysaur, .icons-jigglypuff, .icons-jolteon, .icons-jynx, .icons-kabuto, .icons-kabutops, .icons-kadabra, .icons-kakuna, .icons-kangaskhan, .icons-kingler, .icons-koffing, .icons-krabby, .icons-lapras, .icons-lickitung, .icons-machamp, .icons-machoke, .icons-machop, .icons-magikarp, .icons-magmar, .icons-magnemite, .icons-magneton, .icons-mankey, .icons-marowak, .icons-meowth, .icons-metapod, .icons-mew, .icons-mewtwo, .icons-mrmime, .icons-muk, .icons-nidoking, .icons-nidoqueen, .icons-nidoranF, .icons-nidoranM, .icons-nidorina, .icons-nidorino, .icons-ninetales, .icons-oddish, .icons-omanyte, .icons-omastar, .icons-onix, .icons-paras, .icons-parasect, .icons-persian, .icons-pidgeot, .icons-pidgeotto, .icons-pidgey, .icons-pikachu, .icons-pinsir, .icons-poliwag, .icons-poliwhirl, .icons-poliwrath, .icons-ponyta, .icons-porygon, .icons-primeape, .icons-psyduck, .icons-raichu, .icons-rapidash, .icons-raticate, .icons-rattata, .icons-rhydon, .icons-rhyhorn, .icons-sandshrew, .icons-sandslash, .icons-scyther, .icons-seadras, .icons-seaking, .icons-seel, .icons-shellder, .icons-slowbro, .icons-slowpoke, .icons-snorlax, .icons-spearow, .icons-squirtle, .icons-starmie, .icons-staryu, .icons-tangela, .icons-tauros, .icons-tentacool, .icons-tentacruel, .icons-vaporeon, .icons-venomoth, .icons-venonat, .icons-venusaur, .icons-victreebel, .icons-vileplume, .icons-voltorb, .icons-vulpix, .icons-wartortle, .icons-weedle, .icons-weepinbell, .icons-weezing, .icons-wigglytuff, .icons-zubat {
+  background-image: url('images/icons-s278e0c62dc.png');
+  background-repeat: no-repeat; }
 
-1: @import "mixins";
-2: @import "reset";
-3: @import "base";
-4: @import "pokemon";
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-abra {
+  background-position: 0 0; }
 
-Backtrace:
-/Users/estherkool1/Documents/www/sites/pidgeycrush/components/sass/_mixins.scss:2
-/Users/estherkool1/Documents/www/sites/pidgeycrush/components/sass/style.scss:1
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/sprite_importer.rb:89:in `files'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/sass_extensions/sprites/sprite_map.rb:19:in `from_uri'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/sass_extensions/functions/sprites.rb:78:in `sprite_map'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:143:in `_perform'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:471:in `visit_variable'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `call'
-/Users/estherkool1/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/Users/estherkool1/.rbenv/versions/2.2.3/bin/compass:22:in `load'
-/Users/estherkool1/.rbenv/versions/2.2.3/bin/compass:22:in `<main>'
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-aerodactyl {
+  background-position: 0 -69px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-alakazam {
+  background-position: 0 -127px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arbok {
+  background-position: 0 -213px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arcanine {
+  background-position: 0 -298px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-beedrill {
+  background-position: 0 -397px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-bellsprout {
+  background-position: 0 -477px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-blastoise {
+  background-position: 0 -530px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-bulbasaur {
+  background-position: 0 -618px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-butterfree {
+  background-position: 0 -748px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-candy_painted_base_color {
+  background-position: 0 -822px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-candy_painted_highlight {
+  background-position: 0 -950px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-candy_painted_secondary_color {
+  background-position: 0 -1078px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-candy_vector_base_color {
+  background-position: 0 -1206px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-candy_vector_highlight {
+  background-position: 0 -1238px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-candy_vector_secondary_color {
+  background-position: 0 -1270px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caterpie {
+  background-position: 0 -1302px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-chansey {
+  background-position: 0 -1336px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-charizard {
+  background-position: 0 -1413px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-charmander {
+  background-position: 0 -1513px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-charmeleon {
+  background-position: 0 -1573px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-clefable {
+  background-position: 0 -1741px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-clefairy {
+  background-position: 0 -1821px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-cloyster {
+  background-position: 0 -1884px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-cubone {
+  background-position: 0 -1976px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dewgong {
+  background-position: 0 -2027px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-diglett {
+  background-position: 0 -2096px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-ditto {
+  background-position: 0 -2137px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dodrio {
+  background-position: 0 -2189px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-doduo {
+  background-position: 0 -2285px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dragonair {
+  background-position: 0 -2379px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dragonite {
+  background-position: 0 -2464px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dratini {
+  background-position: 0 -2568px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-drowzee {
+  background-position: 0 -2636px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dugtrio {
+  background-position: 0 -2706px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-eevee {
+  background-position: 0 -2774px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-ekans {
+  background-position: 0 -2828px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-electrabuzz {
+  background-position: 0 -2871px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-electrode {
+  background-position: 0 -2960px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-exeggcute {
+  background-position: 0 -3039px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-exeggcutor {
+  background-position: 0 -3078px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-farfetchd {
+  background-position: 0 -3170px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-fearow {
+  background-position: 0 -3236px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flareon {
+  background-position: 0 -3290px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-gastly {
+  background-position: 0 -3382px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-gengar {
+  background-position: 0 -3468px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-geodude {
+  background-position: 0 -3560px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-gloom {
+  background-position: 0 -3595px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-golbat {
+  background-position: 0 -3665px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goldeen {
+  background-position: 0 -3709px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-golduck {
+  background-position: 0 -3740px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-golem {
+  background-position: 0 -3825px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-graveler {
+  background-position: 0 -3907px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-grimer {
+  background-position: 0 -3969px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-growlithe {
+  background-position: 0 -4052px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-gyarados {
+  background-position: 0 -4122px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-haunter {
+  background-position: 0 -4210px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-hitmonchan {
+  background-position: 0 -4312px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-hitmonlee {
+  background-position: 0 -4387px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-horsea {
+  background-position: 0 -4472px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-hypno {
+  background-position: 0 -4520px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-ivysaur {
+  background-position: 0 -4605px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-jigglypuff {
+  background-position: 0 -4684px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-jolteon {
+  background-position: 0 -4741px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-jynx {
+  background-position: 0 -4808px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-kabuto {
+  background-position: 0 -4893px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-kabutops {
+  background-position: 0 -4935px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-kadabra {
+  background-position: 0 -5020px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-kakuna {
+  background-position: 0 -5101px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-kangaskhan {
+  background-position: 0 -5161px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-kingler {
+  background-position: 0 -5266px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-koffing {
+  background-position: 0 -5358px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-krabby {
+  background-position: 0 -5420px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lapras {
+  background-position: 0 -5487px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lickitung {
+  background-position: 0 -5575px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-machamp {
+  background-position: 0 -5654px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-machoke {
+  background-position: 0 -5739px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-machop {
+  background-position: 0 -5824px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-magikarp {
+  background-position: 0 -5889px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-magmar {
+  background-position: 0 -5956px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-magnemite {
+  background-position: 0 -6049px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-magneton {
+  background-position: 0 -6101px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mankey {
+  background-position: 0 -6158px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-marowak {
+  background-position: 0 -6235px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-meowth {
+  background-position: 0 -6310px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-metapod {
+  background-position: 0 -6370px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mew {
+  background-position: 0 -6426px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mewtwo {
+  background-position: 0 -6497px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mrmime {
+  background-position: 0 -6597px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-muk {
+  background-position: 0 -6675px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nidoking {
+  background-position: 0 -6752px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nidoqueen {
+  background-position: 0 -6837px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nidoranF {
+  background-position: 0 -6916px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nidoranM {
+  background-position: 0 -6952px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nidorina {
+  background-position: 0 -7007px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nidorino {
+  background-position: 0 -7071px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-ninetales {
+  background-position: 0 -7144px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-oddish {
+  background-position: 0 -7228px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-omanyte {
+  background-position: 0 -7283px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-omastar {
+  background-position: 0 -7339px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-onix {
+  background-position: 0 -7417px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-paras {
+  background-position: 0 -7541px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-parasect {
+  background-position: 0 -7582px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-persian {
+  background-position: 0 -7658px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pidgeot {
+  background-position: 0 -7723px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pidgeotto {
+  background-position: 0 -7808px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pidgey {
+  background-position: 0 -7875px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pikachu {
+  background-position: 0 -7919px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pinsir {
+  background-position: 0 -7977px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-poliwag {
+  background-position: 0 -8062px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-poliwhirl {
+  background-position: 0 -8122px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-poliwrath {
+  background-position: 0 -8198px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-ponyta {
+  background-position: 0 -8283px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-porygon {
+  background-position: 0 -8362px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-primeape {
+  background-position: 0 -8435px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-psyduck {
+  background-position: 0 -8516px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-raichu {
+  background-position: 0 -8592px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rapidash {
+  background-position: 0 -8678px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-raticate {
+  background-position: 0 -8776px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rattata {
+  background-position: 0 -8845px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rhydon {
+  background-position: 0 -8911px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rhyhorn {
+  background-position: 0 -9011px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-sandshrew {
+  background-position: 0 -9093px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-sandslash {
+  background-position: 0 -9152px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-scyther {
+  background-position: 0 -9225px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-seadras {
+  background-position: 0 -9344px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-seaking {
+  background-position: 0 -9423px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-seel {
+  background-position: 0 -9480px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-shellder {
+  background-position: 0 -9534px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-slowbro {
+  background-position: 0 -9582px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-slowpoke {
+  background-position: 0 -9670px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-snorlax {
+  background-position: 0 -9746px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-spearow {
+  background-position: 0 -9842px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-squirtle {
+  background-position: 0 -9881px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-starmie {
+  background-position: 0 -9938px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-staryu {
+  background-position: 0 -10015px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-tangela {
+  background-position: 0 -10083px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-tauros {
+  background-position: 0 -10156px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-tentacool {
+  background-position: 0 -10259px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-tentacruel {
+  background-position: 0 -10334px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-vaporeon {
+  background-position: 0 -10420px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-venomoth {
+  background-position: 0 -10492px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-venonat {
+  background-position: 0 -10584px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-venusaur {
+  background-position: 0 -10655px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-victreebel {
+  background-position: 0 -10743px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-vileplume {
+  background-position: 0 -10836px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-voltorb {
+  background-position: 0 -10912px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-vulpix {
+  background-position: 0 -10968px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-wartortle {
+  background-position: 0 -11031px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-weedle {
+  background-position: 0 -11106px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-weepinbell {
+  background-position: 0 -11137px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-weezing {
+  background-position: 0 -11208px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-wigglytuff {
+  background-position: 0 -11284px; }
+
+/* line 84, ../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-zubat {
+  background-position: 0 -11365px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: No files were found in the load path matching \"icons/*.png\". Your current load paths are: /Users/estherkool1/Documents/www/sites/pidgeycrush/images\A         on line 2 of /Users/estherkool1/Documents/www/sites/pidgeycrush/components/sass/_mixins.scss\A         from line 1 of /Users/estherkool1/Documents/www/sites/pidgeycrush/components/sass/style.scss\A \A 1: @import \"mixins\";\A 2: @import \"reset\";\A 3: @import \"base\";\A 4: @import \"pokemon\";"; }
+/* line 6, components/sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, components/sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, components/sass/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 34, components/sass/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 37, components/sass/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 40, components/sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, components/sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, components/sass/_base.scss */
+body {
+  background: #b8fba8;
+  /*animation: team-bg 60s infinite alternate;*/
+  background: -moz-radial-gradient(top left, ellipse cover, #ffffff 31%, #b8fba8 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%, #b8fba8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at top left, #ffffff 31%, #b8fba8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b8fba8',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #358998;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px; }
+
+/* line 14, components/sass/_base.scss */
+.wrapper {
+  max-width: 80%;
+  margin: 50px auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 23, components/sass/_base.scss */
+.form-row {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/* line 27, components/sass/_base.scss */
+input {
+  min-height: 25px;
+  border-radius: 3px;
+  border: 2px solid #c0e1b9;
+  border: 1px solid #358998;
+  color: inherit;
+  margin: 5px;
+  padding: 5px; }
+
+/* line 37, components/sass/_base.scss */
+label.candy:before {
+  content: '';
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1270px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
+  display: block;
+  background-color: purple;
+  border-radius: 20px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 37, components/sass/_base.scss */
+    label.candy:before {
+      background-position: 0 -1205px; } }
+
+/* line 44, components/sass/_base.scss */
+.candy {
+  color: #358998;
+  padding: 5px; }
+
+/* line 48, components/sass/_base.scss */
+span.candy {
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 20px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  position: relative; }
+
+/* line 58, components/sass/_base.scss */
+span.candy:hover:after {
+  content: "How much candy do you have for this species?";
+  font-family: 'Roboto Condensed', 'Lato', sans-serif;
+  font-weight: 400;
+  color: black;
+  text-transform: none;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  display: block;
+  width: 150px;
+  line-height: 19px;
+  padding: 5px;
+  border-radius: 5px;
+  right: -150px;
+  top: -60px;
+  position: absolute; }
+
+/* line 76, components/sass/_base.scss */
+.species-instance {
+  display: inline-block; }
+  /* line 78, components/sass/_base.scss */
+  .species-instance::first-letter {
+    text-transform: uppercase; }
+
+/* line 82, components/sass/_base.scss */
+.poke-ava {
+  margin: 15px; }
+
+/* line 85, components/sass/_base.scss */
+.ui-autocomplete {
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+/* line 90, components/sass/_base.scss */
+.ui-autocomplete-input {
+  min-width: 260px; }
+
+/* line 93, components/sass/_base.scss */
+.ui-widget,
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: 'Lato', 'Roboto Condensed'; }
+
+/* line 98, components/sass/_base.scss */
+.ui-widget input::first-letter {
+  text-transform: uppercase; }
+
+/* line 103, components/sass/_base.scss */
+.ui-menu-item {
+  padding: 5px; }
+
+/* line 1, components/sass/_pokemon.scss */
+.bulbasaur {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -618px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 130px;
+  width: 110px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 1, components/sass/_pokemon.scss */
+    .bulbasaur {
+      background-position: 0 -618px; } }
+
+/* line 4, components/sass/_pokemon.scss */
+.ivysaur {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4605px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 79px;
+  width: 94px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 4, components/sass/_pokemon.scss */
+    .ivysaur {
+      background-position: 0 -4455px; } }
+
+/* line 7, components/sass/_pokemon.scss */
+.venusaur {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10655px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 116px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 7, components/sass/_pokemon.scss */
+    .venusaur {
+      background-position: 0 -10500px; } }
+
+/* line 10, components/sass/_pokemon.scss */
+.charmander {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1513px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 60px;
+  width: 44px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 10, components/sass/_pokemon.scss */
+    .charmander {
+      background-position: 0 -1448px; } }
+
+/* line 13, components/sass/_pokemon.scss */
+.charmeleon {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1573px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 168px;
+  width: 104px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 13, components/sass/_pokemon.scss */
+    .charmeleon {
+      background-position: 0 -1508px; } }
+
+/* line 16, components/sass/_pokemon.scss */
+.charizard {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1413px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100px;
+  width: 123px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 16, components/sass/_pokemon.scss */
+    .charizard {
+      background-position: 0 -1348px; } }
+
+/* line 19, components/sass/_pokemon.scss */
+.squirtle {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9881px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 57px;
+  width: 51px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 19, components/sass/_pokemon.scss */
+    .squirtle {
+      background-position: 0 -9727px; } }
+
+/* line 22, components/sass/_pokemon.scss */
+.wartortle {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -11031px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 75px;
+  width: 58px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 22, components/sass/_pokemon.scss */
+    .wartortle {
+      background-position: 0 -10875px; } }
+
+/* line 25, components/sass/_pokemon.scss */
+.blastoise {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -530px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 95px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 25, components/sass/_pokemon.scss */
+    .blastoise {
+      background-position: 0 -530px; } }
+
+/* line 28, components/sass/_pokemon.scss */
+.caterpie {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1302px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 34px;
+  width: 26px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 28, components/sass/_pokemon.scss */
+    .caterpie {
+      background-position: 0 -1237px; } }
+
+/* line 31, components/sass/_pokemon.scss */
+.metapod {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6370px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 56px;
+  width: 35px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 31, components/sass/_pokemon.scss */
+    .metapod {
+      background-position: 0 -6222px; } }
+
+/* line 34, components/sass/_pokemon.scss */
+.butterfree {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -748px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 74px;
+  width: 90px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 34, components/sass/_pokemon.scss */
+    .butterfree {
+      background-position: 0 -683px; } }
+
+/* line 37, components/sass/_pokemon.scss */
+.weedle {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -11106px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 31px;
+  width: 19px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 37, components/sass/_pokemon.scss */
+    .weedle {
+      background-position: 0 -10950px; } }
+
+/* line 40, components/sass/_pokemon.scss */
+.kakuna {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5101px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 60px;
+  width: 32px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 40, components/sass/_pokemon.scss */
+    .kakuna {
+      background-position: 0 -4952px; } }
+
+/* line 43, components/sass/_pokemon.scss */
+.beedrill {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -397px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 80px;
+  width: 65px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 43, components/sass/_pokemon.scss */
+    .beedrill {
+      background-position: 0 -397px; } }
+
+/* line 46, components/sass/_pokemon.scss */
+.pidgey {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7875px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 44px;
+  width: 33px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 46, components/sass/_pokemon.scss */
+    .pidgey {
+      background-position: 0 -7725px; } }
+
+/* line 49, components/sass/_pokemon.scss */
+.pidgeotto {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7808px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 67px;
+  width: 122px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 49, components/sass/_pokemon.scss */
+    .pidgeotto {
+      background-position: 0 -7658px; } }
+
+/* line 52, components/sass/_pokemon.scss */
+.pidgeot {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7723px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 125px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 52, components/sass/_pokemon.scss */
+    .pidgeot {
+      background-position: 0 -7573px; } }
+
+/* line 55, components/sass/_pokemon.scss */
+.rattata {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8845px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 66px;
+  width: 45px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 55, components/sass/_pokemon.scss */
+    .rattata {
+      background-position: 0 -8692px; } }
+
+/* line 58, components/sass/_pokemon.scss */
+.raticate {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8776px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 69px;
+  width: 63px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 58, components/sass/_pokemon.scss */
+    .raticate {
+      background-position: 0 -8623px; } }
+
+/* line 61, components/sass/_pokemon.scss */
+.spearow {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9842px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 39px;
+  width: 25px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 61, components/sass/_pokemon.scss */
+    .spearow {
+      background-position: 0 -9688px; } }
+
+/* line 64, components/sass/_pokemon.scss */
+.fearow {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3236px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 54px;
+  width: 125px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 64, components/sass/_pokemon.scss */
+    .fearow {
+      background-position: 0 -3086px; } }
+
+/* line 67, components/sass/_pokemon.scss */
+.ekans {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2828px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 43px;
+  width: 51px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 67, components/sass/_pokemon.scss */
+    .ekans {
+      background-position: 0 -2679px; } }
+
+/* line 70, components/sass/_pokemon.scss */
+.arbok {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -213px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 72px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 70, components/sass/_pokemon.scss */
+    .arbok {
+      background-position: 0 -213px; } }
+
+/* line 73, components/sass/_pokemon.scss */
+.pikachu {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7919px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 58px;
+  width: 56px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 73, components/sass/_pokemon.scss */
+    .pikachu {
+      background-position: 0 -7769px; } }
+
+/* line 76, components/sass/_pokemon.scss */
+.raichu {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8592px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 86px;
+  width: 54px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 76, components/sass/_pokemon.scss */
+    .raichu {
+      background-position: 0 -8439px; } }
+
+/* line 79, components/sass/_pokemon.scss */
+.sandshrew {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9093px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 59px;
+  width: 52px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 79, components/sass/_pokemon.scss */
+    .sandshrew {
+      background-position: 0 -8939px; } }
+
+/* line 82, components/sass/_pokemon.scss */
+.sandslash {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9152px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 73px;
+  width: 67px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 82, components/sass/_pokemon.scss */
+    .sandslash {
+      background-position: 0 -8998px; } }
+
+/* line 85, components/sass/_pokemon.scss */
+.nidoranF {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6916px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 36px;
+  width: 37px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 85, components/sass/_pokemon.scss */
+    .nidoranF {
+      background-position: 0 -6767px; } }
+
+/* line 88, components/sass/_pokemon.scss */
+.nidorina {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7007px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 64px;
+  width: 54px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 88, components/sass/_pokemon.scss */
+    .nidorina {
+      background-position: 0 -6858px; } }
+
+/* line 91, components/sass/_pokemon.scss */
+.nidoqueen {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6837px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 79px;
+  width: 61px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 91, components/sass/_pokemon.scss */
+    .nidoqueen {
+      background-position: 0 -6689px; } }
+
+/* line 94, components/sass/_pokemon.scss */
+.nidoranM {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6952px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 55px;
+  width: 52px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 94, components/sass/_pokemon.scss */
+    .nidoranM {
+      background-position: 0 -6803px; } }
+
+/* line 97, components/sass/_pokemon.scss */
+.nidorino {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7071px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 73px;
+  width: 80px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 97, components/sass/_pokemon.scss */
+    .nidorino {
+      background-position: 0 -6922px; } }
+
+/* line 100, components/sass/_pokemon.scss */
+.nidoking {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6752px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 89px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 100, components/sass/_pokemon.scss */
+    .nidoking {
+      background-position: 0 -6604px; } }
+
+/* line 103, components/sass/_pokemon.scss */
+.clefairy {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1821px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 63px;
+  width: 67px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 103, components/sass/_pokemon.scss */
+    .clefairy {
+      background-position: 0 -1672px; } }
+
+/* line 106, components/sass/_pokemon.scss */
+.clefable {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1741px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 80px;
+  width: 98px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 106, components/sass/_pokemon.scss */
+    .clefable {
+      background-position: 0 -1592px; } }
+
+/* line 109, components/sass/_pokemon.scss */
+.vulpix {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10968px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 63px;
+  width: 66px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 109, components/sass/_pokemon.scss */
+    .vulpix {
+      background-position: 0 -10812px; } }
+
+/* line 112, components/sass/_pokemon.scss */
+.ninetales {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7144px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 84px;
+  width: 82px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 112, components/sass/_pokemon.scss */
+    .ninetales {
+      background-position: 0 -6995px; } }
+
+/* line 115, components/sass/_pokemon.scss */
+.jigglypuff {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4684px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 57px;
+  width: 55px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 115, components/sass/_pokemon.scss */
+    .jigglypuff {
+      background-position: 0 -4534px; } }
+
+/* line 118, components/sass/_pokemon.scss */
+.wigglytuff {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -11284px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 81px;
+  width: 76px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 118, components/sass/_pokemon.scss */
+    .wigglytuff {
+      background-position: 0 -11126px; } }
+
+/* line 121, components/sass/_pokemon.scss */
+.zubat {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -11365px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 54px;
+  width: 83px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 121, components/sass/_pokemon.scss */
+    .zubat {
+      background-position: 0 -11207px; } }
+
+/* line 124, components/sass/_pokemon.scss */
+.golbat {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3665px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 44px;
+  width: 125px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 124, components/sass/_pokemon.scss */
+    .golbat {
+      background-position: 0 -3515px; } }
+
+/* line 127, components/sass/_pokemon.scss */
+.oddish {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7228px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 55px;
+  width: 56px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 127, components/sass/_pokemon.scss */
+    .oddish {
+      background-position: 0 -7079px; } }
+
+/* line 130, components/sass/_pokemon.scss */
+.gloom {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3595px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 70px;
+  width: 80px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 130, components/sass/_pokemon.scss */
+    .gloom {
+      background-position: 0 -3445px; } }
+
+/* line 133, components/sass/_pokemon.scss */
+.vileplume {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10836px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 76px;
+  width: 117px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 133, components/sass/_pokemon.scss */
+    .vileplume {
+      background-position: 0 -10681px; } }
+
+/* line 136, components/sass/_pokemon.scss */
+.paras {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7541px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 41px;
+  width: 60px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 136, components/sass/_pokemon.scss */
+    .paras {
+      background-position: 0 -7391px; } }
+
+/* line 139, components/sass/_pokemon.scss */
+.parasect {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7582px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 76px;
+  width: 86px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 139, components/sass/_pokemon.scss */
+    .parasect {
+      background-position: 0 -7432px; } }
+
+/* line 142, components/sass/_pokemon.scss */
+.venonat {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10584px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 71px;
+  width: 54px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 142, components/sass/_pokemon.scss */
+    .venonat {
+      background-position: 0 -10430px; } }
+
+/* line 145, components/sass/_pokemon.scss */
+.venomoth {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10492px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 92px;
+  width: 76px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 145, components/sass/_pokemon.scss */
+    .venomoth {
+      background-position: 0 -10338px; } }
+
+/* line 148, components/sass/_pokemon.scss */
+.diglett {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2096px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 41px;
+  width: 50px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 148, components/sass/_pokemon.scss */
+    .diglett {
+      background-position: 0 -1947px; } }
+
+/* line 151, components/sass/_pokemon.scss */
+.dugtrio {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2706px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 68px;
+  width: 88px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 151, components/sass/_pokemon.scss */
+    .dugtrio {
+      background-position: 0 -2557px; } }
+
+/* line 154, components/sass/_pokemon.scss */
+.meowth {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6310px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 60px;
+  width: 47px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 154, components/sass/_pokemon.scss */
+    .meowth {
+      background-position: 0 -6162px; } }
+
+/* line 157, components/sass/_pokemon.scss */
+.persian {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7658px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 65px;
+  width: 56px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 157, components/sass/_pokemon.scss */
+    .persian {
+      background-position: 0 -7508px; } }
+
+/* line 160, components/sass/_pokemon.scss */
+.psyduck {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8516px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 76px;
+  width: 68px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 160, components/sass/_pokemon.scss */
+    .psyduck {
+      background-position: 0 -8364px; } }
+
+/* line 163, components/sass/_pokemon.scss */
+.golduck {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3740px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 77px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 163, components/sass/_pokemon.scss */
+    .golduck {
+      background-position: 0 -3590px; } }
+
+/* line 166, components/sass/_pokemon.scss */
+.mankey {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6158px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 77px;
+  width: 65px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 166, components/sass/_pokemon.scss */
+    .mankey {
+      background-position: 0 -6010px; } }
+
+/* line 169, components/sass/_pokemon.scss */
+.primeape {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8435px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 81px;
+  width: 76px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 169, components/sass/_pokemon.scss */
+    .primeape {
+      background-position: 0 -8284px; } }
+
+/* line 172, components/sass/_pokemon.scss */
+.growlithe {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4052px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 70px;
+  width: 54px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 172, components/sass/_pokemon.scss */
+    .growlithe {
+      background-position: 0 -3902px; } }
+
+/* line 175, components/sass/_pokemon.scss */
+.arcanine {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -298px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 99px;
+  width: 77px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 175, components/sass/_pokemon.scss */
+    .arcanine {
+      background-position: 0 -298px; } }
+
+/* line 178, components/sass/_pokemon.scss */
+.poliwag {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8062px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 60px;
+  width: 68px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 178, components/sass/_pokemon.scss */
+    .poliwag {
+      background-position: 0 -7912px; } }
+
+/* line 181, components/sass/_pokemon.scss */
+.poliwhirl {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8122px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 76px;
+  width: 104px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 181, components/sass/_pokemon.scss */
+    .poliwhirl {
+      background-position: 0 -7972px; } }
+
+/* line 184, components/sass/_pokemon.scss */
+.poliwrath {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8198px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 92px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 184, components/sass/_pokemon.scss */
+    .poliwrath {
+      background-position: 0 -8047px; } }
+
+/* line 187, components/sass/_pokemon.scss */
+.abra {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: block;
+  height: 69px;
+  width: 95px; }
+
+/* line 190, components/sass/_pokemon.scss */
+.kadabra {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5020px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 81px;
+  width: 78px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 190, components/sass/_pokemon.scss */
+    .kadabra {
+      background-position: 0 -4871px; } }
+
+/* line 193, components/sass/_pokemon.scss */
+.alakazam {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -127px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 86px;
+  width: 79px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 193, components/sass/_pokemon.scss */
+    .alakazam {
+      background-position: 0 -127px; } }
+
+/* line 196, components/sass/_pokemon.scss */
+.machop {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5824px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 65px;
+  width: 40px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 196, components/sass/_pokemon.scss */
+    .machop {
+      background-position: 0 -5675px; } }
+
+/* line 199, components/sass/_pokemon.scss */
+.machoke {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5739px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 70px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 199, components/sass/_pokemon.scss */
+    .machoke {
+      background-position: 0 -5590px; } }
+
+/* line 202, components/sass/_pokemon.scss */
+.machamp {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5654px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 75px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 202, components/sass/_pokemon.scss */
+    .machamp {
+      background-position: 0 -5505px; } }
+
+/* line 205, components/sass/_pokemon.scss */
+.bellsprout {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -477px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 53px;
+  width: 53px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 205, components/sass/_pokemon.scss */
+    .bellsprout {
+      background-position: 0 -477px; } }
+
+/* line 208, components/sass/_pokemon.scss */
+.weepinbell {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -11137px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 71px;
+  width: 96px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 208, components/sass/_pokemon.scss */
+    .weepinbell {
+      background-position: 0 -10981px; } }
+
+/* line 211, components/sass/_pokemon.scss */
+.victreebel {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10743px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 93px;
+  width: 109px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 211, components/sass/_pokemon.scss */
+    .victreebel {
+      background-position: 0 -10588px; } }
+
+/* line 214, components/sass/_pokemon.scss */
+.tentacool {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10259px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 75px;
+  width: 43px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 214, components/sass/_pokemon.scss */
+    .tentacool {
+      background-position: 0 -10105px; } }
+
+/* line 217, components/sass/_pokemon.scss */
+.tentacruel {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10334px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 86px;
+  width: 64px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 217, components/sass/_pokemon.scss */
+    .tentacruel {
+      background-position: 0 -10180px; } }
+
+/* line 220, components/sass/_pokemon.scss */
+.geodude {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3560px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 35px;
+  width: 110px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 220, components/sass/_pokemon.scss */
+    .geodude {
+      background-position: 0 -3410px; } }
+
+/* line 223, components/sass/_pokemon.scss */
+.graveler {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3907px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 62px;
+  width: 104px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 223, components/sass/_pokemon.scss */
+    .graveler {
+      background-position: 0 -3757px; } }
+
+/* line 226, components/sass/_pokemon.scss */
+.golem {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3825px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 82px;
+  width: 95px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 226, components/sass/_pokemon.scss */
+    .golem {
+      background-position: 0 -3675px; } }
+
+/* line 229, components/sass/_pokemon.scss */
+.ponyta {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8283px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 79px;
+  width: 40px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 229, components/sass/_pokemon.scss */
+    .ponyta {
+      background-position: 0 -8132px; } }
+
+/* line 232, components/sass/_pokemon.scss */
+.rapidash {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8678px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 98px;
+  width: 66px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 232, components/sass/_pokemon.scss */
+    .rapidash {
+      background-position: 0 -8525px; } }
+
+/* line 235, components/sass/_pokemon.scss */
+.slowpoke {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9670px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 76px;
+  width: 56px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 235, components/sass/_pokemon.scss */
+    .slowpoke {
+      background-position: 0 -9516px; } }
+
+/* line 238, components/sass/_pokemon.scss */
+.slowbro {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9582px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 115px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 238, components/sass/_pokemon.scss */
+    .slowbro {
+      background-position: 0 -9428px; } }
+
+/* line 241, components/sass/_pokemon.scss */
+.magnemite {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6049px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 52px;
+  width: 85px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 241, components/sass/_pokemon.scss */
+    .magnemite {
+      background-position: 0 -5900px; } }
+
+/* line 244, components/sass/_pokemon.scss */
+.magneton {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6101px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 57px;
+  width: 73px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 244, components/sass/_pokemon.scss */
+    .magneton {
+      background-position: 0 -5952px; } }
+
+/* line 247, components/sass/_pokemon.scss */
+.farfetchd {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3170px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 66px;
+  width: 52px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 247, components/sass/_pokemon.scss */
+    .farfetchd {
+      background-position: 0 -3020px; } }
+
+/* line 250, components/sass/_pokemon.scss */
+.doduo {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2285px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 94px;
+  width: 49px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 250, components/sass/_pokemon.scss */
+    .doduo {
+      background-position: 0 -2135px; } }
+
+/* line 253, components/sass/_pokemon.scss */
+.dodrio {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2189px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 96px;
+  width: 60px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 253, components/sass/_pokemon.scss */
+    .dodrio {
+      background-position: 0 -2040px; } }
+
+/* line 256, components/sass/_pokemon.scss */
+.seel {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9480px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 54px;
+  width: 76px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 256, components/sass/_pokemon.scss */
+    .seel {
+      background-position: 0 -9326px; } }
+
+/* line 259, components/sass/_pokemon.scss */
+.dewgong {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2027px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 69px;
+  width: 78px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 259, components/sass/_pokemon.scss */
+    .dewgong {
+      background-position: 0 -1878px; } }
+
+/* line 262, components/sass/_pokemon.scss */
+.grimer {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3969px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 83px;
+  width: 109px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 262, components/sass/_pokemon.scss */
+    .grimer {
+      background-position: 0 -3819px; } }
+
+/* line 265, components/sass/_pokemon.scss */
+.muk {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6675px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 77px;
+  width: 125px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 265, components/sass/_pokemon.scss */
+    .muk {
+      background-position: 0 -6527px; } }
+
+/* line 268, components/sass/_pokemon.scss */
+.shellder {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9534px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 48px;
+  width: 64px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 268, components/sass/_pokemon.scss */
+    .shellder {
+      background-position: 0 -9380px; } }
+
+/* line 271, components/sass/_pokemon.scss */
+.cloyster {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1884px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 92px;
+  width: 99px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 271, components/sass/_pokemon.scss */
+    .cloyster {
+      background-position: 0 -1735px; } }
+
+/* line 274, components/sass/_pokemon.scss */
+.gastly {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3382px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 86px;
+  width: 100px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 274, components/sass/_pokemon.scss */
+    .gastly {
+      background-position: 0 -3232px; } }
+
+/* line 277, components/sass/_pokemon.scss */
+.haunter {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4210px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 102px;
+  width: 110px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 277, components/sass/_pokemon.scss */
+    .haunter {
+      background-position: 0 -4060px; } }
+
+/* line 280, components/sass/_pokemon.scss */
+.gengar {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3468px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 92px;
+  width: 89px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 280, components/sass/_pokemon.scss */
+    .gengar {
+      background-position: 0 -3318px; } }
+
+/* line 283, components/sass/_pokemon.scss */
+.onix {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7417px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 124px;
+  width: 107px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 283, components/sass/_pokemon.scss */
+    .onix {
+      background-position: 0 -7267px; } }
+
+/* line 286, components/sass/_pokemon.scss */
+.drowzee {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2636px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 70px;
+  width: 64px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 286, components/sass/_pokemon.scss */
+    .drowzee {
+      background-position: 0 -2487px; } }
+
+/* line 289, components/sass/_pokemon.scss */
+.hypno {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4520px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 93px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 289, components/sass/_pokemon.scss */
+    .hypno {
+      background-position: 0 -4370px; } }
+
+/* line 292, components/sass/_pokemon.scss */
+.krabby {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5420px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 67px;
+  width: 91px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 292, components/sass/_pokemon.scss */
+    .krabby {
+      background-position: 0 -5271px; } }
+
+/* line 295, components/sass/_pokemon.scss */
+.kingler {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5266px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 92px;
+  width: 129px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 295, components/sass/_pokemon.scss */
+    .kingler {
+      background-position: 0 -5117px; } }
+
+/* line 298, components/sass/_pokemon.scss */
+.voltorb {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10912px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 56px;
+  width: 56px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 298, components/sass/_pokemon.scss */
+    .voltorb {
+      background-position: 0 -10757px; } }
+
+/* line 301, components/sass/_pokemon.scss */
+.electrode {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2960px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 79px;
+  width: 78px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 301, components/sass/_pokemon.scss */
+    .electrode {
+      background-position: 0 -2811px; } }
+
+/* line 304, components/sass/_pokemon.scss */
+.exeggcute {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3039px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 39px;
+  width: 94px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 304, components/sass/_pokemon.scss */
+    .exeggcute {
+      background-position: 0 -2889px; } }
+
+/* line 307, components/sass/_pokemon.scss */
+.exeggcutor {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3078px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 92px;
+  width: 187px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 307, components/sass/_pokemon.scss */
+    .exeggcutor {
+      background-position: 0 -2928px; } }
+
+/* line 310, components/sass/_pokemon.scss */
+.cubone {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1976px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 51px;
+  width: 40px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 310, components/sass/_pokemon.scss */
+    .cubone {
+      background-position: 0 -1827px; } }
+
+/* line 313, components/sass/_pokemon.scss */
+.marowak {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6235px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 75px;
+  width: 52px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 313, components/sass/_pokemon.scss */
+    .marowak {
+      background-position: 0 -6087px; } }
+
+/* line 316, components/sass/_pokemon.scss */
+.hitmonlee {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4387px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 53px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 316, components/sass/_pokemon.scss */
+    .hitmonlee {
+      background-position: 0 -4237px; } }
+
+/* line 319, components/sass/_pokemon.scss */
+.hitmonchan {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4312px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 75px;
+  width: 50px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 319, components/sass/_pokemon.scss */
+    .hitmonchan {
+      background-position: 0 -4162px; } }
+
+/* line 322, components/sass/_pokemon.scss */
+.lickitung {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5575px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 79px;
+  width: 77px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 322, components/sass/_pokemon.scss */
+    .lickitung {
+      background-position: 0 -5426px; } }
+
+/* line 325, components/sass/_pokemon.scss */
+.koffing {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5358px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 62px;
+  width: 65px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 325, components/sass/_pokemon.scss */
+    .koffing {
+      background-position: 0 -5209px; } }
+
+/* line 328, components/sass/_pokemon.scss */
+.weezing {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -11208px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 76px;
+  width: 108px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 328, components/sass/_pokemon.scss */
+    .weezing {
+      background-position: 0 -11051px; } }
+
+/* line 331, components/sass/_pokemon.scss */
+.rhyhorn {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9011px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 82px;
+  width: 82px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 331, components/sass/_pokemon.scss */
+    .rhyhorn {
+      background-position: 0 -8857px; } }
+
+/* line 334, components/sass/_pokemon.scss */
+.rhydon {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8911px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100px;
+  width: 101px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 334, components/sass/_pokemon.scss */
+    .rhydon {
+      background-position: 0 -8757px; } }
+
+/* line 337, components/sass/_pokemon.scss */
+.chansey {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -1336px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 77px;
+  width: 90px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 337, components/sass/_pokemon.scss */
+    .chansey {
+      background-position: 0 -1271px; } }
+
+/* line 340, components/sass/_pokemon.scss */
+.tangela {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10083px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 73px;
+  width: 79px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 340, components/sass/_pokemon.scss */
+    .tangela {
+      background-position: 0 -9929px; } }
+
+/* line 343, components/sass/_pokemon.scss */
+.kangaskhan {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5161px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 105px;
+  width: 111px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 343, components/sass/_pokemon.scss */
+    .kangaskhan {
+      background-position: 0 -5012px; } }
+
+/* line 346, components/sass/_pokemon.scss */
+.horsea {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4472px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 48px;
+  width: 34px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 346, components/sass/_pokemon.scss */
+    .horsea {
+      background-position: 0 -4322px; } }
+
+/* line 349, components/sass/_pokemon.scss */
+.seadras {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9344px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 79px;
+  width: 68px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 349, components/sass/_pokemon.scss */
+    .seadras {
+      background-position: 0 -9190px; } }
+
+/* line 352, components/sass/_pokemon.scss */
+.goldeen {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3709px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 31px;
+  width: 64px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 352, components/sass/_pokemon.scss */
+    .goldeen {
+      background-position: 0 -3559px; } }
+
+/* line 355, components/sass/_pokemon.scss */
+.seaking {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9423px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 57px;
+  width: 57px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 355, components/sass/_pokemon.scss */
+    .seaking {
+      background-position: 0 -9269px; } }
+
+/* line 358, components/sass/_pokemon.scss */
+.staryu {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10015px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 68px;
+  width: 67px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 358, components/sass/_pokemon.scss */
+    .staryu {
+      background-position: 0 -9861px; } }
+
+/* line 361, components/sass/_pokemon.scss */
+.starmie {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9938px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 77px;
+  width: 79px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 361, components/sass/_pokemon.scss */
+    .starmie {
+      background-position: 0 -9784px; } }
+
+/* line 364, components/sass/_pokemon.scss */
+.mrMime {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6597px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 78px;
+  width: 78px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 364, components/sass/_pokemon.scss */
+    .mrMime {
+      background-position: 0 -6449px; } }
+
+/* line 367, components/sass/_pokemon.scss */
+.scyther {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9225px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 119px;
+  width: 104px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 367, components/sass/_pokemon.scss */
+    .scyther {
+      background-position: 0 -9071px; } }
+
+/* line 370, components/sass/_pokemon.scss */
+.jynx {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4808px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 90px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 370, components/sass/_pokemon.scss */
+    .jynx {
+      background-position: 0 -4658px; } }
+
+/* line 373, components/sass/_pokemon.scss */
+.electrabuzz {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2871px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 89px;
+  width: 83px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 373, components/sass/_pokemon.scss */
+    .electrabuzz {
+      background-position: 0 -2722px; } }
+
+/* line 376, components/sass/_pokemon.scss */
+.magmar {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5956px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 93px;
+  width: 90px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 376, components/sass/_pokemon.scss */
+    .magmar {
+      background-position: 0 -5807px; } }
+
+/* line 379, components/sass/_pokemon.scss */
+.pinsir {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7977px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 88px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 379, components/sass/_pokemon.scss */
+    .pinsir {
+      background-position: 0 -7827px; } }
+
+/* line 382, components/sass/_pokemon.scss */
+.tauros {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10156px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 103px;
+  width: 98px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 382, components/sass/_pokemon.scss */
+    .tauros {
+      background-position: 0 -10002px; } }
+
+/* line 385, components/sass/_pokemon.scss */
+.magikarp {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5889px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 67px;
+  width: 78px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 385, components/sass/_pokemon.scss */
+    .magikarp {
+      background-position: 0 -5740px; } }
+
+/* line 388, components/sass/_pokemon.scss */
+.gyarados {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4122px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 86px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 388, components/sass/_pokemon.scss */
+    .gyarados {
+      background-position: 0 -3972px; } }
+
+/* line 391, components/sass/_pokemon.scss */
+.lapras {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -5487px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 105px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 391, components/sass/_pokemon.scss */
+    .lapras {
+      background-position: 0 -5338px; } }
+
+/* line 394, components/sass/_pokemon.scss */
+.ditto {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2137px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 52px;
+  width: 63px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 394, components/sass/_pokemon.scss */
+    .ditto {
+      background-position: 0 -1988px; } }
+
+/* line 397, components/sass/_pokemon.scss */
+.eevee {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2774px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 54px;
+  width: 67px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 397, components/sass/_pokemon.scss */
+    .eevee {
+      background-position: 0 -2625px; } }
+
+/* line 400, components/sass/_pokemon.scss */
+.vaporeon {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -10420px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 72px;
+  width: 95px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 400, components/sass/_pokemon.scss */
+    .vaporeon {
+      background-position: 0 -10266px; } }
+
+/* line 403, components/sass/_pokemon.scss */
+.jolteon {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4741px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 67px;
+  width: 48px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 403, components/sass/_pokemon.scss */
+    .jolteon {
+      background-position: 0 -4591px; } }
+
+/* line 406, components/sass/_pokemon.scss */
+.flareon {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -3290px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 92px;
+  width: 52px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 406, components/sass/_pokemon.scss */
+    .flareon {
+      background-position: 0 -3140px; } }
+
+/* line 409, components/sass/_pokemon.scss */
+.porygon {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -8362px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 73px;
+  width: 74px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 409, components/sass/_pokemon.scss */
+    .porygon {
+      background-position: 0 -8211px; } }
+
+/* line 412, components/sass/_pokemon.scss */
+.omanyte {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7283px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 56px;
+  width: 50px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 412, components/sass/_pokemon.scss */
+    .omanyte {
+      background-position: 0 -7134px; } }
+
+/* line 415, components/sass/_pokemon.scss */
+.omastar {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -7339px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 78px;
+  width: 82px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 415, components/sass/_pokemon.scss */
+    .omastar {
+      background-position: 0 -7190px; } }
+
+/* line 418, components/sass/_pokemon.scss */
+.kabuto {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4893px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 42px;
+  width: 60px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 418, components/sass/_pokemon.scss */
+    .kabuto {
+      background-position: 0 -4744px; } }
+
+/* line 421, components/sass/_pokemon.scss */
+.kabutops {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -4935px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 64px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 421, components/sass/_pokemon.scss */
+    .kabutops {
+      background-position: 0 -4786px; } }
+
+/* line 424, components/sass/_pokemon.scss */
+.aerodactyl {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -69px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 58px;
+  width: 125px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 424, components/sass/_pokemon.scss */
+    .aerodactyl {
+      background-position: 0 -69px; } }
+
+/* line 427, components/sass/_pokemon.scss */
+.snorlax {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -9746px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 96px;
+  width: 99px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 427, components/sass/_pokemon.scss */
+    .snorlax {
+      background-position: 0 -9592px; } }
+
+/* line 430, components/sass/_pokemon.scss */
+.dratini {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2568px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 68px;
+  width: 52px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 430, components/sass/_pokemon.scss */
+    .dratini {
+      background-position: 0 -2419px; } }
+
+/* line 433, components/sass/_pokemon.scss */
+.dragonair {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2379px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 85px;
+  width: 59px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 433, components/sass/_pokemon.scss */
+    .dragonair {
+      background-position: 0 -2229px; } }
+
+/* line 436, components/sass/_pokemon.scss */
+.dragonite {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -2464px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 104px;
+  width: 63px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 436, components/sass/_pokemon.scss */
+    .dragonite {
+      background-position: 0 -2315px; } }
+
+/* line 439, components/sass/_pokemon.scss */
+.mewtwo {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6497px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100px;
+  width: 87px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 439, components/sass/_pokemon.scss */
+    .mewtwo {
+      background-position: 0 -6349px; } }
+
+/* line 442, components/sass/_pokemon.scss */
+.mew {
+  background-image: url('images/icons-sa9eeeb7c01.png');
+  background-position: 0 -6426px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 71px;
+  width: 65px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+    /* line 442, components/sass/_pokemon.scss */
+    .mew {
+      background-position: 0 -6278px; } }

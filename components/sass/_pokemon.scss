@@ -1,0 +1,444 @@
+.bulbasaur {
+  @include sprite-background(bulbasaur);
+}
+.ivysaur {
+  @include sprite-background(ivysaur);
+}
+.venusaur {
+  @include sprite-background(venusaur);
+}
+.charmander {
+  @include sprite-background(charmander);
+}
+.charmeleon {
+  @include sprite-background(charmeleon);
+}
+.charizard {
+  @include sprite-background(charizard);
+}
+.squirtle {
+  @include sprite-background(squirtle);
+}
+.wartortle {
+  @include sprite-background(wartortle);
+}
+.blastoise {
+  @include sprite-background(blastoise);
+}
+.caterpie {
+  @include sprite-background(caterpie);
+}
+.metapod {
+  @include sprite-background(metapod);
+}
+.butterfree {
+  @include sprite-background(butterfree);
+}
+.weedle {
+  @include sprite-background(weedle);
+}
+.kakuna {
+  @include sprite-background(kakuna);
+}
+.beedrill {
+  @include sprite-background(beedrill);
+}
+.pidgey {
+  @include sprite-background(pidgey);
+}
+.pidgeotto {
+  @include sprite-background(pidgeotto);
+}
+.pidgeot {
+  @include sprite-background(pidgeot);
+}
+.rattata {
+  @include sprite-background(rattata);
+}
+.raticate {
+  @include sprite-background(raticate);
+}
+.spearow {
+  @include sprite-background(spearow);
+}
+.fearow {
+  @include sprite-background(fearow);
+}
+.ekans {
+  @include sprite-background(ekans);
+}
+.arbok {
+  @include sprite-background(arbok);
+}
+.pikachu {
+  @include sprite-background(pikachu);
+}
+.raichu {
+  @include sprite-background(raichu);
+}
+.sandshrew {
+  @include sprite-background(sandshrew);
+}
+.sandslash {
+  @include sprite-background(sandslash);
+}
+.nidoranF {
+  @include sprite-background(nidoranF);
+}
+.nidorina {
+  @include sprite-background(nidorina);
+}
+.nidoqueen {
+  @include sprite-background(nidoqueen);
+}
+.nidoranM {
+  @include sprite-background(nidoranM);
+}
+.nidorino {
+  @include sprite-background(nidorino);
+}
+.nidoking {
+  @include sprite-background(nidoking);
+}
+.clefairy {
+  @include sprite-background(clefairy);
+}
+.clefable {
+  @include sprite-background(clefable);
+}
+.vulpix {
+  @include sprite-background(vulpix);
+}
+.ninetales {
+  @include sprite-background(ninetales);
+}
+.jigglypuff {
+  @include sprite-background(jigglypuff);
+}
+.wigglytuff {
+  @include sprite-background(wigglytuff);
+}
+.zubat {
+  @include sprite-background(zubat);
+}
+.golbat {
+  @include sprite-background(golbat);
+}
+.oddish {
+  @include sprite-background(oddish);
+}
+.gloom {
+  @include sprite-background(gloom);
+}
+.vileplume {
+  @include sprite-background(vileplume);
+}
+.paras {
+  @include sprite-background(paras);
+}
+.parasect {
+  @include sprite-background(parasect);
+}
+.venonat {
+  @include sprite-background(venonat);
+}
+.venomoth {
+  @include sprite-background(venomoth);
+}
+.diglett {
+  @include sprite-background(diglett);
+}
+.dugtrio {
+  @include sprite-background(dugtrio);
+}
+.meowth {
+  @include sprite-background(meowth);
+}
+.persian {
+  @include sprite-background(persian);
+}
+.psyduck {
+  @include sprite-background(psyduck);
+}
+.golduck {
+  @include sprite-background(golduck);
+}
+.mankey {
+  @include sprite-background(mankey);
+}
+.primeape {
+  @include sprite-background(primeape);
+}
+.growlithe {
+  @include sprite-background(growlithe);
+}
+.arcanine {
+  @include sprite-background(arcanine);
+}
+.poliwag {
+  @include sprite-background(poliwag);
+}
+.poliwhirl {
+  @include sprite-background(poliwhirl);
+}
+.poliwrath {
+  @include sprite-background(poliwrath);
+}
+.abra {
+  @include sprite-background(abra);
+}
+.kadabra {
+  @include sprite-background(kadabra);
+}
+.alakazam {
+  @include sprite-background(alakazam);
+}
+.machop {
+  @include sprite-background(machop);
+}
+.machoke {
+  @include sprite-background(machoke);
+}
+.machamp {
+  @include sprite-background(machamp);
+}
+.bellsprout {
+  @include sprite-background(bellsprout);
+}
+.weepinbell {
+  @include sprite-background(weepinbell);
+}
+.victreebel {
+  @include sprite-background(victreebel);
+}
+.tentacool {
+  @include sprite-background(tentacool);
+}
+.tentacruel {
+  @include sprite-background(tentacruel);
+}
+.geodude {
+  @include sprite-background(geodude);
+}
+.graveler {
+  @include sprite-background(graveler);
+}
+.golem {
+  @include sprite-background(golem);
+}
+.ponyta {
+  @include sprite-background(ponyta);
+}
+.rapidash {
+  @include sprite-background(rapidash);
+}
+.slowpoke {
+  @include sprite-background(slowpoke);
+}
+.slowbro {
+  @include sprite-background(slowbro);
+}
+.magnemite {
+  @include sprite-background(magnemite);
+}
+.magneton {
+  @include sprite-background(magneton);
+}
+.farfetchd {
+  @include sprite-background(farfetchd);
+}
+.doduo {
+  @include sprite-background(doduo);
+}
+.dodrio {
+  @include sprite-background(dodrio);
+}
+.seel {
+  @include sprite-background(seel);
+}
+.dewgong {
+  @include sprite-background(dewgong);
+}
+.grimer {
+  @include sprite-background(grimer);
+}
+.muk {
+  @include sprite-background(muk);
+}
+.shellder {
+  @include sprite-background(shellder);
+}
+.cloyster {
+  @include sprite-background(cloyster);
+}
+.gastly {
+  @include sprite-background(gastly);
+}
+.haunter {
+  @include sprite-background(haunter);
+}
+.gengar {
+  @include sprite-background(gengar);
+}
+.onix {
+  @include sprite-background(onix);
+}
+.drowzee {
+  @include sprite-background(drowzee);
+}
+.hypno {
+  @include sprite-background(hypno);
+}
+.krabby {
+  @include sprite-background(krabby);
+}
+.kingler {
+  @include sprite-background(kingler);
+}
+.voltorb {
+  @include sprite-background(voltorb);
+}
+.electrode {
+  @include sprite-background(electrode);
+}
+.exeggcute {
+  @include sprite-background(exeggcute);
+}
+.exeggcutor {
+  @include sprite-background(exeggcutor);
+}
+.cubone {
+  @include sprite-background(cubone);
+}
+.marowak {
+  @include sprite-background(marowak);
+}
+.hitmonlee {
+  @include sprite-background(hitmonlee);
+}
+.hitmonchan {
+  @include sprite-background(hitmonchan);
+}
+.lickitung {
+  @include sprite-background(lickitung);
+}
+.koffing {
+  @include sprite-background(koffing);
+}
+.weezing {
+  @include sprite-background(weezing);
+}
+.rhyhorn {
+  @include sprite-background(rhyhorn);
+}
+.rhydon {
+  @include sprite-background(rhydon);
+}
+.chansey {
+  @include sprite-background(chansey);
+}
+.tangela {
+  @include sprite-background(tangela);
+}
+.kangaskhan {
+  @include sprite-background(kangaskhan);
+}
+.horsea {
+  @include sprite-background(horsea);
+}
+.seadras {
+  @include sprite-background(seadras);
+}
+.goldeen {
+  @include sprite-background(goldeen);
+}
+.seaking {
+  @include sprite-background(seaking);
+}
+.staryu {
+  @include sprite-background(staryu);
+}
+.starmie {
+  @include sprite-background(starmie);
+}
+.mrMime {
+  @include sprite-background(mrmime);
+}
+.scyther {
+  @include sprite-background(scyther);
+}
+.jynx {
+  @include sprite-background(jynx);
+}
+.electrabuzz {
+  @include sprite-background(electrabuzz);
+}
+.magmar {
+  @include sprite-background(magmar);
+}
+.pinsir {
+  @include sprite-background(pinsir);
+}
+.tauros {
+  @include sprite-background(tauros);
+}
+.magikarp {
+  @include sprite-background(magikarp);
+}
+.gyarados {
+  @include sprite-background(gyarados);
+}
+.lapras {
+  @include sprite-background(lapras);
+}
+.ditto {
+  @include sprite-background(ditto);
+}
+.eevee {
+  @include sprite-background(eevee);
+}
+.vaporeon {
+  @include sprite-background(vaporeon);
+}
+.jolteon {
+  @include sprite-background(jolteon);
+}
+.flareon {
+  @include sprite-background(flareon);
+}
+.porygon {
+  @include sprite-background(porygon);
+}
+.omanyte {
+  @include sprite-background(omanyte);
+}
+.omastar {
+  @include sprite-background(omastar);
+}
+.kabuto {
+  @include sprite-background(kabuto);
+}
+.kabutops {
+  @include sprite-background(kabutops);
+}
+.aerodactyl {
+  @include sprite-background(aerodactyl);
+}
+.snorlax {
+  @include sprite-background(snorlax);
+}
+.dratini {
+  @include sprite-background(dratini);
+}
+.dragonair {
+  @include sprite-background(dragonair);
+}
+.dragonite {
+  @include sprite-background(dragonite);
+}
+.mewtwo {
+  @include sprite-background(mewtwo);
+}
+.mew {
+  @include sprite-background(mew);
+}
