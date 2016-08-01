@@ -4,6 +4,7 @@ function pokemon(species, candy, evolve) {
     this.evolve = evolve;
     this.xp = 500;
     this.label = this.species;
+    this.resourceName = this.species.replace('\'', '' ).replace(' ', '');
 };
 
 var bulbasaur = new pokemon('bulbasaur', 25, true);

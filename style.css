@@ -673,7 +673,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 1, components/sass/_base.scss */
+/* line 2, components/sass/_base.scss */
 body {
   background: #b8fba8;
   /*animation: team-bg 60s infinite alternate;*/
@@ -691,7 +691,11 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 20px; }
 
-/* line 14, components/sass/_base.scss */
+/* line 15, components/sass/_base.scss */
+p {
+  margin-bottom: 1em; }
+
+/* line 18, components/sass/_base.scss */
 .wrapper {
   max-width: 80%;
   margin: 50px auto;
@@ -700,22 +704,83 @@ body {
   justify-content: center;
   align-items: center; }
 
-/* line 23, components/sass/_base.scss */
-.form-row {
-  text-transform: uppercase;
-  font-weight: 700; }
-
-/* line 27, components/sass/_base.scss */
+/* line 26, components/sass/_base.scss */
 input {
   min-height: 25px;
   border-radius: 3px;
   border: 2px solid #c0e1b9;
   border: 1px solid #358998;
   color: inherit;
-  margin: 5px;
+  margin: 5px 5px 30px;
   padding: 5px; }
 
-/* line 37, components/sass/_base.scss */
+/* line 35, components/sass/_base.scss */
+.species-instance {
+  display: inline-block; }
+  /* line 37, components/sass/_base.scss */
+  .species-instance::first-letter {
+    text-transform: uppercase; }
+
+/* line 43, components/sass/_base.scss */
+.ui-autocomplete {
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+/* line 48, components/sass/_base.scss */
+.ui-autocomplete-input {
+  min-width: 260px; }
+
+/* line 51, components/sass/_base.scss */
+.ui-widget,
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: 'Lato', 'Roboto Condensed'; }
+
+/* line 56, components/sass/_base.scss */
+.ui-widget input::first-letter {
+  text-transform: uppercase; }
+
+/* line 60, components/sass/_base.scss */
+.ui-menu-item {
+  padding: 5px; }
+
+/* line 63, components/sass/_base.scss */
+.pokemon-number {
+  max-width: 50px; }
+
+/* line 66, components/sass/_base.scss */
+.pokemon-avatar__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 100%; }
+
+/* line 72, components/sass/_base.scss */
+.pokemon-ava {
+  margin: 15px 5px;
+  position: relative; }
+
+/* line 76, components/sass/_base.scss */
+.pokemon-delete {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 3px 5px;
+  border-radius: 20px; }
+  /* line 85, components/sass/_base.scss */
+  .pokemon-delete:after {
+    content: '\2715';
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* line 99, components/sass/_base.scss */
 label.candy:before {
   content: '';
   background-image: url('images/icons-sa9eeeb7c01.png');
@@ -728,16 +793,16 @@ label.candy:before {
   background-color: purple;
   border-radius: 20px; }
   @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-    /* line 37, components/sass/_base.scss */
+    /* line 99, components/sass/_base.scss */
     label.candy:before {
       background-position: 0 -1205px; } }
 
-/* line 44, components/sass/_base.scss */
+/* line 106, components/sass/_base.scss */
 .candy {
   color: #358998;
   padding: 5px; }
 
-/* line 48, components/sass/_base.scss */
+/* line 110, components/sass/_base.scss */
 span.candy {
   border: 1px solid;
   border-color: inherit;
@@ -748,7 +813,7 @@ span.candy {
   line-height: 10px;
   position: relative; }
 
-/* line 58, components/sass/_base.scss */
+/* line 120, components/sass/_base.scss */
 span.candy:hover:after {
   content: "How much candy do you have for this species?";
   font-family: 'Roboto Condensed', 'Lato', sans-serif;
@@ -765,40 +830,6 @@ span.candy:hover:after {
   right: -150px;
   top: -60px;
   position: absolute; }
-
-/* line 76, components/sass/_base.scss */
-.species-instance {
-  display: inline-block; }
-  /* line 78, components/sass/_base.scss */
-  .species-instance::first-letter {
-    text-transform: uppercase; }
-
-/* line 82, components/sass/_base.scss */
-.poke-ava {
-  margin: 15px; }
-
-/* line 85, components/sass/_base.scss */
-.ui-autocomplete {
-  max-height: 250px;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
-/* line 90, components/sass/_base.scss */
-.ui-autocomplete-input {
-  min-width: 260px; }
-
-/* line 93, components/sass/_base.scss */
-.ui-widget,
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-  font-family: 'Lato', 'Roboto Condensed'; }
-
-/* line 98, components/sass/_base.scss */
-.ui-widget input::first-letter {
-  text-transform: uppercase; }
-
-/* line 103, components/sass/_base.scss */
-.ui-menu-item {
-  padding: 5px; }
 
 /* line 1, components/sass/_pokemon.scss */
 .bulbasaur {
@@ -2370,7 +2401,7 @@ span.candy:hover:after {
       background-position: 0 -9784px; } }
 
 /* line 364, components/sass/_pokemon.scss */
-.mrMime {
+.mrmime {
   background-image: url('images/icons-sa9eeeb7c01.png');
   background-position: 0 -6597px;
   background-repeat: no-repeat;
@@ -2379,7 +2410,7 @@ span.candy:hover:after {
   width: 78px; }
   @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
     /* line 364, components/sass/_pokemon.scss */
-    .mrMime {
+    .mrmime {
       background-position: 0 -6449px; } }
 
 /* line 367, components/sass/_pokemon.scss */

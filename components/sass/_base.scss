@@ -1,3 +1,4 @@
+// Base styles
 body {
   background: #b8fba8;
   /*animation: team-bg 60s infinite alternate;*/
@@ -11,6 +12,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
 }
+p {
+  margin-bottom: 1em;
+}
 .wrapper {
   max-width: 80%;
   margin: 50px auto;
@@ -19,24 +23,82 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.form-row {
-  text-transform: uppercase;
-  font-weight: 700;
-}
 input {
   min-height: 25px;
   border-radius: 3px;
   border: 2px solid #c0e1b9;
   border: 1px solid #358998;
   color: inherit;
-  margin: 5px;
+  margin: 5px 5px 30px;
   padding: 5px;
 }
+.species-instance {
+  display: inline-block;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+// Pokémon Selector
+.ui-autocomplete {
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.ui-autocomplete-input {
+  min-width: 260px;
+}
+.ui-widget,
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: 'Lato', 'Roboto Condensed';
+}
+.ui-widget input {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+.ui-menu-item {
+  padding: 5px;
+}
+.pokemon-number {
+  max-width: 50px;
+}
+.pokemon-avatar__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 100%;
+}
+.pokemon-ava {
+  margin: 15px 5px;
+  position: relative;
+}
+.pokemon-delete {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 3px 5px;
+  border-radius: 20px;
+  &:after {
+    content: '\2715';
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
 
 label.candy:before {
   content: '';
-    @include sprite-background(candy_vector_secondary_color);
+  @include sprite-background(candy_vector_secondary_color);
   display: block;
   background-color: purple;
   border-radius: 20px;
@@ -71,35 +133,4 @@ span.candy:hover:after {
   right: -150px;
   top: -60px;
   position: absolute;
-}
-
-.species-instance {
-  display: inline-block;
-  &::first-letter {
-    text-transform: uppercase;
-  }
-}
-.poke-ava {
-  	margin: 15px;
-}
-.ui-autocomplete {
-  max-height: 250px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.ui-autocomplete-input {
-  min-width: 260px;
-}
-.ui-widget,
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-  font-family: 'Lato', 'Roboto Condensed';
-}
-.ui-widget input {
-  &::first-letter {
-    text-transform: uppercase;
-  }
-}
-
-.ui-menu-item {
-  padding: 5px;
 }
