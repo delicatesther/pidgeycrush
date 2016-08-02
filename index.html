@@ -17,29 +17,48 @@
 <body>
   <div class="wrapper">
 
-    <form>
-      <div class="ui-widget">
-        <label for="pokemonSelect">Pokémon: </label>
-        <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species">
-        <label for="pokemonNumber">Number:</label>
-        <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="1">
-        <p id="pokemon-desc"></p>
-        <div id="pokemonFields" class="pokemon-avatar__wrapper"> </div>
+    <form method="post">
+      <div class="widget__wrapper">
+        <div class="ui-widget">
+            <label for="pokemonSelect">Pokémon: </label>
+            <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species">
+          <ul id="pokemonFields" class="pokemon-avatar__wrapper">
+            <!--Pokémon Avatars spawn here-->
+          </ul>
+        </div>
       </div>
 
+      <button id="resetPokemonSelect">Reset Selection</button>
+      <button id="addPokemonSpecies" type="submit">Add Pokémon to Table</button>
+    </form>
 
-        <!-- <label for="candy" class="candy"></label>
-        <span class="candy">?</span>
-        <input type="number" name="candy" id="candy" required />
-        <span># Candy</span><span id="candyNeeded"></span>
-        <input type="checkbox" name="f1rst"><label for="f1rst">First of it's kind to evolve?</label>
-        <input type="checkbox" name="transfer"><label for="f1rst">Transfer pokémon after evolve?</label> -->
-
+      <table id="finalDestination" class="final-destination">
+        <thead>
+          <tr>
+          <td>#</td>
+          <td class="species">Species</td>
+          <td class="candyNeeded">Candy Needed</td>
+          <td class="candyInventory">Candy Inventory</td>
+          <td class="Bonus"># Evolutions possible</td>
+          <td class="Bonus">New Species Evolution</td>
+          <td class="TotalXP">Total XP Gained</td>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <td>#</td>
+        <td>Evolutions</td>
+        <td>XP gained</td>
+        <td>XP gained with lucky egg</td>
+      </tfoot>
+      </table>
       </div>
       <!-- <p>
         You can evolve <span class="pokeNumber">0</span> <span class="pokemon">Pokémon</span> for a total of <span class="xp">0xp</span>.
       </p> -->
     </form>
+
   </div>
 </body>
 </html>

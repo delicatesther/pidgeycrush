@@ -19,9 +19,6 @@ p {
   max-width: 80%;
   margin: 50px auto;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 input {
   min-height: 25px;
@@ -69,7 +66,7 @@ input {
   position: relative;
   max-width: 100%;
 }
-.pokemon-ava {
+.pokemon-avatar {
   margin: 15px 5px;
   position: relative;
 }
@@ -79,7 +76,7 @@ input {
   position: absolute;
   top: -15px;
   right: -10px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   padding: 3px 5px;
   border-radius: 20px;
   &:after {
@@ -93,44 +90,36 @@ input {
   }
 }
 
+form {
+  border: 1px solid #358998;
+  padding: 30px;
+  border-radius: 3px;
+	margin-bottom: 30px;
+}
 
-
-
-label.candy:before {
-  content: '';
-  @include sprite-background(candy_vector_secondary_color);
+.final-destination {
   display: block;
-  background-color: purple;
-  border-radius: 20px;
-}
-.candy {
-  color: #358998;
-  padding: 5px;
-}
-span.candy {
-  border: 1px solid;
-  border-color: inherit;
-  border-radius: 20px;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  line-height: 10px;
-  position: relative;
-}
-span.candy:hover:after {
-  content: "How much candy do you have for this species?";
-  font-family: 'Roboto Condensed', 'Lato', sans-serif;
-  font-weight: 400;
-  color: black;
-  text-transform: none;
-  font-size: 12px;
-  background: rgba(255, 255, 255, 0.6);
-  display: block;
-  width: 150px;
-  line-height:19px;
-  padding: 5px;
-  border-radius: 5px;
-  right: -150px;
-  top: -60px;
-  position: absolute;
+  border: 1px solid #358998;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  border-collapse: collapse;
+
+  thead,
+  tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  thead,
+  tfoot {
+    font-size: 14px;
+    font-family: 'Roboto condensed';
+    text-transform: uppercase;
+  }
+  td {
+    padding: 5px 8px;
+    text-align: center;
+	  vertical-align: middle;
+  }
+  .pokemon-avatar {
+    padding: 0;
+  }
 }
