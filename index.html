@@ -22,14 +22,14 @@
         <div class="ui-widget">
             <label for="pokemonSelect">Pokémon: </label>
             <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species">
-          <ul id="pokemonFields" class="pokemon-avatar__wrapper">
-            <!--Pokémon Avatars spawn here-->
-          </ul>
+            <ul id="pokemonFields" class="pokemon-avatar__wrapper">
+              <!--Pokémon Avatars spawn here-->
+            </ul>
         </div>
       </div>
 
       <button id="resetPokemonSelect">Reset Selection</button>
-      <button id="addPokemonSpecies" type="submit">Add Pokémon to Table</button>
+      <a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>
     </form>
 
       <table id="finalDestination" class="final-destination">
@@ -58,7 +58,6 @@
         You can evolve <span class="pokeNumber">0</span> <span class="pokemon">Pokémon</span> for a total of <span class="xp">0xp</span>.
       </p> -->
     </form>
-
   </div>
 </body>
 </html>

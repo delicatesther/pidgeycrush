@@ -6,19 +6,33 @@ $(document).ready(function(){
     autoFocus: true,
     minLength: 1,
   });
-    //Sort Pokémon Array in select alphabetically
-    function SortByName(a, b) {
-      var aName = a.species.toLowerCase();
-      var bName = b.species.toLowerCase();
-      return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
-    }
-    // Overrides the default autocomplete filter function to search only from the beginning of the string
-    $.ui.autocomplete.filter = function (array, term) {
-      var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
-      return $.grep(array, function (value) {
-        return matcher.test(value.label || value.value || value);
-      });
-    };
+  //Sort Pokémon Array in select alphabetically
+  function SortByName(a, b) {
+    var aName = a.species.toLowerCase();
+    var bName = b.species.toLowerCase();
+    return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+  };
+  // Overrides the default autocomplete filter function to search only from the beginning of the string
+  $.ui.autocomplete.filter = function (array, term) {
+    var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+    return $.grep(array, function (value) {
+      return matcher.test(value.label || value.value || value);
+    });
+  };
+
+  resetForm = function(){
+    $('#pokemon-desc').remove();
+    $('.number-input__wrapper').remove();
+    $('.pokemon-avatar__wrapper li').remove();
+    $('#pokemonSelect').val(''); return false;
+    $('#pokemonNumber').val(''); return false;
+  };
+
+  // Reset entire field
+  $('#resetPokemonSelect').on('click', function(e){
+    e.preventDefault();
+    resetForm();
+  });
 
   //Pokémon Selector
   $('#pokemonSelect').on('autocompleteselect', function (e, ui) {
@@ -27,54 +41,36 @@ $(document).ready(function(){
     $('#pokemon-desc').remove();
     $("#pokemonFields").html('');
 
-    //Evolution is not possible on end states
-    if(ui.item.evolve != true) {
-      //Generate first Pokémon avatar, w/o close button
+    $pokemonAvatar = function(){
       $("#pokemonFields").append('<li id="pokemon1" class="pokemon-avatar ' + ui.item.resourceName + '">' + '</li>');
       $('#poke-img').addClass(ui.item.resourceName);
       $('#poke-img').addClass('pokemon-avatar');
+    };
 
-      //Remove number selection if it's there
-      $("input[name='pokemonNumber']").remove();
-      $("label[for='pokemonNumber']").remove();
+    $pokemonNumberInput = function(){
+      $('#pokemon-desc').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + ui.item.value + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
+    }
 
-      //Inform user
-      $('.ui-widget').append('<p id="pokemon-desc">You chose <span class="species-instance">' + ui.item.value + '! </span> Unfortunately <span class="species-instance">' + ui.item.value + '</span> does not evolve. :( </p>');
-      $(this).val(''); return false;
+    //Evolution is not possible on end states
+    if(ui.item.evolve != true) {
+      $pokemonAvatar(); //Generate first Pokémon avatar
+      $('.number-input__wrapper').remove();  //Remove number selection if it's there
+      $('.ui-widget').append('<p id="pokemon-desc">You chose <span class="species-instance">' + ui.item.value + '! </span> Unfortunately <span class="species-instance">' + ui.item.value + '</span> does not evolve. :( </p>'); //Inform user
+      $('#pokemonSelect').val(''); return false;
     }
 
     //Add multiple Pokémon of one species
     else {
-
-      //Generate first Pokémon avatar, incl. close button
-      $("#pokemonFields").append('<li id="pokemon1" class="pokemon-avatar ' + ui.item.resourceName + '">' + '<span class="pokemon-delete"></span></li>');
-      $('#poke-img').addClass(ui.item.resourceName);
-      $('#poke-img').addClass('pokemon-avatar');
-
+      //Generate first Pokémon avatar
+      $pokemonAvatar();
       //Add choice + number input
-      $('.ui-widget').append('<p id="pokemon-desc">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span><div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + ui.item.value + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
+      $('.ui-widget').append('<p id="pokemon-desc">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span>').append($pokemonNumberInput());
     }
 
-    // Add Pokémon to Table
-    $('#addPokemonSpecies').on('click', function(e){
-      e.preventDefault();
-      var $tableInner = $('#finalDestination').find('tbody');
 
-      $tableInner.append('<tr>').append('<td class="finNumPokemon"></td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>');
-
-
-      var $numberPokemon = parseInt($("input[name='pokemonNumber']").val());
-      $('.finNumPokemon').html($numberPokemon);
-
-
-        $('#pokemon-desc').remove();
-        $('#pokemonFields').html('');
-        $('#pokemonSelect').val(''); return false;
-
-    });
 
     //Generate Pokémon avatars based on number input
-    $('#pokemonNumber').keyup(function() {
+    $('#pokemonNumber').on('keyup change', function() {
       var $numberPokemon = parseInt($("input[name='pokemonNumber']").val());
 
       //Reset avatars from previous selection
@@ -82,7 +78,7 @@ $(document).ready(function(){
 
       //Number input loop
       for (i = 1; i <= $numberPokemon; i++) {
-        $("#pokemonFields").append('<li id="pokemon' + i + '" class="pokemon-avatar ' + ui.item.resourceName + '">' + '<span class="pokemon-delete"></span></li>');
+        $pokemonAvatar();
       } // Reset value if input reaches 0
       if ( $("input[name='pokemonNumber']").val() < 1) {
         $('#pokemon-desc').remove();
@@ -101,26 +97,26 @@ $(document).ready(function(){
       $("input[name='pokemonNumber']").val($newVal);
 
       //Remove Pokémon description if value reaches 0
-      if ($newVal === 0){
-        $('#pokemonSelect').val('');
-        $('pokemonNumber').val('0');
-        $('body').find($('#pokemon-desc')).remove();
+      if ($newVal < 1){
+        resetForm();
       }
     });
 
     //Remove Pokémon description if value reaches 0
     if ( $("input[name='pokemonNumber']").val() === 0) {
-      $('#pokemon-desc').remove();
-      $('#pokemon-desc').remove();
+      resetForm();
     }
-  });
 
-  // Reset entire field
-  $('#resetPokemonSelect').on('click', function(e){
-    e.preventDefault();
-    $('#pokemon-desc').remove();
-    $('#pokemonFields').html('');
-    $('#pokemonSelect').val(''); return false;
+
+    // Add Pokémon to Table
+    addPokemonSpecies = function(){
+      var $tableInner = $('#finalDestination').find('tbody');
+      $tableInner.append('<tr>').append('<td class="finNumPokemon"></td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>');
+      var $numberPokemon = parseInt($("input[name='pokemonNumber']").val());
+
+      $('.finNumPokemon').html($numberPokemon);
+      resetForm();
+    };
   });
 
 
