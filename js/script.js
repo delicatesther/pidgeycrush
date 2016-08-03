@@ -24,6 +24,7 @@ $(document).ready(function(){
     $('#pokemon-desc').remove();
     $('.number-input__wrapper').remove();
     $('.pokemon-avatar__wrapper li').remove();
+    $('#addPokemonSpecies').remove();
     $('#pokemonSelect').val(''); return false;
     $('#pokemonNumber').val(''); return false;
   };
@@ -39,6 +40,7 @@ $(document).ready(function(){
 
     //Remove former selection
     $('#pokemon-desc').remove();
+    $('#addPokemonSpecies').remove();
     $("#pokemonFields").html('');
 
     $pokemonAvatar = function(){
@@ -65,6 +67,7 @@ $(document).ready(function(){
       $pokemonAvatar();
       //Add choice + number input
       $('.ui-widget').append('<p id="pokemon-desc">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span>').append($pokemonNumberInput());
+      $('.buttons').append('<a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
     }
 
 
@@ -108,16 +111,36 @@ $(document).ready(function(){
     }
 
 
+    var num;
+
     // Add Pokémon to Table
     addPokemonSpecies = function(){
-      var $tableInner = $('#finalDestination').find('tbody');
-      $tableInner.append('<tr>').append('<td class="finNumPokemon"></td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>');
-      var $numberPokemon = parseInt($("input[name='pokemonNumber']").val());
 
-      $('.finNumPokemon').html($numberPokemon);
+      var $curNumberPokemon = function() {
+        $(document).on('change', $('#pokemonNumber'), function(){
+          num = parseInt($('#pokemonNumber', this).val());
+        })
+      };
+
+
+
+      $curNumberPokemon();
+      var $tableInner = $('#finalDestination').find('tbody');
+      $tableInner.append('<tr>').append('<td>' + num + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>');
       resetForm();
+
     };
   });
-
-
 });
+
+
+
+
+// var $curNumberPokemon = function(num){
+//   $(document).on('change', $('#pokemonNumber'), function(){
+//     num = parseInt($('#pokemonNumber', this).val());
+//     console.log(num);
+//   })
+// };
+
+// $curNumberPokemon();

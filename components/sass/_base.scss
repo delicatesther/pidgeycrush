@@ -1,19 +1,40 @@
 // Base styles
 body {
-  background: #b8fba8;
+  background: $green--light;
   /*animation: team-bg 60s infinite alternate;*/
-  background: -moz-radial-gradient(top left, ellipse cover, #ffffff 31%, #b8fba8 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%,#b8fba8 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at top left, #ffffff 31%,#b8fba8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b8fba8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -moz-radial-gradient(top left, ellipse cover, #ffffff 31%, $green--light 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%,$green--light 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at top left, #ffffff 31%,$green--light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$green--light',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color: #358998;
+  color: $green--dark;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
 }
+
 p {
   margin-bottom: 1em;
+}
+
+a,
+button {
+  text-decoration: none;
+  background: $green--dark;
+  color: $white;
+  border-radius: 3px;
+  padding: 10px 30px;
+  font-size: 13px;
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  &:hover {
+    text-decoration: none;
+    background: lighten($green--dark, 10%);
+  }
+  &:active {
+    background: darken($green--dark, 5%);
+  }
 }
 .wrapper {
   max-width: 80%;
@@ -24,10 +45,20 @@ input {
   min-height: 25px;
   border-radius: 3px;
   border: 2px solid #c0e1b9;
-  border: 1px solid #358998;
+  border: 1px solid $green--dark;
   color: inherit;
   margin: 5px 5px 30px;
   padding: 5px;
+}
+.widget__wrapper,
+.buttons {
+  display: flex;
+  align-items: center;
+}
+.buttons {
+  a {
+    margin-right: 15px;
+  }
 }
 .species-instance {
   display: inline-block;
@@ -41,6 +72,15 @@ input {
   max-height: 250px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+.ui-autocomplete a {
+  background: $white;
+  &:active {
+    color: inherit;
+  }
+  &:hover {
+    color: inherit;
+  }
 }
 .ui-autocomplete-input {
   min-width: 260px;
@@ -76,7 +116,7 @@ input {
   position: absolute;
   top: -15px;
   right: -10px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba($white, 0.8);
   padding: 3px 5px;
   border-radius: 20px;
   &:after {
@@ -91,7 +131,7 @@ input {
 }
 
 form {
-  border: 1px solid #358998;
+  border: 1px solid $green--dark;
   padding: 30px;
   border-radius: 3px;
 	margin-bottom: 30px;
@@ -99,14 +139,14 @@ form {
 
 .final-destination {
   display: block;
-  border: 1px solid #358998;
-  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid $green--dark;
+  background: rgba($white, 0.8);
   border-radius: 3px;
   border-collapse: collapse;
 
   thead,
   tr {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba($black, 0.1);
   }
   thead,
   tfoot {
