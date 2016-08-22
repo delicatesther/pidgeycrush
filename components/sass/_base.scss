@@ -19,15 +19,18 @@ p {
 
 a,
 button {
-  text-decoration: none;
   background: $green--dark;
-  color: $white;
   border-radius: 3px;
-  padding: 10px 30px;
-  font-size: 13px;
+  color: $white;
+  display: inline-block;
   font-family: 'Roboto Condensed';
+  font-size: 13px;
+  margin: 20px 0;
+  padding: 10px 30px;
+  text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s ease;
+
   &:hover {
     text-decoration: none;
     background: lighten($green--dark, 10%);
@@ -47,7 +50,7 @@ input {
   border: 2px solid #c0e1b9;
   border: 1px solid $green--dark;
   color: inherit;
-  margin: 5px 5px 30px;
+  margin: 5px;
   padding: 5px;
 }
 .widget__wrapper,
@@ -132,7 +135,7 @@ input {
 
 form {
   border: 1px solid $green--dark;
-  padding: 30px;
+  padding: 20px 20px 0;
   border-radius: 3px;
 	margin-bottom: 30px;
 }

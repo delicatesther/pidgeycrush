@@ -29,10 +29,19 @@ $(document).ready(function(){
     $('#pokemonNumber').val(''); return false;
   };
 
+  resetTable = function(){
+    $('#finalDestination').find('tbody').html('');
+  };
+
   // Reset entire field
   $('#resetPokemonSelect').on('click', function(e){
     e.preventDefault();
     resetForm();
+  });
+  // Reset entire table
+  $('#resetTable').on('click', function(e){
+    e.preventDefault();
+    resetTable();
   });
 
   //Pokémon Selector
@@ -53,6 +62,10 @@ $(document).ready(function(){
       $('#pokemon-desc').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + ui.item.value + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
     }
 
+    $pokemonCandyInput = function(){
+      $('#pokemon-desc').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + ui.item.candyType + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
+    }
+
     //Evolution is not possible on end states
     if(ui.item.evolve != true) {
       $pokemonAvatar(); //Generate first Pokémon avatar
@@ -66,7 +79,7 @@ $(document).ready(function(){
       //Generate first Pokémon avatar
       $pokemonAvatar();
       //Add choice + number input
-      $('.ui-widget').append('<p id="pokemon-desc">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span>').append($pokemonNumberInput());
+      $('.ui-widget').append('<p id="pokemon-desc">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span>').append($pokemonNumberInput()).append($pokemonCandyInput());
       $('.buttons').append('<a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
     }
 
@@ -96,7 +109,19 @@ $(document).ready(function(){
     // Add Pokémon to Table
     addPokemonSpecies = function(){
       var $tableInner = $('#finalDestination').find('tbody');
-      $tableInner.append('<tr>').append('<td>' + parseInt($('#pokemonNumber').val(), 10) + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>');
+      var $numPokemon = parseInt($('#pokemonNumber').val(), 10);
+      var $numCandy = parseInt($('#candyNumber').val(), 10);
+
+      var rowTemplate = '<tr><td>' + $numPokemon + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>' + '</td><td>' + $numCandy + '</td><td>' + ui.item.candy * $numPokemon  + '</td><td>' + Math.floor($numCandy / ui.item.candy) + '</td></tr>';
+
+      $tableInner.append(rowTemplate);
+
+
+
+      // $tableInner.append('<tr>').append('<td>' + $num + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>' + '</td><td>' + ui.item.candy *  $num + '</td>');
+
+
+
       resetForm();
 
     };
