@@ -70,11 +70,9 @@ $(document).ready(function(){
       $('.buttons').append('<a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
     }
 
-
-
     //Generate Pokémon avatars based on number input
     $('#pokemonNumber').on('keyup change', function() {
-      var $numberPokemon = parseInt($("input[name='pokemonNumber']").val());
+      var $numberPokemon = parseInt($("input[name='pokemonNumber']").val(), 10);
 
       //Reset avatars from previous selection
       $("#pokemonFields").html("");
@@ -90,57 +88,17 @@ $(document).ready(function(){
       }
     });
 
-    //remove Pokémon on avatar close button and reset field data
-    $(document).on('click','.pokemon-delete',function() {
-      $(this).closest(".pokemon-avatar").remove();
-
-      //Recalculate number input value on avatar removal
-      var $numberPokemon = parseInt($("input[name='pokemonNumber']").val());
-      var $newVal = $numberPokemon -=1;
-      $("input[name='pokemonNumber']").val($newVal);
-
-      //Remove Pokémon description if value reaches 0
-      if ($newVal < 1){
-        resetForm();
-      }
-    });
-
     //Remove Pokémon description if value reaches 0
     if ( $("input[name='pokemonNumber']").val() === 0) {
       resetForm();
     }
 
-
-    var num;
-
     // Add Pokémon to Table
     addPokemonSpecies = function(){
-
-      var $curNumberPokemon = function() {
-        $(document).on('change', $('#pokemonNumber'), function(){
-          num = parseInt($('#pokemonNumber', this).val());
-        })
-      };
-
-
-
-      $curNumberPokemon();
       var $tableInner = $('#finalDestination').find('tbody');
-      $tableInner.append('<tr>').append('<td>' + num + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>');
+      $tableInner.append('<tr>').append('<td>' + parseInt($('#pokemonNumber').val(), 10) + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>');
       resetForm();
 
     };
   });
 });
-
-
-
-
-// var $curNumberPokemon = function(num){
-//   $(document).on('change', $('#pokemonNumber'), function(){
-//     num = parseInt($('#pokemonNumber', this).val());
-//     console.log(num);
-//   })
-// };
-
-// $curNumberPokemon();
