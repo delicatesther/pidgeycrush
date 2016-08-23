@@ -14,10 +14,19 @@ body {
 }
 
 p {
-  margin-bottom: 1em;
+  margin: 0 auto 1em;
+
 }
 small {
   font-size: 0.8em;
+}
+.disclaimer {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  text-align: center;
+  max-width: 500px;
+  margin: 30px auto;
+  color: #aaa;
 }
 a,
 button {
@@ -40,6 +49,22 @@ button {
   &:active {
     background: darken($green--dark, 5%);
   }
+}
+.pokemon-choice {
+  text-align: center;
+  .choice {
+    font-family: 'Roboto Condensed', 'Lato';
+    transform: rotate(-2deg);
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+}
+.message {
+  text-align: center;
 }
 .circular-button {
   border-radius: 20px;
@@ -116,15 +141,6 @@ input {
 .ui-menu-item {
   padding: 5px;
 }
-.choice {
-  font-family: 'Roboto Condensed', 'Lato';
-  transform: rotate(-2deg);
-  display: block;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-}
 .pokemon-number,
 .candy-number {
   max-width: 100px;
@@ -163,7 +179,7 @@ input {
 }
 form {
   border: 1px solid $green--dark;
-  padding: 20px 20px 0;
+  padding: 20px;
   border-radius: 3px;
   margin-bottom: 30px;
   max-width: 414px;
@@ -208,6 +224,7 @@ table {
   max-width: 680px;
   .pokemon-avatar {
     padding: 0;
+    margin: 10px auto;
   }
   + a {
     margin: 20px auto;
@@ -215,7 +232,6 @@ table {
     max-width: 130px;
   }
 }
-
 table:nth-of-type(2) {
   max-width: 540px;
 }

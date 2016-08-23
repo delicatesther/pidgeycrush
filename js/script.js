@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
     $("#pokemonSelect").autocomplete({
@@ -23,13 +21,8 @@ $(document).ready(function() {
     };
 
     resetForm = function() {
-        $('#pokemon-desc').remove();
-        $('.number-input__wrapper').remove();
-        $('.pokemon-avatar__wrapper li').remove();
-        $('#addPokemonSpecies').remove();
-        $('#pokemonSelect').val('');
-        return false;
-        $('#pokemonNumber').val('');
+        $('#pokemonSelect, #pokemonNumber').val('');
+        $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #firstEvolve, label[for="firstEvolve"], #addPokemonSpecies, #resetPokemonSelect').remove();
         return false;
     };
 
@@ -52,8 +45,7 @@ $(document).ready(function() {
     $('#pokemonSelect').on('autocompleteselect', function(e, ui) {
 
         //Remove former selection
-        $('#pokemon-desc').remove();
-        $('#addPokemonSpecies').remove();
+        $('#pokemon-desc, #addPokemonSpecies').remove();
         $("#pokemonFields").html('');
 
         $pokemonAvatar = function() {
@@ -67,23 +59,25 @@ $(document).ready(function() {
         };
 
         $pokemonNumberInput = function() {
-            $('#pokemon-desc').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + ui.item.value + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
+            $('.ui-widget').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + ui.item.value + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
         }
 
         $pokemonCandyInput = function() {
-            $('#pokemon-desc').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + ui.item.candyType + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
+            $('.ui-widget').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + ui.item.candyType + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
         }
 
         $pokemonFirstEvolution = function() {
-            $('#pokemon-desc').append('<input type="checkbox" name="firstEvolve" id="firstEvolve"><p>Is this the first time you evolve a <span class="species-instance">' + ui.item.value + '</span>? <small>(Adds 500xp!)</small> </p>')
+            $('.ui-widget').append('<input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve">Is this the first time you evolve a <span class="species-instance">' + ui.item.value + '</span>? <small>(Adds 500xp!)</small></label>')
         }
 
         //Evolution is not possible on end states
         if (ui.item.evolve != true) {
             $pokemonAvatar(); //Generate first Pokémon avatar
             $('.number-input__wrapper').remove(); //Remove number selection if it's there
-            $('.ui-widget').append('<p id="pokemon-desc"><span class="choice">You chose <span class="species-instance">' + ui.item.value + '! </span></span><br><br> Unfortunately <span class="species-instance">' + ui.item.value + '</span> does not evolve. :( </p>'); //Inform user
+
+            $('#pokemonChoice').append('<p id="pokemon-desc"><span class="choice">You chose <span class="species-instance">' + ui.item.value + '! </span></span><br><br> Unfortunately <span class="species-instance">' + ui.item.value + '</span> does not evolve. :( </p>'); //Inform user
             $('#pokemonSelect').val('');
+            $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>')
             return false;
         }
 
@@ -92,8 +86,10 @@ $(document).ready(function() {
             //Generate first Pokémon avatar
             $pokemonAvatar();
             //Add choice + number input
-            $('.ui-widget').append('<p id="pokemon-desc"><span class="choice">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span></span><br><br>').append($pokemonNumberInput()).append($pokemonCandyInput()).append($pokemonFirstEvolution());
-            $('.buttons').append('<a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
+            $('#pokemonChoice').prepend('<p id="pokemon-desc"><span class="choice">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span></span>');
+
+            $('.ui-widget').append($pokemonNumberInput()).append($pokemonCandyInput()).append($pokemonFirstEvolution());
+            $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
         }
 
         //Generate Pokémon avatars based on number input
@@ -114,62 +110,72 @@ $(document).ready(function() {
             resetForm();
         }
 
-    // Add Pokémon to Table
-    addPokemonSpecies = function() {
+        // Add Pokémon to Table
+        addPokemonSpecies = function() {
 
-        var $tableInner = $('#finalDestination').find('tbody');
-        var $numPokemon = parseInt($('#pokemonNumber').val(), 10);
-        var $numCandy = parseInt($('#candyNumber').val(), 10);
-        var $candyNeeded = $numPokemon * ui.item.candy;
-        var $candyNeededvsInventory = Math.floor($numCandy / ui.item.candy);
-        var $evolutionsPossible = Math.min($candyNeededvsInventory, $numPokemon);
+            var $tableInner = $('#finalDestination').find('tbody');
+            var $numPokemon = parseInt($('#pokemonNumber').val(), 10);
+            var $numCandy = parseInt($('#candyNumber').val(), 10);
+            var $candyNeeded = $numPokemon * ui.item.candy;
+            var $candyNeededvsInventory = Math.floor($numCandy / ui.item.candy);
+            var $evolutionsPossible = Math.min($candyNeededvsInventory, $numPokemon);
 
-        //Check wether there's a new evolution taking place
-        if ($('#firstEvolve').is(':checked') && $evolutionsPossible >= 1) {
-            $xpGained = $evolutionsPossible * 500 + 500;
-        } else {
-            $xpGained = $evolutionsPossible * 500;
-        }
+            //Check wether there's a new evolution taking place
+            if ($('#firstEvolve').is(':checked') && $evolutionsPossible >= 1) {
+                $xpGained = $evolutionsPossible * 500 + 500;
+            } else {
+                $xpGained = $evolutionsPossible * 500;
+            }
 
-        var rowTemplate = '<tr><td>' + $numPokemon + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>' + '</td><td>' + $candyNeeded + '</td><td>' + $numCandy + '</td><td class="evolvesPossible">' + $evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
+            var rowTemplate = '<tr><td>' + $numPokemon + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>' + '</td><td>' + $candyNeeded + '</td><td>' + $numCandy + '</td><td class="evolvesPossible">' + $evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
 
-        $tableInner.append(rowTemplate);
+            $tableInner.append(rowTemplate);
 
-        // add unique id to each row -- do I need this?
-        $('#finalDestination tbody tr').attr('id', function(i) {
-            return 'pokemonRow' + (i + 1);
-        });
-
-        // remove row on click
-        $(document).on('click', '#removeRow', function() {
-            $(this).closest('tr').remove();
-        });
-
-        resetForm();
-
-        function calculateSum() {
-            var sum1 = 0;
-            var sum2 = 0;
-
-            $('.evolvesPossible').each(function() {
-                sum1 += parseInt($(this).html());
-            });
-            $('.xpGained').each(function() {
-                sum2 += parseInt($(this).html());
+            // add unique id to each row -- do I need this?
+            $('#finalDestination tbody tr').attr('id', function(i) {
+                return 'pokemonRow' + (i + 1);
             });
 
-            $('#total-1').html(sum1);
-            $('#total-2').html(sum2);
-            $('#total-3').html(sum2 * 2);
-          }
-          calculateSum();
+            // remove row on click
+            $(document).on('click', '#removeRow', function() {
+                $(this).closest('tr').remove();
+            });
 
-          $(document).on('click', $('#removeRow'), function(){
+            function calculateSum() {
+                var sum1 = 0;
+                var sum2 = 0;
+
+                $('.evolvesPossible').each(function() {
+                    sum1 += parseInt($(this).html());
+
+                    if (sum1 >= 60 ) {
+
+
+
+                      $('#eggMessage').html('<p>You can only evolve (roughly) 60 Pokémon during one Lucky Egg activation. <br>You may want to get another egg!</p> <a id="removeEggMessage" href="javascript:void(0)" onclick="removeEggMessage();">Got it!</a>');
+                    }
+                });
+                $('.xpGained').each(function() {
+                    sum2 += parseInt($(this).html());
+                });
+
+                $('#total-1').html(sum1);
+                $('#total-2').html(sum2);
+                $('#total-3').html(sum2 * 2);
+
+            }
             calculateSum();
-          });
+
+            $(document).on('click', $('#removeRow'), function() {
+                calculateSum();
+            });
+
+            removeEggMessage = function() {
+              $('#eggMessage').remove();
+            }
+            resetForm();
         }
 
-
-      });
+    });
 
 });

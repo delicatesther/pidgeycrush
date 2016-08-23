@@ -19,22 +19,26 @@
   <div class="wrapper">
 
     <form method="post">
+      <p>To add a Pokémon species to your evolution table, simply select one below!</p>
       <div class="widget__wrapper">
         <div class="ui-widget">
           <label for="pokemonSelect">Pokémon: </label>
           <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species">
-          <ul id="pokemonFields" class="pokemon-avatar__wrapper">
-            <!--Pokémon Avatars spawn here-->
-          </ul>
+
+          <div id="pokemonChoice" class="pokemon-choice">
+            <ul id="pokemonFields" class="pokemon-avatar__wrapper">
+              <!--Pokémon Avatars spawn here-->
+            </ul>
+          </div>
         </div>
 
       </div>
 
       <div class="buttons">
-        <a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>
+        <!-- <a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a> -->
       </div>
     </form>
-
+    <div id="eggMessage" class="message"></div>
     <table id="finalDestination" class="final-destination">
       <thead>
         <tr>
@@ -51,7 +55,6 @@
       </tbody>
     </table>
     <a id="resetTable" href="javascript:void(0)" onclick="resetTable();">Reset Table</a>
-
     <table id="tally" class="tally">
       <thead>
         <tr>
@@ -68,12 +71,9 @@
         </tr>
       </tbody>
     </table>
-  </div>
 
-  <!-- <p>
-  You can evolve <span class="pokeNumber">0</span> <span class="pokemon">Pokémon</span> for a total of <span class="xp">0xp</span>.
-</p> -->
-</form>
+  <p class="disclaimer">This calculator is based on the popular game Pokémon Go, developed by Niantic, Inc.<br> Any and all rights are belong to them.<br><br><small>Please don't sue me, guys. I just wanted to build a calculator. :(</small></p>
+  </div>
 </div>
 </body>
 </html>
