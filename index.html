@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pidgey Crush</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
@@ -20,46 +21,59 @@
     <form method="post">
       <div class="widget__wrapper">
         <div class="ui-widget">
-            <label for="pokemonSelect">Pokémon: </label>
-            <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species">
-            <ul id="pokemonFields" class="pokemon-avatar__wrapper">
-              <!--Pokémon Avatars spawn here-->
-            </ul>
+          <label for="pokemonSelect">Pokémon: </label>
+          <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species">
+          <ul id="pokemonFields" class="pokemon-avatar__wrapper">
+            <!--Pokémon Avatars spawn here-->
+          </ul>
         </div>
+
       </div>
+
       <div class="buttons">
         <a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>
       </div>
     </form>
 
-      <table id="finalDestination" class="final-destination">
-        <thead>
-          <tr>
+    <table id="finalDestination" class="final-destination">
+      <thead>
+        <tr>
           <td>#</td>
           <td>Species</td>
-          <td>Candy Inventory</td>
-          <td>Candy Needed</td>
+          <td>Candy needed</td>
+          <td>Candy inventory</td>
           <td># Evolutions possible</td>
-          <td>New Species Evolution</td>
-          <td>Total XP Gained</td>
+          <td>XP gained</td>
+          <td><span>Remove row</span></td>
         </tr>
       </thead>
       <tbody>
-
       </tbody>
-      <tfoot>
-        <td>#</td>
-        <td>Evolutions</td>
-        <td>XP gained</td>
-        <td>XP gained with lucky egg</td>
-      </tfoot>
-      </table>
-        <a id="resetTable" href="javascript:void(0)" onclick="resetTable();">Reset Table</a>
-      </div>
-      <!-- <p>
-        You can evolve <span class="pokeNumber">0</span> <span class="pokemon">Pokémon</span> for a total of <span class="xp">0xp</span>.
-      </p> -->
-    </form>
+    </table>
+    <a id="resetTable" href="javascript:void(0)" onclick="resetTable();">Reset Table</a>
+
+    <table id="tally" class="tally">
+      <thead>
+        <tr>
+          <td>Total number of evolutions</td>
+          <td>Total XP gained</td>
+          <td>Total XP gained with Lucky Egg</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="total-1"></td>
+          <td id="total-2"></td>
+          <td id="total-3"></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+
+  <!-- <p>
+  You can evolve <span class="pokeNumber">0</span> <span class="pokemon">Pokémon</span> for a total of <span class="xp">0xp</span>.
+</p> -->
+</form>
+</div>
 </body>
 </html>
