@@ -1,8 +1,12 @@
 $(document).ready(function() {
 
+  var pokemonArray =  pokemonService.getPokemon();
+  console.log(pokemonArray);
+    //Autocomplete field
     $("#pokemonSelect").autocomplete({
         //Grab data from Pokémon Array
-        source: pokemonArray.sort(SortByName),
+        // source: pokemonArray.sort(SortByName),
+        source: pokemonService.getPokemon(),
         autoFocus: true,
         minLength: 1,
     });
@@ -20,56 +24,54 @@ $(document).ready(function() {
         });
     };
 
+
+    //Reset functions
     resetForm = function() {
         $('#pokemonSelect, #pokemonNumber').val('');
         $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #firstEvolve, label[for="firstEvolve"], #addPokemonSpecies, #resetPokemonSelect').remove();
         return false;
     };
-
     resetTable = function() {
         $('#finalDestination').find('tbody').html('');
     };
-
-    // Reset entire field
+    // Reset field
     $('#resetPokemonSelect').on('click', function(e) {
         e.preventDefault();
         resetForm();
     });
-    // Reset entire table
+    // Reset  table
     $('#resetTable').on('click', function(e) {
         e.preventDefault();
         resetTable();
     });
 
+
     //Pokémon Selector
     $('#pokemonSelect').on('autocompleteselect', function(e, ui) {
-
         //Remove former selection
         $('#pokemon-desc, #addPokemonSpecies').remove();
         $("#pokemonFields").html('');
-
+        //Add Pokémon avatar
         $pokemonAvatar = function() {
             $("#pokemonFields").append('<li class="pokemon-avatar ' + ui.item.resourceName + '">' + '</li>');
             $('#poke-img').addClass(ui.item.resourceName);
             $('#poke-img').addClass('pokemon-avatar');
-
             $('#pokemonFields li').attr('id', function(i) {
                 return 'pokemon' + (i + 1);
             });
         };
-
+        // Generate inputfield to select number of Pokémon to add
         $pokemonNumberInput = function() {
             $('.ui-widget').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + ui.item.value + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
         }
-
+        // Generate inputfield to select Pokémon candy in inventory
         $pokemonCandyInput = function() {
             $('.ui-widget').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + ui.item.candyType + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
         }
-
+        // Generate checkbox to indicate a first evolution of the species
         $pokemonFirstEvolution = function() {
             $('.ui-widget').append('<input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve">Is this the first time you evolve a <span class="species-instance">' + ui.item.value + '</span>? <small>(Adds 500xp!)</small></label>')
         }
-
         //Evolution is not possible on end states
         if (ui.item.evolve != true) {
             $pokemonAvatar(); //Generate first Pokémon avatar
@@ -80,39 +82,33 @@ $(document).ready(function() {
             $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>')
             return false;
         }
-
         //Add multiple Pokémon of one species
         else {
-            //Generate first Pokémon avatar
+            //Show first Pokémon avatar
             $pokemonAvatar();
-            //Add choice + number input
+            //Add Pokémon choice + inputfields
             $('#pokemonChoice').prepend('<p id="pokemon-desc"><span class="choice">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span></span>');
-
             $('.ui-widget').append($pokemonNumberInput()).append($pokemonCandyInput()).append($pokemonFirstEvolution());
+            //Generate buttons to reset selectionfield or to add Pokémon to evolution table
             $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
         }
-
-        //Generate Pokémon avatars based on number input
+        //Generate Pokémon avatars based number selection in inputfield
         $('#pokemonNumber').on('keyup change', function() {
             var $numberPokemon = parseInt($("input[name='pokemonNumber']").val(), 10);
-
             //Reset avatars from previous selection
             $("#pokemonFields").html("");
-
             //Number input loop
             for (i = 1; i <= $numberPokemon; i++) {
                 $pokemonAvatar();
             }
         });
-
-        //Remove Pokémon description if value reaches 0
+        //Remove Pokémon avatar if value reaches 0
         if ($("input[name='pokemonNumber']").val() === 0) {
             resetForm();
         }
 
-        // Add Pokémon to Table
+        // Add Pokémon to Evolution table
         addPokemonSpecies = function() {
-
             var $tableInner = $('#finalDestination').find('tbody');
             var $numPokemon = parseInt($('#pokemonNumber').val(), 10);
             var $numCandy = parseInt($('#candyNumber').val(), 10);
