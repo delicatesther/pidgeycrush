@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
   var pokemonArray =  pokemonService.getPokemon();
-  console.log(pokemonArray);
     //Autocomplete field
     $("#pokemonSelect").autocomplete({
         //Grab data from Pokémon Array
@@ -70,8 +69,9 @@ $(document).ready(function() {
         }
         // Generate checkbox to indicate a first evolution of the species
         $pokemonFirstEvolution = function() {
-            $('.ui-widget').append('<input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve">Is this the first time you evolve a <span class="species-instance">' + ui.item.value + '</span>? <small>(Adds 500xp!)</small></label>')
+            $('.ui-widget').append('<div class="evolution-bonus"><span class="bonus">Adds<br>500 XP!</span><input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve"></label><span>Is this the first time you evolve a <span class="species-instance">' + ui.item.value + '</span>?</span></div>')
         }
+
         //Evolution is not possible on end states
         if (ui.item.evolve != true) {
             $pokemonAvatar(); //Generate first Pokémon avatar
@@ -106,6 +106,16 @@ $(document).ready(function() {
         if ($("input[name='pokemonNumber']").val() === 0) {
             resetForm();
         }
+
+        //Add bonus bubble
+        $('#firstEvolve').change(function(){
+          if($(this).is(':checked')) {
+              $('.bonus').addClass('bonus-animated');
+          } else {
+            $('.bonus').removeClass('bonus-animated').css('opacity', 0);
+          }
+        })
+
 
         // Add Pokémon to Evolution table
         addPokemonSpecies = function() {
