@@ -12,7 +12,16 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
-
+h2 {
+  font-family: 'Roboto Condensed', 'Lato';
+  transform: rotate(-2deg);
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0;
+}
 p {
   margin: 0 auto 1em;
 
@@ -36,7 +45,7 @@ button {
   display: inline-block;
   font-family: 'Roboto Condensed';
   font-size: 13px;
-  margin: 20px 0;
+  margin: 20px 5px;
   padding: 10px 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -52,16 +61,6 @@ button {
 }
 .pokemon-choice {
   text-align: center;
-  .choice {
-    font-family: 'Roboto Condensed', 'Lato';
-    transform: rotate(-2deg);
-    display: block;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    margin: 20px 0;
-  }
 }
 .message {
   text-align: center;
@@ -98,7 +97,7 @@ label[for="firstEvolve"] {
   cursor: pointer;
   position: relative;
   padding-left: 18px;
-  margin-right: 5px;
+  margin: 0px 5px -6px 0px;
   font-size: 13px;
   border: 1px solid $green--dark;
   height: 20px;
@@ -161,6 +160,7 @@ input[type=checkbox] {
 .buttons {
   display: flex;
   align-items: center;
+	justify-content: center;
 }
 .buttons {
   a {

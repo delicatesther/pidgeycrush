@@ -27,7 +27,7 @@ $(document).ready(function() {
     //Reset functions
     resetForm = function() {
         $('#pokemonSelect, #pokemonNumber').val('');
-        $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #firstEvolve, label[for="firstEvolve"], #addPokemonSpecies, #resetPokemonSelect').remove();
+        $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
         return false;
     };
     resetTable = function() {
@@ -74,24 +74,29 @@ $(document).ready(function() {
 
         //Evolution is not possible on end states
         if (ui.item.evolve != true) {
+            resetForm();
             $pokemonAvatar(); //Generate first Pokémon avatar
-            $('.number-input__wrapper').remove(); //Remove number selection if it's there
 
-            $('#pokemonChoice').append('<p id="pokemon-desc"><span class="choice">You chose <span class="species-instance">' + ui.item.value + '! </span></span><br><br> Unfortunately <span class="species-instance">' + ui.item.value + '</span> does not evolve. :( </p>'); //Inform user
+            $('#pokemonChoice').prepend('<h2>You chose <span class="species-instance">' + ui.item.value + '! </span></h2><p id="pokemon-desc">Unfortunately <span class="species-instance">' + ui.item.value + '</span> does not evolve. :(</p>'); //Inform user
             $('#pokemonSelect').val('');
+
             $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>')
             return false;
+
         }
         //Add multiple Pokémon of one species
         else {
+            resetForm();
             //Show first Pokémon avatar
             $pokemonAvatar();
+
             //Add Pokémon choice + inputfields
-            $('#pokemonChoice').prepend('<p id="pokemon-desc"><span class="choice">You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span></span>');
+            $('#pokemonChoice').prepend('<p id="pokemon-desc"><h2>You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span></h2>');
             $('.ui-widget').append($pokemonNumberInput()).append($pokemonCandyInput()).append($pokemonFirstEvolution());
             //Generate buttons to reset selectionfield or to add Pokémon to evolution table
             $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
         }
+
         //Generate Pokémon avatars based number selection in inputfield
         $('#pokemonNumber').on('keyup change', function() {
             var $numberPokemon = parseInt($("input[name='pokemonNumber']").val(), 10);
@@ -102,6 +107,7 @@ $(document).ready(function() {
                 $pokemonAvatar();
             }
         });
+
         //Remove Pokémon avatar if value reaches 0
         if ($("input[name='pokemonNumber']").val() === 0) {
             resetForm();
@@ -119,6 +125,7 @@ $(document).ready(function() {
 
         // Add Pokémon to Evolution table
         addPokemonSpecies = function() {
+            // resetForm();
             var $tableInner = $('#finalDestination').find('tbody');
             var $numPokemon = parseInt($('#pokemonNumber').val(), 10);
             var $numCandy = parseInt($('#candyNumber').val(), 10);
@@ -147,6 +154,7 @@ $(document).ready(function() {
                 $(this).closest('tr').remove();
             });
 
+            //Calculate # evolutions possible and XP gained
             function calculateSum() {
                 var sum1 = 0;
                 var sum2 = 0;
@@ -154,9 +162,8 @@ $(document).ready(function() {
                 $('.evolvesPossible').each(function() {
                     sum1 += parseInt($(this).html());
 
+                    //Warn user that roughly 60 evolutions are possible within one luck egg activation
                     if (sum1 >= 60 ) {
-
-
 
                       $('#eggMessage').html('<p>You can only evolve (roughly) 60 Pokémon during one Lucky Egg activation. <br>You may want to get another egg!</p> <a id="removeEggMessage" href="javascript:void(0)" onclick="removeEggMessage();">Got it!</a>');
                     }
@@ -165,6 +172,7 @@ $(document).ready(function() {
                     sum2 += parseInt($(this).html());
                 });
 
+                //Add calculations to Evolution Table
                 $('#total-1').html(sum1);
                 $('#total-2').html(sum2);
                 $('#total-3').html(sum2 * 2);
@@ -172,10 +180,11 @@ $(document).ready(function() {
             }
             calculateSum();
 
+            //Redo calculation if user removes a row from the Evolution table
             $(document).on('click', $('#removeRow'), function() {
                 calculateSum();
             });
-
+            // Remove egg animation time warning
             removeEggMessage = function() {
               $('#eggMessage').remove();
             }
