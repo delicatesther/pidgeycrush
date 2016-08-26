@@ -43,7 +43,10 @@ $(document).ready(function() {
         e.preventDefault();
         resetTable();
     });
-
+    // Remove egg animation time warning
+    removeEggMessage = function() {
+      $('#eggMessage').remove();
+    }
 
     //Pokémon Selector
     $('#pokemonSelect').on('autocompleteselect', function(e, ui) {
@@ -125,13 +128,22 @@ $(document).ready(function() {
 
         // Add Pokémon to Evolution table
         addPokemonSpecies = function() {
-            // resetForm();
+
             var $tableInner = $('#finalDestination').find('tbody');
             var $numPokemon = parseInt($('#pokemonNumber').val(), 10);
             var $numCandy = parseInt($('#candyNumber').val(), 10);
             var $candyNeeded = $numPokemon * ui.item.candy;
             var $candyNeededvsInventory = Math.floor($numCandy / ui.item.candy);
             var $evolutionsPossible = Math.min($candyNeededvsInventory, $numPokemon);
+
+
+            if ($numPokemon === ui.item.candy + 1) {
+              $('#metaEvolution').css('display', 'block');
+              $('#metaNumCandy').append(ui.item.candy + ' <span class="species-instance">' + ui.item.species + '</span> candy');
+              $('#metaEvolveState').append('');
+            } else {
+              $('#metaEvolution').css('display', 'none');
+            }
 
             //Check wether there's a new evolution taking place
             if ($('#firstEvolve').is(':checked') && $evolutionsPossible >= 1) {
@@ -164,8 +176,10 @@ $(document).ready(function() {
 
                     //Warn user that roughly 60 evolutions are possible within one luck egg activation
                     if (sum1 >= 60 ) {
-
-                      $('#eggMessage').html('<p>You can only evolve (roughly) 60 Pokémon during one Lucky Egg activation. <br>You may want to get another egg!</p> <a id="removeEggMessage" href="javascript:void(0)" onclick="removeEggMessage();">Got it!</a>');
+                      $('#eggMessage').html('');
+                      $('#eggMessage').append('<p class="egg-message">You can only evolve (roughly) 60 Pokémon during one Lucky Egg activation. <br>You may want to get another egg!</p> <a id="removeEggMessage" href="javascript:void(0)" onclick="removeEggMessage();">Got it!</a>');
+                    } else if (sum1 < 60) {
+                      $('#eggMessage').html('');
                     }
                 });
                 $('.xpGained').each(function() {
@@ -176,7 +190,6 @@ $(document).ready(function() {
                 $('#total-1').html(sum1);
                 $('#total-2').html(sum2);
                 $('#total-3').html(sum2 * 2);
-
             }
             calculateSum();
 
@@ -184,12 +197,10 @@ $(document).ready(function() {
             $(document).on('click', $('#removeRow'), function() {
                 calculateSum();
             });
-            // Remove egg animation time warning
-            removeEggMessage = function() {
-              $('#eggMessage').remove();
-            }
+
             resetForm();
-        }
+          }
+
 
     });
 

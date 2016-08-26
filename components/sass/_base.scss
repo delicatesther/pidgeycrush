@@ -14,7 +14,6 @@ body {
 }
 h2 {
   font-family: 'Roboto Condensed', 'Lato';
-  transform: rotate(-2deg);
   display: block;
   text-transform: uppercase;
   text-align: center;
@@ -24,7 +23,7 @@ h2 {
 }
 p {
   margin: 0 auto 1em;
-
+  line-height: 1.2em;
 }
 small {
   font-size: 0.8em;
@@ -59,11 +58,31 @@ button {
     background: darken($green--dark, 5%);
   }
 }
+.logo {
+  max-width: 400px;
+  fill: $green--dark;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+}
 .pokemon-choice {
   text-align: center;
+  h2 {
+    animation: choice-animate 0.5s forwards ease;
+  }
 }
 .message {
   text-align: center;
+  .egg-message {
+    &:before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      @include sprite-background(luckyegg);
+    }
+  }
 }
 .circular-button {
   border-radius: 20px;
@@ -127,6 +146,8 @@ input[type=checkbox] {
 }
 .evolution-bonus {
   position: relative;
+  width: 320px;
+  margin: 0 auto 30px;
 }
 .bonus {
   width: 70px;
@@ -156,11 +177,22 @@ input[type=checkbox] {
   }
 }
 
+@keyframes choice-animate {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-2deg);
+  }
+}
+
 .widget__wrapper,
 .buttons {
   display: flex;
   align-items: center;
-	justify-content: center;
+  justify-content: center;
 }
 .buttons {
   a {
@@ -175,6 +207,9 @@ input[type=checkbox] {
 }
 
 // Pokémon Selector
+input {
+  margin: 10px auto 30px;
+}
 .ui-autocomplete {
   max-height: 250px;
   overflow-y: auto;
@@ -212,7 +247,7 @@ input[type=checkbox] {
 .candy-number {
   max-width: 100px;
   display: block;
-  margin-bottom: 30px;
+
 }
 .pokemon-avatar__wrapper {
   display: flex;
@@ -224,6 +259,18 @@ input[type=checkbox] {
 .pokemon-avatar {
   margin: 15px 5px;
   position: relative;
+  opacity: 0;
+  animation: scale 0.5s forwards ease;
+}
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .pokemon-delete {
   cursor: pointer;
@@ -247,11 +294,17 @@ input[type=checkbox] {
 form {
   border: 1px solid $green--dark;
   padding: 20px;
-  border-radius: 3px;
+  // border-radius: 3px;
   margin-bottom: 30px;
-  max-width: 414px;
-  // min-height: 736px;
+  max-width: 680px;
   margin: 0 auto 30px;
+  text-align: center;
+  + p {
+    text-align: center;
+  }
+  h2 {
+    transform: rotate(-2deg);
+  }
 }
 .buttons {
   margin: 0 auto;
@@ -263,16 +316,20 @@ form {
 table {
   display: none;
   @include mq(m) {
-    display: block;
-    border: 1px solid $green--dark;
-    background: rgba($white, 0.8);
-    border-radius: 3px;
+    display: table;
     border-collapse: collapse;
+    border: 1px solid $green--dark;
     margin: 0 auto;
+    width: 680px;
   }
-  thead,
+  thead {
+    background: $green--light;
+  }
   tr {
     border-bottom: 1px solid rgba($black, 0.1);
+    &:last-child {
+      border-bottom: $green--dark;
+    }
   }
   thead,
   tfoot {
@@ -281,14 +338,16 @@ table {
     text-transform: uppercase;
   }
   td {
+    background: rgba($white, 0.8);
     padding: 5px 8px;
     text-align: center;
     vertical-align: middle;
   }
 }
-
+.meta-evolution {
+  display: none;
+}
 .final-destination {
-  max-width: 680px;
   .pokemon-avatar {
     padding: 0;
     margin: 10px auto;
@@ -298,7 +357,4 @@ table {
     display: block;
     max-width: 130px;
   }
-}
-table:nth-of-type(2) {
-  max-width: 540px;
 }

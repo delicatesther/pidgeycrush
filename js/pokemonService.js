@@ -242,11 +242,12 @@ var pokemonService = (function PokemonService(Pokemon) {
 
 })(Pokemon);
 
-function Pokemon(species, candy, candyType, evolve) {
+function Pokemon(species, candy, candyType, evolve, evolveState) {
     this.species = species;
     this.candy = candy;
     this.candyType = candyType;
     this.evolve = evolve;
+    this.evolveState = evolveState;
     this.xp = 500;
     this.label = this.species;
     this.resourceName = this.species.replace('\'', '' ).replace(' ', '');
