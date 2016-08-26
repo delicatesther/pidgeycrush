@@ -259,8 +259,8 @@ input {
 .pokemon-avatar {
   margin: 15px 5px;
   position: relative;
-  opacity: 0;
-  animation: scale 0.5s forwards ease;
+
+  &:last-of-type{  opacity: 0; animation: scale 0.5s forwards ease;}
 }
 @keyframes scale {
   0% {

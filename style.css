@@ -984,9 +984,11 @@ input {
 /* line 259, components/sass/_base.scss */
 .pokemon-avatar {
   margin: 15px 5px;
-  position: relative;
-  opacity: 0;
-  animation: scale 0.5s forwards ease; }
+  position: relative; }
+  /* line 263, components/sass/_base.scss */
+  .pokemon-avatar:last-of-type {
+    opacity: 0;
+    animation: scale 0.5s forwards ease; }
 
 @keyframes scale {
   0% {
