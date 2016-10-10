@@ -10,7 +10,10 @@ body {
   background-size: 100% 200%;
   color: $green--dark;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+  @include mq(m) {
+    font-size: 16px;
+  }
 }
 h2 {
   font-family: 'Roboto Condensed', 'Lato';
@@ -259,7 +262,6 @@ input {
 .pokemon-avatar {
   margin: 15px 5px;
   position: relative;
-
   &:last-of-type{  opacity: 0; animation: scale 0.5s forwards ease;}
 }
 @keyframes scale {
@@ -314,18 +316,18 @@ form {
 }
 
 table {
-  display: none;
+  margin: 0 auto;
   @include mq(m) {
     display: table;
     border-collapse: collapse;
     border: 1px solid $green--dark;
-    margin: 0 auto;
     width: 680px;
   }
-  thead {
+  thead tr {
     background: $green--light;
   }
   tr {
+    background: $white;
     border-bottom: 1px solid rgba($black, 0.1);
     &:last-child {
       border-bottom: $green--dark;
@@ -338,10 +340,18 @@ table {
     text-transform: uppercase;
   }
   td {
-    background: rgba($white, 0.8);
-    padding: 5px 8px;
+    padding: 5px 3px;
     text-align: center;
     vertical-align: middle;
+    @include mq(m) {
+      padding: 5px 8px;
+    }
+  }
+  .wide {
+    display: none;
+    @include mq(m) {
+      display: table-cell;
+    }
   }
 }
 .meta-evolution {
@@ -355,6 +365,6 @@ table {
   + a {
     margin: 20px auto;
     display: block;
-    max-width: 130px;
+    max-width: 160px;
   }
 }

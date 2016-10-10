@@ -2,6 +2,7 @@
 @import "icons/*.png";
 @include all-icons-sprites;
 
+
 $sprites: sprite-map("icons/*.png");
 $sprites-retina: sprite-map("icons-2x/*.png");
 

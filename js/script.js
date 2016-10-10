@@ -152,7 +152,7 @@ $(document).ready(function() {
                 $xpGained = $evolutionsPossible * 500;
             }
 
-            var rowTemplate = '<tr><td>' + $numPokemon + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>' + '</td><td>' + $candyNeeded + '</td><td>' + $numCandy + '</td><td class="evolvesPossible">' + $evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
+            var rowTemplate = '<tr><td>' + $numPokemon + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>' + '</td><td class="wide">' + $candyNeeded + '</td><td class="wide">' + $numCandy + '</td><td class="evolvesPossible">' + $evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
 
             $tableInner.append(rowTemplate);
 
