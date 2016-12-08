@@ -3,105 +3,12 @@ class Pokemon {
       this.species = species;
       this.candy = candy;
       this.candyType = candyType;
+      this.evolutionState = evolutionState;
       this.xp = 500;
       this.label = this.species;
       this.resourceName = this.species.replace('\'', '' ).replace(' ', '');
   }
 }
-
-class EvolvingPokemon extends Pokemon {
-  constructor (species, candy, candyType, evolutionState) {
-    super(species, candy, candyType);
-    this.evolutionState = evolutionState;
-
-    this.evolve = function(){
-      return new EvolvingPokemon(this.evolutionState, this.candy, this.candyType, this.evolutionState);
-    }
-  }
-}
-
-class Pigeotto {
-   constructor(arrayOfPiggies) {
-      if (arrayOfPiggies.length > 12) {
-          for (var i = 0,  i <= arrayOfPiggies.length, i++){
-              if (! arrayOfPiggies[i] instanceof Piggy){
-                  return
-              }
-          }
-       }
-
-       return new Pokemon(‘Pigeotto’);
-   }
-}
-
-var pokemonFamily = new Object(
-  species: this.species[],
-  candyType: this.species[0],
-  candyNeeded: this.candyNeeded[],
-  xp: 500,
-  this.label = this.species[];
-  this.resourceName = this.species.replace('\'', '' ).replace(' ', '');
-);
-
-var bulbasaurFamily = new pokemonFamily (
-  species: ['bulbasaur', 'ivysaur', 'venusaur'],
-  candyNeeded: [25, 100],
-);
-
-
-class Pidgeotto {
-   constructor(arrayOfPidgies) {
-      var i;
-
-      if (arrayOfPidgies.length =12) {
-          for (i = 0,  i <= arrayOfPidgies.length, i++){
-              if (! arrayOfPidgies[i] instanceof Pidgey){
-                  break;
-              }
-          }
-       }
-
-       return (i = 12) ? new Pokemon(‘Pigeotto’) : null;
-   }
-}
-
-var selectedPokemon = new Array();
-
-selectedPokemon = selectedPokemon.push(new Pidgey(), new Pidgey());
-
-function evolve(arrayOfPokemon){
-   var newPokemon = new Pidgeotto(arrayOfPokemon);
-   return (newPokemon) ? [newPokemon] : arrayOfPokemon;
-}
-
-miss wil je dan wel je lijst met pokemon als json ergens opslaan zoals:
-var pokemonJson = {
-   pidgey: {candy: 1},
-   pidgeotto: {candy: 20, evolvesFrom: pidgey, requiredNr: 12}
-}
-
-en dan gewoon 1 class:
-class Pokemon {
-   constructor(name, candy, evolvesFrom, requiredNr, arrayOfPokemon) {
-      var objectToReturn;
-      if (typeof evolvesFrom === ‘undefined’ && typeof requiredNr === ‘undefined’) {
-          objectToReturn =  this;
-      } else {
-        if (arrayOfPokemon.length =requiredNr) {
-          for (i = 0,  i <= arrayOfPokemon.length, i++){
-              if (! arrayOfPokemon[i] instanceof evolvesFrom){
-                  break;
-              }
-          }
-       }
-    }
-
-       return (i = 12) ? new Pokemon(‘Pigeotto’) : null;
-   }}
-   
-var testPokemon = new EvolvingPokemon('bulbasaur', 25, 'bulbasaur', 'ivysaur');
-testPokemon = testPokemon.evolve();
-
 var pokemonService = (function PokemonService(Pokemon) {
   var allPokemon = new Array();
 
@@ -153,108 +60,108 @@ var pokemonService = (function PokemonService(Pokemon) {
       new EvolvingPokemon('nidorina', 100, 'nidoranF', 'nidoqueen'),
       new Pokemon('nidoqueen', 0, 'nidoranF'),
 
-      new Pokemon('clefairy', 50, 'clefairy'),
+      new Pokemon('clefairy', 50, 'clefairy', 'clefable'),
       new Pokemon('clefable', 0, 'clefairy'),
 
-      new Pokemon('vulpix', 50, 'vulpix'),
+      new Pokemon('vulpix', 50, 'vulpix', 'ninetales'),
       new Pokemon('ninetales', 0, 'vulpix'),
 
-      new Pokemon('jigglypuff', 50, 'jigglypuff'),
+      new Pokemon('jigglypuff', 50, 'jigglypuff', 'wigglytuff'),
       new Pokemon('wigglytuff', 0, 'jigglypuff'),
 
-      new Pokemon('zubat', 50, 'zubat'),
+      new Pokemon('zubat', 50, 'zubat', 'golbat'),
       new Pokemon('golbat', 0, 'zubat'),
 
-      new Pokemon('oddish', 25, 'oddish'),
-      new Pokemon('gloom', 100, 'oddish'),
+      new Pokemon('oddish', 25, 'oddish', 'gloom'),
+      new Pokemon('gloom', 100, 'oddish', 'vileplume'),
       new Pokemon('vileplume', 0, 'oddish'),
 
-      new Pokemon('paras', 50, 'paras'),
+      new Pokemon('paras', 50, 'paras', 'parasect'),
       new Pokemon('parasect', 0, 'paras'),
 
-      new Pokemon('venonat', 50, 'venonat'),
+      new Pokemon('venonat', 50, 'venonat', 'venomoth'),
       new Pokemon('venomoth', 0, 'venonat'),
 
-      new Pokemon('diglett', 50, 'diglett'),
+      new Pokemon('diglett', 50, 'diglett', 'dugtrio'),
       new Pokemon('dugtrio', 0, 'diglett'),
 
-      new Pokemon('meowth', 50, 'meowth'),
+      new Pokemon('meowth', 50, 'meowth', 'persian'),
       new Pokemon('persian', 0, 'meowth'),
 
-      new Pokemon('psyduck', 50, 'psyduck'),
+      new Pokemon('psyduck', 50, 'psyduck', 'golduck'),
       new Pokemon('golduck', 0, 'psyduck'),
 
-      new Pokemon('mankey', 50, 'mankey'),
+      new Pokemon('mankey', 50, 'mankey', 'primeape'),
       new Pokemon('primeape', 0, 'mankey'),
 
-      new Pokemon('growlithe', 50, 'growlithe'),
+      new Pokemon('growlithe', 50, 'growlithe', 'arcanine'),
       new Pokemon('arcanine', 0, 'growlithe'),
 
-      new Pokemon('poliwag', 25, 'poliwag'),
-      new Pokemon('poliwhirl', 100, 'poliwag'),
+      new Pokemon('poliwag', 25, 'poliwag', 'poliwhirl'),
+      new Pokemon('poliwhirl', 100, 'poliwag', 'poliwrath'),
       new Pokemon('poliwrath', 0, 'poliwag'),
 
-      new Pokemon('abra', 25, 'abra'),
-      new Pokemon('kadabra', 100, 'abra'),
+      new Pokemon('abra', 25, 'abra', 'kadabra'),
+      new Pokemon('kadabra', 100, 'abra', 'alakazam'),
       new Pokemon('alakazam', 0, 'abra'),
 
-      new Pokemon('machop', 25, 'machop'),
-      new Pokemon('machoke', 100, 'machop'),
+      new Pokemon('machop', 25, 'machop', 'machoke'),
+      new Pokemon('machoke', 100, 'machop', 'machamp'),
       new Pokemon('machamp', 0, 'machop'),
 
-      new Pokemon('bellsprout', 25, 'bellsprout'),
-      new Pokemon('weepinbell', 100, 'bellsprout'),
+      new Pokemon('bellsprout', 25, 'bellsprout', 'weepinbell'),
+      new Pokemon('weepinbell', 100, 'bellsprout', 'victreebel'),
       new Pokemon('victreebel', 0, 'bellsprout'),
 
-      new Pokemon('tentacool', 50, 'tentacool'),
+      new Pokemon('tentacool', 50, 'tentacool', 'tentacruel'),
       new Pokemon('tentacruel', 0, 'tentacool'),
 
-      new Pokemon('geodude', 25, 'geodude'),
-      new Pokemon('graveler', 100, 'geodude'),
+      new Pokemon('geodude', 25, 'geodude', 'graveler'),
+      new Pokemon('graveler', 100, 'geodude', 'golem'),
       new Pokemon('golem', 0, 'geodude'),
 
-      new Pokemon('ponyta', 50, 'ponyta'),
+      new Pokemon('ponyta', 50, 'ponyta', 'rapidash'),
       new Pokemon('rapidash', 0, 'ponyta'),
 
-      new Pokemon('slowpoke', 50, 'slowpoke'),
+      new Pokemon('slowpoke', 50, 'slowpoke', 'slowbro'),
       new Pokemon('slowbro', 0, 'slowpoke'),
 
-      new Pokemon('magnemite', 50, 'magnemite'),
+      new Pokemon('magnemite', 50, 'magnemite', 'magneton'),
       new Pokemon('magneton', 0, 'magnemite'),
 
       new Pokemon('farfetch\'d', 0, 'farfetch\'d'),
 
-      new Pokemon('doduo', 50, 'doduo'),
+      new Pokemon('doduo', 50, 'doduo', 'dodrio'),
       new Pokemon('dodrio', 0, 'doduo'),
 
-      new Pokemon('seel', 50, 'seel'),
+      new Pokemon('seel', 50, 'seel', 'dewgong'),
       new Pokemon('dewgong', 0, 'seel'),
 
-      new Pokemon('grimer', 50, 'grimer'),
+      new Pokemon('grimer', 50, 'grimer', 'muk'),
       new Pokemon('muk', 0, 'grimer'),
 
-      new Pokemon('shellder', 50, 'shellder'),
+      new Pokemon('shellder', 50, 'shellder', 'cloyster'),
       new Pokemon('cloyster', 0, 'shellder'),
 
-      new Pokemon('gastly', 25, 'gastly'),
-      new Pokemon('haunter', 100, 'gastly'),
+      new Pokemon('gastly', 25, 'gastly', 'haunter'),
+      new Pokemon('haunter', 100, 'gastly', 'gengar'),
       new Pokemon('gengar', 0, 'gastly'),
 
       new Pokemon('onix', 0, 'onix'),
 
-      new Pokemon('drowzee', 50, 'drowzee'),
+      new Pokemon('drowzee', 50, 'drowzee', 'hypno'),
       new Pokemon('hypno', 0, 'drowzee'),
 
-      new Pokemon('krabby', 50, 'krabby'),
+      new Pokemon('krabby', 50, 'krabby', 'kingler'),
       new Pokemon('kingler', 0, 'krabby'),
 
-      new Pokemon('voltorb', 50, 'voltorb'),
+      new Pokemon('voltorb', 50, 'voltorb', 'electrode'),
       new Pokemon('electrode', 0, 'voltorb'),
 
-      new Pokemon('exeggcute', 50, 'exeggcute'),
+      new Pokemon('exeggcute', 50, 'exeggcute', 'exeggcutor'),
       new Pokemon('exeggcutor', 0, 'exeggcute'),
 
-      new Pokemon('cubone', 50, 'cubone'),
+      new Pokemon('cubone', 50, 'cubone', 'marowak'),
       new Pokemon('marowak', 0, 'cubone'),
 
       new Pokemon('hitmonlee', 0, 'hitmonlee'),
@@ -262,10 +169,10 @@ var pokemonService = (function PokemonService(Pokemon) {
 
       new Pokemon('lickitung', 0, 'lickitung'),
 
-      new Pokemon('koffing', 50, 'koffing'),
+      new Pokemon('koffing', 50, 'koffing', 'weezing'),
       new Pokemon('weezing', 0, 'koffing'),
 
-      new Pokemon('rhyhorn', 50, 'rhyhorn'),
+      new Pokemon('rhyhorn', 50, 'rhyhorn', 'rhydon'),
       new Pokemon('rhydon', 0, 'rhyhorn'),
 
       new Pokemon('chansey', 0, 'chansey'),
@@ -274,13 +181,13 @@ var pokemonService = (function PokemonService(Pokemon) {
 
       new Pokemon('kangaskhan', 0, 'kangaskhan'),
 
-      new Pokemon('horsea', 50, 'horsea'),
+      new Pokemon('horsea', 50, 'horsea', 'seadra'),
       new Pokemon('seadra', 0, 'horsea'),
 
-      new Pokemon('goldeen', 50, 'goldeen'),
+      new Pokemon('goldeen', 50, 'goldeen', 'seaking'),
       new Pokemon('seaking', 0, 'goldeen'),
 
-      new Pokemon('staryu', 50, 'staryu'),
+      new Pokemon('staryu', 50, 'staryu', 'starmie'),
       new Pokemon('starmie', 0, 'staryu'),
 
       new Pokemon('mr mime', 0, 'mr mime'),
@@ -297,24 +204,24 @@ var pokemonService = (function PokemonService(Pokemon) {
 
       new Pokemon('tauros', 0, 'tauros'),
 
-      new Pokemon('magikarp', 400, 'magikarp'),
+      new Pokemon('magikarp', 400, 'magikarp', 'gyarados'),
       new Pokemon('gyarados', 0, 'magikarp'),
 
       new Pokemon('lapras', 0, 'lapras'),
 
       new Pokemon('ditto', 0, 'ditto'),
 
-      new Pokemon('eevee', 25, 'eevee'),
+      new Pokemon('eevee', 25, 'eevee', 'vaporeon\/jolteon\/flareon'),
       new Pokemon('vaporeon', 0, 'eevee'),
       new Pokemon('jolteon', 0, 'eevee'),
       new Pokemon('flareon', 0, 'eevee'),
 
       new Pokemon('porygon', 0, 'porygon'),
 
-      new Pokemon('omanyte', 50, 'omanyte'),
+      new Pokemon('omanyte', 50, 'omanyte', 'omastar'),
       new Pokemon('omastar', 0, 'omanyte'),
 
-      new Pokemon('kabuto', 50, 'kabuto'),
+      new Pokemon('kabuto', 50, 'kabuto'. 'kabutops'),
       new Pokemon('kabutops', 0, 'kabuto'),
 
       new Pokemon('aerodactyl', 0, 'aerodactyl'),

@@ -7,7 +7,8 @@ body {
   background: radial-gradient(ellipse at top left, #ffffff 31%,$green--light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$green--light',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-repeat: no-repeat;
-  background-size: 100% 200%;
+  background-size: 100% 300%;
+  
   color: $green--dark;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
