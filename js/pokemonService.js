@@ -1,253 +1,237 @@
-var pokemonService = (function PokemonService(Pokemon) {
-  var allPokemon = new Array();
-      allPokemon.push(
-        new Pokemon('bulbasaur', 25, 'bulbasaur', 'ivysaur'),
-        new Pokemon('ivysaur', 100, 'bulbasaur', 'venusaur'),
-        new Pokemon('venusaur', 0, 'bulbasaur'),
-
-        new Pokemon('charmander', 25, 'charmander', 'charmeleon'),
-        new Pokemon('charmeleon', 100, 'charmander', 'charizard'),
-        new Pokemon('charizard', 0, 'charmander'),
-
-        new Pokemon('squirtle', 25, 'squirtle', 'wartortle'),
-        new Pokemon('wartortle', 100, 'squirtle', 'blastoise'),
-        new Pokemon('blastoise', 100, 'squirtle'),
-
-        new Pokemon('caterpie', 12, 'caterpie', 'metapod'),
-        new Pokemon('metapod', 50, 'caterpie', 'butterfree'),
-        new Pokemon('butterfree', 0, 'caterpie'),
-
-        new Pokemon('weedle', 12, 'weedle', 'kakuna'),
-        new Pokemon('kakuna', 50, 'weedle', 'beedrill'),
-        new Pokemon('beedrill', 0, 'weedle'),
-
-        new Pokemon('pidgey', 12, 'pidgey', 'pidgeotto'),
-        new Pokemon('pidgeotto', 50, 'pidgey', 'pidgeot'),
-        new Pokemon('pidgeot', 50, 'pidgey'),
-
-        new Pokemon('rattata', 25, 'rattata', 'raticate'),
-        new Pokemon('raticate', 0, 'rattata'),
-
-        new Pokemon('spearow', 50, 'spearow', 'fearow'),
-        new Pokemon('fearow', 0, 'spearow'),
-
-        new Pokemon('ekans', 50, 'ekans', 'arbok'),
-        new Pokemon('arbok', 50, 'ekans'),
-
-        new Pokemon('pikachu', 50, 'pikachu', 'raichu'),
-        new Pokemon('raichu', 0, 'pikachu'),
-
-        new Pokemon('sandshrew', 50, 'sandshrew', 'sandslash'),
-        new Pokemon('sandslash', 0, 'sandshrew'),
-
-        new Pokemon('nidoranM', 25, 'nidoranM', 'nidorino'),
-        new Pokemon('nidorino', 100, 'nidoranM', 'nidoking'),
-        new Pokemon('nidoking', 0, 'nidoranM'),
-
-        new Pokemon('nidoranF', 25, 'nidoranF', 'nidorina'),
-        new Pokemon('nidorina', 100, 'nidoranF', 'nidoqueen'),
-        new Pokemon('nidoqueen', 0, 'nidoranF'),
-
-        new Pokemon('clefairy', 50, 'clefairy', 'clefable'),
-        new Pokemon('clefable', 0, 'clefairy'),
-
-        new Pokemon('vulpix', 50, 'vulpix', 'ninetales'),
-        new Pokemon('ninetales', 0, 'vulpix'),
-
-        new Pokemon('jigglypuff', 50, 'jigglypuff', 'wigglytuff'),
-        new Pokemon('wigglytuff', 0, 'jigglypuff'),
-
-        new Pokemon('zubat', 50, 'zubat', 'golbat'),
-        new Pokemon('golbat', 0, 'zubat'),
-
-        new Pokemon('oddish', 25, 'oddish', 'gloom'),
-        new Pokemon('gloom', 100, 'oddish', 'vileplume'),
-        new Pokemon('vileplume', 0, 'oddish'),
-
-        new Pokemon('paras', 50, 'paras', 'parasect'),
-        new Pokemon('parasect', 0, 'paras'),
-
-        new Pokemon('venonat', 50, 'venonat', 'venomoth'),
-        new Pokemon('venomoth', 0, 'venonat'),
-
-        new Pokemon('diglett', 50, 'diglett', 'dugtrio'),
-        new Pokemon('dugtrio', 0, 'diglett'),
-
-        new Pokemon('meowth', 50, 'meowth', 'persian'),
-        new Pokemon('persian', 0, 'meowth'),
-
-        new Pokemon('psyduck', 50, 'psyduck', 'golduck'),
-        new Pokemon('golduck', 0, 'psyduck'),
-
-        new Pokemon('mankey', 50, 'mankey', 'primeape'),
-        new Pokemon('primeape', 0, 'mankey'),
-
-        new Pokemon('growlithe', 50, 'growlithe', 'arcanine'),
-        new Pokemon('arcanine', 0, 'growlithe'),
-
-        new Pokemon('poliwag', 25, 'poliwag', 'poliwhirl'),
-        new Pokemon('poliwhirl', 100, 'poliwag', 'poliwrath'),
-        new Pokemon('poliwrath', 0, 'poliwag'),
-
-        new Pokemon('abra', 25, 'abra', 'kadabra'),
-        new Pokemon('kadabra', 100, 'abra', 'alakazam'),
-        new Pokemon('alakazam', 0, 'abra'),
-
-        new Pokemon('machop', 25, 'machop', 'machoke'),
-        new Pokemon('machoke', 100, 'machop', 'machamp'),
-        new Pokemon('machamp', 0, 'machop'),
-
-        new Pokemon('bellsprout', 25, 'bellsprout', 'weepinbell'),
-        new Pokemon('weepinbell', 100, 'bellsprout', 'victreebel'),
-        new Pokemon('victreebel', 0, 'bellsprout'),
-
-        new Pokemon('tentacool', 50, 'tentacool', 'tentacruel'),
-        new Pokemon('tentacruel', 0, 'tentacool'),
-
-        new Pokemon('geodude', 25, 'geodude', 'graveler'),
-        new Pokemon('graveler', 100, 'geodude', 'golem'),
-        new Pokemon('golem', 0, 'geodude'),
-
-        new Pokemon('ponyta', 50, 'ponyta', 'rapidash'),
-        new Pokemon('rapidash', 0, 'ponyta'),
-
-        new Pokemon('slowpoke', 50, 'slowpoke', 'slowbro'),
-        new Pokemon('slowbro', 0, 'slowpoke'),
-
-        new Pokemon('magnemite', 50, 'magnemite', 'magneton'),
-        new Pokemon('magneton', 0, 'magnemite'),
-
-        new Pokemon('farfetch\'d', 0, 'farfetch\'d'),
-
-        new Pokemon('doduo', 50, 'doduo', 'dodrio'),
-        new Pokemon('dodrio', 0, 'doduo'),
-
-        new Pokemon('seel', 50, 'seel', 'dewgong'),
-        new Pokemon('dewgong', 0, 'seel'),
-
-        new Pokemon('grimer', 50, 'grimer', 'muk'),
-        new Pokemon('muk', 0, 'grimer'),
-
-        new Pokemon('shellder', 50, 'shellder', 'cloyster'),
-        new Pokemon('cloyster', 0, 'shellder'),
-
-        new Pokemon('gastly', 25, 'gastly', 'haunter'),
-        new Pokemon('haunter', 100, 'gastly', 'gengar'),
-        new Pokemon('gengar', 0, 'gastly'),
-
-        new Pokemon('onix', 0, 'onix'),
-
-        new Pokemon('drowzee', 50, 'drowzee', 'hypno'),
-        new Pokemon('hypno', 0, 'drowzee'),
-
-        new Pokemon('krabby', 50, 'krabby', 'kingler'),
-        new Pokemon('kingler', 0, 'krabby'),
-
-        new Pokemon('voltorb', 50, 'voltorb', 'electrode'),
-        new Pokemon('electrode', 0, 'voltorb'),
-
-        new Pokemon('exeggcute', 50, 'exeggcute', 'exeggcutor'),
-        new Pokemon('exeggcutor', 0, 'exeggcute'),
-
-        new Pokemon('cubone', 50, 'cubone', 'marowak'),
-        new Pokemon('marowak', 0, 'cubone'),
-
-        new Pokemon('hitmonlee', 0, 'hitmonlee'),
-        new Pokemon('hitmonchan', 0, 'hitmonchan'),
-
-        new Pokemon('lickitung', 0, 'lickitung'),
-
-        new Pokemon('koffing', 50, 'koffing', 'weezing'),
-        new Pokemon('weezing', 0, 'koffing'),
-
-        new Pokemon('rhyhorn', 50, 'rhyhorn', 'rhydon'),
-        new Pokemon('rhydon', 0, 'rhyhorn'),
-
-        new Pokemon('chansey', 0, 'chansey'),
-
-        new Pokemon('tangela', 0, 'tangela'),
-
-        new Pokemon('kangaskhan', 0, 'kangaskhan'),
-
-        new Pokemon('horsea', 50, 'horsea', 'seadra'),
-        new Pokemon('seadra', 0, 'horsea'),
-
-        new Pokemon('goldeen', 50, 'goldeen', 'seaking'),
-        new Pokemon('seaking', 0, 'goldeen'),
-
-        new Pokemon('staryu', 50, 'staryu', 'starmie'),
-        new Pokemon('starmie', 0, 'staryu'),
-
-        new Pokemon('mr mime', 0, 'mr mime'),
-
-        new Pokemon('scyther', 0, 'scyther'),
-
-        new Pokemon('jynx', 0, 'jynx'),
-
-        new Pokemon('electrabuzz', 0, 'electrabuzz'),
-
-        new Pokemon('magmar', 0, 'magmar'),
-
-        new Pokemon('pinsir', 0, 'pinsir'),
-
-        new Pokemon('tauros', 0, 'tauros'),
-
-        new Pokemon('magikarp', 400, 'magikarp', 'gyarados'),
-        new Pokemon('gyarados', 0, 'magikarp'),
-
-        new Pokemon('lapras', 0, 'lapras'),
-
-        new Pokemon('ditto', 0, 'ditto'),
-
-        new Pokemon('eevee', 25, 'eevee', 'vaporeon\/jolteon\/flareon'),
-        new Pokemon('vaporeon', 0, 'eevee'),
-        new Pokemon('jolteon', 0, 'eevee'),
-        new Pokemon('flareon', 0, 'eevee'),
-
-        new Pokemon('porygon', 0, 'porygon'),
-
-        new Pokemon('omanyte', 50, 'omanyte', 'omastar'),
-        new Pokemon('omastar', 0, 'omanyte'),
-
-        new Pokemon('kabuto', 50, 'kabuto', 'kabutops'),
-        new Pokemon('kabutops', 0, 'kabuto'),
-
-        new Pokemon('aerodactyl', 0, 'aerodactyl'),
-
-        new Pokemon('snorlax', 0, 'snorlax'),
-
-        new Pokemon('dratini', 25, 'dratini', 'dragonair'),
-        new Pokemon('dragonair', 100, 'dratini', 'dragonite'),
-        new Pokemon('dragonite', 0, 'dratini'),
-
-        new Pokemon('mewtwo', 0, 'mewtwo'),
-
-        new Pokemon('mew', 0, 'mew')
-  );
-
-
-    return {
-	    getPokemon : getPokemon
-    };
-
-    function getPokemon(filterFunction) {
-    	if(typeof filterFunction === 'undefined' || typeof filterFunction !== 'function'){
-    	    filterFunction = function(pokemon) {
-    		      return true;
-    	    };
-    	}
-	return allPokemon.filter(filterFunction);
-    }
-
-})(Pokemon);
-
-function Pokemon(species, candy, candyType, evolve, evolveState) {
-    this.species = species;
-    this.candy = candy;
-    this.candyType = candyType;
-    this.evolve = evolve;
-    this.evolveState = evolveState;
-    this.xp = 500;
-    this.label = this.species;
-    this.resourceName = this.species.replace('\'', '' ).replace(' ', '');
+function pokemon(species, candy, candyType, evolution) {
+  this.species = species;
+  this.candy = candy;
+  this.candyType = candyType;
+  this.evolution = evolution;
+  this.xp = 500;
+  this.label = this.species;
+  this.resourceName = this.species.replace('\'', '' ).replace(' ', '');
 };
+
+var bulbasaur = new pokemon('bulbasaur', 25, 'bulbasaur', 'ivysaur');
+var ivysaur = new pokemon('ivysaur', 100, 'bulbasaur', 'venusaur');
+var venusaur = new pokemon('venusaur', 'bulbasaur');
+
+var charmander = new pokemon('charmander', 25, 'charmander', 'charmeleon');
+var charmeleon = new pokemon('charmeleon', 100, 'charmander', 'charizard');
+var charizard = new pokemon('charizard', 'charmander');
+
+var squirtle = new pokemon('squirtle', 25, 'squirtle', 'wartortle');
+var wartortle = new pokemon('wartortle', 100, 'squirtle', 'blastoise');
+var blastoise = new pokemon('blastoise', 'squirtle');
+
+var caterpie = new pokemon('caterpie', 12, 'caterpie', 'metapod');
+var metapod = new pokemon('metapod', 50, 'caterpie', 'butterfree');
+var butterfree = new pokemon('butterfree', 'caterpie');
+
+var weedle = new pokemon('weedle', 12, 'weedle', 'kakuna');
+var kakuna = new pokemon('kakuna', 50, 'weedle', 'beedrill');
+var beedrill = new pokemon('beedrill','weedle');
+
+var pidgey = new pokemon('pidgey', 12, 'pidgey', 'pidgeotto');
+var pidgeotto = new pokemon('pidgeotto', 50, 'pidgey', 'pidgeot');
+var pidgeot = new pokemon('pidgeot', 'pidgey');
+
+var rattata = new pokemon('rattata', 25, 'rattata', 'raticate');
+var raticate = new pokemon('raticate','rattata');
+
+var spearow = new pokemon('spearow', 50, 'spearow', 'fearow');
+var fearow = new pokemon('fearow','spearow');
+
+var ekans = new pokemon('ekans', 50, 'ekans', 'arbok');
+var arbok = new pokemon('arbok', 'ekans');
+
+var pikachu = new pokemon('pikachu', 50, 'pikachu', 'raichu');
+var raichu = new pokemon('raichu','pikachu');
+
+var sandshrew = new pokemon('sandshrew', 50, 'sandshrew', 'sandslash');
+var sandslash = new pokemon('sandslash','sandshrew');
+
+var nidoranM = new pokemon('nidoranM', 25, 'nidoranM', 'nidorino');
+var nidorino = new pokemon('nidorino', 100, 'nidoranM', 'nidoking');
+var nidoking = new pokemon('nidoking','nidoranM');
+
+var nidoranF = new pokemon('nidoranF', 25, 'nidoranF', 'nidorina');
+var nidorina = new pokemon('nidorina', 100, 'nidoranF', 'nidoqueen');
+var nidoqueen = new pokemon('nidoqueen','nidoranF');
+
+var clefairy = new pokemon('clefairy', 50, 'clefairy', 'clefable');
+var clefable = new pokemon('clefable','clefairy');
+
+var vulpix = new pokemon('vulpix', 50, 'vulpix', 'ninetales');
+var ninetales = new pokemon('ninetales','vulpix');
+
+var jigglypuff = new pokemon('jigglypuff', 50, 'jigglypuff', 'wigglytuff');
+var wigglytuff = new pokemon('wigglytuff','jigglypuff');
+
+var zubat = new pokemon('zubat', 50, 'zubat', 'golbat');
+var golbat = new pokemon('golbat','zubat');
+
+var oddish = new pokemon('oddish', 25, 'oddish', 'gloom');
+var gloom = new pokemon('gloom', 100, 'oddish', 'vileplume');
+var vileplume = new pokemon('vileplume','oddish');
+
+var paras = new pokemon('paras', 50, 'paras', 'parasect');
+var parasect = new pokemon('parasect','paras');
+
+var venonat = new pokemon('venonat', 50, 'venonat', 'venomoth');
+var venomoth = new pokemon('venomoth','venonat');
+
+var diglett = new pokemon('diglett', 50, 'diglett', 'dugtrio');
+var dugtrio = new pokemon('dugtrio','diglett');
+
+var meowth = new pokemon('meowth', 50, 'meowth', 'persian');
+var persian = new pokemon('persian','meowth');
+
+var psyduck = new pokemon('psyduck', 50, 'psyduck', 'golduck');
+var golduck = new pokemon('golduck','psyduck');
+
+var mankey = new pokemon('mankey', 50, 'mankey', 'primeape');
+var primeape = new pokemon('primeape','mankey');
+
+var growlithe = new pokemon('growlithe', 50, 'growlithe', 'arcanine');
+var arcanine = new pokemon('arcanine','growlithe');
+
+var poliwag = new pokemon('poliwag', 25, 'poliwag', 'poliwhirl');
+var poliwhirl = new pokemon('poliwhirl', 100, 'poliwag', 'poliwrath');
+var poliwrath = new pokemon('poliwrath','poliwag');
+
+var abra = new pokemon('abra', 25, 'abra', 'kadabra');
+var kadabra = new pokemon('kadabra', 100, 'abra', 'alakazam');
+var alakazam = new pokemon('alakazam','abra');
+
+var machop = new pokemon('machop', 25, 'machop', 'machoke');
+var machoke = new pokemon('machoke', 100, 'machop', 'machamp');
+var machamp = new pokemon('machamp','machop');
+
+var bellsprout = new pokemon('bellsprout', 25, 'bellsprout', 'weepinbell');
+var weepinbell = new pokemon('weepinbell', 100, 'bellsprout', 'victreebel');
+var victreebel = new pokemon('victreebel','bellsprout');
+
+var tentacool = new pokemon('tentacool', 50, 'tentacool', 'tentacruel');
+var tentacruel = new pokemon('tentacruel','tentacool');
+
+var geodude = new pokemon('geodude', 25, 'geodude', 'graveler');
+var graveler = new pokemon('graveler', 100, 'geodude', 'golem');
+var golem = new pokemon('golem','geodude');
+
+var ponyta = new pokemon('ponyta', 50, 'ponyta', 'rapidash');
+var rapidash = new pokemon('rapidash','ponyta');
+
+var slowpoke = new pokemon('slowpoke', 50, 'slowpoke', 'slowbro');
+var slowbro = new pokemon('slowbro','slowpoke');
+
+var magnemite = new pokemon('magnemite', 50, 'magnemite', 'magneton');
+var magneton = new pokemon('magneton','magnemite');
+
+var farfetchd = new pokemon('farfetch\'d','farfetch\'d');
+
+var doduo = new pokemon('doduo', 50, 'doduo', 'dodrio');
+var dodrio = new pokemon('dodrio','doduo');
+
+var seel = new pokemon('seel', 50, 'seel', 'dewgong');
+var dewgong = new pokemon('dewgong','seel');
+
+var grimer = new pokemon('grimer', 50, 'grimer', 'muk');
+var muk = new pokemon('muk','grimer');
+
+var shellder = new pokemon('shellder', 50, 'shellder', 'cloyster');
+var cloyster = new pokemon('cloyster','shellder');
+
+var gastly = new pokemon('gastly', 25, 'gastly', 'haunter');
+var haunter = new pokemon('haunter', 100, 'gastly', 'gengar');
+var gengar = new pokemon('gengar','gastly');
+
+var onix = new pokemon('onix','onix');
+
+var drowzee = new pokemon('drowzee', 50, 'drowzee', 'hypno');
+var hypno = new pokemon('hypno','drowzee');
+
+var krabby = new pokemon('krabby', 50, 'krabby', 'kingler');
+var kingler = new pokemon('kingler','krabby');
+
+var voltorb = new pokemon('voltorb', 50, 'voltorb', 'electrode');
+var electrode = new pokemon('electrode','voltorb');
+
+var exeggcute = new pokemon('exeggcute', 50, 'exeggcute', 'exeggcutor');
+var exeggcutor = new pokemon('exeggcutor','exeggcute');
+
+var cubone = new pokemon('cubone', 50, 'cubone', 'marowak');
+var marowak = new pokemon('marowak','cubone');
+
+
+var hitmonlee = new pokemon('hitmonlee','hitmonlee');
+var hitmonchan = new pokemon('hitmonchan','hitmonchan');
+
+var lickitung = new pokemon('lickitung','lickitung');
+
+var koffing = new pokemon('koffing', 50, 'koffing', 'weezing');
+var weezing = new pokemon('weezing','koffing');
+
+var rhyhorn = new pokemon('rhyhorn', 50, 'rhyhorn', 'rhydon');
+var rhydon = new pokemon('rhydon','rhyhorn');
+
+var chansey = new pokemon('chansey','chansey');
+
+var tangela = new pokemon('tangela','tangela');
+
+var kangaskhan = new pokemon('kangaskhan','kangaskhan');
+
+var horsea = new pokemon('horsea', 50, 'horsea', 'seadra');
+var seadra = new pokemon('seadra','horsea');
+
+var goldeen = new pokemon('goldeen', 50, 'goldeen', 'seaking');
+var seaking = new pokemon('seaking','goldeen');
+
+var staryu = new pokemon('staryu', 50, 'staryu', 'starmie');
+var starmie = new pokemon('starmie','staryu');
+
+var mrMime = new pokemon('mr mime','mr mime');
+
+var scyther = new pokemon('scyther','scyther');
+
+var jynx = new pokemon('jynx','jynx');
+
+var electrabuzz = new pokemon('electrabuzz','electrabuzz');
+
+var magmar = new pokemon('magmar','magmar');
+
+var pinsir = new pokemon('pinsir','pinsir');
+
+var tauros = new pokemon('tauros','tauros');
+
+var magikarp = new pokemon('magikarp', 400, 'magikarp', 'gyarados');
+var gyarados = new pokemon('gyarados','magikarp');
+
+var lapras = new pokemon('lapras','lapras');
+
+var ditto = new pokemon('ditto','ditto');
+
+var eevee = new pokemon('eevee', 25, 'eevee', 'vaporeon\/jolteon\/flareon');
+var vaporeon = new pokemon('vaporeon','eevee');
+var jolteon = new pokemon('jolteon','eevee');
+var flareon = new pokemon('flareon','eevee');
+
+var porygon = new pokemon('porygon','porygon');
+
+var omanyte = new pokemon('omanyte', 50, 'omanyte', 'omastar');
+var omastar = new pokemon('omastar','omanyte');
+
+var kabuto = new pokemon('kabuto', 50, 'kabuto', 'kabutops');
+var kabutops = new pokemon('kabutops','kabuto');
+
+var aerodactyl = new pokemon('aerodactyl','aerodactyl');
+
+var snorlax = new pokemon('snorlax','snorlax');
+
+var dratini = new pokemon('dratini', 25, 'dratini', 'dragonair');
+var dragonair = new pokemon('dragonair', 100, 'dratini', 'dragonite');
+var dragonite = new pokemon('dragonite','dratini');
+
+var mewtwo = new pokemon('mewtwo','mewtwo');
+
+var mew = new pokemon('mew','mew');
+
+var pokemonArray = [];
+
+pokemonArray.push(bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree, weedle, kakuna, beedrill, pidgey, pidgeotto, pidgeot, rattata, raticate, spearow, fearow, ekans, arbok, pikachu, raichu, sandshrew, sandslash, nidoranF, nidorina, nidoqueen, nidoranM, nidorino, nidoking, clefairy, clefable, vulpix, ninetales, jigglypuff, wigglytuff, zubat, golbat, oddish, gloom, vileplume, paras, parasect, venonat, venomoth, diglett, dugtrio, meowth, persian, psyduck, golduck, mankey, primeape, growlithe, arcanine, poliwag, poliwhirl, poliwrath, abra, kadabra, alakazam, machop, machoke, machamp, bellsprout, weepinbell, victreebel, tentacool, tentacruel, geodude, graveler, golem, ponyta, rapidash, slowpoke, slowbro, magnemite, magneton, farfetchd, doduo, dodrio, seel, dewgong, grimer, muk, shellder, cloyster, gastly, haunter, gengar, onix, drowzee, hypno, krabby, kingler, voltorb, electrode, exeggcute, exeggcutor, cubone, marowak, hitmonlee, hitmonchan, lickitung, koffing, weezing, rhyhorn, rhydon, chansey, tangela, kangaskhan, horsea, seadra, goldeen, seaking, staryu, starmie, mrMime, scyther, jynx, electrabuzz, magmar, pinsir, tauros, magikarp, gyarados, lapras, ditto, eevee, vaporeon, jolteon, flareon, porygon, omanyte, omastar, kabuto, kabutops, aerodactyl, snorlax, dratini, dragonair, dragonite, mewtwo, mew);

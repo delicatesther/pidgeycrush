@@ -1,14 +1,14 @@
-// Base styles
+/*-----------------------------------------------------------------
+----------------               Base styles   ---------------------- -------------------------------------------------------------------*/
 body {
   background: $green--light;
-  /*animation: team-bg 60s infinite alternate;*/
-  background: -moz-radial-gradient(top left, ellipse cover, #ffffff 31%, $green--light 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%,$green--light 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at top left, #ffffff 31%,$green--light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$green--light',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -moz-radial-gradient(top left, ellipse cover, #ffffff 31%, $green--light 100%);
+  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%,$green--light 100%);
+  background: radial-gradient(ellipse at top left, #ffffff 31%,$green--light 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$green--light',GradientType=1 );
   background-repeat: no-repeat;
-  background-size: 100% 300%;
-  
+  background-attachment: fixed;
+  margin: 0;
   color: $green--dark;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -17,13 +17,13 @@ body {
   }
 }
 h2 {
-  font-family: 'Roboto Condensed', 'Lato';
   display: block;
-  text-transform: uppercase;
-  text-align: center;
+  font-family: 'Roboto Condensed', 'Lato';
   font-size: 30px;
   font-weight: 600;
   margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 p {
   margin: 0 auto 1em;
@@ -32,15 +32,6 @@ p {
 small {
   font-size: 0.8em;
 }
-.disclaimer {
-  font-size: 0.8em;
-  line-height: 1.2em;
-  text-align: center;
-  max-width: 500px;
-  margin: 30px auto;
-  color: #aaa;
-}
-a,
 button {
   background: $green--dark;
   border-radius: 3px;
@@ -53,7 +44,6 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s ease;
-
   &:hover {
     text-decoration: none;
     background: lighten($green--dark, 10%);
@@ -62,32 +52,56 @@ button {
     background: darken($green--dark, 5%);
   }
 }
+
 .logo {
   max-width: 400px;
-  fill: $green--dark;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 30px;
 }
-.pokemon-choice {
+.disclaimer {
+  font-size: 0.8em;
+  line-height: 1.2em;
   text-align: center;
+  max-width: 500px;
+  margin: 30px auto;
+  color: #aaa;
+}
+.pokemon-species {
+  text-transform: capitalize;
+}
+.choice {
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+  &.active {
+    opacity: 1;
+  }
   h2 {
     animation: choice-animate 0.5s forwards ease;
+
   }
 }
-.message {
-  text-align: center;
-  .egg-message {
-    &:before {
-      content: '';
-      display: block;
-      margin: 0 auto;
-      position: relative;
-      @include sprite-background(luckyegg);
-    }
+.sadface {
+  opacity: 0;
+  transition: 0.5s;
+  &.active {
+    opacity: 1;
   }
 }
+// .message {
+//   text-align: center;
+//   .egg-message {
+//     &:before {
+//       content: '';
+//       display: block;
+//       margin: 0 auto;
+//       position: relative;
+//       @include sprite-background(luckyegg);
+//     }
+//   }
+// }
 .circular-button {
   border-radius: 20px;
   width: 15px;
@@ -102,51 +116,6 @@ button {
   max-width: 80%;
   margin: 50px auto;
   height: 100vh;
-}
-input {
-  min-height: 25px;
-  border-radius: 3px;
-  border: 2px solid #c0e1b9;
-  border: 1px solid $green--dark;
-  color: inherit;
-  margin: 5px 0;
-  padding: 5px;
-}
-label {
-  display:block;
-}
-label[for="firstEvolve"] {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  padding-left: 18px;
-  margin: 0px 5px -6px 0px;
-  font-size: 13px;
-  border: 1px solid $green--dark;
-  height: 20px;
-  border-radius: 3px;
-  &:before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    background-color: #fff;
-
-  }
-}
-input[type=checkbox] {
-  display: none;
-
-  &:checked + label:before {
-    content: "\2713";
-    font-size: 15px;
-    text-align: center;
-    line-height: 15px;
-  }
 }
 .evolution-bonus {
   position: relative;
@@ -169,29 +138,6 @@ input[type=checkbox] {
     animation: bonus-animate 0.3s forwards ease;
   }
 }
-
-@keyframes bonus-animate {
-  0% {
-    opacity: 0;
-    transform: scale(0) rotate(0deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(10deg);
-  }
-}
-
-@keyframes choice-animate {
-  0% {
-    opacity: 0;
-    transform: scale(0) rotate(0deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(-2deg);
-  }
-}
-
 .widget__wrapper,
 .buttons {
   display: flex;
@@ -210,43 +156,6 @@ input[type=checkbox] {
   }
 }
 
-// Pokémon Selector
-input {
-  margin: 10px auto 30px;
-}
-.ui-autocomplete {
-  max-height: 250px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.ui-autocomplete a {
-  background: $white;
-  margin: auto;
-  &:active {
-    color: inherit;
-  }
-  &:hover {
-    color: inherit;
-  }
-}
-.ui-autocomplete-input {
-  min-width: 260px;
-}
-.ui-widget,
-.ui-widget input,
-.ui-widget select,
-.ui-widget textarea,
-.ui-widget button {
-  font-family: 'Lato', 'Roboto Condensed';
-}
-.ui-widget input {
-  &::first-letter {
-    text-transform: uppercase;
-  }
-}
-.ui-menu-item {
-  padding: 5px;
-}
 .pokemon-number,
 .candy-number {
   max-width: 100px;
@@ -314,58 +223,4 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-table {
-  margin: 0 auto;
-  @include mq(m) {
-    display: table;
-    border-collapse: collapse;
-    border: 1px solid $green--dark;
-    width: 680px;
-  }
-  thead tr {
-    background: $green--light;
-  }
-  tr {
-    background: $white;
-    border-bottom: 1px solid rgba($black, 0.1);
-    &:last-child {
-      border-bottom: $green--dark;
-    }
-  }
-  thead,
-  tfoot {
-    font-size: 14px;
-    font-family: 'Roboto condensed';
-    text-transform: uppercase;
-  }
-  td {
-    padding: 5px 3px;
-    text-align: center;
-    vertical-align: middle;
-    @include mq(m) {
-      padding: 5px 8px;
-    }
-  }
-  .wide {
-    display: none;
-    @include mq(m) {
-      display: table-cell;
-    }
-  }
-}
-.meta-evolution {
-  display: none;
-}
-.final-destination {
-  .pokemon-avatar {
-    padding: 0;
-    margin: 10px auto;
-  }
-  + a {
-    margin: 20px auto;
-    display: block;
-    max-width: 160px;
-  }
 }
