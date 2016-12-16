@@ -1,18 +1,50 @@
 {
   "name" : "pidgey-crush",
+  "description" : "Pidgey Crush, a tool to help you evolve Pokémon efficiently",
   "version" : "0.0.1",
   "author" : "Esther Kool",
-  "description": "a tool to help you evolve pokemon efficiently",
   "license" : "The MIT License",
   "repository" : {
     "type" : "git",
     "url" : "https://github.com/delicatesther/pidgeycrush.git"
   },
-  "dependencies" : {
-    "grunt" : "~0.4.1",
-    "grunt-contrib-watch":"~0.5.3",
-    "grunt-contrib-compass":"~0.5.0",
-    "grunt-contrib-uglify":"~0.2.2",
-    "matchdep":"~0.1.2"
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "autoprefixer": "^6.4.1",
+    "css-mqpacker": "^5.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp.spritesmith": "^6.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "gulp-postcss": "^6.2.0",
+    "postcss-flexbugs-fixes": "^2.0.0",
+    "compass-mixins": "0.12.10",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-live-server": "^0.0.3"
+  },
+  "scripts": {
+    "gulp": "gulp build"
+  },
+  "paths": {
+    "sass": {
+      "src": "app/components/sass/",
+      "dest": "app/"
+    },
+    "sprites": {
+      "src": "app/components/sprites/",
+      "dest": "app/images"
+    },
+    "css": {
+      "src": "app/components/css/",
+      "dest": "app/"
+    },
+    "js": {
+    "src": "app/components/js/",
+    "dest": "app/js"
     }
   }
+}

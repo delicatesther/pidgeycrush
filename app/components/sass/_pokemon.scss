@@ -1,0 +1,444 @@
+.bulbasaur {
+  @include sprite($bulbasaur);
+}
+.ivysaur {
+  @include sprite($ivysaur);
+}
+.venusaur {
+  @include sprite($venusaur);
+}
+.charmander {
+  @include sprite($charmander);
+}
+.charmeleon {
+  @include sprite($charmeleon);
+}
+.charizard {
+  @include sprite($charizard);
+}
+.squirtle {
+  @include sprite($squirtle);
+}
+.wartortle {
+  @include sprite($wartortle);
+}
+.blastoise {
+  @include sprite($blastoise);
+}
+.caterpie {
+  @include sprite($caterpie);
+}
+.metapod {
+  @include sprite($metapod);
+}
+.butterfree {
+  @include sprite($butterfree);
+}
+.weedle {
+  @include sprite($weedle);
+}
+.kakuna {
+  @include sprite($kakuna);
+}
+.beedrill {
+  @include sprite($beedrill);
+}
+.pidgey {
+  @include sprite($pidgey);
+}
+.pidgeotto {
+  @include sprite($pidgeotto);
+}
+.pidgeot {
+  @include sprite($pidgeot);
+}
+.rattata {
+  @include sprite($rattata);
+}
+.raticate {
+  @include sprite($raticate);
+}
+.spearow {
+  @include sprite($spearow);
+}
+.fearow {
+  @include sprite($fearow);
+}
+.ekans {
+  @include sprite($ekans);
+}
+.arbok {
+  @include sprite($arbok);
+}
+.pikachu {
+  @include sprite($pikachu);
+}
+.raichu {
+  @include sprite($raichu);
+}
+.sandshrew {
+  @include sprite($sandshrew);
+}
+.sandslash {
+  @include sprite($sandslash);
+}
+.nidoranF {
+  @include sprite($nidoran-f);
+}
+.nidorina {
+  @include sprite($nidorina);
+}
+.nidoqueen {
+  @include sprite($nidoqueen);
+}
+.nidoranM {
+  @include sprite($nidoran-m);
+}
+.nidorino {
+  @include sprite($nidorino);
+}
+.nidoking {
+  @include sprite($nidoking);
+}
+.clefairy {
+  @include sprite($clefairy);
+}
+.clefable {
+  @include sprite($clefable);
+}
+.vulpix {
+  @include sprite($vulpix);
+}
+.ninetales {
+  @include sprite($ninetales);
+}
+.jigglypuff {
+  @include sprite($jigglypuff);
+}
+.wigglytuff {
+  @include sprite($wigglytuff);
+}
+.zubat {
+  @include sprite($zubat);
+}
+.golbat {
+  @include sprite($golbat);
+}
+.oddish {
+  @include sprite($oddish);
+}
+.gloom {
+  @include sprite($gloom);
+}
+.vileplume {
+  @include sprite($vileplume);
+}
+.paras {
+  @include sprite($paras);
+}
+.parasect {
+  @include sprite($parasect);
+}
+.venonat {
+  @include sprite($venonat);
+}
+.venomoth {
+  @include sprite($venomoth);
+}
+.diglett {
+  @include sprite($diglett);
+}
+.dugtrio {
+  @include sprite($dugtrio);
+}
+.meowth {
+  @include sprite($meowth);
+}
+.persian {
+  @include sprite($persian);
+}
+.psyduck {
+  @include sprite($psyduck);
+}
+.golduck {
+  @include sprite($golduck);
+}
+.mankey {
+  @include sprite($mankey);
+}
+.primeape {
+  @include sprite($primeape);
+}
+.growlithe {
+  @include sprite($growlithe);
+}
+.arcanine {
+  @include sprite($arcanine);
+}
+.poliwag {
+  @include sprite($poliwag);
+}
+.poliwhirl {
+  @include sprite($poliwhirl);
+}
+.poliwrath {
+  @include sprite($poliwrath);
+}
+.abra {
+  @include sprite($abra);
+}
+.kadabra {
+  @include sprite($kadabra);
+}
+.alakazam {
+  @include sprite($alakazam);
+}
+.machop {
+  @include sprite($machop);
+}
+.machoke {
+  @include sprite($machoke);
+}
+.machamp {
+  @include sprite($machamp);
+}
+.bellsprout {
+  @include sprite($bellsprout);
+}
+.weepinbell {
+  @include sprite($weepinbell);
+}
+.victreebel {
+  @include sprite($victreebel);
+}
+.tentacool {
+  @include sprite($tentacool);
+}
+.tentacruel {
+  @include sprite($tentacruel);
+}
+.geodude {
+  @include sprite($geodude);
+}
+.graveler {
+  @include sprite($graveler);
+}
+.golem {
+  @include sprite($golem);
+}
+.ponyta {
+  @include sprite($ponyta);
+}
+.rapidash {
+  @include sprite($rapidash);
+}
+.slowpoke {
+  @include sprite($slowpoke);
+}
+.slowbro {
+  @include sprite($slowbro);
+}
+.magnemite {
+  @include sprite($magnemite);
+}
+.magneton {
+  @include sprite($magneton);
+}
+.farfetchd {
+  @include sprite($farfetchd);
+}
+.doduo {
+  @include sprite($doduo);
+}
+.dodrio {
+  @include sprite($dodrio);
+}
+.seel {
+  @include sprite($seel);
+}
+.dewgong {
+  @include sprite($dewgong);
+}
+.grimer {
+  @include sprite($grimer);
+}
+.muk {
+  @include sprite($muk);
+}
+.shellder {
+  @include sprite($shellder);
+}
+.cloyster {
+  @include sprite($cloyster);
+}
+.gastly {
+  @include sprite($gastly);
+}
+.haunter {
+  @include sprite($haunter);
+}
+.gengar {
+  @include sprite($gengar);
+}
+.onix {
+  @include sprite($onix);
+}
+.drowzee {
+  @include sprite($drowzee);
+}
+.hypno {
+  @include sprite($hypno);
+}
+.krabby {
+  @include sprite($krabby);
+}
+.kingler {
+  @include sprite($kingler);
+}
+.voltorb {
+  @include sprite($voltorb);
+}
+.electrode {
+  @include sprite($electrode);
+}
+.exeggcute {
+  @include sprite($exeggcute);
+}
+.exeggcutor {
+  @include sprite($exeggcutor);
+}
+.cubone {
+  @include sprite($cubone);
+}
+.marowak {
+  @include sprite($marowak);
+}
+.hitmonlee {
+  @include sprite($hitmonlee);
+}
+.hitmonchan {
+  @include sprite($hitmonchan);
+}
+.lickitung {
+  @include sprite($lickitung);
+}
+.koffing {
+  @include sprite($koffing);
+}
+.weezing {
+  @include sprite($weezing);
+}
+.rhyhorn {
+  @include sprite($rhyhorn);
+}
+.rhydon {
+  @include sprite($rhydon);
+}
+.chansey {
+  @include sprite($chansey);
+}
+.tangela {
+  @include sprite($tangela);
+}
+.kangaskhan {
+  @include sprite($kangaskhan);
+}
+.horsea {
+  @include sprite($horsea);
+}
+.seadras {
+  @include sprite($seadras);
+}
+.goldeen {
+  @include sprite($goldeen);
+}
+.seaking {
+  @include sprite($seaking);
+}
+.staryu {
+  @include sprite($staryu);
+}
+.starmie {
+  @include sprite($starmie);
+}
+.mrmime {
+  @include sprite($mrmime);
+}
+.scyther {
+  @include sprite($scyther);
+}
+.jynx {
+  @include sprite($jynx);
+}
+.electrabuzz {
+  @include sprite($electrabuzz);
+}
+.magmar {
+  @include sprite($magmar);
+}
+.pinsir {
+  @include sprite($pinsir);
+}
+.tauros {
+  @include sprite($tauros);
+}
+.magikarp {
+  @include sprite($magikarp);
+}
+.gyarados {
+  @include sprite($gyarados);
+}
+.lapras {
+  @include sprite($lapras);
+}
+.ditto {
+  @include sprite($ditto);
+}
+.eevee {
+  @include sprite($eevee);
+}
+.vaporeon {
+  @include sprite($vaporeon);
+}
+.jolteon {
+  @include sprite($jolteon);
+}
+.flareon {
+  @include sprite($flareon);
+}
+.porygon {
+  @include sprite($porygon);
+}
+.omanyte {
+  @include sprite($omanyte);
+}
+.omastar {
+  @include sprite($omastar);
+}
+.kabuto {
+  @include sprite($kabuto);
+}
+.kabutops {
+  @include sprite($kabutops);
+}
+.aerodactyl {
+  @include sprite($aerodactyl);
+}
+.snorlax {
+  @include sprite($snorlax);
+}
+.dratini {
+  @include sprite($dratini);
+}
+.dragonair {
+  @include sprite($dragonair);
+}
+.dragonite {
+  @include sprite($dragonite);
+}
+.mewtwo {
+  @include sprite($mewtwo);
+}
+.mew {
+  @include sprite($mew);
+}
