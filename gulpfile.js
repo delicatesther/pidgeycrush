@@ -77,16 +77,15 @@ var bases = {
 gulp.task('serve', function(file) {
 var server = gls.static(bases.app);
 	server.start();
-	gulp.watch(['app/**/*', 'app/index.html'])
+	// gulp.watch(['app/**/*', 'app/index.html'])
 	server.notify.apply(server, [file]);
 });
 
 //watch
-gulp.task('default', ['css', 'serve'], function() {
+gulp.task('default', ['serve'], function() {
 	//watch .scss files
 	gulp.watch('components/sass/**/*.scss', ['css'])
 	gulp.watch(['app/**/*', 'app/index.html'])
-
 });
 
 //build
@@ -96,5 +95,6 @@ gulp.task('build', ['css', 'sprites'], function() {
 	.pipe(gulp.dest('dist'));
 
 		gulp.src('*.html', {cwd: bases.app}).pipe(gulp.dest(bases.dist));
+		gulp.src('*.css', {cwd: bases.app}).pipe(gulp.dest(bases.dist));
 		gulp.src('images/*.**', {cwd: bases.app}).pipe(gulp.dest(bases.dist + 'images'));
 });

@@ -12,6 +12,8 @@ body {
   color: $green--dark;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
+  background: green !important;
+  
   @include mq(m) {
     font-size: 16px;
   }
@@ -34,6 +36,7 @@ small {
 }
 button {
   background: $green--dark;
+  border: none;
   border-radius: 3px;
   color: $white;
   display: inline-block;
@@ -41,6 +44,7 @@ button {
   font-size: 13px;
   margin: 20px 5px;
   padding: 10px 30px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s ease;
@@ -52,7 +56,12 @@ button {
     background: darken($green--dark, 5%);
   }
 }
-
+.button {
+  @extend button;
+}
+li {
+  list-style: none;
+}
 .logo {
   max-width: 400px;
   position: relative;
