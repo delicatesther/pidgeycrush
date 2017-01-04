@@ -2,20 +2,70 @@
 ----------------               Base styles   ---------------------- -------------------------------------------------------------------*/
 body {
   background: $green--light;
-  background: -moz-radial-gradient(top left, ellipse cover, #ffffff 31%, $green--light 100%);
-  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%,$green--light 100%);
   background: radial-gradient(ellipse at top left, #ffffff 31%,$green--light 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$green--light',GradientType=1 );
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
   color: $green--dark;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
-  
+
   @include mq(m) {
     font-size: 16px;
   }
+  &.mystic {
+    background: $blue--light;
+    background: radial-gradient(ellipse at top left, #ffffff 31%,$blue--light 100%);
+    color: $blue--dark;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  &.instinct {
+    background: $yellow--light;
+    background: radial-gradient(ellipse at top left, #ffffff 31%,$yellow--light 100%);
+    color: $yellow--dark;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  &.valor {
+    background: $red--light;
+    background: radial-gradient(ellipse at top left, #ffffff 31%,$red--light 100%);
+    color: $red--dark;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+.teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 680px;
+  margin: 10px auto 30px;
+  a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  .mystic-logo {
+    @include sprite($mystic);
+    .mystic & {
+      animation: logo-grow .3s ease;
+    }
+  }
+  .instinct-logo {
+    @include sprite($instinct);
+    .instinct & {
+      animation: logo-grow .3s ease;
+    }
+  }
+  .valor-logo {
+    @include sprite($valor);
+    .valor & {
+      animation: logo-grow .3s ease;
+    }
+  }
+
 }
 h2 {
   display: block;
@@ -47,12 +97,39 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s ease;
+  .mystic & {
+    background: $blue--dark;
+  }
+  .instinct & {
+    background: $yellow--dark;
+  }
+  .valor & {
+    background: $red--dark;
+  }
   &:hover {
     text-decoration: none;
     background: lighten($green--dark, 10%);
+    .mystic & {
+      background: lighten($blue--dark, 10%);
+    }
+    .instinct & {
+      background: lighten($yellow--dark, 10%);
+    }
+    .valor & {
+      background: lighten($red--dark, 10%);
+    }
   }
   &:active {
     background: darken($green--dark, 5%);
+    .mystic & {
+      background: darken($blue--dark, 5%);
+    }
+    .instinct & {
+      background: darken($yellow--dark, 5%);
+    }
+    .valor & {
+      background: darken($red--dark, 5%);
+    }
   }
 }
 .button {
@@ -62,11 +139,12 @@ li {
   list-style: none;
 }
 .logo {
+  width:100%;
   max-width: 400px;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 30px;
+  fill: currentColor;
+left: 50%;
+transform: translateX(-50%);
 }
 .disclaimer {
   font-size: 0.8em;
@@ -182,16 +260,7 @@ li {
   position: relative;
   &:last-of-type{  opacity: 0; animation: scale 0.5s forwards ease;}
 }
-@keyframes scale {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+
 .pokemon-delete {
   cursor: pointer;
   display: block;
@@ -214,7 +283,6 @@ li {
 form {
   border: 1px solid $green--dark;
   padding: 20px;
-  // border-radius: 3px;
   margin-bottom: 30px;
   max-width: 680px;
   margin: 0 auto 30px;
@@ -224,6 +292,15 @@ form {
   }
   h2 {
     transform: rotate(-2deg);
+  }
+  .mystic & {
+    border: 1px solid $blue--dark;
+  }
+  .instinct & {
+    border: 1px solid $yellow--dark;
+  }
+  .valor & {
+    border: 1px solid $red--dark;
   }
 }
 .buttons {

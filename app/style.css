@@ -136,10 +136,8 @@ table {
 ----------------               Base styles   ---------------------- -------------------------------------------------------------------*/
 body {
   background: #b8fba8;
-  background: -webkit-radial-gradient(top left, ellipse cover, #ffffff 31%, #b8fba8 100%);
   background: -webkit-radial-gradient(top left ellipse, #ffffff 31%, #b8fba8 100%);
   background: radial-gradient(ellipse at top left, #ffffff 31%, #b8fba8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$green--light',GradientType=1 );
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
@@ -152,6 +150,93 @@ body {
   body {
     font-size: 16px;
   }
+}
+
+body.mystic {
+  background: #92c5fc;
+  background: -webkit-radial-gradient(top left ellipse, #ffffff 31%, #92c5fc 100%);
+  background: radial-gradient(ellipse at top left, #ffffff 31%, #92c5fc 100%);
+  color: #0677ee;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.instinct {
+  background: #feeea0;
+  background: -webkit-radial-gradient(top left ellipse, #ffffff 31%, #feeea0 100%);
+  background: radial-gradient(ellipse at top left, #ffffff 31%, #feeea0 100%);
+  color: #ceac03;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.valor {
+  background: #fba29d;
+  background: -webkit-radial-gradient(top left ellipse, #ffffff 31%, #fba29d 100%);
+  background: radial-gradient(ellipse at top left, #ffffff 31%, #fba29d 100%);
+  color: #f3150a;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.teams {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 680px;
+  margin: 10px auto 30px;
+}
+
+.teams a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.teams .mystic-logo {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -448px;
+  width: 100px;
+  height: 99px;
+}
+
+.mystic .teams .mystic-logo {
+  -webkit-animation: logo-grow .3s ease;
+          animation: logo-grow .3s ease;
+}
+
+.teams .instinct-logo {
+  background-image: url(../images/sprite.png);
+  background-position: -299px -448px;
+  width: 100px;
+  height: 93px;
+}
+
+.instinct .teams .instinct-logo {
+  -webkit-animation: logo-grow .3s ease;
+          animation: logo-grow .3s ease;
+}
+
+.teams .valor-logo {
+  background-image: url(../images/sprite.png);
+  background-position: -100px -448px;
+  width: 100px;
+  height: 98px;
+}
+
+.valor .teams .valor-logo {
+  -webkit-animation: logo-grow .3s ease;
+          animation: logo-grow .3s ease;
 }
 
 h2 {
@@ -190,13 +275,49 @@ button, .button {
   transition: 0.5s ease;
 }
 
+.mystic button, .mystic .button {
+  background: #0677ee;
+}
+
+.instinct button, .instinct .button {
+  background: #ceac03;
+}
+
+.valor button, .valor .button {
+  background: #f3150a;
+}
+
 button:hover, .button:hover {
   text-decoration: none;
   background: #43abbd;
 }
 
+.mystic button:hover, .mystic .button:hover {
+  background: #2d91fa;
+}
+
+.instinct button:hover, .instinct .button:hover {
+  background: #fbd309;
+}
+
+.valor button:hover, .valor .button:hover {
+  background: #f74239;
+}
+
 button:active, .button:active {
   background: #2e7885;
+}
+
+.mystic button:active, .mystic .button:active {
+  background: #056bd5;
+}
+
+.instinct button:active, .instinct .button:active {
+  background: #b59703;
+}
+
+.valor button:active, .valor .button:active {
+  background: #db1309;
 }
 
 li {
@@ -204,13 +325,14 @@ li {
 }
 
 .logo {
+  width: 100%;
   max-width: 400px;
   position: relative;
+  fill: currentColor;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin-bottom: 30px;
 }
 
 .disclaimer {
@@ -284,7 +406,7 @@ li {
   text-align: center;
   opacity: 0;
   background-image: url(../images/sprite.png);
-  background-position: -857px -248px;
+  background-position: -792px -335px;
   width: 70px;
   height: 70px;
   position: absolute;
@@ -357,32 +479,6 @@ li {
           animation: scale 0.5s forwards ease;
 }
 
-@-webkit-keyframes scale {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes scale {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 .pokemon-delete {
   cursor: pointer;
   display: block;
@@ -423,6 +519,18 @@ form h2 {
   -webkit-transform: rotate(-2deg);
       -ms-transform: rotate(-2deg);
           transform: rotate(-2deg);
+}
+
+.mystic form {
+  border: 1px solid #0677ee;
+}
+
+.instinct form {
+  border: 1px solid #ceac03;
+}
+
+.valor form {
+  border: 1px solid #f3150a;
 }
 
 .buttons {
@@ -492,16 +600,72 @@ form h2 {
   }
 }
 
+@-webkit-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes logo-grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes logo-grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .bulbasaur {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -506px;
+  background-position: -1129px -431px;
   width: 55px;
   height: 65px;
 }
 
 .ivysaur {
   background-image: url(../images/sprite.png);
-  background-position: -282px -630px;
+  background-position: -95px -703px;
   width: 94px;
   height: 79px;
 }
@@ -515,14 +679,14 @@ form h2 {
 
 .charmander {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -515px;
+  background-position: -1076px -574px;
   width: 44px;
   height: 60px;
 }
 
 .charmeleon {
   background-image: url(../images/sprite.png);
-  background-position: -1055px 0px;
+  background-position: -1076px -85px;
   width: 52px;
   height: 84px;
 }
@@ -536,77 +700,77 @@ form h2 {
 
 .squirtle {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -287px;
+  background-position: -1076px -293px;
   width: 51px;
   height: 57px;
 }
 
 .wartortle {
   background-image: url(../images/sprite.png);
-  background-position: -1107px 0px;
+  background-position: 0px -1010px;
   width: 58px;
   height: 75px;
 }
 
 .blastoise {
   background-image: url(../images/sprite.png);
-  background-position: 0px -630px;
+  background-position: -590px -362px;
   width: 95px;
   height: 88px;
 }
 
 .caterpie {
   background-image: url(../images/sprite.png);
-  background-position: -1006px -229px;
+  background-position: -1027px -309px;
   width: 26px;
   height: 34px;
 }
 
 .metapod {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -775px;
+  background-position: -1076px -834px;
   width: 35px;
   height: 56px;
 }
 
 .butterfree {
   background-image: url(../images/sprite.png);
-  background-position: -767px 0px;
+  background-position: -189px -703px;
   width: 90px;
   height: 74px;
 }
 
 .weedle {
   background-image: url(../images/sprite.png);
-  background-position: -1087px -831px;
+  background-position: -1108px -890px;
   width: 19px;
   height: 31px;
 }
 
 .kakuna {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -831px;
+  background-position: -1076px -890px;
   width: 32px;
   height: 60px;
 }
 
 .beedrill {
   background-image: url(../images/sprite.png);
-  background-position: -929px -662px;
+  background-position: -950px -662px;
   width: 65px;
   height: 80px;
 }
 
 .pidgey {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -939px;
+  background-position: -1027px -94px;
   width: 33px;
   height: 44px;
 }
 
 .pidgeotto {
   background-image: url(../images/sprite.png);
-  background-position: -424px -448px;
+  background-position: -117px -547px;
   width: 122px;
   height: 67px;
 }
@@ -620,364 +784,364 @@ form h2 {
 
 .rattata {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -222px;
+  background-position: -1076px -228px;
   width: 45px;
   height: 65px;
 }
 
 .raticate {
   background-image: url(../images/sprite.png);
-  background-position: -317px -877px;
+  background-position: -552px -861px;
   width: 63px;
   height: 69px;
 }
 
 .spearow {
   background-image: url(../images/sprite.png);
-  background-position: -1006px -190px;
+  background-position: -1027px -270px;
   width: 25px;
   height: 39px;
 }
 
 .fearow {
   background-image: url(../images/sprite.png);
-  background-position: -520px -544px;
+  background-position: -364px -547px;
   width: 125px;
   height: 54px;
 }
 
 .ekans {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -640px;
+  background-position: -1076px -699px;
   width: 51px;
   height: 43px;
 }
 
 .arbok {
   background-image: url(../images/sprite.png);
-  background-position: -857px 0px;
+  background-position: -792px -173px;
   width: 72px;
   height: 85px;
 }
 
 .pikachu {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -968px;
+  background-position: -1129px -836px;
   width: 55px;
   height: 58px;
 }
 
 .raichu {
   background-image: url(../images/sprite.png);
-  background-position: -857px -561px;
+  background-position: -792px -648px;
   width: 54px;
   height: 86px;
 }
 
 .sandshrew {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -163px;
+  background-position: -1076px -169px;
   width: 52px;
   height: 59px;
 }
 
 .sandslash {
   background-image: url(../images/sprite.png);
-  background-position: -857px -318px;
+  background-position: -792px -405px;
   width: 67px;
   height: 73px;
 }
 
 .nidoranF {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -983px;
+  background-position: -1027px -138px;
   width: 37px;
   height: 36px;
 }
 
 .nidorina {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -639px;
+  background-position: -1129px -564px;
   width: 54px;
   height: 64px;
 }
 
 .nidoqueen {
   background-image: url(../images/sprite.png);
-  background-position: -857px -483px;
+  background-position: -792px -570px;
   width: 60px;
   height: 78px;
 }
 
 .nidoranM {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -344px;
+  background-position: -1076px -350px;
   width: 52px;
   height: 55px;
 }
 
 .nidorino {
   background-image: url(../images/sprite.png);
-  background-position: 0px -877px;
+  background-position: -235px -861px;
   width: 80px;
   height: 73px;
 }
 
 .nidoking {
   background-image: url(../images/sprite.png);
-  background-position: -677px -458px;
+  background-position: -699px -443px;
   width: 89px;
   height: 85px;
 }
 
 .clefairy {
   background-image: url(../images/sprite.png);
-  background-position: -380px -877px;
+  background-position: -240px -785px;
   width: 67px;
   height: 63px;
 }
 
 .clefable {
   background-image: url(../images/sprite.png);
-  background-position: -193px -544px;
+  background-position: 0px -623px;
   width: 98px;
   height: 80px;
 }
 
 .vulpix {
   background-image: url(../images/sprite.png);
-  background-position: -447px -877px;
+  background-position: -307px -785px;
   width: 66px;
   height: 63px;
 }
 
 .ninetales {
   background-image: url(../images/sprite.png);
-  background-position: -590px -281px;
+  background-position: -868px 0px;
   width: 82px;
   height: 84px;
 }
 
 .jigglypuff {
   background-image: url(../images/sprite.png);
-  background-position: -182px -950px;
+  background-position: -1129px -973px;
   width: 55px;
   height: 57px;
 }
 
 .wigglytuff {
   background-image: url(../images/sprite.png);
-  background-position: 0px -718px;
+  background-position: -792px -92px;
   width: 76px;
   height: 81px;
 }
 
 .zubat {
   background-image: url(../images/sprite.png);
-  background-position: -401px -799px;
+  background-position: -591px -623px;
   width: 83px;
   height: 54px;
 }
 
 .golbat {
   background-image: url(../images/sprite.png);
-  background-position: -167px -718px;
+  background-position: -489px -547px;
   width: 125px;
   height: 44px;
 }
 
 .oddish {
   background-image: url(../images/sprite.png);
-  background-position: -237px -950px;
+  background-position: -737px -861px;
   width: 56px;
   height: 55px;
 }
 
 .gloom {
   background-image: url(../images/sprite.png);
-  background-position: -159px -877px;
+  background-position: -394px -861px;
   width: 80px;
   height: 70px;
 }
 
 .vileplume {
   background-image: url(../images/sprite.png);
-  background-position: -307px -448px;
+  background-position: 0px -547px;
   width: 117px;
   height: 76px;
 }
 
 .paras {
   background-image: url(../images/sprite.png);
-  background-position: -756px -799px;
+  background-position: -571px -785px;
   width: 60px;
   height: 41px;
 }
 
 .parasect {
   background-image: url(../images/sprite.png);
-  background-position: -767px -361px;
+  background-position: 0px -785px;
   width: 85px;
   height: 76px;
 }
 
 .venonat {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -226px;
+  background-position: -1129px -221px;
   width: 54px;
   height: 70px;
 }
 
 .venomoth {
   background-image: url(../images/sprite.png);
-  background-position: -590px -189px;
+  background-position: -792px 0px;
   width: 76px;
   height: 92px;
 }
 
 .diglett {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -683px;
+  background-position: -1076px -742px;
   width: 50px;
   height: 41px;
 }
 
 .dugtrio {
   background-image: url(../images/sprite.png);
-  background-position: -235px -799px;
+  background-position: -85px -785px;
   width: 88px;
   height: 68px;
 }
 
 .meowth {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -399px;
+  background-position: -1076px -405px;
   width: 47px;
   height: 60px;
 }
 
 .persian {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -441px;
+  background-position: -1129px -366px;
   width: 55px;
   height: 65px;
 }
 
 .psyduck {
   background-image: url(../images/sprite.png);
-  background-position: -929px -742px;
+  background-position: -950px -742px;
   width: 68px;
   height: 75px;
 }
 
 .golduck {
   background-image: url(../images/sprite.png);
-  background-position: -767px -178px;
+  background-position: -868px -356px;
   width: 77px;
   height: 85px;
 }
 
 .mankey {
   background-image: url(../images/sprite.png);
-  background-position: -857px -171px;
+  background-position: -792px -258px;
   width: 65px;
   height: 77px;
 }
 
 .primeape {
   background-image: url(../images/sprite.png);
-  background-position: -929px -79px;
+  background-position: -950px -79px;
   width: 75px;
   height: 80px;
 }
 
 .growlithe {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -296px;
+  background-position: -1129px -151px;
   width: 54px;
   height: 70px;
 }
 
 .arcanine {
   background-image: url(../images/sprite.png);
-  background-position: -677px -271px;
+  background-position: -699px -256px;
   width: 77px;
   height: 99px;
 }
 
 .poliwag {
   background-image: url(../images/sprite.png);
-  background-position: -513px -877px;
+  background-position: -373px -785px;
   width: 68px;
   height: 60px;
 }
 
 .poliwhirl {
   background-image: url(../images/sprite.png);
-  background-position: -291px -544px;
+  background-position: -98px -623px;
   width: 104px;
   height: 75px;
 }
 
 .poliwrath {
   background-image: url(../images/sprite.png);
-  background-position: -95px -630px;
+  background-position: -699px -85px;
   width: 92px;
   height: 85px;
 }
 
 .abra {
   background-image: url(../images/sprite.png);
-  background-position: -566px -630px;
+  background-position: -392px -623px;
   width: 95px;
   height: 69px;
 }
 
 .kadabra {
   background-image: url(../images/sprite.png);
-  background-position: -767px -600px;
+  background-position: -868px -702px;
   width: 78px;
   height: 81px;
 }
 
 .alakazam {
   background-image: url(../images/sprite.png);
-  background-position: -590px -365px;
+  background-position: -868px -84px;
   width: 79px;
   height: 86px;
 }
 
 .machop {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -575px;
+  background-position: -1076px -634px;
   width: 40px;
   height: 65px;
 }
 
 .machoke {
   background-image: url(../images/sprite.png);
-  background-position: -929px -159px;
+  background-position: -950px -159px;
   width: 70px;
   height: 85px;
 }
 
 .machamp {
   background-image: url(../images/sprite.png);
-  background-position: -767px -515px;
+  background-position: -868px -617px;
   width: 75px;
   height: 85px;
 }
 
 .bellsprout {
   background-image: url(../images/sprite.png);
-  background-position: -723px -877px;
+  background-position: -1076px -465px;
   width: 53px;
   height: 53px;
 }
 
 .weepinbell {
   background-image: url(../images/sprite.png);
-  background-position: -471px -630px;
+  background-position: -297px -623px;
   width: 95px;
   height: 70px;
 }
@@ -991,14 +1155,14 @@ form h2 {
 
 .tentacool {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -826px;
+  background-position: -1129px -694px;
   width: 43px;
   height: 75px;
 }
 
 .tentacruel {
   background-image: url(../images/sprite.png);
-  background-position: -929px -339px;
+  background-position: -950px -339px;
   width: 64px;
   height: 86px;
 }
@@ -1012,35 +1176,35 @@ form h2 {
 
 .graveler {
   background-image: url(../images/sprite.png);
-  background-position: -661px -630px;
+  background-position: -487px -623px;
   width: 104px;
   height: 62px;
 }
 
 .golem {
   background-image: url(../images/sprite.png);
-  background-position: -187px -630px;
+  background-position: 0px -703px;
   width: 95px;
   height: 82px;
 }
 
 .ponyta {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -84px;
+  background-position: -1129px -894px;
   width: 40px;
   height: 79px;
 }
 
 .rapidash {
   background-image: url(../images/sprite.png);
-  background-position: -767px -263px;
+  background-position: -868px -441px;
   width: 66px;
   height: 98px;
 }
 
 .slowpoke {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -75px;
+  background-position: -1129px 0px;
   width: 55px;
   height: 76px;
 }
@@ -1054,56 +1218,56 @@ form h2 {
 
 .magnemite {
   background-image: url(../images/sprite.png);
-  background-position: -484px -799px;
+  background-position: -674px -623px;
   width: 85px;
   height: 52px;
 }
 
 .magneton {
   background-image: url(../images/sprite.png);
-  background-position: -929px -817px;
+  background-position: -448px -703px;
   width: 73px;
   height: 58px;
 }
 
 .farfetchd {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -703px;
+  background-position: -1129px -628px;
   width: 52px;
   height: 66px;
 }
 
 .doduo {
   background-image: url(../images/sprite.png);
-  background-position: -1006px 0px;
+  background-position: -1027px 0px;
   width: 49px;
   height: 94px;
 }
 
 .dodrio {
   background-image: url(../images/sprite.png);
-  background-position: -929px -244px;
+  background-position: -950px -244px;
   width: 60px;
   height: 95px;
 }
 
 .seel {
   background-image: url(../images/sprite.png);
-  background-position: -581px -877px;
+  background-position: -521px -703px;
   width: 75px;
   height: 54px;
 }
 
 .dewgong {
   background-image: url(../images/sprite.png);
-  background-position: -239px -877px;
+  background-position: -474px -861px;
   width: 78px;
   height: 69px;
 }
 
 .grimer {
   background-image: url(../images/sprite.png);
-  background-position: -198px -448px;
+  background-position: -590px 0px;
   width: 109px;
   height: 83px;
 }
@@ -1117,21 +1281,21 @@ form h2 {
 
 .shellder {
   background-image: url(../images/sprite.png);
-  background-position: -632px -799px;
+  background-position: -792px -734px;
   width: 64px;
   height: 48px;
 }
 
 .cloyster {
   background-image: url(../images/sprite.png);
-  background-position: -99px -448px;
+  background-position: -399px -448px;
   width: 99px;
   height: 92px;
 }
 
 .gastly {
   background-image: url(../images/sprite.png);
-  background-position: 0px -544px;
+  background-position: -590px -183px;
   width: 100px;
   height: 86px;
 }
@@ -1145,7 +1309,7 @@ form h2 {
 
 .gengar {
   background-image: url(../images/sprite.png);
-  background-position: -677px -93px;
+  background-position: -590px -450px;
   width: 89px;
   height: 92px;
 }
@@ -1159,21 +1323,21 @@ form h2 {
 
 .drowzee {
   background-image: url(../images/sprite.png);
-  background-position: -53px -950px;
+  background-position: -65px -939px;
   width: 64px;
   height: 70px;
 }
 
 .hypno {
   background-image: url(../images/sprite.png);
-  background-position: -100px -544px;
+  background-position: -699px 0px;
   width: 93px;
   height: 85px;
 }
 
 .krabby {
   background-image: url(../images/sprite.png);
-  background-position: -76px -718px;
+  background-position: -279px -703px;
   width: 91px;
   height: 67px;
 }
@@ -1187,21 +1351,21 @@ form h2 {
 
 .voltorb {
   background-image: url(../images/sprite.png);
-  background-position: -293px -950px;
+  background-position: -1129px -1030px;
   width: 55px;
   height: 55px;
 }
 
 .electrode {
   background-image: url(../images/sprite.png);
-  background-position: 0px -799px;
+  background-position: -78px -861px;
   width: 78px;
   height: 78px;
 }
 
 .exeggcute {
   background-image: url(../images/sprite.png);
-  background-position: -292px -718px;
+  background-position: -596px -703px;
   width: 94px;
   height: 39px;
 }
@@ -1215,42 +1379,42 @@ form h2 {
 
 .cubone {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -724px;
+  background-position: -1076px -783px;
   width: 40px;
   height: 51px;
 }
 
 .marowak {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -151px;
+  background-position: -1129px -76px;
   width: 52px;
   height: 75px;
 }
 
 .hitmonlee {
   background-image: url(../images/sprite.png);
-  background-position: 0px -950px;
+  background-position: -1076px 0px;
   width: 53px;
   height: 85px;
 }
 
 .hitmonchan {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -366px;
+  background-position: -1129px -291px;
   width: 50px;
   height: 75px;
 }
 
 .lickitung {
   background-image: url(../images/sprite.png);
-  background-position: -929px 0px;
+  background-position: -950px 0px;
   width: 77px;
   height: 79px;
 }
 
 .koffing {
   background-image: url(../images/sprite.png);
-  background-position: -117px -950px;
+  background-position: -615px -861px;
   width: 65px;
   height: 62px;
 }
@@ -1264,7 +1428,7 @@ form h2 {
 
 .rhyhorn {
   background-image: url(../images/sprite.png);
-  background-position: -590px -451px;
+  background-position: -868px -170px;
   width: 82px;
   height: 82px;
 }
@@ -1285,7 +1449,7 @@ form h2 {
 
 .tangela {
   background-image: url(../images/sprite.png);
-  background-position: -80px -877px;
+  background-position: -315px -861px;
   width: 79px;
   height: 73px;
 }
@@ -1299,49 +1463,49 @@ form h2 {
 
 .horsea {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -891px;
+  background-position: -1076px -950px;
   width: 34px;
   height: 48px;
 }
 
 .seadras {
   background-image: url(../images/sprite.png);
-  background-position: -929px -583px;
+  background-position: -950px -583px;
   width: 68px;
   height: 79px;
 }
 
 .goldeen {
   background-image: url(../images/sprite.png);
-  background-position: -767px -681px;
+  background-position: -950px -903px;
   width: 64px;
   height: 31px;
 }
 
 .seaking {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -769px;
+  background-position: -680px -861px;
   width: 57px;
   height: 57px;
 }
 
 .staryu {
   background-image: url(../images/sprite.png);
-  background-position: -857px -718px;
+  background-position: -173px -785px;
   width: 67px;
   height: 68px;
 }
 
 .starmie {
   background-image: url(../images/sprite.png);
-  background-position: -156px -799px;
+  background-position: -156px -861px;
   width: 79px;
   height: 77px;
 }
 
 .mrmime {
   background-image: url(../images/sprite.png);
-  background-position: -78px -799px;
+  background-position: 0px -861px;
   width: 78px;
   height: 78px;
 }
@@ -1355,28 +1519,28 @@ form h2 {
 
 .jynx {
   background-image: url(../images/sprite.png);
-  background-position: -677px -185px;
+  background-position: -699px -170px;
   width: 90px;
   height: 86px;
 }
 
 .electrabuzz {
   background-image: url(../images/sprite.png);
-  background-position: -590px -100px;
+  background-position: -498px -448px;
   width: 83px;
   height: 89px;
 }
 
 .magmar {
   background-image: url(../images/sprite.png);
-  background-position: -677px 0px;
+  background-position: -590px -269px;
   width: 90px;
   height: 93px;
 }
 
 .pinsir {
   background-image: url(../images/sprite.png);
-  background-position: -677px -543px;
+  background-position: -699px -528px;
   width: 88px;
   height: 85px;
 }
@@ -1390,14 +1554,14 @@ form h2 {
 
 .magikarp {
   background-image: url(../images/sprite.png);
-  background-position: -323px -799px;
+  background-position: -370px -703px;
   width: 78px;
   height: 67px;
 }
 
 .gyarados {
   background-image: url(../images/sprite.png);
-  background-position: -677px -370px;
+  background-position: -699px -355px;
   width: 86px;
   height: 88px;
 }
@@ -1411,119 +1575,119 @@ form h2 {
 
 .ditto {
   background-image: url(../images/sprite.png);
-  background-position: -569px -799px;
+  background-position: -508px -785px;
   width: 63px;
   height: 52px;
 }
 
 .eevee {
   background-image: url(../images/sprite.png);
-  background-position: -656px -877px;
+  background-position: -441px -785px;
   width: 67px;
   height: 54px;
 }
 
 .vaporeon {
   background-image: url(../images/sprite.png);
-  background-position: -376px -630px;
+  background-position: -202px -623px;
   width: 95px;
   height: 72px;
 }
 
 .jolteon {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -901px;
+  background-position: -1129px -769px;
   width: 48px;
   height: 67px;
 }
 
 .flareon {
   background-image: url(../images/sprite.png);
-  background-position: -857px -391px;
+  background-position: -792px -478px;
   width: 52px;
   height: 92px;
 }
 
 .porygon {
   background-image: url(../images/sprite.png);
-  background-position: -929px -510px;
+  background-position: -950px -510px;
   width: 74px;
   height: 73px;
 }
 
 .omanyte {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -459px;
+  background-position: -1076px -518px;
   width: 50px;
   height: 56px;
 }
 
 .omastar {
   background-image: url(../images/sprite.png);
-  background-position: -767px -437px;
+  background-position: -868px -539px;
   width: 82px;
   height: 78px;
 }
 
 .kabuto {
   background-image: url(../images/sprite.png);
-  background-position: -696px -799px;
+  background-position: -614px -547px;
   width: 60px;
   height: 42px;
 }
 
 .kabutops {
   background-image: url(../images/sprite.png);
-  background-position: -929px -425px;
+  background-position: -950px -425px;
   width: 64px;
   height: 85px;
 }
 
 .aerodactyl {
   background-image: url(../images/sprite.png);
-  background-position: -395px -544px;
+  background-position: -239px -547px;
   width: 125px;
   height: 58px;
 }
 
 .snorlax {
   background-image: url(../images/sprite.png);
-  background-position: 0px -448px;
+  background-position: -200px -448px;
   width: 99px;
   height: 96px;
 }
 
 .dratini {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -571px;
+  background-position: -1129px -496px;
   width: 52px;
   height: 68px;
 }
 
 .dragonair {
   background-image: url(../images/sprite.png);
-  background-position: -857px -85px;
+  background-position: -950px -817px;
   width: 59px;
   height: 86px;
 }
 
 .dragonite {
   background-image: url(../images/sprite.png);
-  background-position: -767px -74px;
+  background-position: -868px -252px;
   width: 63px;
   height: 104px;
 }
 
 .mewtwo {
   background-image: url(../images/sprite.png);
-  background-position: -590px 0px;
+  background-position: -590px -83px;
   width: 87px;
   height: 100px;
 }
 
 .mew {
   background-image: url(../images/sprite.png);
-  background-position: -857px -647px;
+  background-position: 0px -939px;
   width: 65px;
   height: 71px;
 }
@@ -1533,8 +1697,7 @@ form h2 {
 input {
   min-height: 25px;
   border-radius: 3px;
-  border: 2px solid #c0e1b9;
-  border: 1px solid #358998;
+  border: 1px solid #ccc;
   color: inherit;
   margin: 5px 0;
   padding: 5px;
@@ -1551,7 +1714,6 @@ label[for="firstEvolve"] {
   padding-left: 18px;
   margin: 0px 5px -6px 0px;
   font-size: 13px;
-  border: 1px solid #358998;
   height: 20px;
   border-radius: 3px;
 }
@@ -1605,9 +1767,33 @@ input {
   background: rgba(184, 251, 168, 0.6);
 }
 
+.mystic .ui-autocomplete a:active {
+  background: rgba(146, 197, 252, 0.6);
+}
+
+.instinct .ui-autocomplete a:active {
+  background: rgba(254, 238, 160, 0.6);
+}
+
+.valor .ui-autocomplete a:active {
+  background: rgba(251, 162, 157, 0.6);
+}
+
 .ui-autocomplete a:hover {
   color: inherit;
   background: rgba(184, 251, 168, 0.6);
+}
+
+.mystic .ui-autocomplete a:hover {
+  background: rgba(146, 197, 252, 0.6);
+}
+
+.instinct .ui-autocomplete a:hover {
+  background: rgba(254, 238, 160, 0.6);
+}
+
+.valor .ui-autocomplete a:hover {
+  background: rgba(251, 162, 157, 0.6);
 }
 
 .ui-widget,
@@ -1639,10 +1825,31 @@ table {
     border: 1px solid #358998;
     width: 680px;
   }
+  .mystic table {
+    border: 1px solid #0677ee;
+  }
+  .instinct table {
+    border: 1px solid #ceac03;
+  }
+  .valor table {
+    border: 1px solid #f3150a;
+  }
 }
 
 table thead tr {
   background: #b8fba8;
+}
+
+.mystic table thead tr {
+  background: #92c5fc;
+}
+
+.instinct table thead tr {
+  background: #feeea0;
+}
+
+.valor table thead tr {
+  background: #fba29d;
 }
 
 table tr {

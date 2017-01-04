@@ -17,7 +17,15 @@
 </head>
 <body>
   <div class="wrapper">
-    <img class="logo" src="images/pidgeycrushlogo.svg" alt="Pidgeycrush">
+    <!-- <img class="logo" src="images/pidgeycrushlogo.svg" alt="Pidgeycrush"> -->
+    <svg class="logo"  alt="Pidgeycrush" viewBox="0 0 530 90">
+       <use xlink:href="images/pidgeycrushlogo.svg#logo"></use>
+    </svg>
+    <div class="teams">
+      <a class="mystic-logo" onclick="colourScheme()"></a>
+      <a class="instinct-logo" onclick="colourScheme()"></a>
+      <a class="valor-logo" onclick="colourScheme()"></a>
+    </div>
     <form method="post">
       <p>To add a Pokémon species to your evolution table, simply select one below!</p>
       <div class="widget__wrapper">

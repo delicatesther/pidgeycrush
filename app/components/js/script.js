@@ -23,6 +23,21 @@ $(document).ready(function() {
       }
 
       //--------------------------------------
+      //        Colour Scheme
+      //--------------------------------------
+      colourScheme = function() {
+        $('.mystic-logo').on('click', function() {
+          $('body').removeClass('instinct valor').addClass('mystic');
+        });
+        $('.instinct-logo').on('click', function() {
+          $('body').removeClass('mystic valor').addClass('instinct');
+        });
+        $('.valor-logo').on('click', function() {
+          $('body').removeClass('mystic instinct').addClass('valor');
+        });
+      }
+
+      //--------------------------------------
       //        Pokémon Selector
       //--------------------------------------
       var chosenPokemon;
@@ -56,6 +71,5 @@ $(document).ready(function() {
       });
     };
     pokemonSelector();
-
 
 });// End script

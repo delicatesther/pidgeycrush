@@ -5,9 +5,27 @@ table {
     border-collapse: collapse;
     border: 1px solid $green--dark;
     width: 680px;
+    .mystic & {
+      border: 1px solid $blue--dark;
+    }
+    .instinct & {
+      border: 1px solid $yellow--dark;
+    }
+    .valor & {
+      border: 1px solid $red--dark;
+    }
   }
   thead tr {
     background: $green--light;
+    .mystic & {
+      background: $blue--light;
+    }
+    .instinct & {
+      background: $yellow--light;
+    }
+    .valor & {
+      background: $red--light;
+    }
   }
   tr {
     background: $white;
