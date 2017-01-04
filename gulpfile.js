@@ -14,8 +14,7 @@ pkg 						= require('./package.json'),
 paths 					= pkg.paths,
 sourcemaps 			= require('gulp-sourcemaps'),
 postcss      		= require('gulp-postcss'),
-gls							= require('gulp-live-server');
-
+browserSync 		= require('browser-sync').create();
 
 //optimizing images
 gulp.task('images', function() {
@@ -39,7 +38,10 @@ gulp.task('css', function () {
 	}).on('error', sass.logError))
 	.pipe(postcss(processors))
 	.pipe(sourcemaps.write('./'))
-	.pipe(gulp.dest(paths.sass.dest));
+	.pipe(gulp.dest(paths.sass.dest))
+	.pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 // sprite sheets and scss creation
@@ -73,20 +75,23 @@ var bases = {
 };
 
 
-// live reload
-gulp.task('serve', function(file) {
-var server = gls.static(bases.app);
-	server.start();
-	// gulp.watch(['app/**/*', 'app/index.html'])
-	server.notify.apply(server, [file]);
-});
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+		files: ["app/**/*.css", "app/**/*.js", "app/*.html"]
+  })
+})
 
 //watch
-gulp.task('default', ['serve'], function() {
+gulp.task('default', ['browserSync', 'css'], function() {
 	//watch .scss files
-	gulp.watch('components/sass/**/*.scss', ['css'])
-	gulp.watch(['app/**/*', 'app/index.html'])
+	gulp.watch('app/**/*.scss', ['css']);
+	gulp.watch('app/**/*.html');
+	gulp.watch('app/**/*.js');
 });
+
 
 //build
 gulp.task('build', ['css', 'sprites'], function() {

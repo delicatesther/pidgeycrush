@@ -1,12 +1,12 @@
 {
-  "name" : "pidgey-crush",
-  "description" : "Pidgey Crush, a tool to help you evolve Pokémon efficiently",
-  "version" : "0.0.1",
-  "author" : "Esther Kool",
-  "license" : "The MIT License",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/delicatesther/pidgeycrush.git"
+  "name": "pidgey-crush",
+  "description": "Pidgey Crush, a tool to help you evolve Pokémon efficiently",
+  "version": "0.0.1",
+  "author": "Esther Kool",
+  "license": "The MIT License",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/delicatesther/pidgeycrush.git"
   },
   "main": "gulpfile.js",
   "dependencies": {
@@ -23,8 +23,7 @@
     "gulp-postcss": "^6.2.0",
     "postcss-flexbugs-fixes": "^2.0.0",
     "compass-mixins": "0.12.10",
-    "gulp-sourcemaps": "^1.9.1",
-    "gulp-live-server": "^0.0.3"
+    "gulp-sourcemaps": "^1.9.1"
   },
   "scripts": {
     "gulp": "gulp build"
@@ -43,8 +42,11 @@
       "dest": "app/"
     },
     "js": {
-    "src": "app/components/js/",
-    "dest": "app/js"
+      "src": "app/components/js/",
+      "dest": "app/js"
     }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5"
   }
 }

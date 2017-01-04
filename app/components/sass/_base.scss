@@ -12,7 +12,6 @@ body {
   color: $green--dark;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
-  background: green !important;
   
   @include mq(m) {
     font-size: 16px;
