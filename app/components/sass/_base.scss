@@ -39,6 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   max-width: 680px;
   margin: 10px auto 30px;
   a {
@@ -88,6 +89,7 @@ button {
   border: none;
   border-radius: 3px;
   color: $white;
+  cursor: pointer;
   display: inline-block;
   font-family: 'Roboto Condensed';
   font-size: 13px;
@@ -143,8 +145,9 @@ li {
   max-width: 400px;
   position: relative;
   fill: currentColor;
-left: 50%;
-transform: translateX(-50%);
+  // left: 50%;
+  // transform: translateX(-50%);
+  cursor: pointer;
 }
 .disclaimer {
   font-size: 0.8em;
@@ -171,9 +174,13 @@ transform: translateX(-50%);
 }
 .sadface {
   opacity: 0;
+  height: 0;
+  font-size: 0;
   transition: 0.5s;
   &.active {
     opacity: 1;
+    height: auto;
+    font-size: 1em;
   }
 }
 // .message {
@@ -199,32 +206,35 @@ transform: translateX(-50%);
   cursor: pointer;
 }
 .wrapper {
-  max-width: 80%;
+  width: 80%;
   margin: 50px auto;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .evolution-bonus {
   position: relative;
-  width: 320px;
   margin: 0 auto 30px;
+
 }
 .bonus {
-  width: 70px;
   padding: 22px 10px;
-  height: 70px;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
   opacity: 0;
-  @include sprite($bonus);
   position: absolute;
-  right: -70px;
-  top: -50px;
-  &.bonus-animated {
+  right: 0;
+  bottom: -40px;
+  &.active {
     animation: bonus-animate 0.3s forwards ease;
   }
 }
-.widget__wrapper,
+.widget__wrapper {
+
+}
 .buttons {
   display: flex;
   align-items: center;
@@ -241,12 +251,11 @@ transform: translateX(-50%);
     text-transform: uppercase;
   }
 }
-
-.pokemon-number,
-.candy-number {
-  max-width: 100px;
-  display: block;
-
+.further-options {
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 .pokemon-avatar__wrapper {
   display: flex;
@@ -260,7 +269,12 @@ transform: translateX(-50%);
   position: relative;
   &:last-of-type{  opacity: 0; animation: scale 0.5s forwards ease;}
 }
+td {
+  .pokemon-avatar {
+    margin: 0 auto;
 
+  }
+}
 .pokemon-delete {
   cursor: pointer;
   display: block;
@@ -308,4 +322,27 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.evolution-table {
+  text-align: center;
+  .details {
+    display: none;
+    &.active {
+      display: block;
+      text-align: left;
+      font-size: 11px;
+      line-height: 1.5em;
+    }
+    span {
+      font-weight: 600;
+      text-align: right;
+      float: right;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: currentColor;
+      background: linear-gradient(to right, rgba($white, 0), currentColor,  rgba($white, 0));;
+    }
+  }
 }

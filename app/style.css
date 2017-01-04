@@ -192,6 +192,7 @@ body.valor {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   max-width: 680px;
   margin: 10px auto 30px;
 }
@@ -263,6 +264,7 @@ button, .button {
   border: none;
   border-radius: 3px;
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-family: 'Roboto Condensed';
   font-size: 13px;
@@ -329,10 +331,7 @@ li {
   max-width: 400px;
   position: relative;
   fill: currentColor;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .disclaimer {
@@ -366,12 +365,16 @@ li {
 
 .sadface {
   opacity: 0;
+  height: 0;
+  font-size: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .sadface.active {
   opacity: 1;
+  height: auto;
+  font-size: 1em;
 }
 
 .circular-button {
@@ -386,40 +389,49 @@ li {
 }
 
 .wrapper {
-  max-width: 80%;
+  width: 80%;
   margin: 50px auto;
-  height: 100vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .evolution-bonus {
   position: relative;
-  width: 320px;
   margin: 0 auto 30px;
 }
 
 .bonus {
-  width: 70px;
   padding: 22px 10px;
-  height: 70px;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
   opacity: 0;
-  background-image: url(../images/sprite.png);
-  background-position: -792px -335px;
-  width: 70px;
-  height: 70px;
   position: absolute;
-  right: -70px;
-  top: -50px;
+  right: 0;
+  bottom: -40px;
 }
 
-.bonus.bonus-animated {
+.bonus.active {
   -webkit-animation: bonus-animate 0.3s forwards ease;
           animation: bonus-animate 0.3s forwards ease;
 }
 
-.widget__wrapper,
 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
@@ -447,9 +459,11 @@ li {
   text-transform: uppercase;
 }
 
-.pokemon-number,
-.candy-number {
-  max-width: 100px;
+.further-options {
+  display: none;
+}
+
+.further-options.active {
   display: block;
 }
 
@@ -477,6 +491,10 @@ li {
   opacity: 0;
   -webkit-animation: scale 0.5s forwards ease;
           animation: scale 0.5s forwards ease;
+}
+
+td .pokemon-avatar {
+  margin: 0 auto;
 }
 
 .pokemon-delete {
@@ -546,6 +564,36 @@ form h2 {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+}
+
+.evolution-table {
+  text-align: center;
+}
+
+.evolution-table .details {
+  display: none;
+}
+
+.evolution-table .details.active {
+  display: block;
+  text-align: left;
+  font-size: 11px;
+  line-height: 1.5em;
+}
+
+.evolution-table .details span {
+  font-weight: 600;
+  text-align: right;
+  float: right;
+}
+
+.evolution-table .details hr {
+  border: 0;
+  height: 1px;
+  background: currentColor;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(currentColor), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), currentColor, rgba(255, 255, 255, 0));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), currentColor, rgba(255, 255, 255, 0));
 }
 
 @-webkit-keyframes bonus-animate {
@@ -1697,7 +1745,7 @@ form h2 {
 input {
   min-height: 25px;
   border-radius: 3px;
-  border: 1px solid #ccc;
+  border: 1px solid currentColor;
   color: inherit;
   margin: 5px 0;
   padding: 5px;
@@ -1723,11 +1771,13 @@ label[for="firstEvolve"]:before {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-right: 10px;
+  margin-left: 15px;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 1px;
   background-color: #fff;
+  border: 1px solid currentColor;
+  border-radius: 3px;
 }
 
 input[type=checkbox] {
@@ -1741,11 +1791,47 @@ input[type=checkbox]:checked + label:before {
   line-height: 15px;
 }
 
+.select-pokemon {
+  min-width: 250px;
+}
+
+.numbered-inputs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.numbered-inputs input {
+  max-width: 100px;
+}
+
+.numbered-inputs p {
+  min-height: 50px;
+}
+
+@media screen and (min-width: 400px) {
+  .numbered-inputs p {
+    min-height: 0;
+  }
+}
+
 /*-----------------------------------------------------------------
 ---------------- Autocomplete UI             ---------------------- -------------------------------------------------------------------*/
 input {
   margin: 10px auto 30px;
-  min-width: 250px;
 }
 
 .ui-autocomplete {

@@ -1,7 +1,7 @@
-function pokemon(species, candy, candyType, evolution) {
+function pokemon(species, candy, genus, evolution) {
   this.species = species;
   this.candy = candy;
-  this.candyType = candyType;
+  this.genus = genus;
   this.evolution = evolution;
   this.xp = 500;
   this.label = this.species;

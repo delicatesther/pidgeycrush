@@ -3,7 +3,7 @@
 input {
   min-height: 25px;
   border-radius: 3px;
-  border: 1px solid #ccc;
+  border: 1px solid currentColor;
   color: inherit;
   margin: 5px 0;
   padding: 5px;
@@ -25,12 +25,13 @@ label[for="firstEvolve"] {
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: 10px;
+    margin-left: 15px;
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: 1px;
     background-color: #fff;
-
+    border: 1px solid currentColor;
+    border-radius: 3px;
   }
 }
 input[type=checkbox] {
@@ -43,11 +44,28 @@ input[type=checkbox] {
     line-height: 15px;
   }
 }
+.select-pokemon {
+  min-width: 250px;
+}
+.numbered-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  input {
+    max-width: 100px;
+  }
+  p {
+    min-height: 50px;
+    @include mq(xs) {
+      min-height: 0;
+    }
+  }
+}
 /*-----------------------------------------------------------------
 ---------------- Autocomplete UI             ---------------------- -------------------------------------------------------------------*/
 input {
   margin: 10px auto 30px;
-  min-width: 250px;
 }
 .ui-autocomplete {
   max-height: 250px;

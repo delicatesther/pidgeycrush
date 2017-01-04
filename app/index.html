@@ -18,31 +18,55 @@
 <body>
   <div class="wrapper">
     <!-- <img class="logo" src="images/pidgeycrushlogo.svg" alt="Pidgeycrush"> -->
-    <svg class="logo"  alt="Pidgeycrush" viewBox="0 0 530 90">
-       <use xlink:href="images/pidgeycrushlogo.svg#logo"></use>
+    <svg class="logo" id="pidgeycrushLogo" alt="Pidgeycrush" viewBox="0 0 530 90">
+      <use xlink:href="images/pidgeycrushlogo.svg#logo"></use>
     </svg>
     <div class="teams">
-      <a class="mystic-logo" onclick="colourScheme()"></a>
-      <a class="instinct-logo" onclick="colourScheme()"></a>
-      <a class="valor-logo" onclick="colourScheme()"></a>
+      <a class="instinct-logo" id="instinctLogo" onclick="colourScheme()"></a>
+      <a class="valor-logo" id="valorLogo" onclick="colourScheme()"></a>
+      <a class="mystic-logo" id="mysticLogo" onclick="colourScheme()"></a>
     </div>
     <form method="post">
       <p>To add a Pokémon species to your evolution table, simply select one below!</p>
       <div class="widget__wrapper">
         <div class="ui-widget">
           <label for="selectPokemon">Pokémon: </label>
-          <input id="selectPokemon" name="selectPokemon" placeholder="Start typing Pokémon species">
+          <input id="selectPokemon" name="selectPokemon" class="select-pokemon" placeholder="Start typing Pokémon species">
           <div id="choice" class="choice"><h2 id="description">You chose <span class="pokemonSpecies"></span>!</h2></div>
 
           <ul id="pokemonFields" class="pokemon-avatar__wrapper">
-              <!--Pokémon Avatars spawn here-->
-            </ul>
-            <p id="sadFace" class="sadface">Unfortunately, <span class="pokemon-species pokemonSpecies"></span> does not evolve. :( </p>
+            <!--Pokémon Avatars spawn here-->
+          </ul>
+          <p id="sadFace" class="sadface">Unfortunately, <span class="pokemon-species pokemonSpecies"></span> does not evolve. :( </p>
+
+          <div id="furtherOptions" class="further-options">
+            <div class="numbered-inputs">
+              <div>
+              <p>How many <span class="pokemon-species pokemonSpecies"></span> do you have?</p>
+              <input type="number" id="pokemonNumber" name="pokemonNumber" class="pokemon-number" min="0" value="1">
+            </div>
+            <div>
+              <p>How much <span class="pokemon-species pokemonGenus"></span> candy do you have?</p>
+              <input type="number" id="pokemonCandy" name="pokemonCandy" class="pokemon-candy" min="0" value="0">
+            </div>
+            </div>
+
+            <div class="evolution-bonus">
+              <span class="bonus" id="bonus">Adds<br>500 XP!</span>
+              <p>Are you missing <span class="pokemon-species pokemonEvolution"></span> in your Pokedex?
+              <input type="checkbox" name="firstEvolve" id="firstEvolve">
+              <label for="firstEvolve"></label>
+              </p>
+            </div>
+            <a id="resetForm" onclick="resetForm()" class="button">Reset Selection</a>
+            <a id="addToTable" onclick="addPokemonSpecies()" class="button">Add Pokémon to table</a>
+          </div>
         </div>
       </form>
     </div>
-    <div id="evolutionTable">
+    <div id="evolutionTable" class="evolution-table">
       <h2>Evolution Table</h2>
+      <p>You can evolve the following Pokémon:</p>
       <table>
         <thead>
           <tr>
@@ -50,6 +74,7 @@
             <td>Species</td>
             <td>XP gained</td>
             <td>Details</td>
+            <td>Remove row</td>
           </tr>
         </thead>
         <tr>
@@ -57,8 +82,10 @@
           <td></td>
           <td></td>
           <td></td>
+          <td></td>
         </tr>
       </table>
+      <a id="showDetails" class="show-details button" onclick="showDetails()">Show/hide details</a>
     </div>
     <p class="disclaimer">This calculator is based on the popular game Pokémon Go, developed by Niantic, Inc.<br> Any and all rights are belong to them.<br><br><small>Please don't sue me, guys. I just wanted to build a calculator. :(</small></p>
   </div>
