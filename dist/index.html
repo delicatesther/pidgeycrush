@@ -26,9 +26,22 @@
       <use xlink:href="images/pidgeycrushlogo.svg#logo"></use>
     </svg>
     <div class="teams">
-      <a class="instinct-logo" id="instinctLogo" onclick="colourScheme()"></a>
-      <a class="valor-logo" id="valorLogo" onclick="colourScheme()"></a>
-      <a class="mystic-logo" id="mysticLogo" onclick="colourScheme()"></a>
+      <a class="instinct-logo logo" id="instinctLogo" onclick="colourScheme()">
+        <svg  viewBox="0 0 100 100">
+          <use xlink:href="images/Team-Logos-Instinct.svg#Layer_1"></use>
+        </svg>
+      </a>
+      <a class="valor-logo logo" id="valorLogo" onclick="colourScheme()">
+        <svg  viewBox="0 0 100 100">
+          <use xlink:href="images/Team-Logos-Valor.svg#Layer_1"></use>
+        </svg>
+      </a>
+
+      <a class="mystic-logo logo" id="mysticLogo" onclick="colourScheme()">
+      <svg  viewBox="0 0 100 100">
+        <use xlink:href="images/Team-Logos-Mystic.svg#Layer_1"></use>
+      </svg>
+      </a>
     </div>
     <form method="post">
       <p>To add a Pokémon species to your evolution table, simply select one below!</p>
@@ -62,8 +75,8 @@
               <label for="firstEvolve"></label>
               </p>
             </div>
-            <a id="resetForm" onclick="resetForm()" class="button">Reset Selection</a>
             <a id="addPokemonSpecies" onclick="addPokemonSpecies()" class="button">Add Pokémon to table</a>
+            <a id="resetForm" onclick="resetForm()" class="button">Reset Selection</a>
           </div>
         </div>
       </form>

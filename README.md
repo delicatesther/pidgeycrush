@@ -4,3 +4,6 @@ The calculator offers you a choice of all Pokémon, let's you input the number o
 
 Thanks to Superviral's Pokemon-GO-App-Assets-and-Images for the assets!
 https://github.com/Superviral/Pokemon-GO-App-Assets-and-Images
+
+Also thanks to Meritt Thomas for the Pokémon Go Team Logos!
+https://dribbble.com/shots/2831980-Pok-mon-GO-Team-Logos-Vector-Download

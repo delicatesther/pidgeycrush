@@ -46,22 +46,20 @@ body {
     display: block;
     width: 100px;
     height: 100px;
+    max-width: 30%;
     cursor: pointer;
   }
   .mystic-logo {
-    @include sprite($mystic);
     .mystic & {
       animation: logo-grow .3s ease;
     }
   }
   .instinct-logo {
-    @include sprite($instinct);
     .instinct & {
       animation: logo-grow .3s ease;
     }
   }
   .valor-logo {
-    @include sprite($valor);
     .valor & {
       animation: logo-grow .3s ease;
     }
@@ -240,7 +238,10 @@ li {
   }
 }
 .wrapper {
-  width: 80%;
+  width: 95%;
+  @include mq(m) {
+    width: 80%;
+  }
   margin: 50px auto;
   min-height: 100vh;
   display: flex;
@@ -262,6 +263,13 @@ li {
   position: absolute;
   right: 0;
   bottom: -40px;
+  @include mq(xxs) {
+    bottom: -60px;
+  }
+  @include mq(m) {
+    bottom: -30px;
+    right: 30px;
+  }
   &.active {
     animation: bonus-animate 0.3s forwards ease;
   }
