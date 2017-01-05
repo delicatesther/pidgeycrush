@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     //Reset functions
     resetForm = function() {
-        $('#selectPokemon, #pokemonNumber').val('');
+        $('#selectPokemon, #pokemonNumber, #pokemonCandy').val('');
         $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #pokemonChoice h2, #addPokemonSpecies, #resetselectPokemon, .evolution-bonus').remove();
         return false;
     };

@@ -1,21 +1,29 @@
 table {
   margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  border: 1px solid $green--dark;
+  .mystic & {
+    border: 1px solid $blue--dark;
+  }
+  .instinct & {
+    border: 1px solid $yellow--dark;
+  }
+  .valor & {
+    border: 1px solid $red--dark;
+  }
   @include mq(m) {
     display: table;
     border-collapse: collapse;
-    border: 1px solid $green--dark;
     width: 680px;
-    .mystic & {
-      border: 1px solid $blue--dark;
-    }
-    .instinct & {
-      border: 1px solid $yellow--dark;
-    }
-    .valor & {
-      border: 1px solid $red--dark;
-    }
   }
-  thead tr {
+  tr {
+    background: $white;
+    border-bottom: 1px solid rgba($black, 0.1);
+  }
+  thead tr,
+  tfoot tr:first-of-type {
+    border: 1px solid currentColor;
     background: $green--light;
     .mystic & {
       background: $blue--light;
@@ -27,18 +35,20 @@ table {
       background: $red--light;
     }
   }
-  tr {
-    background: $white;
-    border-bottom: 1px solid rgba($black, 0.1);
-    &:last-child {
-      border-bottom: $green--dark;
-    }
-  }
+
   thead,
   tfoot {
     font-size: 14px;
     font-family: 'Roboto condensed';
     text-transform: uppercase;
+  }
+  tfoot {
+     tr {
+      border: 1px solid currentColor;
+    }
+    tr:nth-of-type(2) {
+      // display: none;
+    }
   }
   td {
     padding: 5px 3px;
@@ -47,25 +57,33 @@ table {
     @include mq(m) {
       padding: 5px 8px;
     }
-  }
-  .wide {
-    display: none;
-    @include mq(m) {
-      display: table-cell;
+    &.wide {
+      display: none;
+      @include mq(m) {
+        display: table-cell;
+      }
+    }
+
+    .meta-evolution {
+      display: none;
+    }
+    .final-destination {
+      .pokemon-avatar {
+        padding: 0;
+        margin: 10px auto;
+      }
+      + a {
+        margin: 20px auto;
+        display: block;
+        max-width: 160px;
+      }
     }
   }
 }
-.meta-evolution {
-  display: none;
-}
-.final-destination {
-  .pokemon-avatar {
-    padding: 0;
-    margin: 10px auto;
+  .evolution-table {
+    tbody {
+      tr:first-of-type {
+        display: none;
+      }
+    }
   }
-  + a {
-    margin: 20px auto;
-    display: block;
-    max-width: 160px;
-  }
-}

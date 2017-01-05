@@ -58,8 +58,11 @@ input[type=checkbox] {
   p {
     min-height: 50px;
     @include mq(xs) {
-      min-height: 0;
+      min-height: 40px;
     }
+  }
+  div {
+    max-width: 49%;
   }
 }
 /*-----------------------------------------------------------------

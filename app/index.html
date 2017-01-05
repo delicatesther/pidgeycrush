@@ -59,7 +59,7 @@
               </p>
             </div>
             <a id="resetForm" onclick="resetForm()" class="button">Reset Selection</a>
-            <a id="addToTable" onclick="addPokemonSpecies()" class="button">Add Pokémon to table</a>
+            <a id="addPokemonSpecies" onclick="addPokemonSpecies()" class="button">Add Pokémon to table</a>
           </div>
         </div>
       </form>
@@ -73,21 +73,38 @@
             <td>#</td>
             <td>Species</td>
             <td>XP gained</td>
-            <td>Details</td>
-            <td>Remove row</td>
+            <td class="wide">Details</td>
+            <td>Remove</td>
           </tr>
         </thead>
+        <tbody>
         <tr>
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
+          <td class="wide"></td>
           <td></td>
         </tr>
+      </tbody>
+        <tfoot>
+          <tr>
+            <td>Total # of evolutions</td>
+            <td class="wide"></td>
+            <td>Total XP gained</td>
+            <td>Total with Lucky Egg</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td id="total-1"></td>
+            <td class="wide"></td>
+            <td id="total-2"></td>
+            <td id="total-3"></td>
+            <td></td>
+          </tr>
+        </tfoot>
       </table>
-      <a id="showDetails" class="show-details button" onclick="showDetails()">Show/hide details</a>
     </div>
-    <p class="disclaimer">This calculator is based on the popular game Pokémon Go, developed by Niantic, Inc.<br> Any and all rights are belong to them.<br><br><small>Please don't sue me, guys. I just wanted to build a calculator. :(</small></p>
+    <p class="disclaimer">This calculator is based on the popular game Pokémon Go, developed by Niantic, Inc.<br> Any and all images and rights are belong to them.<br><br><small>Please don't sue me, guys. I just wanted to build a calculator. :(</small></p>
   </div>
 </body>
 </html>

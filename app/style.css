@@ -379,13 +379,55 @@ li {
 
 .circular-button {
   border-radius: 20px;
-  width: 15px;
-  height: 15px;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
   text-align: center;
   cursor: pointer;
+  background: currentColor;
+  display: block;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.circular-button:hover {
+  background: #43abbd;
+}
+
+.mystic .circular-button:hover {
+  background: #2d91fa;
+}
+
+.instinct .circular-button:hover {
+  background: #fbd309;
+}
+
+.valor .circular-button:hover {
+  background: #f74239;
+}
+
+.circular-button span {
+  color: #fff;
+}
+
+.details-icon.active {
+  background: #fff;
+  border: 1px solid currentColor;
+  margin-bottom: 5px;
+}
+
+.details-icon.active span {
+  color: currentColor;
+}
+
+.details-icon.active + .details {
+  display: block;
+  text-align: left;
+  font-size: 11px;
+  line-height: 1.5em;
 }
 
 .wrapper {
@@ -574,17 +616,15 @@ form h2 {
   display: none;
 }
 
-.evolution-table .details.active {
-  display: block;
-  text-align: left;
-  font-size: 11px;
-  line-height: 1.5em;
-}
-
 .evolution-table .details span {
   font-weight: 600;
   text-align: right;
   float: right;
+}
+
+.evolution-table .details span.pokemon-species {
+  float: none;
+  font-weight: 300;
 }
 
 .evolution-table .details hr {
@@ -1824,8 +1864,12 @@ input[type=checkbox]:checked + label:before {
 
 @media screen and (min-width: 400px) {
   .numbered-inputs p {
-    min-height: 0;
+    min-height: 40px;
   }
+}
+
+.numbered-inputs div {
+  max-width: 49%;
 }
 
 /*-----------------------------------------------------------------
@@ -1902,40 +1946,29 @@ input {
 
 table {
   margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  border: 1px solid #358998;
+}
+
+.mystic table {
+  border: 1px solid #0677ee;
+}
+
+.instinct table {
+  border: 1px solid #ceac03;
+}
+
+.valor table {
+  border: 1px solid #f3150a;
 }
 
 @media screen and (min-width: 767px) {
   table {
     display: table;
     border-collapse: collapse;
-    border: 1px solid #358998;
     width: 680px;
   }
-  .mystic table {
-    border: 1px solid #0677ee;
-  }
-  .instinct table {
-    border: 1px solid #ceac03;
-  }
-  .valor table {
-    border: 1px solid #f3150a;
-  }
-}
-
-table thead tr {
-  background: #b8fba8;
-}
-
-.mystic table thead tr {
-  background: #92c5fc;
-}
-
-.instinct table thead tr {
-  background: #feeea0;
-}
-
-.valor table thead tr {
-  background: #fba29d;
 }
 
 table tr {
@@ -1943,8 +1976,25 @@ table tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-table tr:last-child {
-  border-bottom: #358998;
+table thead tr,
+table tfoot tr:first-of-type {
+  border: 1px solid currentColor;
+  background: #b8fba8;
+}
+
+.mystic table thead tr, .mystic
+table tfoot tr:first-of-type {
+  background: #92c5fc;
+}
+
+.instinct table thead tr, .instinct
+table tfoot tr:first-of-type {
+  background: #feeea0;
+}
+
+.valor table thead tr, .valor
+table tfoot tr:first-of-type {
+  background: #fba29d;
 }
 
 table thead,
@@ -1952,6 +2002,10 @@ table tfoot {
   font-size: 14px;
   font-family: 'Roboto condensed';
   text-transform: uppercase;
+}
+
+table tfoot tr {
+  border: 1px solid currentColor;
 }
 
 table td {
@@ -1966,29 +2020,33 @@ table td {
   }
 }
 
-table .wide {
+table td.wide {
   display: none;
 }
 
 @media screen and (min-width: 767px) {
-  table .wide {
+  table td.wide {
     display: table-cell;
   }
 }
 
-.meta-evolution {
+table td .meta-evolution {
   display: none;
 }
 
-.final-destination .pokemon-avatar {
+table td .final-destination .pokemon-avatar {
   padding: 0;
   margin: 10px auto;
 }
 
-.final-destination + a {
+table td .final-destination + a {
   margin: 20px auto;
   display: block;
   max-width: 160px;
+}
+
+.evolution-table tbody tr:first-of-type {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
