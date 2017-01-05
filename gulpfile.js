@@ -100,6 +100,7 @@ gulp.task('build', ['css', 'sprites'], function() {
 	.pipe(gulp.dest('dist'));
 
 		gulp.src('*.html', {cwd: bases.app}).pipe(gulp.dest(bases.dist));
+		gulp.src('js/*.js', {cwd: bases.app}).pipe(gulp.dest(bases.dist + 'js'));
 		gulp.src('*.css', {cwd: bases.app}).pipe(gulp.dest(bases.dist));
 		gulp.src('images/*.**', {cwd: bases.app}).pipe(gulp.dest(bases.dist + 'images'));
 });
