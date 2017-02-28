@@ -126,12 +126,20 @@ $(document).ready(function() {
 
         var candyNeededvsInventory = Math.floor(numCandy / chosenPokemon.candy);
         // console.log(candyNeededvsInventory);
-        var evolutionsPossible = Math.min(candyNeededvsInventory, numPokemon);
+        var evolutionsPossible;
+
+        if(numPokemon === chosenPokemon.candy) {
+          evolutionsPossible = (Math.min(candyNeededvsInventory, numPokemon)) + 1;
+        } else {
+          evolutionsPossible = Math.min(candyNeededvsInventory, numPokemon);
+        }
+
         var xpGained = evolutionsPossible * 500;
         var bonusAmount = 0;
         if($('#firstEvolve').is(':checked')) {
           bonusAmount = 500;
         }
+
         //Check wether there's a new evolution taking place
         if ($('#firstEvolve').is(':checked') && evolutionsPossible >= 1) {
           xpGained = evolutionsPossible * 500 + 500;

@@ -40,6 +40,13 @@ $(document).ready(function() {
     });
   }
 
+   commaSeparateNumber = function(val){
+   while (/(\d+)(\d{3})/.test(val.toString())){
+     val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+   }
+   return val;
+ }
+
   //--------------------------------------
   //        Pokémon Selector
   //--------------------------------------
@@ -116,6 +123,7 @@ $(document).ready(function() {
       //--------------------------------------
 
       addPokemonSpecies = function() {
+
         var tableInner = $('#evolutionTable').find('tbody');
 
         var numPokemon = parseInt(pokemonNumber.val(), 10);
@@ -126,16 +134,26 @@ $(document).ready(function() {
 
         var candyNeededvsInventory = Math.floor(numCandy / chosenPokemon.candy);
         // console.log(candyNeededvsInventory);
-        var evolutionsPossible = Math.min(candyNeededvsInventory, numPokemon);
-        var xpGained = evolutionsPossible * 500;
+        var evolutionsPossible;
+
+        if(numPokemon === chosenPokemon.candy) {
+          evolutionsPossible = (Math.min(candyNeededvsInventory, numPokemon)) + 1;
+        } else {
+          evolutionsPossible = Math.min(candyNeededvsInventory, numPokemon);
+        }
+
+        var xpGained = commaSeparateNumber(evolutionsPossible * 500);
+
         var bonusAmount = 0;
         if($('#firstEvolve').is(':checked')) {
           bonusAmount = 500;
         }
+
         //Check wether there's a new evolution taking place
         if ($('#firstEvolve').is(':checked') && evolutionsPossible >= 1) {
           xpGained = evolutionsPossible * 500 + 500;
         }
+
 
         var rowTemplate =
         `<tr>
