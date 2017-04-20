@@ -40,6 +40,13 @@ $(document).ready(function() {
     });
   }
 
+   commaSeparateNumber = function(val){
+   while (/(\d+)(\d{3})/.test(val.toString())){
+     val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+   }
+   return val;
+ }
+
   //--------------------------------------
   //        Pokémon Selector
   //--------------------------------------
@@ -116,6 +123,7 @@ $(document).ready(function() {
       //--------------------------------------
 
       addPokemonSpecies = function() {
+
         var tableInner = $('#evolutionTable').find('tbody');
 
         var numPokemon = parseInt(pokemonNumber.val(), 10);
@@ -134,7 +142,8 @@ $(document).ready(function() {
           evolutionsPossible = Math.min(candyNeededvsInventory, numPokemon);
         }
 
-        var xpGained = evolutionsPossible * 500;
+        var xpGained = commaSeparateNumber(evolutionsPossible * 500);
+
         var bonusAmount = 0;
         if($('#firstEvolve').is(':checked')) {
           bonusAmount = 500;
@@ -144,6 +153,7 @@ $(document).ready(function() {
         if ($('#firstEvolve').is(':checked') && evolutionsPossible >= 1) {
           xpGained = evolutionsPossible * 500 + 500;
         }
+
 
         var rowTemplate =
         `<tr>

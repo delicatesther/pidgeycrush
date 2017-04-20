@@ -745,7 +745,7 @@ form h2 {
 
 .bulbasaur {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -506px;
+  background-position: -1107px -441px;
   width: 55px;
   height: 65px;
 }
@@ -766,7 +766,7 @@ form h2 {
 
 .charmander {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -515px;
+  background-position: -1055px -707px;
   width: 44px;
   height: 60px;
 }
@@ -787,7 +787,7 @@ form h2 {
 
 .squirtle {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -287px;
+  background-position: -1055px -424px;
   width: 51px;
   height: 57px;
 }
@@ -808,14 +808,14 @@ form h2 {
 
 .caterpie {
   background-image: url(../images/sprite.png);
-  background-position: -1006px -229px;
+  background-position: -1006px -626px;
   width: 26px;
   height: 34px;
 }
 
 .metapod {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -775px;
+  background-position: -1006px -247px;
   width: 35px;
   height: 56px;
 }
@@ -829,14 +829,14 @@ form h2 {
 
 .weedle {
   background-image: url(../images/sprite.png);
-  background-position: -1087px -831px;
+  background-position: -1031px -587px;
   width: 19px;
   height: 31px;
 }
 
 .kakuna {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -831px;
+  background-position: -1006px -303px;
   width: 32px;
   height: 60px;
 }
@@ -850,7 +850,7 @@ form h2 {
 
 .pidgey {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -939px;
+  background-position: -1006px -411px;
   width: 33px;
   height: 44px;
 }
@@ -871,21 +871,21 @@ form h2 {
 
 .rattata {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -222px;
+  background-position: -1055px -359px;
   width: 45px;
   height: 65px;
 }
 
 .raticate {
   background-image: url(../images/sprite.png);
-  background-position: -317px -877px;
+  background-position: -117px -950px;
   width: 63px;
   height: 69px;
 }
 
 .spearow {
   background-image: url(../images/sprite.png);
-  background-position: -1006px -190px;
+  background-position: -1006px -587px;
   width: 25px;
   height: 39px;
 }
@@ -899,7 +899,7 @@ form h2 {
 
 .ekans {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -640px;
+  background-position: -1055px -948px;
   width: 51px;
   height: 43px;
 }
@@ -913,7 +913,7 @@ form h2 {
 
 .pikachu {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -968px;
+  background-position: -245px -950px;
   width: 55px;
   height: 58px;
 }
@@ -927,7 +927,7 @@ form h2 {
 
 .sandshrew {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -163px;
+  background-position: -1055px -300px;
   width: 52px;
   height: 59px;
 }
@@ -941,7 +941,7 @@ form h2 {
 
 .nidoranF {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -983px;
+  background-position: -1006px -455px;
   width: 37px;
   height: 36px;
 }
@@ -962,7 +962,7 @@ form h2 {
 
 .nidoranM {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -344px;
+  background-position: -1055px -481px;
   width: 52px;
   height: 55px;
 }
@@ -983,7 +983,7 @@ form h2 {
 
 .clefairy {
   background-image: url(../images/sprite.png);
-  background-position: -380px -877px;
+  background-position: -449px -877px;
   width: 67px;
   height: 63px;
 }
@@ -997,7 +997,7 @@ form h2 {
 
 .vulpix {
   background-image: url(../images/sprite.png);
-  background-position: -447px -877px;
+  background-position: -516px -877px;
   width: 66px;
   height: 63px;
 }
@@ -1011,7 +1011,7 @@ form h2 {
 
 .jigglypuff {
   background-image: url(../images/sprite.png);
-  background-position: -182px -950px;
+  background-position: -300px -950px;
   width: 55px;
   height: 57px;
 }
@@ -1039,7 +1039,7 @@ form h2 {
 
 .oddish {
   background-image: url(../images/sprite.png);
-  background-position: -237px -950px;
+  background-position: -355px -950px;
   width: 56px;
   height: 55px;
 }
@@ -1088,7 +1088,7 @@ form h2 {
 
 .diglett {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -683px;
+  background-position: -1055px -991px;
   width: 50px;
   height: 41px;
 }
@@ -1102,14 +1102,14 @@ form h2 {
 
 .meowth {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -399px;
+  background-position: -1055px -536px;
   width: 47px;
   height: 60px;
 }
 
 .persian {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -441px;
+  background-position: -1107px -506px;
   width: 55px;
   height: 65px;
 }
@@ -1158,7 +1158,7 @@ form h2 {
 
 .poliwag {
   background-image: url(../images/sprite.png);
-  background-position: -513px -877px;
+  background-position: -582px -877px;
   width: 68px;
   height: 60px;
 }
@@ -1200,7 +1200,7 @@ form h2 {
 
 .machop {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -575px;
+  background-position: -1055px -767px;
   width: 40px;
   height: 65px;
 }
@@ -1221,7 +1221,7 @@ form h2 {
 
 .bellsprout {
   background-image: url(../images/sprite.png);
-  background-position: -723px -877px;
+  background-position: -792px -877px;
   width: 53px;
   height: 53px;
 }
@@ -1242,7 +1242,7 @@ form h2 {
 
 .tentacool {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -826px;
+  background-position: -1107px -956px;
   width: 43px;
   height: 75px;
 }
@@ -1277,7 +1277,7 @@ form h2 {
 
 .ponyta {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -84px;
+  background-position: -1055px -151px;
   width: 40px;
   height: 79px;
 }
@@ -1340,7 +1340,7 @@ form h2 {
 
 .seel {
   background-image: url(../images/sprite.png);
-  background-position: -581px -877px;
+  background-position: -650px -877px;
   width: 75px;
   height: 54px;
 }
@@ -1438,7 +1438,7 @@ form h2 {
 
 .voltorb {
   background-image: url(../images/sprite.png);
-  background-position: -293px -950px;
+  background-position: -411px -950px;
   width: 55px;
   height: 55px;
 }
@@ -1466,7 +1466,7 @@ form h2 {
 
 .cubone {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -724px;
+  background-position: -1006px -94px;
   width: 40px;
   height: 51px;
 }
@@ -1501,7 +1501,7 @@ form h2 {
 
 .koffing {
   background-image: url(../images/sprite.png);
-  background-position: -117px -950px;
+  background-position: -180px -950px;
   width: 65px;
   height: 62px;
 }
@@ -1550,7 +1550,7 @@ form h2 {
 
 .horsea {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -891px;
+  background-position: -1006px -363px;
   width: 34px;
   height: 48px;
 }
@@ -1571,14 +1571,14 @@ form h2 {
 
 .seaking {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -769px;
+  background-position: -1107px -838px;
   width: 57px;
   height: 57px;
 }
 
 .staryu {
   background-image: url(../images/sprite.png);
-  background-position: -857px -718px;
+  background-position: -317px -877px;
   width: 67px;
   height: 68px;
 }
@@ -1669,7 +1669,7 @@ form h2 {
 
 .eevee {
   background-image: url(../images/sprite.png);
-  background-position: -656px -877px;
+  background-position: -725px -877px;
   width: 67px;
   height: 54px;
 }
@@ -1683,7 +1683,7 @@ form h2 {
 
 .jolteon {
   background-image: url(../images/sprite.png);
-  background-position: -1107px -901px;
+  background-position: -1055px -84px;
   width: 48px;
   height: 67px;
 }
@@ -1704,7 +1704,7 @@ form h2 {
 
 .omanyte {
   background-image: url(../images/sprite.png);
-  background-position: -1055px -459px;
+  background-position: -1055px -596px;
   width: 50px;
   height: 56px;
 }
@@ -1777,6 +1777,83 @@ form h2 {
   background-position: -857px -647px;
   width: 65px;
   height: 71px;
+}
+
+.pichu {
+  background-image: url(../images/sprite.png);
+  background-position: -1055px -652px;
+  width: 49px;
+  height: 55px;
+}
+
+.cleffa {
+  background-image: url(../images/sprite.png);
+  background-position: -845px -877px;
+  width: 53px;
+  height: 50px;
+}
+
+.magby {
+  background-image: url(../images/sprite.png);
+  background-position: -1107px -769px;
+  width: 49px;
+  height: 69px;
+}
+
+.igglybuff {
+  background-image: url(../images/sprite.png);
+  background-position: -1006px -198px;
+  width: 41px;
+  height: 49px;
+}
+
+.elekid {
+  background-image: url(../images/sprite.png);
+  background-position: -384px -877px;
+  width: 65px;
+  height: 68px;
+}
+
+.smoochum {
+  background-image: url(../images/sprite.png);
+  background-position: -1006px -145px;
+  width: 38px;
+  height: 53px;
+}
+
+.tyrogue {
+  background-image: url(../images/sprite.png);
+  background-position: -1055px -882px;
+  width: 35px;
+  height: 66px;
+}
+
+.togepi {
+  background-image: url(../images/sprite.png);
+  background-position: -1055px -832px;
+  width: 48px;
+  height: 50px;
+}
+
+.togetic {
+  background-image: url(../images/sprite.png);
+  background-position: -1107px -895px;
+  width: 53px;
+  height: 61px;
+}
+
+.umbreon {
+  background-image: url(../images/sprite.png);
+  background-position: -1055px -230px;
+  width: 45px;
+  height: 70px;
+}
+
+.espeon {
+  background-image: url(../images/sprite.png);
+  background-position: -857px -718px;
+  width: 62px;
+  height: 74px;
 }
 
 /*------------------------------------------------------------------

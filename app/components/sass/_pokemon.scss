@@ -442,3 +442,36 @@
 .mew {
   @include sprite($mew);
 }
+.pichu {
+  @include sprite($pichu);
+}
+.cleffa {
+  @include sprite($cleffa);
+}
+.magby {
+  @include sprite($magby);
+}
+.igglybuff {
+  @include sprite($igglybuff);
+}
+.elekid {
+  @include sprite($elekid);
+}
+.smoochum {
+  @include sprite($smoochum);
+}
+.tyrogue {
+  @include sprite($tyrogue);
+}
+.togepi {
+  @include sprite($togepi);
+}
+.togetic {
+  @include sprite($togetic);
+}
+.umbreon {
+  @include sprite($umbreon);
+}
+.espeon {
+  @include sprite($espeon);
+}
