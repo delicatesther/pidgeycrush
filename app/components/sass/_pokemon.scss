@@ -427,6 +427,15 @@
 .snorlax {
   @include sprite($snorlax);
 }
+.articuno {
+  @include sprite($articuno);
+}
+.zabdos {
+  @include sprite($zabdos);
+}
+.moltres {
+  @include sprite($moltres);
+}
 .dratini {
   @include sprite($dratini);
 }
@@ -529,6 +538,12 @@
 .crobat {
   @include sprite($crobat);
 }
+.chinchou {
+  @include sprite($chinchou);
+}
+.lanturn {
+  @include sprite($lanturn);
+}
 .natu {
   @include sprite($natu);
 }
@@ -598,6 +613,9 @@
 .girafarig {
   @include sprite($girafarig);
 }
+.wobbuffet {
+  @include sprite($wobbuffet);
+}
 .pineco {
   @include sprite($pineco);
 }
@@ -606,6 +624,9 @@
 }
 .gligar {
   @include sprite($gligar);
+}
+.dunsparce {
+  @include sprite($dunsparce)
 }
 .steelix {
   @include sprite($steelix);
@@ -654,6 +675,9 @@
 }
 .mantine {
   @include sprite($mantine);
+}
+.skarmory {
+  @include sprite($skarmory);
 }
 .houndour {
   @include sprite($houndour);

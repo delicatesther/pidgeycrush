@@ -224,6 +224,10 @@ var aerodactyl = new pokemon('aerodactyl','aerodactyl');
 
 var snorlax = new pokemon('snorlax','snorlax');
 
+var articuno = new pokemon('articuno','articuno');
+var zabdos = new pokemon('zabdos','zabdos');
+var moltres = new pokemon('moltres','moltres');
+
 var dratini = new pokemon('dratini', 25, 'dratini', 'dragonair');
 var dragonair = new pokemon('dragonair', 100, 'dratini', 'dragonite');
 var dragonite = new pokemon('dragonite','dratini');
@@ -265,6 +269,9 @@ var spinarak = new pokemon('spinarak', 50, 'spinarak', 'ariados');
 var ariados = new pokemon('ariados', 'spinarak');
 
 var crobat = new pokemon('crobat', 'zubat');
+
+var chinchou = new pokemon('chinchou', 50, 'chinchou', 'lanturn');
+var lanturn = new pokemon('lanturn', 'chinchou');
 
 var pichu = new pokemon('pichu', 100, 'pichu', 'pikachu');
 
@@ -318,8 +325,12 @@ var unown = new pokemon('unown', 'unown');
 
 var girafarig = new pokemon('girafarig', 'girafarig');
 
+var wobbuffet = new pokemon('wobbuffet', 'wobbuffet');
+
 var pineco = new pokemon('pineco', 50, 'pineco', 'forretress');
 var forretress = new pokemon('forretress', 'pineco');
+
+var dunsparce = new pokemon('dunsparce', 'dunsparce');
 
 var gligar = new pokemon('gligar', 'gligar');
 
@@ -352,6 +363,8 @@ var octillery = new pokemon('octillery', 'remoraid');
 var delibird = new pokemon('delibird', 'delibird');
 
 var mantine = new pokemon('mantine', 'mantine');
+
+var skarmory = new pokemon('skarmory', 'skarmory');
 
 var houndour = new pokemon('houndour', 50, 'houndour', 'houndoom');
 var houndoom = new pokemon('houndoom', 'houndour');
@@ -391,4 +404,4 @@ var celebi = new pokemon('celebi', 'celebi');
 
 var pokemonArray = [];
 
-pokemonArray.push(bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree, weedle, kakuna, beedrill, pidgey, pidgeotto, pidgeot, rattata, raticate, spearow, fearow, ekans, arbok, pikachu, raichu, sandshrew, sandslash, nidoranF, nidorina, nidoqueen, nidoranM, nidorino, nidoking, clefairy, clefable, vulpix, ninetales, jigglypuff, wigglytuff, zubat, golbat, oddish, gloom, vileplume, paras, parasect, venonat, venomoth, diglett, dugtrio, meowth, persian, psyduck, golduck, mankey, primeape, growlithe, arcanine, poliwag, poliwhirl, poliwrath, abra, kadabra, alakazam, machop, machoke, machamp, bellsprout, weepinbell, victreebel, tentacool, tentacruel, geodude, graveler, golem, ponyta, rapidash, slowpoke, slowbro, magnemite, magneton, farfetchd, doduo, dodrio, seel, dewgong, grimer, muk, shellder, cloyster, gastly, haunter, gengar, onix, drowzee, hypno, krabby, kingler, voltorb, electrode, exeggcute, exeggcutor, cubone, marowak, hitmonlee, hitmonchan, lickitung, koffing, weezing, rhyhorn, rhydon, chansey, tangela, kangaskhan, horsea, seadra, goldeen, seaking, staryu, starmie, mrMime, scyther, jynx, electabuzz, magmar, pinsir, tauros, magikarp, gyarados, lapras, ditto, eevee, vaporeon, jolteon, flareon, porygon, omanyte, omastar, kabuto, kabutops, aerodactyl, snorlax, dratini, dragonair, dragonite, tyrogue, smoochum, elekid, magby, mewtwo, mew, chikorita, bayleef, meganium, cyndaquil, quilava, typhlosion, totodile, croconaw, feraligatr, sentret, furret, hoothoot, noctowl, ledyba, ledian, spinarak, ariados, crobat, pichu, cleffa, igglybuff, togepi, togetic, natu, xatu, mareep, flaaffy, ampharos, bellossom, marill, azumarill, hoppip, skiploom, jumpluff, aipom, sunkern, sunflora, yanma, wooper, quagsire, espeon, umbreon, murkrow, slowking, misdreavus, unown, girafarig, pineco, forretress, gligar, steelix, snubbull, granbull, qwilfish, scizor, shuckle, heracross, sneasel, teddiursa, ursaring, slugma, magcargo, corsola, remoraid, octillery, delibird, mantine, houndour, houndoom, phanpy, donphan, porygon2, stantler, smeargle, hitmontop, miltank, blissey, raikou, entei, suicune, larvitar, pupitar, tyranitar, lugia, hoOh, celebi);
+pokemonArray.push(bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree, weedle, kakuna, beedrill, pidgey, pidgeotto, pidgeot, rattata, raticate, spearow, fearow, ekans, arbok, pikachu, raichu, sandshrew, sandslash, nidoranF, nidorina, nidoqueen, nidoranM, nidorino, nidoking, clefairy, clefable, vulpix, ninetales, jigglypuff, wigglytuff, zubat, golbat, oddish, gloom, vileplume, paras, parasect, venonat, venomoth, diglett, dugtrio, meowth, persian, psyduck, golduck, mankey, primeape, growlithe, arcanine, poliwag, poliwhirl, poliwrath, abra, kadabra, alakazam, machop, machoke, machamp, bellsprout, weepinbell, victreebel, tentacool, tentacruel, geodude, graveler, golem, ponyta, rapidash, slowpoke, slowbro, magnemite, magneton, farfetchd, doduo, dodrio, seel, dewgong, grimer, muk, shellder, cloyster, gastly, haunter, gengar, onix, drowzee, hypno, krabby, kingler, voltorb, electrode, exeggcute, exeggcutor, cubone, marowak, hitmonlee, hitmonchan, lickitung, koffing, weezing, rhyhorn, rhydon, chansey, tangela, kangaskhan, horsea, seadra, goldeen, seaking, staryu, starmie, mrMime, scyther, jynx, electabuzz, magmar, pinsir, tauros, magikarp, gyarados, lapras, ditto, eevee, vaporeon, jolteon, flareon, porygon, omanyte, omastar, kabuto, kabutops, aerodactyl, snorlax, articuno, zabdos, moltres, dratini, dragonair, dragonite, tyrogue, smoochum, elekid, magby, mewtwo, mew, chikorita, bayleef, meganium, cyndaquil, quilava, typhlosion, totodile, croconaw, feraligatr, sentret, furret, hoothoot, noctowl, ledyba, ledian, spinarak, ariados, crobat, chinchou, lanturn, pichu, cleffa, igglybuff, togepi, togetic, natu, xatu, mareep, flaaffy, ampharos, bellossom, marill, azumarill, hoppip, skiploom, jumpluff, aipom, sunkern, sunflora, yanma, wooper, quagsire, espeon, umbreon, murkrow, slowking, misdreavus, unown, girafarig, wobbuffet, pineco, forretress, dunsparce, gligar, steelix, snubbull, granbull, qwilfish, scizor, shuckle, heracross, sneasel, teddiursa, ursaring, slugma, magcargo, corsola, remoraid, octillery, delibird, mantine, skarmory, houndour, houndoom, phanpy, donphan, porygon2, stantler, smeargle, hitmontop, miltank, blissey, raikou, entei, suicune, larvitar, pupitar, tyranitar, lugia, hoOh, celebi);
