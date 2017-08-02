@@ -93,7 +93,8 @@ input {
   background: $white;
   overflow-y: auto;
   overflow-x: hidden;
-  max-width: 517px;
+  width: 500px;
+  margin: 0 auto;
 }
 .ui-autocomplete a {
   margin: auto;

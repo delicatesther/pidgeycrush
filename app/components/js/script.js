@@ -122,11 +122,20 @@ $(document).ready(function() {
 
         var numCandy = parseInt($('#pokemonCandy').val(), 10);
 
-        var candyNeeded = numPokemon * chosenPokemon.candy; //say for 2 pidgey that's 24
+
+        var candyNeeded = function(){
+          if(numPokemon === 1) {
+            numPokemon * chosenPokemon.candy; //say for 1 pidgey that's 12
+          }
+          else {
+            numPokemon * (chosenPokemon.candy - (numPokemon -1)); //say for 2 pidgey that's 23
+          }
+        }
 
         var candyNeededvsInventory = Math.floor(numCandy / chosenPokemon.candy);
         // console.log(candyNeededvsInventory);
         var evolutionsPossible = Math.min(candyNeededvsInventory, numPokemon);
+
         var xpGained = evolutionsPossible * 500;
         var bonusAmount = 0;
         if($('#firstEvolve').is(':checked')) {
@@ -208,10 +217,10 @@ $(document).ready(function() {
       $(this).closest('tr').remove();
       console.log('delete');
     });
+
   }
-  pokemonSelector();
-  initEvents();
-
-
+});
+pokemonSelector();
+initEvents();
 
 });// End script

@@ -80,7 +80,7 @@
               <label for="firstEvolve"></label>
               </p>
             </div>
-            <a id="addPokemonSpecies" onclick="addPokemonSpecies()" class="button">Add Pokémon to table</a>
+            <a id="addPokemonSpecies" onclick="addPokemonSpecies()" name="addPokemonSpecies" class="button">Add Pokémon to table</a>
             <a id="resetForm" onclick="resetForm()" class="button">Reset Selection</a>
           </div>
         </div>
@@ -129,5 +129,13 @@
     </div>
     <p class="disclaimer">This calculator is based on the popular game Pokémon Go, developed by Niantic, Inc.<br> Any and all images and rights are belong to them.<br><br><small>Please don't sue me, guys. I just wanted to build a calculator. :(</small></p>
   </div>
+
+  <script>
+  $('#pokemonCandy').on("keyup", function (event) {
+    if (event.which == 13) {
+      $("#addPokemonSpecies").trigger('click');
+    }
+  });
+  </script>
 </body>
 </html>
