@@ -1,0 +1,280 @@
+{
+  "pokemon": [
+    {
+      "index"     : "001",
+      "species"   : "Bulbasaur",
+      "genus"     : "Bulbasaur",
+      "type"      : ["grass","poison"],
+      "candy"     : 25,
+      "evolution" : "Ivysaur"
+    },
+    {
+      "index"     : "002",
+      "species"   : "Ivysaur",
+      "genus"     : "Bulbasaur",
+      "type"      : ["grass","poison"],
+      "candy"     : 100,
+      "evolution" : "Venusaur"
+    },
+    {
+      "index"     : "003",
+      "species"   : "Venusaur",
+      "genus"     : "Bulbasaur",
+      "type"      : ["grass","poison"]
+    },
+    {
+      "index"     : "004",
+      "species"   : "Charmander",
+      "genus"     : "Charmander",
+      "type"      : ["fire"],
+      "candy"     : 25,
+      "evolution" : "Charmeleon"
+    },
+    {
+      "index"     : "005",
+      "species"   : "Charmeleon",
+      "genus"     : "Charmander",
+      "type"      : ["fire"],
+      "candy"     : 100,
+      "evolution" : "Charizard"
+    },
+    {
+      "index"     : "006",
+      "species"   : "Charizard",
+      "genus"     : "Charmander",
+      "type"      : ["fire", "flying"]
+    },
+    {
+      "index"     : "007",
+      "species"   : "Squirtle",
+      "genus"     : "Squirtle",
+      "type"      : ["water"],
+      "candy"     : 25,
+      "evolution" : "Wartortle"
+    },
+    {
+      "index"     : "008",
+      "species"   : "Wartortle",
+      "genus"     : "Squirtle",
+      "type"      : ["water"],
+      "candy"     : "100",
+      "evolution" : "Blastoise"
+    },
+    {
+      "index"     : "009",
+      "species"   : "Blastoise",
+      "genus"     : "Squirtle",
+      "type"      : ["water"]
+    },
+    {
+      "index"     : "010",
+      "species"   : "Caterpie",
+      "genus"     : "Caterpie",
+      "type"      : ["bug"],
+      "candy"     : 12,
+      "evolution" : "Metapod"
+    },
+    {
+      "index"     : "011",
+      "species"   : "Metapod",
+      "genus"     : "Caterpie",
+      "type"      : ["bug"],
+      "candy"     : 50,
+      "evolution" : "Butterfree"
+    },
+    {
+      "index"     : "012",
+      "species"   : "Butterfree",
+      "genus"     : "Caterpie",
+      "type"      : ["bug", "flying"]
+    },
+    {
+      "index"     : "013",
+      "species"   : "Weedle",
+      "genus"     : "Weedle",
+      "type"      : ["bug" , "poison"],
+      "candy"     : 12,
+      "evolution" : "Kakuna"
+    },
+    {
+      "index"     : "014",
+      "species"   : "Kakuna",
+      "genus"     : "Weedle",
+      "type"      : ["bug" , "poison"],
+      "candy"     : 50,
+      "evolution" : "Beedrill"
+    },
+    {
+      "index"     : "015",
+      "species"   : "Beedrill",
+      "genus"     : "Weedle",
+      "type"      : ["bug" , "poison"]
+    },
+    {
+      "index"     : "016",
+      "species"   : "Pidgey",
+      "genus"     : "Pidgey",
+      "type"      : ["normal" , "flying"],
+      "candy"     : 12,
+      "evolution" : "Pidgeotto"
+    },
+    {
+      "index"     : "017",
+      "species"   : "Pidgeotto",
+      "genus"     : "Pidgey",
+      "type"      : ["normal" , "flying"],
+      "candy"     : 50,
+      "evolution" : "Pidgeot"
+    },
+    {
+      "index"     : "018",
+      "species"   : "Pidgeot",
+      "genus"     : "Pidgey",
+      "type"      : ["normal" , "flying"]
+    },
+    {
+      "index"     : "019",
+      "species"   : "Rattata",
+      "genus"     : "Rattata",
+      "type"      : ["normal"],
+      "candy"     : 25,
+      "evolution" : "Raticate"
+    },
+    {
+      "index"     : "020",
+      "species"   : "Raticate",
+      "genus"     : "Rattata",
+      "type"      : ["",""]
+    },
+    {
+      "index"     : "021",
+      "species"   : "Spearow",
+      "genus"     : "Spearow",
+      "type"      : ["normal" , "flying"],
+      "candy"     : 50,
+      "evolution" : "Fearow"
+    },
+    {
+      "index"     : "022",
+      "species"   : "Fearow",
+      "genus"     : "Spearow",
+      "type"      : ["normal" , "flying"]
+    },
+    {
+      "index"     : "023",
+      "species"   : "Ekans",
+      "genus"     : "Ekans",
+      "type"      : ["poison"],
+      "candy"     : 50,
+      "evolution" : "Arbok"
+    },
+    {
+      "index"     : "024",
+      "species"   : "Arbok",
+      "genus"     : "Ekans",
+      "type"      : ["poison"]
+    },
+    {
+      "index"     : "025",
+      "species"   : "Pikachu",
+      "genus"     : "Pikachu",
+      "type"      : ["electric"],
+      "candy"     : 50,
+      "evolution" : "Raichu"
+    },
+    {
+      "index"     : "026",
+      "species"   : "Raichu",
+      "genus"     : "Pikachu",
+      "type"      : ["electric"]
+    },
+    {
+      "index"     : "027",
+      "species"   : "Sandshrew",
+      "genus"     : "Sandshrew",
+      "type"      : ["ground"],
+      "candy"     : 50,
+      "evolution" : "Sandslash"
+    },
+    {
+      "index"     : "028",
+      "species"   : "Sandslash",
+      "genus"     : "Sandshrew",
+      "type"      : ["ground"]
+    },
+    {
+      "index"     : "029",
+      "species"   : "NidoranF",
+      "genus"     : "NidoranF",
+      "type"      : ["poison"],
+      "candy"     : 25,
+      "evolution" : ""
+    },
+    {
+      "index"     : "030",
+      "species"   : "Nidorina",
+      "genus"     : "NidoranF",
+      "type"      : ["poison"],
+      "candy"     : 100,
+      "evolution" : "Nidoqueen"
+    },
+    {
+      "index"     : "031",
+      "species"   : "Nidoqueen",
+      "genus"     : "NidoranF",
+      "type"      : ["poison", "ground"]
+    },
+    {
+      "index"     : "032",
+      "species"   : "NidoranM",
+      "genus"     : "NidoranM",
+      "type"      : ["poison"],
+      "candy"     : 25,
+      "evolution" : ""
+    },
+    {
+      "index"     : "033",
+      "species"   : "Nidorino",
+      "genus"     : "NidoranM",
+      "type"      : ["poison"],
+      "candy"     : 100,
+      "evolution" : "Nidoking"
+    },
+    {
+      "index"     : "034",
+      "species"   : "Nidoking",
+      "genus"     : "NidoranM",
+      "type"      : ["poison", "ground"]
+    },
+    {
+      "index"     : "035",
+      "species"   : "Clefairy",
+      "genus"     : "Clefairy",
+      "type"      : ["fairy"],
+      "candy"     : 50,
+      "evolution" : "Clefable"
+    },
+    {
+      "index"     : "036",
+      "species"   : "Clefable",
+      "genus"     : "Clefairy",
+      "type"      : ["fairy"]
+    },
+    {
+      "index"     : "",
+      "species"   : "",
+      "genus"     : "",
+      "type"      : ["",""],
+      "candy"     : ,
+      "evolution" : ""
+    },
+    {
+      "index"     : "",
+      "species"   : "",
+      "genus"     : "",
+      "type"      : ["",""],
+      "candy"     : ,
+      "evolution" : ""
+    },
+  ]
+}
