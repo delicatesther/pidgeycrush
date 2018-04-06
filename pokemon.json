@@ -1,280 +1,1511 @@
 {
-  "pokemon": [
-    {
-      "index"     : "001",
-      "species"   : "Bulbasaur",
-      "genus"     : "Bulbasaur",
-      "type"      : ["grass","poison"],
-      "candy"     : 25,
-      "evolution" : "Ivysaur"
+  "pokemon": [{
+      "index": "001",
+      "species": "Bulbasaur",
+      "genus": "Bulbasaur",
+      "type": ["grass", "poison"],
+      "candy": 25,
+      "evolution": "Ivysaur",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3,
     },
     {
-      "index"     : "002",
-      "species"   : "Ivysaur",
-      "genus"     : "Bulbasaur",
-      "type"      : ["grass","poison"],
-      "candy"     : 100,
-      "evolution" : "Venusaur"
+      "index": "002",
+      "species": "Ivysaur",
+      "genus": "Bulbasaur",
+      "type": ["grass", "poison"],
+      "candy": 100,
+      "evolution": "Venusaur",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "003",
-      "species"   : "Venusaur",
-      "genus"     : "Bulbasaur",
-      "type"      : ["grass","poison"]
+      "index": "003",
+      "species": "Venusaur",
+      "genus": "Bulbasaur",
+      "type": ["grass", "poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "004",
-      "species"   : "Charmander",
-      "genus"     : "Charmander",
-      "type"      : ["fire"],
-      "candy"     : 25,
-      "evolution" : "Charmeleon"
+      "index": "004",
+      "species": "Charmander",
+      "genus": "Charmander",
+      "type": ["fire"],
+      "candy": 25,
+      "evolution": "Charmeleon",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "005",
-      "species"   : "Charmeleon",
-      "genus"     : "Charmander",
-      "type"      : ["fire"],
-      "candy"     : 100,
-      "evolution" : "Charizard"
+      "index": "005",
+      "species": "Charmeleon",
+      "genus": "Charmander",
+      "type": ["fire"],
+      "candy": 100,
+      "evolution": "Charizard",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "006",
-      "species"   : "Charizard",
-      "genus"     : "Charmander",
-      "type"      : ["fire", "flying"]
+      "index": "006",
+      "species": "Charizard",
+      "genus": "Charmander",
+      "type": ["fire", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "007",
-      "species"   : "Squirtle",
-      "genus"     : "Squirtle",
-      "type"      : ["water"],
-      "candy"     : 25,
-      "evolution" : "Wartortle"
+      "index": "007",
+      "species": "Squirtle",
+      "genus": "Squirtle",
+      "type": ["water"],
+      "candy": 25,
+      "evolution": "Wartortle",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "008",
-      "species"   : "Wartortle",
-      "genus"     : "Squirtle",
-      "type"      : ["water"],
-      "candy"     : "100",
-      "evolution" : "Blastoise"
+      "index": "008",
+      "species": "Wartortle",
+      "genus": "Squirtle",
+      "type": ["water"],
+      "candy": "100",
+      "evolution": "Blastoise",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "009",
-      "species"   : "Blastoise",
-      "genus"     : "Squirtle",
-      "type"      : ["water"]
+      "index": "009",
+      "species": "Blastoise",
+      "genus": "Squirtle",
+      "type": ["water"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "010",
-      "species"   : "Caterpie",
-      "genus"     : "Caterpie",
-      "type"      : ["bug"],
-      "candy"     : 12,
-      "evolution" : "Metapod"
+      "index": "010",
+      "species": "Caterpie",
+      "genus": "Caterpie",
+      "type": ["bug"],
+      "candy": 12,
+      "evolution": "Metapod",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "011",
-      "species"   : "Metapod",
-      "genus"     : "Caterpie",
-      "type"      : ["bug"],
-      "candy"     : 50,
-      "evolution" : "Butterfree"
+      "index": "011",
+      "species": "Metapod",
+      "genus": "Caterpie",
+      "type": ["bug"],
+      "candy": 50,
+      "evolution": "Butterfree",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "012",
-      "species"   : "Butterfree",
-      "genus"     : "Caterpie",
-      "type"      : ["bug", "flying"]
+      "index": "012",
+      "species": "Butterfree",
+      "genus": "Caterpie",
+      "type": ["bug", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "013",
-      "species"   : "Weedle",
-      "genus"     : "Weedle",
-      "type"      : ["bug" , "poison"],
-      "candy"     : 12,
-      "evolution" : "Kakuna"
+      "index": "013",
+      "species": "Weedle",
+      "genus": "Weedle",
+      "type": ["bug", "poison"],
+      "candy": 12,
+      "evolution": "Kakuna",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "014",
-      "species"   : "Kakuna",
-      "genus"     : "Weedle",
-      "type"      : ["bug" , "poison"],
-      "candy"     : 50,
-      "evolution" : "Beedrill"
+      "index": "014",
+      "species": "Kakuna",
+      "genus": "Weedle",
+      "type": ["bug", "poison"],
+      "candy": 50,
+      "evolution": "Beedrill",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "015",
-      "species"   : "Beedrill",
-      "genus"     : "Weedle",
-      "type"      : ["bug" , "poison"]
+      "index": "015",
+      "species": "Beedrill",
+      "genus": "Weedle",
+      "type": ["bug", "poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "016",
-      "species"   : "Pidgey",
-      "genus"     : "Pidgey",
-      "type"      : ["normal" , "flying"],
-      "candy"     : 12,
-      "evolution" : "Pidgeotto"
+      "index": "016",
+      "species": "Pidgey",
+      "genus": "Pidgey",
+      "type": ["normal", "flying"],
+      "candy": 12,
+      "evolution": "Pidgeotto",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "017",
-      "species"   : "Pidgeotto",
-      "genus"     : "Pidgey",
-      "type"      : ["normal" , "flying"],
-      "candy"     : 50,
-      "evolution" : "Pidgeot"
+      "index": "017",
+      "species": "Pidgeotto",
+      "genus": "Pidgey",
+      "type": ["normal", "flying"],
+      "candy": 50,
+      "evolution": "Pidgeot",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "018",
-      "species"   : "Pidgeot",
-      "genus"     : "Pidgey",
-      "type"      : ["normal" , "flying"]
+      "index": "018",
+      "species": "Pidgeot",
+      "genus": "Pidgey",
+      "type": ["normal", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "019",
-      "species"   : "Rattata",
-      "genus"     : "Rattata",
-      "type"      : ["normal"],
-      "candy"     : 25,
-      "evolution" : "Raticate"
+      "index": "019",
+      "species": "Rattata",
+      "genus": "Rattata",
+      "type": ["normal"],
+      "candy": 25,
+      "evolution": "Raticate",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "020",
-      "species"   : "Raticate",
-      "genus"     : "Rattata",
-      "type"      : ["",""]
+      "index": "020",
+      "species": "Raticate",
+      "genus": "Rattata",
+      "type": ["", ""],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "021",
-      "species"   : "Spearow",
-      "genus"     : "Spearow",
-      "type"      : ["normal" , "flying"],
-      "candy"     : 50,
-      "evolution" : "Fearow"
+      "index": "021",
+      "species": "Spearow",
+      "genus": "Spearow",
+      "type": ["normal", "flying"],
+      "candy": 50,
+      "evolution": "Fearow",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "022",
-      "species"   : "Fearow",
-      "genus"     : "Spearow",
-      "type"      : ["normal" , "flying"]
+      "index": "022",
+      "species": "Fearow",
+      "genus": "Spearow",
+      "type": ["normal", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "023",
-      "species"   : "Ekans",
-      "genus"     : "Ekans",
-      "type"      : ["poison"],
-      "candy"     : 50,
-      "evolution" : "Arbok"
+      "index": "023",
+      "species": "Ekans",
+      "genus": "Ekans",
+      "type": ["poison"],
+      "candy": 50,
+      "evolution": "Arbok",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "024",
-      "species"   : "Arbok",
-      "genus"     : "Ekans",
-      "type"      : ["poison"]
+      "index": "024",
+      "species": "Arbok",
+      "genus": "Ekans",
+      "type": ["poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "025",
-      "species"   : "Pikachu",
-      "genus"     : "Pikachu",
-      "type"      : ["electric"],
-      "candy"     : 50,
-      "evolution" : "Raichu"
+      "index": "025",
+      "species": "Pikachu",
+      "genus": "Pikachu",
+      "type": ["electric"],
+      "candy": 50,
+      "evolution": "Raichu",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "026",
-      "species"   : "Raichu",
-      "genus"     : "Pikachu",
-      "type"      : ["electric"]
+      "index": "026",
+      "species": "Raichu",
+      "genus": "Pikachu",
+      "type": ["electric"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "027",
-      "species"   : "Sandshrew",
-      "genus"     : "Sandshrew",
-      "type"      : ["ground"],
-      "candy"     : 50,
-      "evolution" : "Sandslash"
+      "index": "027",
+      "species": "Sandshrew",
+      "genus": "Sandshrew",
+      "type": ["ground"],
+      "candy": 50,
+      "evolution": "Sandslash",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "028",
-      "species"   : "Sandslash",
-      "genus"     : "Sandshrew",
-      "type"      : ["ground"]
+      "index": "028",
+      "species": "Sandslash",
+      "genus": "Sandshrew",
+      "type": ["ground"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "029",
-      "species"   : "NidoranF",
-      "genus"     : "NidoranF",
-      "type"      : ["poison"],
-      "candy"     : 25,
-      "evolution" : ""
+      "index": "029",
+      "species": "NidoranF",
+      "genus": "NidoranF",
+      "type": ["poison"],
+      "candy": 25,
+      "evolution": "",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "030",
-      "species"   : "Nidorina",
-      "genus"     : "NidoranF",
-      "type"      : ["poison"],
-      "candy"     : 100,
-      "evolution" : "Nidoqueen"
+      "index": "030",
+      "species": "Nidorina",
+      "genus": "NidoranF",
+      "type": ["poison"],
+      "candy": 100,
+      "evolution": "Nidoqueen",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "031",
-      "species"   : "Nidoqueen",
-      "genus"     : "NidoranF",
-      "type"      : ["poison", "ground"]
+      "index": "031",
+      "species": "Nidoqueen",
+      "genus": "NidoranF",
+      "type": ["poison", "ground"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "032",
-      "species"   : "NidoranM",
-      "genus"     : "NidoranM",
-      "type"      : ["poison"],
-      "candy"     : 25,
-      "evolution" : ""
+      "index": "032",
+      "species": "NidoranM",
+      "genus": "NidoranM",
+      "type": ["poison"],
+      "candy": 25,
+      "evolution": "",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "033",
-      "species"   : "Nidorino",
-      "genus"     : "NidoranM",
-      "type"      : ["poison"],
-      "candy"     : 100,
-      "evolution" : "Nidoking"
+      "index": "033",
+      "species": "Nidorino",
+      "genus": "NidoranM",
+      "type": ["poison"],
+      "candy": 100,
+      "evolution": "Nidoking",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "034",
-      "species"   : "Nidoking",
-      "genus"     : "NidoranM",
-      "type"      : ["poison", "ground"]
+      "index": "034",
+      "species": "Nidoking",
+      "genus": "NidoranM",
+      "type": ["poison", "ground"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "035",
-      "species"   : "Clefairy",
-      "genus"     : "Clefairy",
-      "type"      : ["fairy"],
-      "candy"     : 50,
-      "evolution" : "Clefable"
+      "index": "035",
+      "species": "Clefairy",
+      "genus": "Clefairy",
+      "type": ["fairy"],
+      "candy": 50,
+      "evolution": "Clefable",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "036",
-      "species"   : "Clefable",
-      "genus"     : "Clefairy",
-      "type"      : ["fairy"]
+      "index": "036",
+      "species": "Clefable",
+      "genus": "Clefairy",
+      "type": ["fairy"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
     },
     {
-      "index"     : "",
-      "species"   : "",
-      "genus"     : "",
-      "type"      : ["",""],
-      "candy"     : ,
-      "evolution" : ""
+      "index": "037",
+      "species": "Vulpix",
+      "genus": "Vulpix",
+      "type": ["fire"],
+      "candy": 50,
+      "evolution": "Ninetales",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
     {
-      "index"     : "",
-      "species"   : "",
-      "genus"     : "",
-      "type"      : ["",""],
-      "candy"     : ,
-      "evolution" : ""
+      "index": "038",
+      "species": "Ninetales",
+      "genus": "Vulpix",
+      "type": ["fire"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
     },
+    {
+      "index": "039",
+      "species": "Jigglypuff",
+      "genus": "Jigglypuff",
+      "type": ["normal", "fairy"],
+      "candy": 50,
+      "evolution": "Wigglytuff",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "040",
+      "species": "Wigglytuff",
+      "genus": "Jigglypuff",
+      "type": ["normal", "fairy"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "041",
+      "species": "Zubat",
+      "genus": "Zubat",
+      "type": ["poison", "flying"],
+      "candy": 50,
+      "evolution": "Golbat",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "042",
+      "species": "Golbat",
+      "genus": "Zubat",
+      "type": ["poison", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "043",
+      "species": "Oddish",
+      "genus": "Oddish",
+      "type": ["grass", "poison"],
+      "candy": 25,
+      "evolution": "Gloom",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "044",
+      "species": "Gloom",
+      "genus": "Oddish",
+      "type": ["grass", "poison"],
+      "candy": 100,
+      "evolution": ["Vileplume", "Bellossom"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "045",
+      "species": "Vileplume",
+      "genus": "Oddish",
+      "type": ["grass", "poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "046",
+      "species": "Paras",
+      "genus": "Paras",
+      "type": ["bug", "grass"],
+      "candy": 50,
+      "evolution": "Parasect",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "047",
+      "species": "Parasect",
+      "genus": "Paras",
+      "type": ["bug", "grass"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "048",
+      "species": "Venonat",
+      "genus": "Venonat",
+      "type": ["bug", "poison"],
+      "candy": 50,
+      "evolution": "Venomoth",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "049",
+      "species": "Venomoth",
+      "genus": "Venonat",
+      "type": ["bug", "poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "050",
+      "species": "Diglett",
+      "genus": "Diglett",
+      "type": ["ground"],
+      "candy": 50,
+      "evolution": "Dugtrio",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "051",
+      "species": "Dugtrio",
+      "genus": "Diglett",
+      "type": ["ground"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "052",
+      "species": "Meowth",
+      "genus": "Meowth",
+      "type": ["normal"],
+      "candy": 50,
+      "evolution": "Persian",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "053",
+      "species": "Persian",
+      "genus": "Meowth",
+      "type": ["normal"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "054",
+      "species": "Psyduck",
+      "genus": "Psyduck",
+      "type": ["water"],
+      "candy": 50,
+      "evolution": "Golduck",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "055",
+      "species": "Golduck",
+      "genus": "Psyduck",
+      "type": ["water"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "056",
+      "species": "Mankey",
+      "genus": "Mankey",
+      "type": ["fighting"],
+      "candy": 50,
+      "evolution": "Primeape",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "057",
+      "species": "Primeape",
+      "genus": "Mankey",
+      "type": ["fighting"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "058",
+      "species": "Growlithe",
+      "genus": "Growlithe",
+      "type": ["fire"],
+      "candy": 50,
+      "evolution": "Arcanine",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "059",
+      "species": "Arcanine",
+      "genus": "Growlithe",
+      "type": ["fire"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "60",
+      "species": "Poliwag",
+      "genus": "Poliwag",
+      "type": ["water"],
+      "candy": 25,
+      "evolution": "Poliwhirl",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "061",
+      "species": "Poliwhirl",
+      "genus": "Poliwag",
+      "type": ["water"],
+      "candy": 50,
+      "evolution": ["Poliwrath", "Politoed"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "062",
+      "species": "Poliwrath",
+      "genus": "Poliwag",
+      "type": ["water", "fighting"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "063",
+      "species": "Abra",
+      "genus": "Abra",
+      "type": ["psychic"],
+      "candy": 25,
+      "evolution": "Kadabra",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "064",
+      "species": "Kadabra",
+      "genus": "Abra",
+      "type": ["psychic"],
+      "candy": 100,
+      "evolution": "Alakazam",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "065",
+      "species": "Alakazam",
+      "genus": "Abra",
+      "type": ["psychic"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "066",
+      "species": "Machop",
+      "genus": "Machop",
+      "type": ["fighting"],
+      "candy": 25,
+      "evolution": "Machoke",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "067",
+      "species": "Machoke",
+      "genus": "Machop",
+      "type": ["fighting"],
+      "candy": 100,
+      "evolution": "",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "068",
+      "species": "Machamp",
+      "genus": "Machop",
+      "type": ["fighting"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "069",
+      "species": "Bellsprout",
+      "genus": "Bellsprout",
+      "type": ["grass", "poison"],
+      "candy": 25,
+      "evolution": "Weepinbell",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "070",
+      "species": "Weepinbell",
+      "genus": "Bellsprout",
+      "type": ["grass", "poison"],
+      "candy": 100,
+      "evolution": "Victreebel",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "071",
+      "species": "Victreebel",
+      "genus": "Bellsprout",
+      "type": ["grass", "poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "072",
+      "species": "Tentacool",
+      "genus": "Tentacool",
+      "type": ["water", "poison"],
+      "candy": 50,
+      "evolution": "Tentacruel",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "078",
+      "species": "Tentacruel",
+      "genus": "Tentacool",
+      "type": ["water", "poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "074",
+      "species": "Geodude",
+      "genus": "Geodude",
+      "type": ["rock", "ground"],
+      "candy": 25,
+      "evolution": "Graveler",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "075",
+      "species": "Graveler",
+      "genus": "Geodude",
+      "type": ["rock", "ground"],
+      "candy": 100,
+      "evolution": "Golem",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "076",
+      "species": "Golem",
+      "genus": "Geodude",
+      "type": ["rock", "ground"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "077",
+      "species": "Ponyta",
+      "genus": "Ponyta",
+      "type": ["fire"],
+      "candy": 50,
+      "evolution": "Rapidash",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "078",
+      "species": "Rapidash",
+      "genus": "Ponyta",
+      "type": ["fire"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "079",
+      "species": "Slowpoke",
+      "genus": "Slowpoke",
+      "type": ["water", "psychic"],
+      "candy": 50,
+      "evolution": ["Slowbro", "Slowking"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "080",
+      "species": "Slowbro",
+      "genus": "Slowpoke",
+      "type": ["water", "psychic"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "081",
+      "species": "Magnemite",
+      "genus": "Magnemite",
+      "type": ["electric", "steel"],
+      "candy": 50,
+      "evolution": "Magneton",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "082",
+      "species": "Magneton",
+      "genus": "Magnemite",
+      "type": ["electric", "steel"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "083",
+      "species": "Farfetc'd",
+      "genus": "Farfetc'd",
+      "type": ["normal", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "084",
+      "species": "Doduo",
+      "genus": "Doduo",
+      "type": ["normal", "flying"],
+      "candy": 50,
+      "evolution": "Dodrio",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "085",
+      "species": "Dodrio",
+      "genus": "Doduo",
+      "type": ["normal", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "086",
+      "species": "Seel",
+      "genus": "Seel",
+      "type": ["water"],
+      "candy": 50,
+      "evolution": "Dewgong",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "087",
+      "species": "Dewgong",
+      "genus": "Seel",
+      "type": ["water", "ice"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "088",
+      "species": "Grimer",
+      "genus": "Grimer",
+      "type": ["poison"],
+      "candy": 50,
+      "evolution": "Muk",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "089",
+      "species": "Muk",
+      "genus": "Grimer",
+      "type": ["poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "090",
+      "species": "Shellder",
+      "genus": "Shellder",
+      "type": ["water"],
+      "candy": 50,
+      "evolution": "Cloyster",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "091",
+      "species": "Cloyster",
+      "genus": "Shellder",
+      "type": ["water", "ice"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "092",
+      "species": "Gastly",
+      "genus": "Gastly",
+      "type": ["ghost", "poison"],
+      "candy": 25,
+      "evolution": "Haunter",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "093",
+      "species": "Haunter",
+      "genus": "Gastly",
+      "type": ["ghost", "poison"],
+      "candy": 100,
+      "evolution": "Gengar",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "094",
+      "species": "Gengar",
+      "genus": "Gastly",
+      "type": ["ghost", "poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "095",
+      "species": "Onix",
+      "genus": "Onix",
+      "type": ["rock", "ground"],
+      "candy": 50,
+      "evolution": "Steelix",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "096",
+      "species": "Drowzee",
+      "genus": "Drowzee",
+      "type": ["psychic"],
+      "candy": 50,
+      "evolution": "Hypno",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "097",
+      "species": "Hypno",
+      "genus": "Drowzee",
+      "type": ["psychic"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "098",
+      "species": "Krabby",
+      "genus": "Krabby",
+      "type": ["water"],
+      "candy": 50,
+      "evolution": "Kingler",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "099",
+      "species": "Kingler",
+      "genus": "Krabby",
+      "type": ["water"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "100",
+      "species": "Voltorb",
+      "genus": "Voltorb",
+      "type": ["electric"],
+      "candy": 50,
+      "evolution": "Electrode",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "101",
+      "species": "Electrode",
+      "genus": "Voltorb",
+      "type": ["electric"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "102",
+      "species": "Exeggcute",
+      "genus": "Exeggcute",
+      "type": ["grass", "psychic"],
+      "candy": 50,
+      "evolution": "Exeggutor",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "103",
+      "species": "Exeggutor",
+      "genus": "Exeggcute",
+      "type": ["grass", "psychic"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "104",
+      "species": "Cubone",
+      "genus": "Cubone",
+      "type": ["ground"],
+      "candy": 50,
+      "evolution": "Marowak",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "105",
+      "species": "Marowak",
+      "genus": "Cubone",
+      "type": ["ground"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "106",
+      "species": "Hitmonlee",
+      "genus": "Tyrogue",
+      "type": ["fighting"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "107",
+      "species": "Hitmonchan",
+      "genus": "Tyrogue",
+      "type": ["fighting"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "108",
+      "species": "Lickitung",
+      "genus": "Lickitung",
+      "type": ["normal"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "109",
+      "species": "Koffing",
+      "genus": "Koffing",
+      "type": ["poison"],
+      "candy": 50,
+      "evolution": "Weezing",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "110",
+      "species": "Weezing",
+      "genus": "Koffing",
+      "type": ["poison"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "111",
+      "species": "Rhyhorn",
+      "genus": "Rhyhorn",
+      "type": ["ground", "rock"],
+      "candy": 50,
+      "evolution": "Rhydon",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "112",
+      "species": "Rhydon",
+      "genus": "Rhyhorn",
+      "type": ["ground", "rock"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "113",
+      "species": "Chansey",
+      "genus": "Chansey",
+      "type": ["normal"],
+      "candy": 50,
+      "evolution": "Blissey",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "114",
+      "species": "Tangela",
+      "genus": "Tangela",
+      "type": ["grass"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "115",
+      "species": "Kangaskhan",
+      "genus": "Kangaskhan",
+      "type": ["normal"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "116",
+      "species": "Horsea",
+      "genus": "Horsea",
+      "type": ["water"],
+      "candy": 25,
+      "evolution": "Seadra",
+      "gen": 1,
+      "region": "Kanto",
+    },
+    {
+      "index": "117",
+      "species": "Seadra",
+      "genus": "Horsea",
+      "type": ["water"],
+      "candy": 100,
+      "evolution": "Kingdra",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "118",
+      "species": "Goldeen",
+      "genus": "Goldeen",
+      "type": ["water"],
+      "candy": 50,
+      "evolution": "Seaking",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "119",
+      "species": "Seaking",
+      "genus": "Goldeen",
+      "type": ["water"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "120",
+      "species": "Staryu",
+      "genus": "Staryu",
+      "type": ["water"],
+      "candy": 50,
+      "evolution": "Starmie",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "121",
+      "species": "Starmie",
+      "genus": "Staryu",
+      "type": ["water"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "122",
+      "species": "Mr. Mime",
+      "genus": "Mr. Mime",
+      "type": ["Psychic", "Fairy"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "123",
+      "species": "Scyther",
+      "genus": "Scyther",
+      "type": ["bug", "flying"],
+      "candy": 50,
+      "evolution": "Scizor",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "124",
+      "species": "Jynx",
+      "genus": "Smoochum",
+      "type": ["ice", "psychic"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "125",
+      "species": "Electabuzz",
+      "genus": "Elekid",
+      "type": ["electric"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "126",
+      "species": "Magmar",
+      "genus": "Magby",
+      "type": ["fire"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "127",
+      "species": "Pinsir",
+      "genus": "Pinsir",
+      "type": ["bug"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "128",
+      "species": "Tauros",
+      "genus": "Tauros",
+      "type": ["normal"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "129",
+      "species": "Magikarp",
+      "genus": "Magikarp",
+      "type": ["water"],
+      "candy": 400,
+      "evolution": "Gyarados",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "130",
+      "species": "Gyarados",
+      "genus": "Magikarp",
+      "type": ["water", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 1
+    },
+    {
+      "index": "131",
+      "species": "Lapras",
+      "genus": "Lapras",
+      "type": ["water", "ice"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "132",
+      "species": "Ditto",
+      "genus": "Ditto",
+      "type": ["normal"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "133",
+      "species": "Eevee",
+      "genus": "Eevee",
+      "type": ["normal"],
+      "candy": 50,
+      "evolution": ["Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "134",
+      "species": "Vaporeon",
+      "genus": "Eevee",
+      "type": ["water"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "135",
+      "species": "Jolteon",
+      "genus": "Eevee",
+      "type": ["electric"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "136",
+      "species": "Flareon",
+      "genus": "Eevee",
+      "type": ["fire"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "137",
+      "species": "Porygon",
+      "genus": "Porygon",
+      "type": ["normal"],
+      "candy": 50,
+      "evolution": "Porygon 2",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 3
+    },
+    {
+      "index": "138",
+      "species": "Omanyte",
+      "genus": "Omanyte",
+      "type": ["rock", "water"],
+      "candy": 50,
+      "evolution": "Omastar",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "139",
+      "species": "Omastar",
+      "genus": "Omanyte",
+      "type": ["rock", "water"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "140",
+      "species": "Kabuto",
+      "genus": "Kabuto",
+      "type": ["rock", "water"],
+      "candy": 50,
+      "evolution": "Kabutops",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "141",
+      "species": "Kabutops",
+      "genus": "Kabuto",
+      "type": ["rock", "water"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "142",
+      "species": "Aerodactyl",
+      "genus": "Aerodactyl",
+      "type": ["rock", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "143",
+      "species": "Snorlax",
+      "genus": "Snorlax",
+      "type": ["normal"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "144",
+      "species": "Articuno",
+      "genus": "Articuno",
+      "type": ["ice", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 20
+    },
+    {
+      "index": "145",
+      "species": "Zapdos",
+      "genus": "Zapdos",
+      "type": ["electric", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 20
+    },
+    {
+      "index": "146",
+      "species": "Moltres",
+      "genus": "Moltres",
+      "type": ["fire", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 20
+    },
+    {
+      "index": "147",
+      "species": "Dratini",
+      "genus": "Dratini",
+      "type": ["dragon"],
+      "candy": 25,
+      "evolution": "Dragonair",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "148",
+      "species": "Dragonair",
+      "genus": "Dratini",
+      "type": ["dragon"],
+      "candy": 100,
+      "evolution": "Dragonite",
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "149",
+      "species": "Dragonite",
+      "genus": "Dratini",
+      "type": ["dragon", "flying"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 5
+    },
+    {
+      "index": "150",
+      "species": "Mewtwo",
+      "genus": "Mewtwo",
+      "type": ["psychic"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 20
+    },
+    {
+      "index": "151",
+      "species": "Mew",
+      "genus": "Mew",
+      "type": ["psychic"],
+      "gen": 1,
+      "region": "Kanto",
+      "buddy-distance" : 20
+    }
   ]
 }
