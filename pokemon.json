@@ -9,6 +9,7 @@
       "gen": 1,
       "region": "Kanto",
       "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "002",
@@ -19,7 +20,7 @@
       "evolution": "Venusaur",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
     },
     {
       "index": "003",
@@ -39,7 +40,8 @@
       "evolution": "Charmeleon",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "005",
@@ -101,7 +103,8 @@
       "evolution": "Metapod",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 1
+      "buddy-distance" : 1,
+      "egg-distance"  : 2
     },
     {
       "index": "011",
@@ -132,7 +135,8 @@
       "evolution": "Kakuna",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 1
+      "buddy-distance" : 1,
+      "egg-distance"  : 2
     },
     {
       "index": "014",
@@ -214,7 +218,8 @@
       "evolution": "Fearow",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 1
+      "buddy-distance" : 1,
+      "egg-distance"  : 2
     },
     {
       "index": "022",
@@ -294,7 +299,8 @@
       "evolution": "",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "030",
@@ -325,7 +331,8 @@
       "evolution": "",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "033",
@@ -416,7 +423,8 @@
       "evolution": "Golbat",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 1
+      "buddy-distance" : 1,
+      "egg-distance"  : 2
     },
     {
       "index": "042",
@@ -436,7 +444,8 @@
       "evolution": "Gloom",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "044",
@@ -487,7 +496,8 @@
       "evolution": "Venomoth",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "049",
@@ -507,7 +517,8 @@
       "evolution": "Dugtrio",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "051",
@@ -527,7 +538,8 @@
       "evolution": "Persian",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "053",
@@ -567,7 +579,8 @@
       "evolution": "Primeape",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "057",
@@ -587,7 +600,8 @@
       "evolution": "Arcanine",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "059",
@@ -607,7 +621,8 @@
       "evolution": "Poliwhirl",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "061",
@@ -638,7 +653,8 @@
       "evolution": "Kadabra",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "064",
@@ -669,7 +685,8 @@
       "evolution": "Machoke",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "067",
@@ -700,7 +717,8 @@
       "evolution": "Weepinbell",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "070",
@@ -751,7 +769,8 @@
       "evolution": "Graveler",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 1
+      "buddy-distance" : 1,
+      "egg-distance"  : 2
     },
     {
       "index": "075",
@@ -782,7 +801,8 @@
       "evolution": "Rapidash",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "078",
@@ -802,7 +822,8 @@
       "evolution": ["Slowbro", "Slowking"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "080",
@@ -851,7 +872,8 @@
       "evolution": "Dodrio",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "085",
@@ -871,7 +893,8 @@
       "evolution": "Dewgong",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "087",
@@ -891,7 +914,8 @@
       "evolution": "Muk",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "089",
@@ -911,7 +935,8 @@
       "evolution": "Cloyster",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "091",
@@ -931,7 +956,8 @@
       "evolution": "Haunter",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "093",
@@ -962,7 +988,8 @@
       "evolution": "Steelix",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 5
     },
     {
       "index": "096",
@@ -973,7 +1000,8 @@
       "evolution": "Hypno",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "097",
@@ -993,7 +1021,8 @@
       "evolution": "Kingler",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "099",
@@ -1013,7 +1042,8 @@
       "evolution": "Electrode",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "101",
@@ -1033,7 +1063,8 @@
       "evolution": "Exeggutor",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 2
     },
     {
       "index": "103",
@@ -1053,7 +1084,8 @@
       "evolution": "Marowak",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "105",
@@ -1071,7 +1103,8 @@
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "107",
@@ -1080,7 +1113,8 @@
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "108",
@@ -1089,7 +1123,8 @@
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "109",
@@ -1100,7 +1135,8 @@
       "evolution": "Weezing",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "110",
@@ -1120,7 +1156,8 @@
       "evolution": "Rhydon",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "112",
@@ -1140,7 +1177,8 @@
       "evolution": "Blissey",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "114",
@@ -1149,7 +1187,8 @@
       "type": ["grass"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "115",
@@ -1169,6 +1208,8 @@
       "evolution": "Seadra",
       "gen": 1,
       "region": "Kanto",
+      "buddy-distance" : 3,
+      "egg-distance"  : 5
     },
     {
       "index": "117",
@@ -1239,7 +1280,8 @@
       "evolution": "Scizor",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 5
     },
     {
       "index": "124",
@@ -1275,7 +1317,8 @@
       "type": ["bug"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 5
     },
     {
       "index": "128",
@@ -1295,7 +1338,8 @@
       "evolution": "Gyarados",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 1
+      "buddy-distance" : 1,
+      "egg-distance"  : 2
     },
     {
       "index": "130",
@@ -1313,7 +1357,8 @@
       "type": ["water", "ice"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "132",
@@ -1333,7 +1378,8 @@
       "evolution": ["Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 5
     },
     {
       "index": "134",
@@ -1371,7 +1417,8 @@
       "evolution": "Porygon 2",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 3
+      "buddy-distance" : 3,
+      "egg-distance"  : 10
     },
     {
       "index": "138",
@@ -1382,7 +1429,8 @@
       "evolution": "Omastar",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "139",
@@ -1402,7 +1450,8 @@
       "evolution": "Kabutops",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "141",
@@ -1420,7 +1469,8 @@
       "type": ["rock", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "143",
@@ -1429,7 +1479,8 @@
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "144",
@@ -1467,7 +1518,8 @@
       "evolution": "Dragonair",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance" : 5
+      "buddy-distance" : 5,
+      "egg-distance"  : 10
     },
     {
       "index": "148",
