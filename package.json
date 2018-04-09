@@ -45,10 +45,14 @@
     },
     "css": {
       "src": "src/css/",
-      "dest": "dest/css/"
+      "dest": "dest/css/",
+      "vendorSrc": "src/css/vendor/",
+      "vendorDest": "dest/css/vendor/"
     },
     "js": {
       "src": "src/js/",
+      "vendorSrc": "src/js/vendor/",
+      "vendorDest": "dest/js/vendor/",
       "dest": "dest/js/"
     },
     "images": {
