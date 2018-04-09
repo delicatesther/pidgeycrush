@@ -83,7 +83,7 @@ button {
       display: block;
       margin: 0 auto;
       position: relative;
-      @include sprite-background(luckyegg);
+      // @include sprite-background(luckyegg);
     }
   }
 }
@@ -160,7 +160,7 @@ input[type=checkbox] {
   font-weight: 600;
   text-align: center;
   opacity: 0;
-  @include sprite-background(bonus);
+  // @include sprite-background(bonus);
   position: absolute;
   right: -70px;
   top: -50px;

@@ -8,12 +8,14 @@ var
     pkg          = require('./package.json'),           // json file with information about dependencies and paths
     paths        = pkg.paths,                           // used inside gulp.js to make some functions
     sequence     = require('run-sequence'),             // needed for task execution loop at end of file
+    gutil        = require('gulp-util'),
+    gif          = require('gulp-if'),
     gulp         = require('gulp'),                     // general gulp
     sass         = require('gulp-sass'),                // gulp sass
     sourcemaps   = require('gulp-sourcemaps'),          // creat map file to locate scss origin
-    autoprefixer = require('gulp-autoprefixer'),        // output browser autoprefix
-    mmq          = require('gulp-merge-media-queries'), // merge media queries on css
-    cssfont64    = require('gulp-cssfont64'),           // iconfont base 64
+    prefix       = require('gulp-autoprefixer'),        // output browser autoprefix
+    mmq          = require('gulp-merge-media-queries'), // merge media queries on
+    cleanCSS     = require('gulp-clean-css'),
     iconfontCss  = require('gulp-iconfont-css'),        // iconfont css
     iconfont     = require('gulp-iconfont'),            // iconfont
     sprites      = require("gulp.spritesmith"),           // sprites
@@ -23,16 +25,19 @@ var
     lintscss     = require('gulp-stylelint'),           // lint scss style
     browserify   = require('browserify'),               // merge all js files in one
     uglify       = require('gulp-uglify'),              // optimize js for production
+    watchify     = require('watchify'),
     merge        = require('merge-stream'),
     source       = require('vinyl-source-stream'),
     buffer       = require('vinyl-buffer'),
     chalk        = require('chalk'),
-    del          = require('del');
+    del          = require('del'),
+    miminist     = require('minimist'),
+    flags        = miminist((process.argv.slice(2));
 
 
     // Environment Flags ( Production / Watching )
     flags           = require('minimist')(process.argv.slice(2)),
-    isProduction    = flags.production || flags.prod || false,
+    production    = flags.production || flags.prod || false,
     watching        = flags.watch || false
 
 
@@ -53,6 +58,7 @@ gulp.task('clean', function () {
 // ======================================
 // TASK: Icon fonts
 // ======================================
+
 gulp.task('iconfont', function() {
     var
         iconfont_config = "iconfont-config.scss", //Config file to generate the .scss file
@@ -85,29 +91,15 @@ gulp.task('iconfont', function() {
         .pipe(gulp.dest(paths.iconfont.destFont));
 });
 
-// converting the font created in "iconfont" above to base 64
-// when using this please use above fontName: 'iconfont64' and only formats: ['ttf']
-// also wipe all fonts from the dest folder before you start
-// iconfont-config.scss needs to be changed to use base64 (see comments there)
-
-// ======================================
-// TASK: Base64 Font
-// ======================================
-gulp.task('base64', function() {
-    return gulp
-    .src(paths.base64css.src + '*.ttf')
-    .pipe(cssfont64())
-    .pipe(gulp.dest(paths.base64css.destcss));
-});
-
-
 // ======================================================
 // TASK: Sprite sheets for png images and scss creation
 // ======================================================
+
 gulp.task('sprites', function() {
     var
         sprites_scss = "_sprites.scss", //auto-generated .scss file
         sprites_png = "sprites.png"; //auto-generated .png sprite
+        sprites_png2x = "sprites2x.png"; //auto-generated .png sprite
 
     var spriteData = gulp.src(paths.sprites.src + '**/*.**')
         .pipe(sprites({
@@ -137,6 +129,7 @@ gulp.task('sprites', function() {
 // ======================================================
 // TASK: Optmize Images
 // ======================================================
+
 gulp.task('imagemin', function () {
     return gulp
     .src(paths.images.src + '**/**')
@@ -172,7 +165,7 @@ gulp.task('scripts', function(){
         .pipe(source('all.js'))
         .pipe(buffer())
         .pipe(sourcemaps.init({loadMaps: true}))
-        .pipe(isProduction ? uglify({
+        .pipe(production ? uglify({
           errorHandler: notify.onError({
               title: 'JS error',
               message: '<%= error.message %>',
@@ -189,8 +182,49 @@ gulp.task('scripts', function(){
     }
 
   return rebundle();
-})
+});
 
+
+// ======================================
+// TASK : Compress vendor js
+// ======================================
+
+gulp.task('compress-vendor-js', function (done) {
+
+    var opts = {
+        entries: './' + paths.js.src + 'vendor/**/*.*', // browserify requires relative path
+        debug: false
+    };
+    if (watching) {
+        opts = Object.assign(opts, watchify.args);
+    }
+    var bundler = browserify(opts);
+    if (watching) {
+        bundler = watchify(bundler);
+    }
+    // optionally transform
+    // bundler.transform('transformer');
+
+    bundler.on('update', function (ids) {
+        gutil.log('File(s) changed: ' + gutil.colors.cyan(ids));
+        gutil.log('Rebundling...');
+        rebundle();
+    });
+
+    bundler.on('log', gutil.log);
+
+    function rebundle() {
+        return bundler.bundle()
+            .on('error', function (e) {
+                gutil.log('Browserify Error', gutil.colors.red(e));
+            })
+            .pipe(source('vendor.js'))
+            .pipe(buffer()) // <----- convert from streaming to buffered vinyl file object
+            .pipe(gif(production, uglify()))
+            .pipe(gulp.dest(paths.js.dest));
+    }
+    return rebundle();
+});
 
 // ======================================
 // TASK : Style Lint
@@ -208,44 +242,32 @@ gulp.task('style-lint', function () {
     }));
 });
 
-
 // ======================================
 // TASK : Build normal CSS
 // ======================================
 
-gulp.task('style', function() {
+gulp.task('style', function () {
+    return gulp.src(paths.sass.src + '*.scss')
+        .pipe(gif(!production, sourcemaps.init()))
+        .pipe(sass({
+            outputStyle: 'nested'
+        }).on('error', sass.logError))
+        .pipe(gif(production, mmq({log: true}))) // if ran on dev breaks sourcemaps
+        .pipe(prefix({ cascade: true }))
+        .pipe(cleanCSS({
+            level: {
+                1: {all: true},
+                2: {all: false}
+            }
+        }))
+        .pipe(gif(!production, sourcemaps.write('./')))
+        .pipe(gulp.dest(paths.sass.dest));
+});
 
-    return gulp
-    .src(paths.sass.src + '*.scss')
-
-    .pipe(plumber({
-        errorHandler: function(err) {
-            notify.onError({
-                title: "Gulp Error",
-                message: "Error: <%= error.message %>"
-            })(err);
-            this.emit('end');
-        }
-    }))
-
-    .pipe(sourcemaps.init()) // In case you want the sass maps
-
-    .pipe(sass({
-        outputStyle: isProduction ? 'compressed' : 'nested',
-        sourceComments: true,
-        sourceMap: '/' + paths.sass.src
-    }))
-
-    .pipe(autoprefixer({
-        browsers: [
-            'last 2 versions' // Depends on the project, more info : ( https://confluence.emakina.nl/display/TBD/Definition+of+Done)
-        ]
-    }))
-
-    .pipe(sourcemaps.write('./'))
-
-    .pipe(mmq()) // Todo : if the this pipe is commented the production flag works well
-    .pipe(gulp.dest(paths.sass.dest));
+gulp.task('compress-vendor-css', function () {
+    return gulp.src(paths.css.src + 'vendor/*.css')
+        .pipe(cleanCSS({ root: './' }))
+        .pipe(gulp.dest(paths.css.dest));
 });
 
 // ======================================================
@@ -253,53 +275,25 @@ gulp.task('style', function() {
 // ======================================================
 
 gulp.task('build', function(callback) {
-  sequence('sprites','iconfont','style', 'scripts' , callback);
+  console.log(chalk.white.bgBlue('Building ' + (flags.production ? 'production' : 'development') + ' version...'));
+  sequence('sprites','iconfont','compress-vendor-css', 'style', 'compress-vendor-js', 'scripts' , callback);
+  function callback(event) {
+    console.log(chalk.white.bgGreen('All great CHUCK NORRIS! Code is ready :) '))
+  }
 });
 
 // ======================================================
 // TASK: Gulp default (using build task with a simple watch )
 // ======================================================
-gulp.task('watch', function() {
-    gulp.watch(paths.sass.src + '**/*.scss', ['style']).on('change', callback);
-    gulp.watch(paths.js.src + '**/*.js', ['scripts']).on('change', callback);
 
-      function callback(event) {
-        console.log(chalk.green ('File ' + event.path + ' was ' + event.type + '! Still on watching mode...'));
-      };
-});
+gulp.task('enable-watch-mode', function () { watching = true; });
 
-
-gulp.task('default', function() {
-
-    console.log(chalk.white.bgBlue('Building ' + (flags.production ? 'production' : 'development') + ' version...'));
-
-    if (flags.watch) {
-        sequence(
-            'clean', // Always clean the destination folder before compile the code
-            [
-                // Up to the developer to decide the tasks in this list
-                'build',
-                'style-lint',
-            ],
-            'watch',
-            function() {
-                console.log(chalk.white.bgBlue('I am in watch mode...'))
-            }
-        )
-    }
-     else {
-        sequence(
-            'clean', // Always clean the destination folder before compile the code
-            [
-                // Up to the developer to decide the tasks in this list
-                'sprites',
-                'iconfont',
-                'style',
-                'scripts',
-            ],
-            function() {
-                console.log(chalk.white.bgGreen('All great CHUCK NORRIS! Code is ready :) '))
-            }
-        )
-    }
+gulp.task('default', ['enable-watch-mode', 'build'], function () {
+    gulp.watch(paths.sass.src + '**/*.scss', ['css']).on('change', callback);
+    gulp.watch(paths.css.src + 'vendor/*.css', ['compress-vendor-css']).on('change', callback);
+    gulp.watch(paths.sprites.src + '**/*.**', ['sprites']).on('change', callback);
+    gulp.watch(paths.js.src + 'vendor/*.js', ['compress-vendor-js']).on('change', callback);
+    function callback(event) {
+      console.log(chalk.green ('File ' + event.path + ' was ' + event.type + '! Still on watching mode...'));
+    };
 });
