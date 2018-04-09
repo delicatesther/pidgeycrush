@@ -182,43 +182,13 @@ gulp.task('scripts', function(){
 
 
 // ======================================
-// TASK : Compress vendor js
+// TASK : Pipe vendor js
 // ======================================
 
-gulp.task('compress-vendor-js', function (done) {
-
-  var opts = {
-    entries: './' + paths.js.vendorSrc + 'vendor.js', // browserify requires relative path
-    debug: false
-  };
-  if (watching) {
-    opts = Object.assign(opts, watchify.args);
-  }
-  var bundler = browserify(opts);
-  if (watching) {
-    bundler = watchify(bundler);
-  }
-  // optionally transform
-  // bundler.transform('transformer');
-  bundler.on('update', function (ids) {
-    gutil.log('File(s) changed: ' + gutil.colors.cyan(ids));
-    gutil.log('Rebundling...');
-    rebundle();
-  });
-
-  bundler.on('log', gutil.log);
-
-  function rebundle() {
-    return bundler.bundle()
-    .on('error', function (e) {
-      gutil.log('Browserify Error', gutil.colors.red(e));
-    })
-    .pipe(source('vendor.js'))
-    .pipe(buffer()) // <----- convert from streaming to buffered vinyl file object
-    .pipe(gif(production, uglify()))
-    .pipe(gulp.dest(paths.js.dest));
-  }
-  return rebundle();
+gulp.task('pipe-vendor-js', function () {
+  return gulp
+  .src(paths.js.vendorSrc + '**/*.js')
+  .pipe(gulp.dest(paths.js.vendorDest));
 });
 
 // ======================================
@@ -271,7 +241,7 @@ gulp.task('compress-vendor-css', function () {
 
 gulp.task('build', ['clean'], function(callback) {
   console.log(chalk.white.bgBlue('Building ' + (flags.production ? 'production' : 'development') + ' version...'));
-  sequence('sprites','iconfont','compress-vendor-css', 'style', 'compress-vendor-js', 'scripts' , callback);
+  sequence('sprites','iconfont','compress-vendor-css', 'style', 'pipe-vendor-js', 'scripts' , callback);
   function callback(event) {
     console.log(chalk.white.bgGreen('All great CHUCK NORRIS! Code is ready :) '))
   }

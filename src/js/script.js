@@ -1,11 +1,13 @@
 $(document).ready(function() {
 
-  var pokemonArray =  pokemonService.getPokemon();
+  var pokemonJson =  require('../../pokemon.json');
+  var pokemon = pokemonJson.pokemon;
+
     //Autocomplete field
     $("#pokemonSelect").autocomplete({
         //Grab data from Pokémon Array
-        // source: pokemonArray.sort(SortByName),
-        source: pokemonService.getPokemon(),
+        source: pokemon.species,
+
         autoFocus: true,
         minLength: 1,
     });
