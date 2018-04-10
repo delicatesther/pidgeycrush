@@ -253,11 +253,13 @@ gulp.task('build', ['clean'], function(callback) {
 
 gulp.task('enable-watch-mode', function () { watching = true; });
 
-gulp.task('default', ['enable-watch-mode', 'build'], function () {
+gulp.task('default', ['enable-watch-mode'], function (callback) {
   gulp.watch(paths.sass.src + '**/*.scss', ['style']).on('change', callback);
   gulp.watch(paths.sprites.src + '**/*.**', ['sprites']).on('change', callback);
   gulp.watch(paths.js.src + '*.js', ['scripts']).on('change', callback);
+
   function callback(event) {
     console.log(chalk.green ('File ' + event.path + ' was ' + event.type + '! Still on watching mode...'));
   };
+
 });

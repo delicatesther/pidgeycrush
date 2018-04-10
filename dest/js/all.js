@@ -3764,20 +3764,63 @@ $(document).ready(function() {
   var pokemonJson =  require('../../pokemon.json');
   var pokemon = pokemonJson.pokemon;
 
-    //Autocomplete field
-    $("#pokemonSelect").autocomplete({
-        //Grab data from Pokémon Array
-        source: pokemon.species,
+  function getMapKeyValue(obj, key) {
+    if (obj.hasOwnProperty(key))
+    return obj[key];
+    throw new Error("Invalid map key.");
+  }
 
-        autoFocus: true,
-        minLength: 1,
+
+  function getMapKeyArray(key){
+    var array = [];
+    for(var i = 0; i < (pokemonJson.pokemon).length; i++) {
+      var value = getMapKeyValue(pokemon[i], key);
+      array.push(value);
+    }
+    return array;
+  }
+
+    $("#pokemonSelect").autocomplete({
+      //Grab data from Pokémon Array
+      autoFocus: true,
+      minLength: 1,
+      source: getMapKeyArray("species"),
+      select: function (event, ui) {
+        var obj = {};
+        obj[0] = $(this).val(ui.item.id);
+        obj[1] = $(this).val(ui.item.value);
+        selection = obj[1][0].value;
+        return selection;
+      }
     });
+
+    var selectedPokemon;
+
+
+
+    $("#pokemonSelect").on("blur", function(){
+      var pokemonSpeciesArray = [getMapKeyArray("species")];
+      console.log(selection);
+
+      for(var i = 0; i < pokemonSpeciesArray.length; i++) {
+        console.log(pokemonSpeciesArray[i][i]);
+
+        if(selection == pokemonSpeciesArray[i][0]) {
+            console.log("It's a match!");
+            selectedPokemon = pokemon.species;
+            console.log(selectedPokemon);
+
+        }
+      }
+    });
+
     //Sort Pokémon Array in select alphabetically
     function SortByName(a, b) {
         var aName = a.species.toLowerCase();
         var bName = b.species.toLowerCase();
         return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
     };
+
     // Overrides the default autocomplete filter function to search only from the beginning of the string
     $.ui.autocomplete.filter = function(array, term) {
         var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
@@ -3792,19 +3835,23 @@ $(document).ready(function() {
         $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
         return false;
     };
+
     resetTable = function() {
         $('#finalDestination').find('tbody').html('');
     };
+
     // Reset field
     $('#resetPokemonSelect').on('click', function(e) {
         e.preventDefault();
         resetForm();
     });
+
     // Reset  table
     $('#resetTable').on('click', function(e) {
         e.preventDefault();
         resetTable();
     });
+
     // Remove egg animation time warning
     removeEggMessage = function() {
       $('#eggMessage').remove();
