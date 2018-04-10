@@ -9,8 +9,8 @@ module.exports={
       "evolution": "Ivysaur",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "002",
@@ -21,7 +21,7 @@ module.exports={
       "evolution": "Venusaur",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "003",
@@ -30,7 +30,7 @@ module.exports={
       "type": ["grass", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "004",
@@ -41,8 +41,8 @@ module.exports={
       "evolution": "Charmeleon",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "005",
@@ -53,7 +53,7 @@ module.exports={
       "evolution": "Charizard",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "006",
@@ -62,7 +62,7 @@ module.exports={
       "type": ["fire", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "007",
@@ -73,7 +73,7 @@ module.exports={
       "evolution": "Wartortle",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "008",
@@ -84,7 +84,7 @@ module.exports={
       "evolution": "Blastoise",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "009",
@@ -93,7 +93,7 @@ module.exports={
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "010",
@@ -104,8 +104,8 @@ module.exports={
       "evolution": "Metapod",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "011",
@@ -116,7 +116,7 @@ module.exports={
       "evolution": "Butterfree",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "012",
@@ -125,7 +125,7 @@ module.exports={
       "type": ["bug", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "013",
@@ -136,8 +136,8 @@ module.exports={
       "evolution": "Kakuna",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "014",
@@ -148,7 +148,7 @@ module.exports={
       "evolution": "Beedrill",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "015",
@@ -157,7 +157,7 @@ module.exports={
       "type": ["bug", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "016",
@@ -168,7 +168,7 @@ module.exports={
       "evolution": "Pidgeotto",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "017",
@@ -179,7 +179,7 @@ module.exports={
       "evolution": "Pidgeot",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "018",
@@ -188,7 +188,7 @@ module.exports={
       "type": ["normal", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "019",
@@ -199,7 +199,7 @@ module.exports={
       "evolution": "Raticate",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "020",
@@ -208,7 +208,7 @@ module.exports={
       "type": ["", ""],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "021",
@@ -219,8 +219,8 @@ module.exports={
       "evolution": "Fearow",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "022",
@@ -229,7 +229,7 @@ module.exports={
       "type": ["normal", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "023",
@@ -240,7 +240,7 @@ module.exports={
       "evolution": "Arbok",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "024",
@@ -249,7 +249,7 @@ module.exports={
       "type": ["poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "025",
@@ -260,7 +260,7 @@ module.exports={
       "evolution": "Raichu",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "026",
@@ -269,7 +269,7 @@ module.exports={
       "type": ["electric"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "027",
@@ -280,7 +280,7 @@ module.exports={
       "evolution": "Sandslash",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "028",
@@ -289,7 +289,7 @@ module.exports={
       "type": ["ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "029",
@@ -300,8 +300,8 @@ module.exports={
       "evolution": "Nidorina",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "030",
@@ -312,7 +312,7 @@ module.exports={
       "evolution": "Nidoqueen",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "031",
@@ -321,7 +321,7 @@ module.exports={
       "type": ["poison", "ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "032",
@@ -332,8 +332,8 @@ module.exports={
       "evolution": "Nidorino",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "033",
@@ -344,7 +344,7 @@ module.exports={
       "evolution": "Nidoking",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "034",
@@ -353,7 +353,7 @@ module.exports={
       "type": ["poison", "ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "035",
@@ -364,7 +364,7 @@ module.exports={
       "evolution": "Clefable",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "036",
@@ -373,7 +373,7 @@ module.exports={
       "type": ["fairy"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "037",
@@ -384,7 +384,7 @@ module.exports={
       "evolution": "Ninetales",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "038",
@@ -393,7 +393,7 @@ module.exports={
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "039",
@@ -404,7 +404,7 @@ module.exports={
       "evolution": "Wigglytuff",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "040",
@@ -413,7 +413,7 @@ module.exports={
       "type": ["normal", "fairy"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "041",
@@ -424,8 +424,8 @@ module.exports={
       "evolution": "Golbat",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "042",
@@ -436,7 +436,7 @@ module.exports={
       "evolution": "Crobat",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "043",
@@ -447,8 +447,8 @@ module.exports={
       "evolution": "Gloom",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "044",
@@ -459,7 +459,7 @@ module.exports={
       "evolution": ["Vileplume", "Bellossom"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "045",
@@ -468,7 +468,7 @@ module.exports={
       "type": ["grass", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "046",
@@ -479,7 +479,7 @@ module.exports={
       "evolution": "Parasect",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "047",
@@ -488,7 +488,7 @@ module.exports={
       "type": ["bug", "grass"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "048",
@@ -499,8 +499,8 @@ module.exports={
       "evolution": "Venomoth",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "049",
@@ -509,7 +509,7 @@ module.exports={
       "type": ["bug", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "050",
@@ -520,8 +520,8 @@ module.exports={
       "evolution": "Dugtrio",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "051",
@@ -530,7 +530,7 @@ module.exports={
       "type": ["ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "052",
@@ -541,8 +541,8 @@ module.exports={
       "evolution": "Persian",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "053",
@@ -551,7 +551,7 @@ module.exports={
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "054",
@@ -562,7 +562,7 @@ module.exports={
       "evolution": "Golduck",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "055",
@@ -571,7 +571,7 @@ module.exports={
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "056",
@@ -582,8 +582,8 @@ module.exports={
       "evolution": "Primeape",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "057",
@@ -592,7 +592,7 @@ module.exports={
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "058",
@@ -603,8 +603,8 @@ module.exports={
       "evolution": "Arcanine",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "059",
@@ -613,7 +613,7 @@ module.exports={
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "60",
@@ -624,8 +624,8 @@ module.exports={
       "evolution": "Poliwhirl",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "061",
@@ -636,7 +636,7 @@ module.exports={
       "evolution": ["Poliwrath", "Politoed"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "062",
@@ -645,7 +645,7 @@ module.exports={
       "type": ["water", "fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "063",
@@ -656,8 +656,8 @@ module.exports={
       "evolution": "Kadabra",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "064",
@@ -668,7 +668,7 @@ module.exports={
       "evolution": "Alakazam",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "065",
@@ -677,7 +677,7 @@ module.exports={
       "type": ["psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "066",
@@ -688,8 +688,8 @@ module.exports={
       "evolution": "Machoke",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "067",
@@ -700,7 +700,7 @@ module.exports={
       "evolution": "Machamp",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "068",
@@ -709,7 +709,7 @@ module.exports={
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "069",
@@ -720,8 +720,8 @@ module.exports={
       "evolution": "Weepinbell",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "070",
@@ -732,7 +732,7 @@ module.exports={
       "evolution": "Victreebel",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "071",
@@ -741,7 +741,7 @@ module.exports={
       "type": ["grass", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "072",
@@ -752,7 +752,7 @@ module.exports={
       "evolution": "Tentacruel",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "078",
@@ -761,7 +761,7 @@ module.exports={
       "type": ["water", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "074",
@@ -772,8 +772,8 @@ module.exports={
       "evolution": "Graveler",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "075",
@@ -784,7 +784,7 @@ module.exports={
       "evolution": "Golem",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "076",
@@ -793,7 +793,7 @@ module.exports={
       "type": ["rock", "ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "077",
@@ -804,8 +804,8 @@ module.exports={
       "evolution": "Rapidash",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "078",
@@ -814,7 +814,7 @@ module.exports={
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "079",
@@ -825,8 +825,8 @@ module.exports={
       "evolution": ["Slowbro", "Slowking"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "080",
@@ -835,7 +835,7 @@ module.exports={
       "type": ["water", "psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "081",
@@ -846,7 +846,7 @@ module.exports={
       "evolution": "Magneton",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "082",
@@ -855,7 +855,7 @@ module.exports={
       "type": ["electric", "steel"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "083",
@@ -864,7 +864,7 @@ module.exports={
       "type": ["normal", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "084",
@@ -875,8 +875,8 @@ module.exports={
       "evolution": "Dodrio",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "085",
@@ -885,7 +885,7 @@ module.exports={
       "type": ["normal", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "086",
@@ -896,8 +896,8 @@ module.exports={
       "evolution": "Dewgong",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "087",
@@ -906,7 +906,7 @@ module.exports={
       "type": ["water", "ice"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "088",
@@ -917,8 +917,8 @@ module.exports={
       "evolution": "Muk",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "089",
@@ -927,7 +927,7 @@ module.exports={
       "type": ["poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "090",
@@ -938,8 +938,8 @@ module.exports={
       "evolution": "Cloyster",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "091",
@@ -948,7 +948,7 @@ module.exports={
       "type": ["water", "ice"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "092",
@@ -959,8 +959,8 @@ module.exports={
       "evolution": "Haunter",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "093",
@@ -971,7 +971,7 @@ module.exports={
       "evolution": "Gengar",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "094",
@@ -980,7 +980,7 @@ module.exports={
       "type": ["ghost", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "095",
@@ -991,8 +991,8 @@ module.exports={
       "evolution": "Steelix",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "096",
@@ -1003,8 +1003,8 @@ module.exports={
       "evolution": "Hypno",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "097",
@@ -1013,7 +1013,7 @@ module.exports={
       "type": ["psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "098",
@@ -1024,8 +1024,8 @@ module.exports={
       "evolution": "Kingler",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "099",
@@ -1034,7 +1034,7 @@ module.exports={
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "100",
@@ -1045,8 +1045,8 @@ module.exports={
       "evolution": "Electrode",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "101",
@@ -1055,7 +1055,7 @@ module.exports={
       "type": ["electric"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "102",
@@ -1066,8 +1066,8 @@ module.exports={
       "evolution": "Exeggutor",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "103",
@@ -1076,7 +1076,7 @@ module.exports={
       "type": ["grass", "psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "104",
@@ -1087,8 +1087,8 @@ module.exports={
       "evolution": "Marowak",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "105",
@@ -1097,7 +1097,7 @@ module.exports={
       "type": ["ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "106",
@@ -1106,8 +1106,8 @@ module.exports={
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "107",
@@ -1116,8 +1116,8 @@ module.exports={
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "108",
@@ -1126,8 +1126,8 @@ module.exports={
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "109",
@@ -1138,8 +1138,8 @@ module.exports={
       "evolution": "Weezing",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "110",
@@ -1148,7 +1148,7 @@ module.exports={
       "type": ["poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "111",
@@ -1159,8 +1159,8 @@ module.exports={
       "evolution": "Rhydon",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "112",
@@ -1169,7 +1169,7 @@ module.exports={
       "type": ["ground", "rock"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "113",
@@ -1180,8 +1180,8 @@ module.exports={
       "evolution": "Blissey",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "114",
@@ -1190,8 +1190,8 @@ module.exports={
       "type": ["grass"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "115",
@@ -1200,7 +1200,7 @@ module.exports={
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "116",
@@ -1211,8 +1211,8 @@ module.exports={
       "evolution": "Seadra",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "117",
@@ -1223,7 +1223,7 @@ module.exports={
       "evolution": "Kingdra",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "118",
@@ -1234,7 +1234,7 @@ module.exports={
       "evolution": "Seaking",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "119",
@@ -1243,7 +1243,7 @@ module.exports={
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "120",
@@ -1254,7 +1254,7 @@ module.exports={
       "evolution": "Starmie",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "121",
@@ -1263,7 +1263,7 @@ module.exports={
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "122",
@@ -1272,7 +1272,7 @@ module.exports={
       "type": ["psychic", "fairy"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "123",
@@ -1283,8 +1283,8 @@ module.exports={
       "evolution": "Scizor",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "124",
@@ -1293,7 +1293,7 @@ module.exports={
       "type": ["ice", "psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "125",
@@ -1302,7 +1302,7 @@ module.exports={
       "type": ["electric"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "126",
@@ -1311,7 +1311,7 @@ module.exports={
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "127",
@@ -1320,8 +1320,8 @@ module.exports={
       "type": ["bug"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "128",
@@ -1330,7 +1330,7 @@ module.exports={
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "129",
@@ -1341,8 +1341,8 @@ module.exports={
       "evolution": "Gyarados",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "130",
@@ -1351,7 +1351,7 @@ module.exports={
       "type": ["water", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "131",
@@ -1360,8 +1360,8 @@ module.exports={
       "type": ["water", "ice"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "132",
@@ -1370,7 +1370,7 @@ module.exports={
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "133",
@@ -1381,8 +1381,8 @@ module.exports={
       "evolution": ["Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "134",
@@ -1391,7 +1391,7 @@ module.exports={
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "135",
@@ -1400,7 +1400,7 @@ module.exports={
       "type": ["electric"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "136",
@@ -1409,7 +1409,7 @@ module.exports={
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "137",
@@ -1420,8 +1420,8 @@ module.exports={
       "evolution": "Porygon2",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 10
+      "buddyDistance": 3,
+      "eggDistance": 10
     },
     {
       "index": "138",
@@ -1432,8 +1432,8 @@ module.exports={
       "evolution": "Omastar",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "139",
@@ -1442,7 +1442,7 @@ module.exports={
       "type": ["rock", "water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "140",
@@ -1453,8 +1453,8 @@ module.exports={
       "evolution": "Kabutops",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "141",
@@ -1463,7 +1463,7 @@ module.exports={
       "type": ["rock", "water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "142",
@@ -1472,8 +1472,8 @@ module.exports={
       "type": ["rock", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "143",
@@ -1482,8 +1482,8 @@ module.exports={
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "144",
@@ -1492,7 +1492,7 @@ module.exports={
       "type": ["ice", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1502,7 +1502,7 @@ module.exports={
       "type": ["electric", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1512,7 +1512,7 @@ module.exports={
       "type": ["fire", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1524,8 +1524,8 @@ module.exports={
       "evolution": "Dragonair",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "148",
@@ -1536,7 +1536,7 @@ module.exports={
       "evolution": "Dragonite",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "149",
@@ -1545,7 +1545,7 @@ module.exports={
       "type": ["dragon", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "150",
@@ -1554,7 +1554,7 @@ module.exports={
       "type": ["psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1564,7 +1564,7 @@ module.exports={
       "type": ["psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1576,8 +1576,8 @@ module.exports={
       "evolution": "Bayleef",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "153",
@@ -1588,7 +1588,7 @@ module.exports={
       "evolution": "Meganium",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "154",
@@ -1597,7 +1597,7 @@ module.exports={
       "type": [""],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "155",
@@ -1608,8 +1608,8 @@ module.exports={
       "evolution": "Quilava",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "156",
@@ -1620,7 +1620,7 @@ module.exports={
       "evolution": "Typhlosion",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "157",
@@ -1629,7 +1629,7 @@ module.exports={
       "type": ["fire"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "158",
@@ -1640,8 +1640,8 @@ module.exports={
       "evolution": "Croconaw",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "159",
@@ -1652,7 +1652,7 @@ module.exports={
       "evolution": "Feraligatr",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "160",
@@ -1661,7 +1661,7 @@ module.exports={
       "type": ["water"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "161",
@@ -1672,7 +1672,7 @@ module.exports={
       "evolution": "Furret",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "162",
@@ -1681,7 +1681,7 @@ module.exports={
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "163",
@@ -1692,7 +1692,7 @@ module.exports={
       "evolution": "Noctowl",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "164",
@@ -1701,7 +1701,7 @@ module.exports={
       "type": ["normal", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "165",
@@ -1712,7 +1712,7 @@ module.exports={
       "evolution": "Ledian",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "166",
@@ -1721,7 +1721,7 @@ module.exports={
       "type": ["bug", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "167",
@@ -1732,8 +1732,8 @@ module.exports={
       "evolution": "Ariados",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "168",
@@ -1742,7 +1742,7 @@ module.exports={
       "type": ["bug", "poison"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "169",
@@ -1751,7 +1751,7 @@ module.exports={
       "type": ["poison", "flying"],
       "gen": 2,
       "region": "distance",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "170",
@@ -1762,8 +1762,8 @@ module.exports={
       "evolution": "Lanturn",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "170",
@@ -1772,7 +1772,7 @@ module.exports={
       "type": [""],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "172",
@@ -1783,8 +1783,8 @@ module.exports={
       "evolution": "Pikachu",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "173",
@@ -1795,8 +1795,8 @@ module.exports={
       "evolution": "Clefairy",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "174",
@@ -1807,8 +1807,8 @@ module.exports={
       "evolution": "Jigglypuff",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "175",
@@ -1819,8 +1819,8 @@ module.exports={
       "evolution": "Togetic",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "176",
@@ -1829,7 +1829,7 @@ module.exports={
       "type": ["fairy", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "177",
@@ -1840,8 +1840,8 @@ module.exports={
       "evolution": "Xatu",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "178",
@@ -1850,7 +1850,7 @@ module.exports={
       "type": ["psychic", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "179",
@@ -1861,8 +1861,8 @@ module.exports={
       "evolution": "Flaaffy",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "180",
@@ -1873,7 +1873,7 @@ module.exports={
       "evolution": "Ampharos",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "181",
@@ -1882,7 +1882,7 @@ module.exports={
       "type": ["electric"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "182",
@@ -1891,7 +1891,7 @@ module.exports={
       "type": ["grass"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "183",
@@ -1902,8 +1902,8 @@ module.exports={
       "evolution": "Azumarill",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "184",
@@ -1912,7 +1912,7 @@ module.exports={
       "type": ["water", "fairy"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "185",
@@ -1921,8 +1921,8 @@ module.exports={
       "type": ["rock"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "186",
@@ -1933,8 +1933,8 @@ module.exports={
       "evolution": "Skiploom",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "188",
@@ -1945,7 +1945,7 @@ module.exports={
       "evolution": "Jumpluff",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "190",
@@ -1954,8 +1954,8 @@ module.exports={
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "191",
@@ -1966,7 +1966,7 @@ module.exports={
       "evolution": "Sunflora",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "192",
@@ -1975,7 +1975,7 @@ module.exports={
       "type": ["grass"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "193",
@@ -1984,7 +1984,7 @@ module.exports={
       "type": ["bug", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "194",
@@ -1995,8 +1995,8 @@ module.exports={
       "evolution": "Quagsire",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "195",
@@ -2005,7 +2005,7 @@ module.exports={
       "type": ["water", "ground"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "196",
@@ -2014,7 +2014,7 @@ module.exports={
       "type": ["psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "197",
@@ -2023,7 +2023,7 @@ module.exports={
       "type": ["dark"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "198",
@@ -2032,7 +2032,7 @@ module.exports={
       "type": ["dark", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "199",
@@ -2041,7 +2041,7 @@ module.exports={
       "type": ["water", "psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "200",
@@ -2050,7 +2050,7 @@ module.exports={
       "type": ["ghost"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "201",
@@ -2059,7 +2059,7 @@ module.exports={
       "type": ["Psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "202",
@@ -2068,8 +2068,8 @@ module.exports={
       "type": ["Psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "203",
@@ -2078,8 +2078,8 @@ module.exports={
       "type": ["normal", "psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "204",
@@ -2090,8 +2090,8 @@ module.exports={
       "evolution": "Forretress",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "205",
@@ -2100,7 +2100,7 @@ module.exports={
       "type": ["bug", "steel"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "206",
@@ -2109,8 +2109,8 @@ module.exports={
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "207",
@@ -2119,8 +2119,8 @@ module.exports={
       "type": ["ground", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "208",
@@ -2129,7 +2129,7 @@ module.exports={
       "type": ["steel"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "209",
@@ -2140,8 +2140,8 @@ module.exports={
       "evolution": "Granbull",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "210",
@@ -2150,7 +2150,7 @@ module.exports={
       "type": ["fairy"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "211",
@@ -2159,8 +2159,8 @@ module.exports={
       "type": ["water", "poison"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "212",
@@ -2169,7 +2169,7 @@ module.exports={
       "type": ["bug"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "213",
@@ -2178,8 +2178,8 @@ module.exports={
       "type": ["bug", "rock"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "214",
@@ -2188,7 +2188,7 @@ module.exports={
       "type": ["bug"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "215",
@@ -2197,8 +2197,8 @@ module.exports={
       "type": ["dark", "ice"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "216",
@@ -2209,8 +2209,8 @@ module.exports={
       "evolution": "Ursaring",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "217",
@@ -2219,7 +2219,7 @@ module.exports={
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "218",
@@ -2230,8 +2230,8 @@ module.exports={
       "evolution": "Magcargo",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "219",
@@ -2240,7 +2240,7 @@ module.exports={
       "type": ["fire"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "220",
@@ -2251,8 +2251,8 @@ module.exports={
       "evolution": "Piloswine",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "221",
@@ -2261,7 +2261,7 @@ module.exports={
       "type": ["ice", "ground"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "222",
@@ -2270,7 +2270,7 @@ module.exports={
       "type": ["water", "rock"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "223",
@@ -2281,8 +2281,8 @@ module.exports={
       "evolution": "Octillery",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "224",
@@ -2291,7 +2291,7 @@ module.exports={
       "type": ["water"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "225",
@@ -2300,7 +2300,7 @@ module.exports={
       "type": ["ice", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "226",
@@ -2309,8 +2309,8 @@ module.exports={
       "type": ["water"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "227",
@@ -2319,8 +2319,8 @@ module.exports={
       "type": ["steel", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "228",
@@ -2331,8 +2331,8 @@ module.exports={
       "evolution": "Houndoom",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "229",
@@ -2341,7 +2341,7 @@ module.exports={
       "type": ["dark", "fire"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "230",
@@ -2350,7 +2350,7 @@ module.exports={
       "type": ["water", "dragon"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "232",
@@ -2361,8 +2361,8 @@ module.exports={
       "evolution": "Donphan",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "232",
@@ -2371,7 +2371,7 @@ module.exports={
       "type": ["ground"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "233",
@@ -2380,7 +2380,7 @@ module.exports={
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "234",
@@ -2389,8 +2389,8 @@ module.exports={
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "236",
@@ -2401,8 +2401,8 @@ module.exports={
       "evolution": ["Hitmonlee", "Hitmonchan", "Hitmontop"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "237",
@@ -2411,7 +2411,7 @@ module.exports={
       "type": ["fighting"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "238",
@@ -2422,8 +2422,8 @@ module.exports={
       "evolution": "Jynx",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "239",
@@ -2434,8 +2434,8 @@ module.exports={
       "evolution": "Electabuzz",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "240",
@@ -2446,8 +2446,8 @@ module.exports={
       "evolution": "Magmar",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "241",
@@ -2456,8 +2456,8 @@ module.exports={
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "242",
@@ -2466,7 +2466,7 @@ module.exports={
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "243",
@@ -2475,7 +2475,7 @@ module.exports={
       "type": ["electric"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2485,7 +2485,7 @@ module.exports={
       "type": ["fire"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2495,7 +2495,7 @@ module.exports={
       "type": ["water"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2507,8 +2507,8 @@ module.exports={
       "evolution": "Pupitar",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "247",
@@ -2519,7 +2519,7 @@ module.exports={
       "evolution": "Tyranitar",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "248",
@@ -2528,7 +2528,7 @@ module.exports={
       "type": ["rock", "dark"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "249",
@@ -2537,7 +2537,7 @@ module.exports={
       "type": ["psychic", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2547,7 +2547,7 @@ module.exports={
       "type": ["fire", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2559,8 +2559,8 @@ module.exports={
       "evolution": "Grovyle",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "253",
@@ -2571,7 +2571,7 @@ module.exports={
       "evolution": "Sceptile",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "254",
@@ -2580,7 +2580,7 @@ module.exports={
       "type": ["grass"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "255",
@@ -2591,8 +2591,8 @@ module.exports={
       "evolution": "Combusken",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "256",
@@ -2603,7 +2603,7 @@ module.exports={
       "evolution": "Blaziken",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "257",
@@ -2612,7 +2612,7 @@ module.exports={
       "type": ["fire", "fighting"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "258",
@@ -2623,8 +2623,8 @@ module.exports={
       "evolution": "Marshtomp",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "259",
@@ -2635,7 +2635,7 @@ module.exports={
       "evolution": "Swampert",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "260",
@@ -2644,7 +2644,7 @@ module.exports={
       "type": ["water", "ground"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "261",
@@ -2655,8 +2655,8 @@ module.exports={
       "evolution": "Mightyena",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 1
+      "buddyDistance": 1,
+      "eggDistance": 1
     },
     {
       "index": "262",
@@ -2665,7 +2665,7 @@ module.exports={
       "type": ["dark"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "263",
@@ -2676,8 +2676,8 @@ module.exports={
       "evolution": "Linoone",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "264",
@@ -2686,7 +2686,7 @@ module.exports={
       "type": ["normal"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "265",
@@ -2697,8 +2697,8 @@ module.exports={
       "evolution": ["Silcoon", "Cascoon"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "266",
@@ -2709,7 +2709,7 @@ module.exports={
       "evolution": "Beautifly",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "267",
@@ -2718,7 +2718,7 @@ module.exports={
       "type": ["bug", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "268",
@@ -2729,7 +2729,7 @@ module.exports={
       "evolution": "Dustox",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "269",
@@ -2738,7 +2738,7 @@ module.exports={
       "type": ["bug", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "270",
@@ -2749,8 +2749,8 @@ module.exports={
       "evolution": "Lombre",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "271",
@@ -2761,7 +2761,7 @@ module.exports={
       "evolution": "Ludicolo",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "272",
@@ -2770,7 +2770,7 @@ module.exports={
       "type": ["water", "grass"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "273",
@@ -2781,8 +2781,8 @@ module.exports={
       "evolution": "Nuzleaf",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "274",
@@ -2793,7 +2793,7 @@ module.exports={
       "evolution": "Shiftry",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "275",
@@ -2802,7 +2802,7 @@ module.exports={
       "type": ["grass", "dark"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "276",
@@ -2813,8 +2813,8 @@ module.exports={
       "evolution": "Swellow",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "277",
@@ -2823,7 +2823,7 @@ module.exports={
       "type": ["normal", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "278",
@@ -2834,8 +2834,8 @@ module.exports={
       "evolution": "Pelipper",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 5
+      "buddyDistance": 1,
+      "eggDistance": 5
     },
     {
       "index": "279",
@@ -2844,7 +2844,7 @@ module.exports={
       "type": ["water", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "280",
@@ -2855,8 +2855,8 @@ module.exports={
       "evolution": "Kirlia",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "281",
@@ -2867,7 +2867,7 @@ module.exports={
       "evolution": "Gardevoir",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "282",
@@ -2876,7 +2876,7 @@ module.exports={
       "type": ["psychic", "fairy"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "283",
@@ -2887,8 +2887,8 @@ module.exports={
       "evolution": "Masquerain",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "284",
@@ -2897,7 +2897,7 @@ module.exports={
       "type": ["bug", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "285",
@@ -2908,8 +2908,8 @@ module.exports={
       "evolution": "Breloom",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "286",
@@ -2918,7 +2918,7 @@ module.exports={
       "type": ["grass", "fighting"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "287",
@@ -2929,8 +2929,8 @@ module.exports={
       "evolution": "Vigoroth",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "288",
@@ -2941,7 +2941,7 @@ module.exports={
       "evolution": "Slaking",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "289",
@@ -2950,7 +2950,7 @@ module.exports={
       "type": ["normal"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "293",
@@ -2961,8 +2961,8 @@ module.exports={
       "evolution": "Loudred",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "294",
@@ -2991,8 +2991,8 @@ module.exports={
       "evolution": "Hariyama",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "297",
@@ -3001,7 +3001,7 @@ module.exports={
       "type": ["fighting"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "298",
@@ -3012,8 +3012,8 @@ module.exports={
       "evolution": "Marill",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "299",
@@ -3022,8 +3022,8 @@ module.exports={
       "type": ["rock"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "300",
@@ -3034,8 +3034,8 @@ module.exports={
       "evolution": "Delcatty",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "301",
@@ -3044,8 +3044,8 @@ module.exports={
       "type": ["normal"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "302",
@@ -3054,8 +3054,8 @@ module.exports={
       "type": ["dark", "ghost"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "303",
@@ -3064,8 +3064,8 @@ module.exports={
       "type": ["steel", "fairy"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "304",
@@ -3076,7 +3076,7 @@ module.exports={
       "evolution": "Lairon",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "306",
@@ -3087,7 +3087,7 @@ module.exports={
       "evolution": "Aggron",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "307",
@@ -3098,8 +3098,8 @@ module.exports={
       "evolution": "Medicham",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "308",
@@ -3108,7 +3108,7 @@ module.exports={
       "type": ["fighting", "psychic"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "309",
@@ -3119,8 +3119,8 @@ module.exports={
       "evolution": "Manectric",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "310",
@@ -3129,7 +3129,7 @@ module.exports={
       "type": ["electric"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "311",
@@ -3138,7 +3138,7 @@ module.exports={
       "type": ["electric"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "312",
@@ -3147,7 +3147,7 @@ module.exports={
       "type": ["electric"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "313",
@@ -3156,7 +3156,7 @@ module.exports={
       "type": ["bug"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "314",
@@ -3165,7 +3165,7 @@ module.exports={
       "type": ["bug"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "315",
@@ -3174,7 +3174,7 @@ module.exports={
       "type": ["grass", "poison"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "316",
@@ -3185,8 +3185,8 @@ module.exports={
       "evolution": "Swalot",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "317",
@@ -3195,7 +3195,7 @@ module.exports={
       "type": ["poison"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
      "index": "318",
@@ -3206,7 +3206,7 @@ module.exports={
      "evolution": "Sharpedo",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "319",
@@ -3215,7 +3215,7 @@ module.exports={
      "type": ["water", "dark"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "320",
@@ -3226,8 +3226,8 @@ module.exports={
      "evolution": "Wailord",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1,
-     "egg-distance": 2
+     "buddyDistance": 1,
+     "eggDistance": 2
    },
     {
      "index": "321",
@@ -3236,7 +3236,7 @@ module.exports={
      "type": ["water"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1
+     "buddyDistance": 1
    },
    {
     "index": "322",
@@ -3247,8 +3247,8 @@ module.exports={
     "evolution": "Camerupt",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 3,
-    "egg-distance": 5
+    "buddyDistance": 3,
+    "eggDistance": 5
     },
    {
     "index": "323",
@@ -3257,7 +3257,7 @@ module.exports={
     "type": ["fire", "ground"],
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 3
+    "buddyDistance": 3
     },
     {
      "index": "324",
@@ -3266,7 +3266,7 @@ module.exports={
      "type": ["fire"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
    },
    {
     "index": "325",
@@ -3277,8 +3277,8 @@ module.exports={
     "evolution": "Grumpig",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 1,
-    "egg-distance": 2
+    "buddyDistance": 1,
+    "eggDistance": 2
     },
    {
     "index": "326",
@@ -3288,7 +3288,7 @@ module.exports={
     "evolution": "Grumpig",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 1
+    "buddyDistance": 1
     },
     {
      "index": "328",
@@ -3299,8 +3299,8 @@ module.exports={
      "evolution": "Vibrava",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5,
-     "egg-distance": 10
+     "buddyDistance": 5,
+     "eggDistance": 10
     },
     {
      "index": "329",
@@ -3311,7 +3311,7 @@ module.exports={
      "evolution": "Flygon",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
     },
     {
      "index": "330",
@@ -3320,7 +3320,7 @@ module.exports={
      "type": ["ground", "dragon"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
     },
     {
      "index": "331",
@@ -3331,8 +3331,8 @@ module.exports={
      "evolution": "Cacturne",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "332",
@@ -3341,7 +3341,7 @@ module.exports={
      "type": ["grass", "dark"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "333",
@@ -3352,8 +3352,8 @@ module.exports={
      "evolution": "Altaria",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1,
-     "egg-distance": 2
+     "buddyDistance": 1,
+     "eggDistance": 2
     },
     {
      "index": "334",
@@ -3362,7 +3362,7 @@ module.exports={
      "type": ["dragon", "flying"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1
+     "buddyDistance": 1
     },
     {
      "index": "335",
@@ -3371,7 +3371,7 @@ module.exports={
      "type": ["normal"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "336",
@@ -3380,7 +3380,7 @@ module.exports={
      "type": ["poison"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
    },
    {
     "index": "337",
@@ -3389,7 +3389,7 @@ module.exports={
     "type": ["rock", "psychic"],
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 3
+    "buddyDistance": 3
     },
     {
      "index": "338",
@@ -3398,7 +3398,7 @@ module.exports={
      "type": ["rock", "psychic"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "339",
@@ -3409,8 +3409,8 @@ module.exports={
      "evolution": "Whiscash",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1,
-     "egg-distance": 2
+     "buddyDistance": 1,
+     "eggDistance": 2
     },
     {
      "index": "340",
@@ -3419,7 +3419,7 @@ module.exports={
      "type": ["water", "ground"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1
+     "buddyDistance": 1
     },
     {
      "index": "341",
@@ -3430,8 +3430,8 @@ module.exports={
      "evolution": "Crawdaunt",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "342",
@@ -3440,7 +3440,7 @@ module.exports={
      "type": ["water", "dark"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "343",
@@ -3451,8 +3451,8 @@ module.exports={
      "evolution": "Claydol",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "344",
@@ -3461,7 +3461,7 @@ module.exports={
      "type": ["ground", "psychic"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "345",
@@ -3472,7 +3472,7 @@ module.exports={
      "evolution": "Cradily",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "346",
@@ -3481,7 +3481,7 @@ module.exports={
      "type": ["rock", "grass"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "347",
@@ -3492,7 +3492,7 @@ module.exports={
      "evolution": "Armaldo",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "348",
@@ -3501,7 +3501,7 @@ module.exports={
      "type": ["rock", "bug"],
      "candy": 50,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "349",
@@ -3512,8 +3512,8 @@ module.exports={
      "evolution": "Milotic",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5,
-     "egg-distance": 10
+     "buddyDistance": 5,
+     "eggDistance": 10
    },
     {
      "index": "350",
@@ -3522,7 +3522,7 @@ module.exports={
      "type": ["water"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
    },
    {
     "index": "351",
@@ -3531,7 +3531,7 @@ module.exports={
     "type": ["normal"],
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 5
+    "buddyDistance": 5
     },
     {
      "index": "353",
@@ -3542,8 +3542,8 @@ module.exports={
      "evolution": "Banette",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "354",
@@ -3552,7 +3552,7 @@ module.exports={
      "type": ["ghost"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "355",
@@ -3563,8 +3563,8 @@ module.exports={
      "evolution": "Dusclops",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "356",
@@ -3573,7 +3573,7 @@ module.exports={
      "type": ["ghost"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "357",
@@ -3582,7 +3582,7 @@ module.exports={
      "type": ["grass", "flying"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
     },
     {
      "index": "358",
@@ -3591,8 +3591,8 @@ module.exports={
      "type": ["Psychic"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5,
-     "egg-distance": 10
+     "buddyDistance": 5,
+     "eggDistance": 10
     },
     {
      "index": "359",
@@ -3601,7 +3601,7 @@ module.exports={
      "type": ["dark"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
    },
    {
     "index": "360",
@@ -3612,8 +3612,8 @@ module.exports={
     "evolution": "Wobbuffet",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 3,
-    "egg-distance": 5
+    "buddyDistance": 3,
+    "eggDistance": 5
     },
     {
      "index": "361",
@@ -3624,7 +3624,7 @@ module.exports={
      "evolution": "Glalie",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "362",
@@ -3633,7 +3633,7 @@ module.exports={
      "type": ["ice"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "363",
@@ -3644,8 +3644,8 @@ module.exports={
      "evolution": "Sealeo",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 2
+     "buddyDistance": 3,
+     "eggDistance": 2
     },
     {
      "index": "364",
@@ -3656,7 +3656,7 @@ module.exports={
      "evolution": "Walrein",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "365",
@@ -3665,7 +3665,7 @@ module.exports={
      "type": ["ice", "water"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "369",
@@ -3674,7 +3674,7 @@ module.exports={
      "type": ["water", "rock"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
     },
     {
      "index": "370",
@@ -3683,8 +3683,8 @@ module.exports={
      "type": ["water"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 2
+     "buddyDistance": 3,
+     "eggDistance": 2
     },
     {
      "index": "371",
@@ -3695,8 +3695,8 @@ module.exports={
      "evolution": "Shelgon",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5,
-     "egg-distance": 10
+     "buddyDistance": 5,
+     "eggDistance": 10
    },
     {
      "index": "372",
@@ -3707,7 +3707,7 @@ module.exports={
      "evolution": "Salamence",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
    },
     {
      "index": "373",
@@ -3716,7 +3716,7 @@ module.exports={
      "type": ["dragon", "flying"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
    },
    {
     "index": "374",
@@ -3727,8 +3727,8 @@ module.exports={
     "evolution": "Metang",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 5,
-    "egg-distance": 10
+    "buddyDistance": 5,
+    "eggDistance": 10
     },
    {
     "index": "375",
@@ -3739,7 +3739,7 @@ module.exports={
     "evolution": "Metagross",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 5
+    "buddyDistance": 5
     },
    {
     "index": "376",
@@ -3748,273 +3748,275 @@ module.exports={
     "type": ["steel"],
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 5
+    "buddyDistance": 5
     }
   ]
 }
 
 },{}],2:[function(require,module,exports){
-var a = require('./script.js');
+var script = require('./script.js');
+var util = require('./util.js');
+pokemonJson = require('../../pokemon.json');
+pokemon = pokemonJson.pokemon;
 
 var gulp = true;
 
-},{"./script.js":3}],3:[function(require,module,exports){
+},{"../../pokemon.json":1,"./script.js":3,"./util.js":4}],3:[function(require,module,exports){
+// ======================================
+// Document Ready
+// ======================================
 $(document).ready(function() {
 
-  var pokemonJson =  require('../../pokemon.json');
-  var pokemon = pokemonJson.pokemon;
-
-  function getMapKeyValue(obj, key) {
-    if (obj.hasOwnProperty(key))
-    return obj[key];
-    throw new Error("Invalid map key.");
-  }
-
-
-  function getMapKeyArray(key){
-    var array = [];
-    for(var i = 0; i < (pokemonJson.pokemon).length; i++) {
-      var value = getMapKeyValue(pokemon[i], key);
-      array.push(value);
+  // ======================================
+  // Pokemon Input Autocomplete and Selection Process
+  // ======================================
+  $("#pokemonSelect").autocomplete({
+    //Grab data from Pokémon Array
+    autoFocus: true,
+    minLength: 1,
+    source: getMapKeyArray("species"),
+    select: function (event, ui) {
+      var obj = {};
+      obj[0] = $(this).val(ui.item.id);
+      obj[1] = $(this).val(ui.item.value);
+      selection = obj[1][0].value;
+      return selection;
     }
-    return array;
-  }
+  });
 
-    $("#pokemonSelect").autocomplete({
-      //Grab data from Pokémon Array
-      autoFocus: true,
-      minLength: 1,
-      source: getMapKeyArray("species"),
-      select: function (event, ui) {
-        var obj = {};
-        obj[0] = $(this).val(ui.item.id);
-        obj[1] = $(this).val(ui.item.value);
-        selection = obj[1][0].value;
-        return selection;
+  // Overrides the default autocomplete filter function to search only from the beginning of the string
+  $.ui.autocomplete.filter = function(array, term) {
+    var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+    return $.grep(array, function(value) {
+      return matcher.test(value.label || value.value || value);
+    });
+  };
+
+  //Sort Pokémon Array in select alphabetically
+  function SortByName(a, b) {
+    var aName = a.species.toLowerCase();
+    var bName = b.species.toLowerCase();
+    return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+  };
+
+  //Pokémon Selector
+  $('#pokemonSelect').on('change', function(e) {
+    selectedPokemon = matchElements(this);
+    console.log(selectedPokemon.species);
+
+    //Remove former selection
+    $('#pokemon-desc, #addPokemonSpecies').remove();
+    $("#pokemonFields").html('');
+
+    //Evolution is not possible on end states
+    if (selectedPokemon.evolution == null) {
+      resetForm();
+      pokemonAvatar(selectedPokemon); //Generate first Pokémon avatar
+
+      $('#pokemonChoice').prepend('<h2>You chose <span class="species-instance">' + selectedPokemon.species + '! </span></h2><p id="pokemon-desc">Unfortunately <span class="species-instance">' + selectedPokemon.species + '</span> does not evolve. :(</p>'); //Inform user
+      $('#pokemonSelect').val('');
+
+      $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>')
+      return false;
+
+    }
+    //Add multiple Pokémon of one species
+    else {
+      resetForm();
+      //Show first Pokémon avatar
+      pokemonAvatar(selectedPokemon);
+
+      //Add Pokémon choice + inputfields
+      $('#pokemonChoice').prepend('<p id="pokemon-desc"><h2>You chose <span class="species-instance">' + selectedPokemon.species + '!&nbsp;</span></h2>');
+      $('.ui-widget').append($pokemonNumberInput()).append($pokemonCandyInput()).append($pokemonFirstEvolution());
+      //Generate buttons to reset selectionfield or to add Pokémon to evolution table
+      $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
+    }
+
+    //Generate Pokémon avatars based number selection in inputfield
+    $('#pokemonNumber').on('keyup change', function() {
+      var $numberPokemon = parseInt($("input[name='pokemonNumber']").val(), 10);
+      //Reset avatars from previous selection
+      $("#pokemonFields").html("");
+      //Number input loop
+      for (i = 1; i <= $numberPokemon; i++) {
+        pokemonAvatar(selectedPokemon);
       }
     });
 
-    var selectedPokemon;
-
-
-
-    $("#pokemonSelect").on("blur", function(){
-      var pokemonSpeciesArray = [getMapKeyArray("species")];
-      console.log(selection);
-
-      for(var i = 0; i < pokemonSpeciesArray.length; i++) {
-        console.log(pokemonSpeciesArray[i][i]);
-
-        if(selection == pokemonSpeciesArray[i][0]) {
-            console.log("It's a match!");
-            selectedPokemon = pokemon.species;
-            console.log(selectedPokemon);
-
-        }
-      }
-    });
-
-    //Sort Pokémon Array in select alphabetically
-    function SortByName(a, b) {
-        var aName = a.species.toLowerCase();
-        var bName = b.species.toLowerCase();
-        return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
-    };
-
-    // Overrides the default autocomplete filter function to search only from the beginning of the string
-    $.ui.autocomplete.filter = function(array, term) {
-        var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
-        return $.grep(array, function(value) {
-            return matcher.test(value.label || value.value || value);
-        });
-    };
-
-    //Reset functions
-    resetForm = function() {
-        $('#pokemonSelect, #pokemonNumber').val('');
-        $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
-        return false;
-    };
-
-    resetTable = function() {
-        $('#finalDestination').find('tbody').html('');
-    };
-
-    // Reset field
-    $('#resetPokemonSelect').on('click', function(e) {
-        e.preventDefault();
-        resetForm();
-    });
-
-    // Reset  table
-    $('#resetTable').on('click', function(e) {
-        e.preventDefault();
-        resetTable();
-    });
-
-    // Remove egg animation time warning
-    removeEggMessage = function() {
-      $('#eggMessage').remove();
+    //Remove Pokémon avatar if value reaches 0
+    if ($("input[name='pokemonNumber']").val() === 0) {
+      resetForm();
     }
 
-    //Pokémon Selector
-    $('#pokemonSelect').on('autocompleteselect', function(e, ui) {
-        //Remove former selection
-        $('#pokemon-desc, #addPokemonSpecies').remove();
-        $("#pokemonFields").html('');
-        //Add Pokémon avatar
-        $pokemonAvatar = function() {
-            $("#pokemonFields").append('<li class="pokemon-avatar ' + ui.item.resourceName + '">' + '</li>');
-            $('#poke-img').addClass(ui.item.resourceName);
-            $('#poke-img').addClass('pokemon-avatar');
-            $('#pokemonFields li').attr('id', function(i) {
-                return 'pokemon' + (i + 1);
-            });
-        };
-        // Generate inputfield to select number of Pokémon to add
-        $pokemonNumberInput = function() {
-            $('.ui-widget').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + ui.item.value + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
-        }
-        // Generate inputfield to select Pokémon candy in inventory
-        $pokemonCandyInput = function() {
-            $('.ui-widget').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + ui.item.candyType + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
-        }
-        // Generate checkbox to indicate a first evolution of the species
-        $pokemonFirstEvolution = function() {
-            $('.ui-widget').append('<div class="evolution-bonus"><span class="bonus">Adds<br>500 XP!</span><input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve"></label><span>Is this the first time you evolve a <span class="species-instance">' + ui.item.value + '</span>?</span></div>')
-        }
 
-        //Evolution is not possible on end states
-        if (ui.item.evolve != true) {
-            resetForm();
-            $pokemonAvatar(); //Generate first Pokémon avatar
+    return selectedPokemon;
+  });
 
-            $('#pokemonChoice').prepend('<h2>You chose <span class="species-instance">' + ui.item.value + '! </span></h2><p id="pokemon-desc">Unfortunately <span class="species-instance">' + ui.item.value + '</span> does not evolve. :(</p>'); //Inform user
-            $('#pokemonSelect').val('');
+  //Add bonus bubble
+  $('#firstEvolve').on("change", function(){
+    if($(this).is(':checked')) {
+      $('.bonus').addClass('bonus-animated');
+    } else {
+      $('.bonus').removeClass('bonus-animated').css('opacity', 0);
+    }
+  });
 
-            $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>')
-            return false;
+  // Add Pokémon to Evolution table
+  addPokemonSpecies = function(selectedPokemon) {
 
-        }
-        //Add multiple Pokémon of one species
-        else {
-            resetForm();
-            //Show first Pokémon avatar
-            $pokemonAvatar();
-
-            //Add Pokémon choice + inputfields
-            $('#pokemonChoice').prepend('<p id="pokemon-desc"><h2>You chose <span class="species-instance">' + ui.item.value + '!&nbsp;</span></h2>');
-            $('.ui-widget').append($pokemonNumberInput()).append($pokemonCandyInput()).append($pokemonFirstEvolution());
-            //Generate buttons to reset selectionfield or to add Pokémon to evolution table
-            $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
-        }
-
-        //Generate Pokémon avatars based number selection in inputfield
-        $('#pokemonNumber').on('keyup change', function() {
-            var $numberPokemon = parseInt($("input[name='pokemonNumber']").val(), 10);
-            //Reset avatars from previous selection
-            $("#pokemonFields").html("");
-            //Number input loop
-            for (i = 1; i <= $numberPokemon; i++) {
-                $pokemonAvatar();
-            }
-        });
-
-        //Remove Pokémon avatar if value reaches 0
-        if ($("input[name='pokemonNumber']").val() === 0) {
-            resetForm();
-        }
-
-        //Add bonus bubble
-        $('#firstEvolve').change(function(){
-          if($(this).is(':checked')) {
-              $('.bonus').addClass('bonus-animated');
-          } else {
-            $('.bonus').removeClass('bonus-animated').css('opacity', 0);
-          }
-        })
+    var tableInner = $('#finalDestination').find('tbody');
+    var numberOfPokemon = parseInt($('#pokemonNumber').val(), 10);
+    var numberOfCandyHeld = parseInt($('#candyNumber').val(), 10);
+    var candyNeeded = numberOfPokemon * selectedPokemon.candy;
+    var difCandyNeededHeld = Math.floor(numberOfCandyHeld / selectedPokemon.candy);
+    var evolutionsPossible = Math.min(difCandyNeededHeld, numberOfPokemon);
 
 
-        // Add Pokémon to Evolution table
-        addPokemonSpecies = function() {
+    if (numberOfPokemon === selectedPokemon.candy + 1) {
+      $('#metaEvolution').css('display', 'block');
+      $('#metaNumCandy').append(selectedPokemon.candy + ' <span class="species-instance">' + selectedPokemon.species + '</span> candy');
+      $('#metaEvolveState').append('');
+    } else {
+      $('#metaEvolution').css('display', 'none');
+    }
 
-            var $tableInner = $('#finalDestination').find('tbody');
-            var $numPokemon = parseInt($('#pokemonNumber').val(), 10);
-            var $numCandy = parseInt($('#candyNumber').val(), 10);
-            var $candyNeeded = $numPokemon * ui.item.candy;
-            var $candyNeededvsInventory = Math.floor($numCandy / ui.item.candy);
-            var $evolutionsPossible = Math.min($candyNeededvsInventory, $numPokemon);
+    //Check wether there's a new evolution taking place
+    if ($('#firstEvolve').is(':checked') && evolutionsPossible >= 1) {
+      $xpGained = evolutionsPossible * 500 + 500;
+    } else {
+      $xpGained = evolutionsPossible * 500;
+    }
 
+    var rowTemplate = '<tr><td>' + numberOfPokemon + '</td><td class="pokemon-avatar ' + selectedPokemon.species + '"></td>' + '</td><td class="wide">' + candyNeeded + '</td><td class="wide">' + numberOfCandyHeld + '</td><td class="evolvesPossible">' + evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
 
-            if ($numPokemon === ui.item.candy + 1) {
-              $('#metaEvolution').css('display', 'block');
-              $('#metaNumCandy').append(ui.item.candy + ' <span class="species-instance">' + ui.item.species + '</span> candy');
-              $('#metaEvolveState').append('');
-            } else {
-              $('#metaEvolution').css('display', 'none');
-            }
+    tableInner.append(rowTemplate);
 
-            //Check wether there's a new evolution taking place
-            if ($('#firstEvolve').is(':checked') && $evolutionsPossible >= 1) {
-                $xpGained = $evolutionsPossible * 500 + 500;
-            } else {
-                $xpGained = $evolutionsPossible * 500;
-            }
-
-            var rowTemplate = '<tr><td>' + $numPokemon + '</td><td class="pokemon-avatar ' + ui.item.resourceName + '"></td>' + '</td><td class="wide">' + $candyNeeded + '</td><td class="wide">' + $numCandy + '</td><td class="evolvesPossible">' + $evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
-
-            $tableInner.append(rowTemplate);
-
-            // add unique id to each row -- do I need this?
-            $('#finalDestination tbody tr').attr('id', function(i) {
-                return 'pokemonRow' + (i + 1);
-            });
-
-            // remove row on click
-            $(document).on('click', '#removeRow', function() {
-                $(this).closest('tr').remove();
-            });
-
-            //Calculate # evolutions possible and XP gained
-            function calculateSum() {
-                var sum1 = 0;
-                var sum2 = 0;
-
-                $('.evolvesPossible').each(function() {
-                    sum1 += parseInt($(this).html());
-
-                    //Warn user that roughly 60 evolutions are possible within one luck egg activation
-                    if (sum1 >= 60 ) {
-                      $('#eggMessage').html('');
-                      $('#eggMessage').append('<p class="egg-message">You can only evolve (roughly) 60 Pokémon during one Lucky Egg activation. <br>You may want to get another egg!</p> <a id="removeEggMessage" href="javascript:void(0)" onclick="removeEggMessage();">Got it!</a>');
-                    } else if (sum1 < 60) {
-                      $('#eggMessage').html('');
-                    }
-                });
-                $('.xpGained').each(function() {
-                    sum2 += parseInt($(this).html());
-                });
-
-                //Add calculations to Evolution Table
-                $('#total-1').html(sum1);
-                $('#total-2').html(sum2);
-                $('#total-3').html(sum2 * 2);
-            }
-            calculateSum();
-
-            //Redo calculation if user removes a row from the Evolution table
-            $(document).on('click', $('#removeRow'), function() {
-                calculateSum();
-            });
-
-            resetForm();
-          }
-
-
+    // add unique id to each row -- do I need this?
+    $('#finalDestination tbody tr').attr('id', function(i) {
+      return 'pokemonRow' + (i + 1);
     });
 
-});
+    // remove row on click
+    $(document).on('click', '#removeRow', function() {
+      $(this).closest('tr').remove();
+    });
 
-},{"../../pokemon.json":1}]},{},[2])
+    //Calculate # evolutions possible and XP gained
+    function calculateSum() {
+      var sum1 = 0;
+      var sum2 = 0;
+
+      $('.evolvesPossible').each(function() {
+        sum1 += parseInt($(this).html());
+
+        //Warn user that roughly 60 evolutions are possible within one luck egg activation
+        if (sum1 >= 60 ) {
+          $('#eggMessage').html('');
+          $('#eggMessage').append('<p class="egg-message">You can only evolve (roughly) 60 Pokémon during one Lucky Egg activation. <br>You may want to get another egg!</p> <a id="removeEggMessage" href="javascript:void(0)" onclick="removeEggMessage();">Got it!</a>');
+        } else if (sum1 < 60) {
+          $('#eggMessage').html('');
+        }
+      });
+      $('.xpGained').each(function() {
+        sum2 += parseInt($(this).html());
+      });
+
+      //Add calculations to Evolution Table
+      $('#total-1').html(sum1);
+      $('#total-2').html(sum2);
+      $('#total-3').html(sum2 * 2);
+    }
+    calculateSum();
+
+    //Redo calculation if user removes a row from the Evolution table
+    $(document).on('click', $('#removeRow'), function() {
+      calculateSum();
+    });
+
+    resetForm();
+  }
+
+  // Remove egg animation time warning
+  removeEggMessage = function(selectedPokemon) {
+    $('#eggMessage').remove();
+  }
+
+  //Add Pokémon avatar
+  pokemonAvatar = function(selectedPokemon) {
+    $("#pokemonFields").append('<li class="pokemon-avatar ' + selectedPokemon.index + '">' + '</li>');
+    $('#poke-img').addClass(selectedPokemon.index);
+    $('#poke-img').addClass('pokemon-avatar');
+    $('#pokemonFields li').attr('id', function(i) {
+      return 'pokemon' + (i + 1);
+    });
+  };
+  // Generate inputfield to select number of Pokémon to add
+  pokemonNumberInput = function(selectedPokemon) {
+    $('.ui-widget').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + selectedPokemon.species + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
+  }
+  // Generate inputfield to select Pokémon candy in inventory
+  pokemonCandyInput = function(selectedPokemon) {
+    $('.ui-widget').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + selectedPokemon.genus + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
+  }
+  // Generate checkbox to indicate a first evolution of the species
+  pokemonFirstEvolution = function(selectedPokemon) {
+    $('.ui-widget').append('<div class="evolution-bonus"><span class="bonus">Adds<br>500 XP!</span><input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve"></label><span>Is this the first time you evolve a <span class="species-instance">' + selectedPokemon.species + '</span>?</span></div>')
+  }
+
+}); // Document Ready End
+
+},{}],4:[function(require,module,exports){
+// ======================================
+// Util
+// ======================================
+
+ getMapKeyValue = function(obj, key) {
+  if (obj.hasOwnProperty(key))
+  return obj[key];
+  throw new Error("Invalid map key.");
+}
+
+getMapKeyArray = function(key){
+  var array = [];
+  for(var i = 0; i < (pokemonJson.pokemon).length; i++) {
+    var value = getMapKeyValue(pokemon[i], key);
+    array.push(value);
+  }
+  return array;
+}
+
+// Match selected value with object in array
+matchElements = function (el, selectedPokemon) {
+  var pokemonSpeciesArray = getMapKeyArray("species");
+  for(var i = 0; i < pokemonSpeciesArray.length; i++) {
+    if(selection == pokemonSpeciesArray[i]) {
+      selectedPokemon = pokemon[i];
+    }
+  }
+  console.table(selectedPokemon);
+  return selectedPokemon;
+}
+
+// ======================================
+//  Reset Forms
+// ======================================
+
+resetForm = function() {
+  $('#pokemonSelect, #pokemonNumber').val('');
+  $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
+  return false;
+};
+
+resetTable = function() {
+  $('#finalDestination').find('tbody').html('');
+};
+
+// Reset field
+$('#resetPokemonSelect').on('click', function(e) { e.preventDefault(); resetForm(); });
+// Reset  table
+$('#resetTable').on('click', function(e) { e.preventDefault(); resetTable(); });
+
+},{}]},{},[2])
 
 //# sourceMappingURL=all.js.map

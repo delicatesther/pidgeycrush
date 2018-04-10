@@ -1,0 +1,87 @@
+input {
+  min-height: 25px;
+  border-radius: 3px;
+  border: 2px solid #c0e1b9;
+  border: 1px solid $green--dark;
+  color: inherit;
+  margin: 5px 0;
+  padding: 5px;
+}
+label {
+  display:block;
+}
+label[for="firstEvolve"] {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 18px;
+  margin: 0px 5px -6px 0px;
+  font-size: 13px;
+  border: 1px solid $green--dark;
+  height: 20px;
+  border-radius: 3px;
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+
+  }
+}
+input[type=checkbox] {
+  display: none;
+
+  &:checked + label:before {
+    content: "\2713";
+    font-size: 15px;
+    text-align: center;
+    line-height: 15px;
+  }
+}
+
+input {
+  margin: 10px auto 30px;
+}
+.ui-autocomplete {
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.ui-autocomplete a {
+  background: $white;
+  margin: auto;
+  &:active {
+    color: inherit;
+  }
+  &:hover {
+    color: inherit;
+  }
+}
+.ui-autocomplete-input {
+  min-width: 260px;
+}
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: 'Lato', 'Roboto Condensed';
+}
+.ui-widget input {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+.ui-menu-item {
+  padding: 5px;
+}
+.pokemon-number,
+.candy-number {
+  max-width: 100px;
+  display: block;
+}

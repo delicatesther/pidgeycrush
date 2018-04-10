@@ -1,0 +1,39 @@
+table {
+  margin: 0 auto;
+  @include breakpoint(m) {
+    display: table;
+    border-collapse: collapse;
+    border: 1px solid $green--dark;
+    width: 680px;
+  }
+  thead tr {
+    background: $green--light;
+  }
+  tr {
+    background: $white;
+    border-bottom: 1px solid rgba($black, 0.1);
+    &:last-child {
+      border-bottom: $green--dark;
+    }
+  }
+  thead,
+  tfoot {
+    font-size: 14px;
+    font-family: 'Roboto condensed';
+    text-transform: uppercase;
+  }
+  td {
+    padding: 5px 3px;
+    text-align: center;
+    vertical-align: middle;
+    @include breakpoint(m) {
+      padding: 5px 8px;
+    }
+  }
+  .wide {
+    display: none;
+    @include breakpoint(m) {
+      display: table-cell;
+    }
+  }
+}

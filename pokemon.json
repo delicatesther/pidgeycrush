@@ -8,8 +8,8 @@
       "evolution": "Ivysaur",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "002",
@@ -20,7 +20,7 @@
       "evolution": "Venusaur",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "003",
@@ -29,7 +29,7 @@
       "type": ["grass", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "004",
@@ -40,8 +40,8 @@
       "evolution": "Charmeleon",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "005",
@@ -52,7 +52,7 @@
       "evolution": "Charizard",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "006",
@@ -61,7 +61,7 @@
       "type": ["fire", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "007",
@@ -72,7 +72,7 @@
       "evolution": "Wartortle",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "008",
@@ -83,7 +83,7 @@
       "evolution": "Blastoise",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "009",
@@ -92,7 +92,7 @@
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "010",
@@ -103,8 +103,8 @@
       "evolution": "Metapod",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "011",
@@ -115,7 +115,7 @@
       "evolution": "Butterfree",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "012",
@@ -124,7 +124,7 @@
       "type": ["bug", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "013",
@@ -135,8 +135,8 @@
       "evolution": "Kakuna",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "014",
@@ -147,7 +147,7 @@
       "evolution": "Beedrill",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "015",
@@ -156,7 +156,7 @@
       "type": ["bug", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "016",
@@ -167,7 +167,7 @@
       "evolution": "Pidgeotto",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "017",
@@ -178,7 +178,7 @@
       "evolution": "Pidgeot",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "018",
@@ -187,7 +187,7 @@
       "type": ["normal", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "019",
@@ -198,7 +198,7 @@
       "evolution": "Raticate",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "020",
@@ -207,7 +207,7 @@
       "type": ["", ""],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "021",
@@ -218,8 +218,8 @@
       "evolution": "Fearow",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "022",
@@ -228,7 +228,7 @@
       "type": ["normal", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "023",
@@ -239,7 +239,7 @@
       "evolution": "Arbok",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "024",
@@ -248,7 +248,7 @@
       "type": ["poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "025",
@@ -259,7 +259,7 @@
       "evolution": "Raichu",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "026",
@@ -268,7 +268,7 @@
       "type": ["electric"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "027",
@@ -279,7 +279,7 @@
       "evolution": "Sandslash",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "028",
@@ -288,7 +288,7 @@
       "type": ["ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "029",
@@ -299,8 +299,8 @@
       "evolution": "Nidorina",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "030",
@@ -311,7 +311,7 @@
       "evolution": "Nidoqueen",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "031",
@@ -320,7 +320,7 @@
       "type": ["poison", "ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "032",
@@ -331,8 +331,8 @@
       "evolution": "Nidorino",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "033",
@@ -343,7 +343,7 @@
       "evolution": "Nidoking",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "034",
@@ -352,7 +352,7 @@
       "type": ["poison", "ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "035",
@@ -363,7 +363,7 @@
       "evolution": "Clefable",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "036",
@@ -372,7 +372,7 @@
       "type": ["fairy"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "037",
@@ -383,7 +383,7 @@
       "evolution": "Ninetales",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "038",
@@ -392,7 +392,7 @@
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "039",
@@ -403,7 +403,7 @@
       "evolution": "Wigglytuff",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "040",
@@ -412,7 +412,7 @@
       "type": ["normal", "fairy"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "041",
@@ -423,8 +423,8 @@
       "evolution": "Golbat",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "042",
@@ -435,7 +435,7 @@
       "evolution": "Crobat",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "043",
@@ -446,8 +446,8 @@
       "evolution": "Gloom",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "044",
@@ -458,7 +458,7 @@
       "evolution": ["Vileplume", "Bellossom"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "045",
@@ -467,7 +467,7 @@
       "type": ["grass", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "046",
@@ -478,7 +478,7 @@
       "evolution": "Parasect",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "047",
@@ -487,7 +487,7 @@
       "type": ["bug", "grass"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "048",
@@ -498,8 +498,8 @@
       "evolution": "Venomoth",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "049",
@@ -508,7 +508,7 @@
       "type": ["bug", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "050",
@@ -519,8 +519,8 @@
       "evolution": "Dugtrio",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "051",
@@ -529,7 +529,7 @@
       "type": ["ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "052",
@@ -540,8 +540,8 @@
       "evolution": "Persian",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "053",
@@ -550,7 +550,7 @@
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "054",
@@ -561,7 +561,7 @@
       "evolution": "Golduck",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "055",
@@ -570,7 +570,7 @@
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "056",
@@ -581,8 +581,8 @@
       "evolution": "Primeape",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "057",
@@ -591,7 +591,7 @@
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "058",
@@ -602,8 +602,8 @@
       "evolution": "Arcanine",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "059",
@@ -612,7 +612,7 @@
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "60",
@@ -623,8 +623,8 @@
       "evolution": "Poliwhirl",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "061",
@@ -635,7 +635,7 @@
       "evolution": ["Poliwrath", "Politoed"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "062",
@@ -644,7 +644,7 @@
       "type": ["water", "fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "063",
@@ -655,8 +655,8 @@
       "evolution": "Kadabra",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "064",
@@ -667,7 +667,7 @@
       "evolution": "Alakazam",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "065",
@@ -676,7 +676,7 @@
       "type": ["psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "066",
@@ -687,8 +687,8 @@
       "evolution": "Machoke",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "067",
@@ -699,7 +699,7 @@
       "evolution": "Machamp",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "068",
@@ -708,7 +708,7 @@
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "069",
@@ -719,8 +719,8 @@
       "evolution": "Weepinbell",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "070",
@@ -731,7 +731,7 @@
       "evolution": "Victreebel",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "071",
@@ -740,7 +740,7 @@
       "type": ["grass", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "072",
@@ -751,7 +751,7 @@
       "evolution": "Tentacruel",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "078",
@@ -760,7 +760,7 @@
       "type": ["water", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "074",
@@ -771,8 +771,8 @@
       "evolution": "Graveler",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "075",
@@ -783,7 +783,7 @@
       "evolution": "Golem",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "076",
@@ -792,7 +792,7 @@
       "type": ["rock", "ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "077",
@@ -803,8 +803,8 @@
       "evolution": "Rapidash",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "078",
@@ -813,7 +813,7 @@
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "079",
@@ -824,8 +824,8 @@
       "evolution": ["Slowbro", "Slowking"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "080",
@@ -834,7 +834,7 @@
       "type": ["water", "psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "081",
@@ -845,7 +845,7 @@
       "evolution": "Magneton",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "082",
@@ -854,7 +854,7 @@
       "type": ["electric", "steel"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "083",
@@ -863,7 +863,7 @@
       "type": ["normal", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "084",
@@ -874,8 +874,8 @@
       "evolution": "Dodrio",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "085",
@@ -884,7 +884,7 @@
       "type": ["normal", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "086",
@@ -895,8 +895,8 @@
       "evolution": "Dewgong",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "087",
@@ -905,7 +905,7 @@
       "type": ["water", "ice"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "088",
@@ -916,8 +916,8 @@
       "evolution": "Muk",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "089",
@@ -926,7 +926,7 @@
       "type": ["poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "090",
@@ -937,8 +937,8 @@
       "evolution": "Cloyster",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "091",
@@ -947,7 +947,7 @@
       "type": ["water", "ice"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "092",
@@ -958,8 +958,8 @@
       "evolution": "Haunter",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "093",
@@ -970,7 +970,7 @@
       "evolution": "Gengar",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "094",
@@ -979,7 +979,7 @@
       "type": ["ghost", "poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "095",
@@ -990,8 +990,8 @@
       "evolution": "Steelix",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "096",
@@ -1002,8 +1002,8 @@
       "evolution": "Hypno",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "097",
@@ -1012,7 +1012,7 @@
       "type": ["psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "098",
@@ -1023,8 +1023,8 @@
       "evolution": "Kingler",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "099",
@@ -1033,7 +1033,7 @@
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "100",
@@ -1044,8 +1044,8 @@
       "evolution": "Electrode",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "101",
@@ -1054,7 +1054,7 @@
       "type": ["electric"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "102",
@@ -1065,8 +1065,8 @@
       "evolution": "Exeggutor",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "103",
@@ -1075,7 +1075,7 @@
       "type": ["grass", "psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "104",
@@ -1086,8 +1086,8 @@
       "evolution": "Marowak",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "105",
@@ -1096,7 +1096,7 @@
       "type": ["ground"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "106",
@@ -1105,8 +1105,8 @@
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "107",
@@ -1115,8 +1115,8 @@
       "type": ["fighting"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "108",
@@ -1125,8 +1125,8 @@
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "109",
@@ -1137,8 +1137,8 @@
       "evolution": "Weezing",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "110",
@@ -1147,7 +1147,7 @@
       "type": ["poison"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "111",
@@ -1158,8 +1158,8 @@
       "evolution": "Rhydon",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "112",
@@ -1168,7 +1168,7 @@
       "type": ["ground", "rock"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "113",
@@ -1179,8 +1179,8 @@
       "evolution": "Blissey",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "114",
@@ -1189,8 +1189,8 @@
       "type": ["grass"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "115",
@@ -1199,7 +1199,7 @@
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "116",
@@ -1210,8 +1210,8 @@
       "evolution": "Seadra",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "117",
@@ -1222,7 +1222,7 @@
       "evolution": "Kingdra",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "118",
@@ -1233,7 +1233,7 @@
       "evolution": "Seaking",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "119",
@@ -1242,7 +1242,7 @@
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "120",
@@ -1253,7 +1253,7 @@
       "evolution": "Starmie",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "121",
@@ -1262,7 +1262,7 @@
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "122",
@@ -1271,7 +1271,7 @@
       "type": ["psychic", "fairy"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "123",
@@ -1282,8 +1282,8 @@
       "evolution": "Scizor",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "124",
@@ -1292,7 +1292,7 @@
       "type": ["ice", "psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "125",
@@ -1301,7 +1301,7 @@
       "type": ["electric"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "126",
@@ -1310,7 +1310,7 @@
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "127",
@@ -1319,8 +1319,8 @@
       "type": ["bug"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "128",
@@ -1329,7 +1329,7 @@
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "129",
@@ -1340,8 +1340,8 @@
       "evolution": "Gyarados",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "130",
@@ -1350,7 +1350,7 @@
       "type": ["water", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "131",
@@ -1359,8 +1359,8 @@
       "type": ["water", "ice"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "132",
@@ -1369,7 +1369,7 @@
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "133",
@@ -1380,8 +1380,8 @@
       "evolution": ["Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "134",
@@ -1390,7 +1390,7 @@
       "type": ["water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "135",
@@ -1399,7 +1399,7 @@
       "type": ["electric"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "136",
@@ -1408,7 +1408,7 @@
       "type": ["fire"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "137",
@@ -1419,8 +1419,8 @@
       "evolution": "Porygon2",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 3,
-      "egg-distance": 10
+      "buddyDistance": 3,
+      "eggDistance": 10
     },
     {
       "index": "138",
@@ -1431,8 +1431,8 @@
       "evolution": "Omastar",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "139",
@@ -1441,7 +1441,7 @@
       "type": ["rock", "water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "140",
@@ -1452,8 +1452,8 @@
       "evolution": "Kabutops",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "141",
@@ -1462,7 +1462,7 @@
       "type": ["rock", "water"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "142",
@@ -1471,8 +1471,8 @@
       "type": ["rock", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "143",
@@ -1481,8 +1481,8 @@
       "type": ["normal"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "144",
@@ -1491,7 +1491,7 @@
       "type": ["ice", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1501,7 +1501,7 @@
       "type": ["electric", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1511,7 +1511,7 @@
       "type": ["fire", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1523,8 +1523,8 @@
       "evolution": "Dragonair",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "148",
@@ -1535,7 +1535,7 @@
       "evolution": "Dragonite",
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "149",
@@ -1544,7 +1544,7 @@
       "type": ["dragon", "flying"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "150",
@@ -1553,7 +1553,7 @@
       "type": ["psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1563,7 +1563,7 @@
       "type": ["psychic"],
       "gen": 1,
       "region": "Kanto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -1575,8 +1575,8 @@
       "evolution": "Bayleef",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "153",
@@ -1587,7 +1587,7 @@
       "evolution": "Meganium",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "154",
@@ -1596,7 +1596,7 @@
       "type": [""],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "155",
@@ -1607,8 +1607,8 @@
       "evolution": "Quilava",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "156",
@@ -1619,7 +1619,7 @@
       "evolution": "Typhlosion",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "157",
@@ -1628,7 +1628,7 @@
       "type": ["fire"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "158",
@@ -1639,8 +1639,8 @@
       "evolution": "Croconaw",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "159",
@@ -1651,7 +1651,7 @@
       "evolution": "Feraligatr",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "160",
@@ -1660,7 +1660,7 @@
       "type": ["water"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "161",
@@ -1671,7 +1671,7 @@
       "evolution": "Furret",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "162",
@@ -1680,7 +1680,7 @@
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "163",
@@ -1691,7 +1691,7 @@
       "evolution": "Noctowl",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "164",
@@ -1700,7 +1700,7 @@
       "type": ["normal", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "165",
@@ -1711,7 +1711,7 @@
       "evolution": "Ledian",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "166",
@@ -1720,7 +1720,7 @@
       "type": ["bug", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "167",
@@ -1731,8 +1731,8 @@
       "evolution": "Ariados",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "168",
@@ -1741,7 +1741,7 @@
       "type": ["bug", "poison"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "169",
@@ -1750,7 +1750,7 @@
       "type": ["poison", "flying"],
       "gen": 2,
       "region": "distance",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "170",
@@ -1761,8 +1761,8 @@
       "evolution": "Lanturn",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "170",
@@ -1771,7 +1771,7 @@
       "type": [""],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "172",
@@ -1782,8 +1782,8 @@
       "evolution": "Pikachu",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "173",
@@ -1794,8 +1794,8 @@
       "evolution": "Clefairy",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "174",
@@ -1806,8 +1806,8 @@
       "evolution": "Jigglypuff",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "175",
@@ -1818,8 +1818,8 @@
       "evolution": "Togetic",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "176",
@@ -1828,7 +1828,7 @@
       "type": ["fairy", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "177",
@@ -1839,8 +1839,8 @@
       "evolution": "Xatu",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "178",
@@ -1849,7 +1849,7 @@
       "type": ["psychic", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "179",
@@ -1860,8 +1860,8 @@
       "evolution": "Flaaffy",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "180",
@@ -1872,7 +1872,7 @@
       "evolution": "Ampharos",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "181",
@@ -1881,7 +1881,7 @@
       "type": ["electric"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "182",
@@ -1890,7 +1890,7 @@
       "type": ["grass"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "183",
@@ -1901,8 +1901,8 @@
       "evolution": "Azumarill",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "184",
@@ -1911,7 +1911,7 @@
       "type": ["water", "fairy"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "185",
@@ -1920,8 +1920,8 @@
       "type": ["rock"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "186",
@@ -1932,8 +1932,8 @@
       "evolution": "Skiploom",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "188",
@@ -1944,7 +1944,7 @@
       "evolution": "Jumpluff",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "190",
@@ -1953,8 +1953,8 @@
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "191",
@@ -1965,7 +1965,7 @@
       "evolution": "Sunflora",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "192",
@@ -1974,7 +1974,7 @@
       "type": ["grass"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "193",
@@ -1983,7 +1983,7 @@
       "type": ["bug", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "194",
@@ -1994,8 +1994,8 @@
       "evolution": "Quagsire",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "195",
@@ -2004,7 +2004,7 @@
       "type": ["water", "ground"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "196",
@@ -2013,7 +2013,7 @@
       "type": ["psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "197",
@@ -2022,7 +2022,7 @@
       "type": ["dark"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "198",
@@ -2031,7 +2031,7 @@
       "type": ["dark", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "199",
@@ -2040,7 +2040,7 @@
       "type": ["water", "psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "200",
@@ -2049,7 +2049,7 @@
       "type": ["ghost"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "201",
@@ -2058,7 +2058,7 @@
       "type": ["Psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "202",
@@ -2067,8 +2067,8 @@
       "type": ["Psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "203",
@@ -2077,8 +2077,8 @@
       "type": ["normal", "psychic"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "204",
@@ -2089,8 +2089,8 @@
       "evolution": "Forretress",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "205",
@@ -2099,7 +2099,7 @@
       "type": ["bug", "steel"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "206",
@@ -2108,8 +2108,8 @@
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "207",
@@ -2118,8 +2118,8 @@
       "type": ["ground", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "208",
@@ -2128,7 +2128,7 @@
       "type": ["steel"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "209",
@@ -2139,8 +2139,8 @@
       "evolution": "Granbull",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "210",
@@ -2149,7 +2149,7 @@
       "type": ["fairy"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "211",
@@ -2158,8 +2158,8 @@
       "type": ["water", "poison"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "212",
@@ -2168,7 +2168,7 @@
       "type": ["bug"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "213",
@@ -2177,8 +2177,8 @@
       "type": ["bug", "rock"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "214",
@@ -2187,7 +2187,7 @@
       "type": ["bug"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "215",
@@ -2196,8 +2196,8 @@
       "type": ["dark", "ice"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "216",
@@ -2208,8 +2208,8 @@
       "evolution": "Ursaring",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "217",
@@ -2218,7 +2218,7 @@
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "218",
@@ -2229,8 +2229,8 @@
       "evolution": "Magcargo",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "219",
@@ -2239,7 +2239,7 @@
       "type": ["fire"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "220",
@@ -2250,8 +2250,8 @@
       "evolution": "Piloswine",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 2
+      "buddyDistance": 3,
+      "eggDistance": 2
     },
     {
       "index": "221",
@@ -2260,7 +2260,7 @@
       "type": ["ice", "ground"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "222",
@@ -2269,7 +2269,7 @@
       "type": ["water", "rock"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "223",
@@ -2280,8 +2280,8 @@
       "evolution": "Octillery",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "224",
@@ -2290,7 +2290,7 @@
       "type": ["water"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "225",
@@ -2299,7 +2299,7 @@
       "type": ["ice", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "226",
@@ -2308,8 +2308,8 @@
       "type": ["water"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "227",
@@ -2318,8 +2318,8 @@
       "type": ["steel", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "228",
@@ -2330,8 +2330,8 @@
       "evolution": "Houndoom",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "229",
@@ -2340,7 +2340,7 @@
       "type": ["dark", "fire"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "230",
@@ -2349,7 +2349,7 @@
       "type": ["water", "dragon"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "232",
@@ -2360,8 +2360,8 @@
       "evolution": "Donphan",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "232",
@@ -2370,7 +2370,7 @@
       "type": ["ground"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "233",
@@ -2379,7 +2379,7 @@
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "234",
@@ -2388,8 +2388,8 @@
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "236",
@@ -2400,8 +2400,8 @@
       "evolution": ["Hitmonlee", "Hitmonchan", "Hitmontop"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "237",
@@ -2410,7 +2410,7 @@
       "type": ["fighting"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "238",
@@ -2421,8 +2421,8 @@
       "evolution": "Jynx",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "239",
@@ -2433,8 +2433,8 @@
       "evolution": "Electabuzz",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "240",
@@ -2445,8 +2445,8 @@
       "evolution": "Magmar",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 5
+      "buddyDistance": 5,
+      "eggDistance": 5
     },
     {
       "index": "241",
@@ -2455,8 +2455,8 @@
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "242",
@@ -2465,7 +2465,7 @@
       "type": ["normal"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "243",
@@ -2474,7 +2474,7 @@
       "type": ["electric"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2484,7 +2484,7 @@
       "type": ["fire"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2494,7 +2494,7 @@
       "type": ["water"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2506,8 +2506,8 @@
       "evolution": "Pupitar",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "247",
@@ -2518,7 +2518,7 @@
       "evolution": "Tyranitar",
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "248",
@@ -2527,7 +2527,7 @@
       "type": ["rock", "dark"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "249",
@@ -2536,7 +2536,7 @@
       "type": ["psychic", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2546,7 +2546,7 @@
       "type": ["fire", "flying"],
       "gen": 2,
       "region": "Johto",
-      "buddy-distance": 20,
+      "buddyDistance": 20,
       "legendary": true
     },
     {
@@ -2558,8 +2558,8 @@
       "evolution": "Grovyle",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "253",
@@ -2570,7 +2570,7 @@
       "evolution": "Sceptile",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "254",
@@ -2579,7 +2579,7 @@
       "type": ["grass"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "255",
@@ -2590,8 +2590,8 @@
       "evolution": "Combusken",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "256",
@@ -2602,7 +2602,7 @@
       "evolution": "Blaziken",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "257",
@@ -2611,7 +2611,7 @@
       "type": ["fire", "fighting"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "258",
@@ -2622,8 +2622,8 @@
       "evolution": "Marshtomp",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "259",
@@ -2634,7 +2634,7 @@
       "evolution": "Swampert",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "260",
@@ -2643,7 +2643,7 @@
       "type": ["water", "ground"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "261",
@@ -2654,8 +2654,8 @@
       "evolution": "Mightyena",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 1
+      "buddyDistance": 1,
+      "eggDistance": 1
     },
     {
       "index": "262",
@@ -2664,7 +2664,7 @@
       "type": ["dark"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "263",
@@ -2675,8 +2675,8 @@
       "evolution": "Linoone",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "264",
@@ -2685,7 +2685,7 @@
       "type": ["normal"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "265",
@@ -2696,8 +2696,8 @@
       "evolution": ["Silcoon", "Cascoon"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "266",
@@ -2708,7 +2708,7 @@
       "evolution": "Beautifly",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "267",
@@ -2717,7 +2717,7 @@
       "type": ["bug", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "268",
@@ -2728,7 +2728,7 @@
       "evolution": "Dustox",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "269",
@@ -2737,7 +2737,7 @@
       "type": ["bug", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "270",
@@ -2748,8 +2748,8 @@
       "evolution": "Lombre",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "271",
@@ -2760,7 +2760,7 @@
       "evolution": "Ludicolo",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "272",
@@ -2769,7 +2769,7 @@
       "type": ["water", "grass"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "273",
@@ -2780,8 +2780,8 @@
       "evolution": "Nuzleaf",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "274",
@@ -2792,7 +2792,7 @@
       "evolution": "Shiftry",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "275",
@@ -2801,7 +2801,7 @@
       "type": ["grass", "dark"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "276",
@@ -2812,8 +2812,8 @@
       "evolution": "Swellow",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "277",
@@ -2822,7 +2822,7 @@
       "type": ["normal", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "278",
@@ -2833,8 +2833,8 @@
       "evolution": "Pelipper",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 5
+      "buddyDistance": 1,
+      "eggDistance": 5
     },
     {
       "index": "279",
@@ -2843,7 +2843,7 @@
       "type": ["water", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "280",
@@ -2854,8 +2854,8 @@
       "evolution": "Kirlia",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "281",
@@ -2866,7 +2866,7 @@
       "evolution": "Gardevoir",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "282",
@@ -2875,7 +2875,7 @@
       "type": ["psychic", "fairy"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "283",
@@ -2886,8 +2886,8 @@
       "evolution": "Masquerain",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "284",
@@ -2896,7 +2896,7 @@
       "type": ["bug", "flying"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "285",
@@ -2907,8 +2907,8 @@
       "evolution": "Breloom",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "286",
@@ -2917,7 +2917,7 @@
       "type": ["grass", "fighting"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "287",
@@ -2928,8 +2928,8 @@
       "evolution": "Vigoroth",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "288",
@@ -2940,7 +2940,7 @@
       "evolution": "Slaking",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "289",
@@ -2949,7 +2949,7 @@
       "type": ["normal"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5
+      "buddyDistance": 5
     },
     {
       "index": "293",
@@ -2960,8 +2960,8 @@
       "evolution": "Loudred",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "294",
@@ -2990,8 +2990,8 @@
       "evolution": "Hariyama",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "297",
@@ -3000,7 +3000,7 @@
       "type": ["fighting"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "298",
@@ -3011,8 +3011,8 @@
       "evolution": "Marill",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "299",
@@ -3021,8 +3021,8 @@
       "type": ["rock"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "300",
@@ -3033,8 +3033,8 @@
       "evolution": "Delcatty",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "301",
@@ -3043,8 +3043,8 @@
       "type": ["normal"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "302",
@@ -3053,8 +3053,8 @@
       "type": ["dark", "ghost"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "303",
@@ -3063,8 +3063,8 @@
       "type": ["steel", "fairy"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 5,
-      "egg-distance": 10
+      "buddyDistance": 5,
+      "eggDistance": 10
     },
     {
       "index": "304",
@@ -3075,7 +3075,7 @@
       "evolution": "Lairon",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "306",
@@ -3086,7 +3086,7 @@
       "evolution": "Aggron",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
       "index": "307",
@@ -3097,8 +3097,8 @@
       "evolution": "Medicham",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "308",
@@ -3107,7 +3107,7 @@
       "type": ["fighting", "psychic"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "309",
@@ -3118,8 +3118,8 @@
       "evolution": "Manectric",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3,
-      "egg-distance": 5
+      "buddyDistance": 3,
+      "eggDistance": 5
     },
     {
       "index": "310",
@@ -3128,7 +3128,7 @@
       "type": ["electric"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "311",
@@ -3137,7 +3137,7 @@
       "type": ["electric"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "312",
@@ -3146,7 +3146,7 @@
       "type": ["electric"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "313",
@@ -3155,7 +3155,7 @@
       "type": ["bug"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "314",
@@ -3164,7 +3164,7 @@
       "type": ["bug"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "315",
@@ -3173,7 +3173,7 @@
       "type": ["grass", "poison"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 3
+      "buddyDistance": 3
     },
     {
       "index": "316",
@@ -3184,8 +3184,8 @@
       "evolution": "Swalot",
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1,
-      "egg-distance": 2
+      "buddyDistance": 1,
+      "eggDistance": 2
     },
     {
       "index": "317",
@@ -3194,7 +3194,7 @@
       "type": ["poison"],
       "gen": 3,
       "region": "Hoenn",
-      "buddy-distance": 1
+      "buddyDistance": 1
     },
     {
      "index": "318",
@@ -3205,7 +3205,7 @@
      "evolution": "Sharpedo",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "319",
@@ -3214,7 +3214,7 @@
      "type": ["water", "dark"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "320",
@@ -3225,8 +3225,8 @@
      "evolution": "Wailord",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1,
-     "egg-distance": 2
+     "buddyDistance": 1,
+     "eggDistance": 2
    },
     {
      "index": "321",
@@ -3235,7 +3235,7 @@
      "type": ["water"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1
+     "buddyDistance": 1
    },
    {
     "index": "322",
@@ -3246,8 +3246,8 @@
     "evolution": "Camerupt",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 3,
-    "egg-distance": 5
+    "buddyDistance": 3,
+    "eggDistance": 5
     },
    {
     "index": "323",
@@ -3256,7 +3256,7 @@
     "type": ["fire", "ground"],
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 3
+    "buddyDistance": 3
     },
     {
      "index": "324",
@@ -3265,7 +3265,7 @@
      "type": ["fire"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
    },
    {
     "index": "325",
@@ -3276,8 +3276,8 @@
     "evolution": "Grumpig",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 1,
-    "egg-distance": 2
+    "buddyDistance": 1,
+    "eggDistance": 2
     },
    {
     "index": "326",
@@ -3287,7 +3287,7 @@
     "evolution": "Grumpig",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 1
+    "buddyDistance": 1
     },
     {
      "index": "328",
@@ -3298,8 +3298,8 @@
      "evolution": "Vibrava",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5,
-     "egg-distance": 10
+     "buddyDistance": 5,
+     "eggDistance": 10
     },
     {
      "index": "329",
@@ -3310,7 +3310,7 @@
      "evolution": "Flygon",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
     },
     {
      "index": "330",
@@ -3319,7 +3319,7 @@
      "type": ["ground", "dragon"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
     },
     {
      "index": "331",
@@ -3330,8 +3330,8 @@
      "evolution": "Cacturne",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "332",
@@ -3340,7 +3340,7 @@
      "type": ["grass", "dark"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "333",
@@ -3351,8 +3351,8 @@
      "evolution": "Altaria",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1,
-     "egg-distance": 2
+     "buddyDistance": 1,
+     "eggDistance": 2
     },
     {
      "index": "334",
@@ -3361,7 +3361,7 @@
      "type": ["dragon", "flying"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1
+     "buddyDistance": 1
     },
     {
      "index": "335",
@@ -3370,7 +3370,7 @@
      "type": ["normal"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "336",
@@ -3379,7 +3379,7 @@
      "type": ["poison"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
    },
    {
     "index": "337",
@@ -3388,7 +3388,7 @@
     "type": ["rock", "psychic"],
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 3
+    "buddyDistance": 3
     },
     {
      "index": "338",
@@ -3397,7 +3397,7 @@
      "type": ["rock", "psychic"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "339",
@@ -3408,8 +3408,8 @@
      "evolution": "Whiscash",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1,
-     "egg-distance": 2
+     "buddyDistance": 1,
+     "eggDistance": 2
     },
     {
      "index": "340",
@@ -3418,7 +3418,7 @@
      "type": ["water", "ground"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 1
+     "buddyDistance": 1
     },
     {
      "index": "341",
@@ -3429,8 +3429,8 @@
      "evolution": "Crawdaunt",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "342",
@@ -3439,7 +3439,7 @@
      "type": ["water", "dark"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "343",
@@ -3450,8 +3450,8 @@
      "evolution": "Claydol",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "344",
@@ -3460,7 +3460,7 @@
      "type": ["ground", "psychic"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "345",
@@ -3471,7 +3471,7 @@
      "evolution": "Cradily",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "346",
@@ -3480,7 +3480,7 @@
      "type": ["rock", "grass"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "347",
@@ -3491,7 +3491,7 @@
      "evolution": "Armaldo",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "348",
@@ -3500,7 +3500,7 @@
      "type": ["rock", "bug"],
      "candy": 50,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "349",
@@ -3511,8 +3511,8 @@
      "evolution": "Milotic",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5,
-     "egg-distance": 10
+     "buddyDistance": 5,
+     "eggDistance": 10
    },
     {
      "index": "350",
@@ -3521,7 +3521,7 @@
      "type": ["water"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
    },
    {
     "index": "351",
@@ -3530,7 +3530,7 @@
     "type": ["normal"],
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 5
+    "buddyDistance": 5
     },
     {
      "index": "353",
@@ -3541,8 +3541,8 @@
      "evolution": "Banette",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "354",
@@ -3551,7 +3551,7 @@
      "type": ["ghost"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "355",
@@ -3562,8 +3562,8 @@
      "evolution": "Dusclops",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 5
+     "buddyDistance": 3,
+     "eggDistance": 5
     },
     {
      "index": "356",
@@ -3572,7 +3572,7 @@
      "type": ["ghost"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "357",
@@ -3581,7 +3581,7 @@
      "type": ["grass", "flying"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
     },
     {
      "index": "358",
@@ -3590,8 +3590,8 @@
      "type": ["Psychic"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5,
-     "egg-distance": 10
+     "buddyDistance": 5,
+     "eggDistance": 10
     },
     {
      "index": "359",
@@ -3600,7 +3600,7 @@
      "type": ["dark"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
    },
    {
     "index": "360",
@@ -3611,8 +3611,8 @@
     "evolution": "Wobbuffet",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 3,
-    "egg-distance": 5
+    "buddyDistance": 3,
+    "eggDistance": 5
     },
     {
      "index": "361",
@@ -3623,7 +3623,7 @@
      "evolution": "Glalie",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "362",
@@ -3632,7 +3632,7 @@
      "type": ["ice"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "363",
@@ -3643,8 +3643,8 @@
      "evolution": "Sealeo",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 2
+     "buddyDistance": 3,
+     "eggDistance": 2
     },
     {
      "index": "364",
@@ -3655,7 +3655,7 @@
      "evolution": "Walrein",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "365",
@@ -3664,7 +3664,7 @@
      "type": ["ice", "water"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3
+     "buddyDistance": 3
     },
     {
      "index": "369",
@@ -3673,7 +3673,7 @@
      "type": ["water", "rock"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
     },
     {
      "index": "370",
@@ -3682,8 +3682,8 @@
      "type": ["water"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 3,
-     "egg-distance": 2
+     "buddyDistance": 3,
+     "eggDistance": 2
     },
     {
      "index": "371",
@@ -3694,8 +3694,8 @@
      "evolution": "Shelgon",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5,
-     "egg-distance": 10
+     "buddyDistance": 5,
+     "eggDistance": 10
    },
     {
      "index": "372",
@@ -3706,7 +3706,7 @@
      "evolution": "Salamence",
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
    },
     {
      "index": "373",
@@ -3715,7 +3715,7 @@
      "type": ["dragon", "flying"],
      "gen": 3,
      "region": "Hoenn",
-     "buddy-distance": 5
+     "buddyDistance": 5
    },
    {
     "index": "374",
@@ -3726,8 +3726,8 @@
     "evolution": "Metang",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 5,
-    "egg-distance": 10
+    "buddyDistance": 5,
+    "eggDistance": 10
     },
    {
     "index": "375",
@@ -3738,7 +3738,7 @@
     "evolution": "Metagross",
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 5
+    "buddyDistance": 5
     },
    {
     "index": "376",
@@ -3747,7 +3747,7 @@
     "type": ["steel"],
     "gen": 3,
     "region": "Hoenn",
-    "buddy-distance": 5
+    "buddyDistance": 5
     }
   ]
 }
