@@ -64,7 +64,7 @@ $(document).ready(function() {
 
       //Add Pokémon choice + inputfields
       $('#pokemonChoice').prepend('<p id="pokemon-desc"><h2>You chose <span class="species-instance">' + selectedPokemon.species + '!&nbsp;</span></h2>');
-      $('.ui-widget').append(pokemonNumberInput()).append($pokemonCandyInput()).append($pokemonFirstEvolution());
+      $('.ui-widget').append(pokemonNumberInput()).append(pokemonCandyInput()).append(pokemonFirstEvolution());
       //Generate buttons to reset selectionfield or to add Pokémon to evolution table
       $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
     }
