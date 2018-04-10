@@ -21,3 +21,7 @@
 	clear:both;
 	}
 }
+
+@function ends-with($string, $find) {
+  @return str-slice($string, (str-length($string) - str-length($find) + 1)) == $find
+}

@@ -1,0 +1,53 @@
+// @mixin pokemon-list() {
+//   $list-length : 384;
+//
+//   @for $i from 1 through $list-length {
+//     $sprite : unquote("$sprite-pokemon-")#{i};
+//
+//     @if( unquote("$sprite-pokemon-")#{i} != null ) {
+//       .pokemon-#{$i} {
+//         @include sprite($sprite);
+//       }
+//     }
+//   }
+//
+// }
+
+
+// @each $animal in puma, sea-slug, egret, salamander {
+//   @if (str-index($animal, -slug)) {
+//     .#{$animal}-icon {
+//       background-image: url('/images/#{$animal}.png');
+//     }
+//   }
+// }
+
+// https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184
+$map: (
+    key: value,
+    nextkey: nextvalue
+);
+
+.element {
+  @if map-has-key($map, key) {
+    content: ’Map has this key.’;
+  } @else {
+    content: ’Map has not this key.’;
+  }
+}
+
+
+$default: 001;
+
+@mixin pokemon-list($index : null) {
+
+  @if($index) {
+    .pokemon#{$index} {
+      @include sprite(unquote("$pokemon")#{$index});
+    }
+  } @else {
+    $index: $default;
+  }
+}
+
+@include pokemon-list();

@@ -1,5 +1,6 @@
 @import "01-settings/variables";
 @import "02-tools/mixins";
+@import "02-tools/functions";
 @import "02-tools/animations";
 @import "03-generic/reset";
 @import "03-generic/generic-styling";
@@ -8,5 +9,5 @@
 @import "05-components/buttons";
 @import "05-components/inputs";
 @import "05-components/tables";
+@import "05-components/pokemon";
 @import "base";
-// @import "pokemon";
