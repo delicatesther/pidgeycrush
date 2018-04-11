@@ -3828,9 +3828,11 @@ $(document).ready(function() {
 
       //Add Pokémon choice + inputfields
       $('#pokemonChoice').prepend('<p id="pokemon-desc"><h2>You chose <span class="species-instance">' + selectedPokemon.species + '!&nbsp;</span></h2>');
-      $('.ui-widget').append(pokemonNumberInput()).append(pokemonCandyInput()).append(pokemonFirstEvolution());
+
+
+      $('.ui-widget').append(pokemonNumberInput(selectedPokemon)).append(pokemonCandyInput(selectedPokemon)).append(pokemonFirstEvolution(selectedPokemon));
       //Generate buttons to reset selectionfield or to add Pokémon to evolution table
-      $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies();">Add Pokémon to Table</a>');
+      $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies(selectedPokemon);">Add Pokémon to Table</a>');
     }
 
     //Generate Pokémon avatars based number selection in inputfield
@@ -3888,7 +3890,7 @@ $(document).ready(function() {
       $xpGained = evolutionsPossible * 500;
     }
 
-    var rowTemplate = '<tr><td>' + numberOfPokemon + '</td><td class="pokemon-avatar ' + selectedPokemon.species + '"></td>' + '</td><td class="wide">' + candyNeeded + '</td><td class="wide">' + numberOfCandyHeld + '</td><td class="evolvesPossible">' + evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
+    var rowTemplate = '<tr><td>' + numberOfPokemon + '</td><td class="pokemon-avatar sprite-pokemon' + selectedPokemon.index + '"></td>' + '</td><td class="wide">' + candyNeeded + '</td><td class="wide">' + numberOfCandyHeld + '</td><td class="evolvesPossible">' + evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
 
     tableInner.append(rowTemplate);
 
