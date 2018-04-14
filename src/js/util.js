@@ -81,6 +81,7 @@ matchGenus = function (genus, index) {
   genusArr = $.makeArray(tempArr);
   // console.table(genusArr);
   console.table(genusArr);
+  return genusArr;
 }
 
 
