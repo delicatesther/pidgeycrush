@@ -2,6 +2,10 @@
 // Util
 // ======================================
 
+// ======================================
+// Get JSON data and parse it towards Autocomplete
+// ======================================
+
  getMapKeyValue = function(obj, key) {
   if (obj.hasOwnProperty(key))
   return obj[key];
@@ -25,9 +29,105 @@ matchElements = function (el, selectedPokemon) {
       selectedPokemon = pokemon[i];
     }
   }
-  console.table(selectedPokemon);
+  // console.table(selectedPokemon);
   return selectedPokemon;
 }
+
+safeGet = function(obj, props, defaultValue) {
+  try {
+    return props.split('.').reduce(function(obj, p) {
+      return obj[p];
+    }, obj);
+  } catch(e) {
+    return defaultValue
+  }
+}
+
+// sortArrayCandy = function(a, b) {
+//   var aCandy = a.candy;
+//   var bCandy = b.candy;
+//   return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
+//   genusArr.sort(function(a, b, value){
+//     var aCandy = a.candy;
+//     var bCandy = b.candy;
+//     if(value === undefined) {
+//       // value = true;
+//       // value = (a.candy+ b.candy);
+//       // return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
+//       return true;
+//     }
+//     else {
+//       return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
+//     }
+//   });
+//   console.table(genusArr);
+// }
+
+// Match selected value with object in array
+matchGenus = function (genus, index) {
+  tempArr = [];
+
+  for(var i = 0; i < pokemon.length; i++) {
+    // console.log(pokemon[i].candy);
+    if(pokemon[i].genus == genus) {
+      tempArr.push(pokemon[i]);
+    }
+  }
+
+  // sort(genusArr.candy, genusArr);
+  // for('candy' in genusArr) {
+  //   console.log(Object.values('candy', genusArr));
+  // }
+  genusArr = $.makeArray(tempArr);
+  // console.table(genusArr);
+  console.table(genusArr);
+}
+
+
+sort = function (prop, arr) {
+    prop = prop.split('.');
+    var len = prop.length;
+
+    arr.sort(function (a, b) {
+        var i = 0;
+        var key;
+
+        while( i < len ) {
+            key = prop[i];
+
+            if(!a.hasOwnProperty(key)) return 1;
+            if(!b.hasOwnProperty(key)) return -1;
+
+            a = a[key];
+            b = b[key];
+            i++;
+        }
+        if (a < b) {
+            return -1;
+        } else if (a > b) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+    return arr;
+};
+
+// Overrides the default autocomplete filter function to search only from the beginning of the string
+$.ui.autocomplete.filter = function(array, term) {
+  var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+  return $.grep(array, function(value) {
+    return matcher.test(value.label || value.value || value);
+  });
+};
+
+//Sort Pokémon Array in select alphabetically
+function SortByName(a, b) {
+  var aName = a.species.toLowerCase();
+  var bName = b.species.toLowerCase();
+  return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+};
+
 
 // ======================================
 //  Reset Forms
@@ -35,7 +135,8 @@ matchElements = function (el, selectedPokemon) {
 
 resetForm = function() {
   $('#pokemonSelect, #pokemonNumber').val('');
-  $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
+  $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
+  $('.avatar').attr('class', 'avatar');
   return false;
 };
 
@@ -47,38 +148,3 @@ resetTable = function() {
 $('#resetPokemonSelect').on('click', function(e) { e.preventDefault(); resetForm(); });
 // Reset  table
 $('#resetTable').on('click', function(e) { e.preventDefault(); resetTable(); });
-
-
-// ======================================
-//  Pokemon Selection Tool Functions
-// ======================================
-
-// Remove egg animation time warning
-removeEggMessage = function(selectedPokemon) {
-  $('#eggMessage').remove();
-}
-
-//Add Pokémon avatar
-pokemonAvatar = function(selectedPokemon) {
-  $("#pokemonFields").append('<li class="pokemon-avatar sprite-pokemon' + selectedPokemon.index + '">' + '</li>');
-  $('#poke-img').addClass(selectedPokemon.index);
-  $('#poke-img').addClass('pokemon-avatar');
-  $('#pokemonFields li').attr('id', function(i) {
-    return 'pokemon' + (i + 1);
-  });
-};
-
-// Generate inputfield to select number of Pokémon to add
-pokemonNumberInput = function(selectedPokemon) {
-  $('.ui-widget').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + selectedPokemon.species + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
-}
-
-// Generate inputfield to select Pokémon candy in inventory
-pokemonCandyInput = function(selectedPokemon) {
-  $('.ui-widget').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + selectedPokemon.genus + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
-}
-
-// Generate checkbox to indicate a first evolution of the species
-pokemonFirstEvolution = function(selectedPokemon) {
-  $('.ui-widget').append('<div class="evolution-bonus"><span class="bonus">Adds<br>500 XP!</span><input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve"></label><span>Is this the first time you evolve a <span class="species-instance">' + selectedPokemon.species + '</span>?</span></div>')
-}

@@ -1,7 +1,7 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 module.exports={
   "pokemon": [{
-      "index": "001",
+      "pokemonIndex": "001",
       "species": "Bulbasaur",
       "genus": "Bulbasaur",
       "type": ["grass", "poison"],
@@ -13,7 +13,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "002",
+      "pokemonIndex": "002",
       "species": "Ivysaur",
       "genus": "Bulbasaur",
       "type": ["grass", "poison"],
@@ -24,7 +24,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "003",
+      "pokemonIndex": "003",
       "species": "Venusaur",
       "genus": "Bulbasaur",
       "type": ["grass", "poison"],
@@ -33,7 +33,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "004",
+      "pokemonIndex": "004",
       "species": "Charmander",
       "genus": "Charmander",
       "type": ["fire"],
@@ -45,7 +45,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "005",
+      "pokemonIndex": "005",
       "species": "Charmeleon",
       "genus": "Charmander",
       "type": ["fire"],
@@ -56,7 +56,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "006",
+      "pokemonIndex": "006",
       "species": "Charizard",
       "genus": "Charmander",
       "type": ["fire", "flying"],
@@ -65,7 +65,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "007",
+      "pokemonIndex": "007",
       "species": "Squirtle",
       "genus": "Squirtle",
       "type": ["water"],
@@ -76,7 +76,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "008",
+      "pokemonIndex": "008",
       "species": "Wartortle",
       "genus": "Squirtle",
       "type": ["water"],
@@ -87,7 +87,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "009",
+      "pokemonIndex": "009",
       "species": "Blastoise",
       "genus": "Squirtle",
       "type": ["water"],
@@ -96,7 +96,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "010",
+      "pokemonIndex": "010",
       "species": "Caterpie",
       "genus": "Caterpie",
       "type": ["bug"],
@@ -108,7 +108,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "011",
+      "pokemonIndex": "011",
       "species": "Metapod",
       "genus": "Caterpie",
       "type": ["bug"],
@@ -119,7 +119,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "012",
+      "pokemonIndex": "012",
       "species": "Butterfree",
       "genus": "Caterpie",
       "type": ["bug", "flying"],
@@ -128,7 +128,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "013",
+      "pokemonIndex": "013",
       "species": "Weedle",
       "genus": "Weedle",
       "type": ["bug", "poison"],
@@ -140,7 +140,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "014",
+      "pokemonIndex": "014",
       "species": "Kakuna",
       "genus": "Weedle",
       "type": ["bug", "poison"],
@@ -151,7 +151,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "015",
+      "pokemonIndex": "015",
       "species": "Beedrill",
       "genus": "Weedle",
       "type": ["bug", "poison"],
@@ -160,7 +160,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "016",
+      "pokemonIndex": "016",
       "species": "Pidgey",
       "genus": "Pidgey",
       "type": ["normal", "flying"],
@@ -171,7 +171,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "017",
+      "pokemonIndex": "017",
       "species": "Pidgeotto",
       "genus": "Pidgey",
       "type": ["normal", "flying"],
@@ -182,7 +182,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "018",
+      "pokemonIndex": "018",
       "species": "Pidgeot",
       "genus": "Pidgey",
       "type": ["normal", "flying"],
@@ -191,7 +191,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "019",
+      "pokemonIndex": "019",
       "species": "Rattata",
       "genus": "Rattata",
       "type": ["normal"],
@@ -202,7 +202,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "020",
+      "pokemonIndex": "020",
       "species": "Raticate",
       "genus": "Rattata",
       "type": ["", ""],
@@ -211,7 +211,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "021",
+      "pokemonIndex": "021",
       "species": "Spearow",
       "genus": "Spearow",
       "type": ["normal", "flying"],
@@ -223,7 +223,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "022",
+      "pokemonIndex": "022",
       "species": "Fearow",
       "genus": "Spearow",
       "type": ["normal", "flying"],
@@ -232,7 +232,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "023",
+      "pokemonIndex": "023",
       "species": "Ekans",
       "genus": "Ekans",
       "type": ["poison"],
@@ -243,7 +243,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "024",
+      "pokemonIndex": "024",
       "species": "Arbok",
       "genus": "Ekans",
       "type": ["poison"],
@@ -252,7 +252,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "025",
+      "pokemonIndex": "025",
       "species": "Pikachu",
       "genus": "Pikachu",
       "type": ["electric"],
@@ -263,7 +263,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "026",
+      "pokemonIndex": "026",
       "species": "Raichu",
       "genus": "Pikachu",
       "type": ["electric"],
@@ -272,7 +272,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "027",
+      "pokemonIndex": "027",
       "species": "Sandshrew",
       "genus": "Sandshrew",
       "type": ["ground"],
@@ -283,7 +283,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "028",
+      "pokemonIndex": "028",
       "species": "Sandslash",
       "genus": "Sandshrew",
       "type": ["ground"],
@@ -292,7 +292,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "029",
+      "pokemonIndex": "029",
       "species": "NidoranF",
       "genus": "NidoranF",
       "type": ["poison"],
@@ -304,7 +304,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "030",
+      "pokemonIndex": "030",
       "species": "Nidorina",
       "genus": "NidoranF",
       "type": ["poison"],
@@ -315,7 +315,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "031",
+      "pokemonIndex": "031",
       "species": "Nidoqueen",
       "genus": "NidoranF",
       "type": ["poison", "ground"],
@@ -324,7 +324,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "032",
+      "pokemonIndex": "032",
       "species": "NidoranM",
       "genus": "NidoranM",
       "type": ["poison"],
@@ -336,7 +336,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "033",
+      "pokemonIndex": "033",
       "species": "Nidorino",
       "genus": "NidoranM",
       "type": ["poison"],
@@ -347,7 +347,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "034",
+      "pokemonIndex": "034",
       "species": "Nidoking",
       "genus": "NidoranM",
       "type": ["poison", "ground"],
@@ -356,7 +356,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "035",
+      "pokemonIndex": "035",
       "species": "Clefairy",
       "genus": "Cleffa",
       "type": ["fairy"],
@@ -367,7 +367,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "036",
+      "pokemonIndex": "036",
       "species": "Clefable",
       "genus": "Cleffa",
       "type": ["fairy"],
@@ -376,7 +376,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "037",
+      "pokemonIndex": "037",
       "species": "Vulpix",
       "genus": "Vulpix",
       "type": ["fire"],
@@ -387,7 +387,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "038",
+      "pokemonIndex": "038",
       "species": "Ninetales",
       "genus": "Vulpix",
       "type": ["fire"],
@@ -396,7 +396,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "039",
+      "pokemonIndex": "039",
       "species": "Jigglypuff",
       "genus": "Igglybuff",
       "type": ["normal", "fairy"],
@@ -407,7 +407,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "040",
+      "pokemonIndex": "040",
       "species": "Wigglytuff",
       "genus": "Igglybuff",
       "type": ["normal", "fairy"],
@@ -416,7 +416,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "041",
+      "pokemonIndex": "041",
       "species": "Zubat",
       "genus": "Zubat",
       "type": ["poison", "flying"],
@@ -428,7 +428,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "042",
+      "pokemonIndex": "042",
       "species": "Golbat",
       "genus": "Zubat",
       "type": ["poison", "flying"],
@@ -439,7 +439,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "043",
+      "pokemonIndex": "043",
       "species": "Oddish",
       "genus": "Oddish",
       "type": ["grass", "poison"],
@@ -451,7 +451,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "044",
+      "pokemonIndex": "044",
       "species": "Gloom",
       "genus": "Oddish",
       "type": ["grass", "poison"],
@@ -462,7 +462,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "045",
+      "pokemonIndex": "045",
       "species": "Vileplume",
       "genus": "Oddish",
       "type": ["grass", "poison"],
@@ -471,7 +471,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "046",
+      "pokemonIndex": "046",
       "species": "Paras",
       "genus": "Paras",
       "type": ["bug", "grass"],
@@ -482,7 +482,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "047",
+      "pokemonIndex": "047",
       "species": "Parasect",
       "genus": "Paras",
       "type": ["bug", "grass"],
@@ -491,7 +491,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "048",
+      "pokemonIndex": "048",
       "species": "Venonat",
       "genus": "Venonat",
       "type": ["bug", "poison"],
@@ -503,7 +503,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "049",
+      "pokemonIndex": "049",
       "species": "Venomoth",
       "genus": "Venonat",
       "type": ["bug", "poison"],
@@ -512,7 +512,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "050",
+      "pokemonIndex": "050",
       "species": "Diglett",
       "genus": "Diglett",
       "type": ["ground"],
@@ -524,7 +524,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "051",
+      "pokemonIndex": "051",
       "species": "Dugtrio",
       "genus": "Diglett",
       "type": ["ground"],
@@ -533,7 +533,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "052",
+      "pokemonIndex": "052",
       "species": "Meowth",
       "genus": "Meowth",
       "type": ["normal"],
@@ -545,7 +545,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "053",
+      "pokemonIndex": "053",
       "species": "Persian",
       "genus": "Meowth",
       "type": ["normal"],
@@ -554,7 +554,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "054",
+      "pokemonIndex": "054",
       "species": "Psyduck",
       "genus": "Psyduck",
       "type": ["water"],
@@ -565,7 +565,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "055",
+      "pokemonIndex": "055",
       "species": "Golduck",
       "genus": "Psyduck",
       "type": ["water"],
@@ -574,7 +574,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "056",
+      "pokemonIndex": "056",
       "species": "Mankey",
       "genus": "Mankey",
       "type": ["fighting"],
@@ -586,7 +586,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "057",
+      "pokemonIndex": "057",
       "species": "Primeape",
       "genus": "Mankey",
       "type": ["fighting"],
@@ -595,7 +595,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "058",
+      "pokemonIndex": "058",
       "species": "Growlithe",
       "genus": "Growlithe",
       "type": ["fire"],
@@ -607,7 +607,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "059",
+      "pokemonIndex": "059",
       "species": "Arcanine",
       "genus": "Growlithe",
       "type": ["fire"],
@@ -616,7 +616,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "60",
+      "pokemonIndex": "60",
       "species": "Poliwag",
       "genus": "Poliwag",
       "type": ["water"],
@@ -628,7 +628,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "061",
+      "pokemonIndex": "061",
       "species": "Poliwhirl",
       "genus": "Poliwag",
       "type": ["water"],
@@ -639,7 +639,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "062",
+      "pokemonIndex": "062",
       "species": "Poliwrath",
       "genus": "Poliwag",
       "type": ["water", "fighting"],
@@ -648,7 +648,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "063",
+      "pokemonIndex": "063",
       "species": "Abra",
       "genus": "Abra",
       "type": ["psychic"],
@@ -660,7 +660,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "064",
+      "pokemonIndex": "064",
       "species": "Kadabra",
       "genus": "Abra",
       "type": ["psychic"],
@@ -671,7 +671,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "065",
+      "pokemonIndex": "065",
       "species": "Alakazam",
       "genus": "Abra",
       "type": ["psychic"],
@@ -680,7 +680,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "066",
+      "pokemonIndex": "066",
       "species": "Machop",
       "genus": "Machop",
       "type": ["fighting"],
@@ -692,7 +692,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "067",
+      "pokemonIndex": "067",
       "species": "Machoke",
       "genus": "Machop",
       "type": ["fighting"],
@@ -703,7 +703,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "068",
+      "pokemonIndex": "068",
       "species": "Machamp",
       "genus": "Machop",
       "type": ["fighting"],
@@ -712,7 +712,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "069",
+      "pokemonIndex": "069",
       "species": "Bellsprout",
       "genus": "Bellsprout",
       "type": ["grass", "poison"],
@@ -724,7 +724,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "070",
+      "pokemonIndex": "070",
       "species": "Weepinbell",
       "genus": "Bellsprout",
       "type": ["grass", "poison"],
@@ -735,7 +735,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "071",
+      "pokemonIndex": "071",
       "species": "Victreebel",
       "genus": "Bellsprout",
       "type": ["grass", "poison"],
@@ -744,7 +744,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "072",
+      "pokemonIndex": "072",
       "species": "Tentacool",
       "genus": "Tentacool",
       "type": ["water", "poison"],
@@ -755,7 +755,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "078",
+      "pokemonIndex": "078",
       "species": "Tentacruel",
       "genus": "Tentacool",
       "type": ["water", "poison"],
@@ -764,7 +764,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "074",
+      "pokemonIndex": "074",
       "species": "Geodude",
       "genus": "Geodude",
       "type": ["rock", "ground"],
@@ -776,7 +776,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "075",
+      "pokemonIndex": "075",
       "species": "Graveler",
       "genus": "Geodude",
       "type": ["rock", "ground"],
@@ -787,7 +787,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "076",
+      "pokemonIndex": "076",
       "species": "Golem",
       "genus": "Geodude",
       "type": ["rock", "ground"],
@@ -796,7 +796,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "077",
+      "pokemonIndex": "077",
       "species": "Ponyta",
       "genus": "Ponyta",
       "type": ["fire"],
@@ -808,7 +808,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "078",
+      "pokemonIndex": "078",
       "species": "Rapidash",
       "genus": "Ponyta",
       "type": ["fire"],
@@ -817,7 +817,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "079",
+      "pokemonIndex": "079",
       "species": "Slowpoke",
       "genus": "Slowpoke",
       "type": ["water", "psychic"],
@@ -829,7 +829,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "080",
+      "pokemonIndex": "080",
       "species": "Slowbro",
       "genus": "Slowpoke",
       "type": ["water", "psychic"],
@@ -838,7 +838,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "081",
+      "pokemonIndex": "081",
       "species": "Magnemite",
       "genus": "Magnemite",
       "type": ["electric", "steel"],
@@ -849,7 +849,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "082",
+      "pokemonIndex": "082",
       "species": "Magneton",
       "genus": "Magnemite",
       "type": ["electric", "steel"],
@@ -858,7 +858,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "083",
+      "pokemonIndex": "083",
       "species": "Farfetc'd",
       "genus": "Farfetc'd",
       "type": ["normal", "flying"],
@@ -867,7 +867,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "084",
+      "pokemonIndex": "084",
       "species": "Doduo",
       "genus": "Doduo",
       "type": ["normal", "flying"],
@@ -879,7 +879,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "085",
+      "pokemonIndex": "085",
       "species": "Dodrio",
       "genus": "Doduo",
       "type": ["normal", "flying"],
@@ -888,7 +888,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "086",
+      "pokemonIndex": "086",
       "species": "Seel",
       "genus": "Seel",
       "type": ["water"],
@@ -900,7 +900,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "087",
+      "pokemonIndex": "087",
       "species": "Dewgong",
       "genus": "Seel",
       "type": ["water", "ice"],
@@ -909,7 +909,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "088",
+      "pokemonIndex": "088",
       "species": "Grimer",
       "genus": "Grimer",
       "type": ["poison"],
@@ -921,7 +921,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "089",
+      "pokemonIndex": "089",
       "species": "Muk",
       "genus": "Grimer",
       "type": ["poison"],
@@ -930,7 +930,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "090",
+      "pokemonIndex": "090",
       "species": "Shellder",
       "genus": "Shellder",
       "type": ["water"],
@@ -942,7 +942,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "091",
+      "pokemonIndex": "091",
       "species": "Cloyster",
       "genus": "Shellder",
       "type": ["water", "ice"],
@@ -951,7 +951,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "092",
+      "pokemonIndex": "092",
       "species": "Gastly",
       "genus": "Gastly",
       "type": ["ghost", "poison"],
@@ -963,7 +963,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "093",
+      "pokemonIndex": "093",
       "species": "Haunter",
       "genus": "Gastly",
       "type": ["ghost", "poison"],
@@ -974,7 +974,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "094",
+      "pokemonIndex": "094",
       "species": "Gengar",
       "genus": "Gastly",
       "type": ["ghost", "poison"],
@@ -983,7 +983,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "095",
+      "pokemonIndex": "095",
       "species": "Onix",
       "genus": "Onix",
       "type": ["rock", "ground"],
@@ -995,7 +995,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "096",
+      "pokemonIndex": "096",
       "species": "Drowzee",
       "genus": "Drowzee",
       "type": ["psychic"],
@@ -1007,7 +1007,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "097",
+      "pokemonIndex": "097",
       "species": "Hypno",
       "genus": "Drowzee",
       "type": ["psychic"],
@@ -1016,7 +1016,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "098",
+      "pokemonIndex": "098",
       "species": "Krabby",
       "genus": "Krabby",
       "type": ["water"],
@@ -1028,7 +1028,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "099",
+      "pokemonIndex": "099",
       "species": "Kingler",
       "genus": "Krabby",
       "type": ["water"],
@@ -1037,7 +1037,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "100",
+      "pokemonIndex": "100",
       "species": "Voltorb",
       "genus": "Voltorb",
       "type": ["electric"],
@@ -1049,7 +1049,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "101",
+      "pokemonIndex": "101",
       "species": "Electrode",
       "genus": "Voltorb",
       "type": ["electric"],
@@ -1058,7 +1058,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "102",
+      "pokemonIndex": "102",
       "species": "Exeggcute",
       "genus": "Exeggcute",
       "type": ["grass", "psychic"],
@@ -1070,7 +1070,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "103",
+      "pokemonIndex": "103",
       "species": "Exeggutor",
       "genus": "Exeggcute",
       "type": ["grass", "psychic"],
@@ -1079,7 +1079,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "104",
+      "pokemonIndex": "104",
       "species": "Cubone",
       "genus": "Cubone",
       "type": ["ground"],
@@ -1091,7 +1091,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "105",
+      "pokemonIndex": "105",
       "species": "Marowak",
       "genus": "Cubone",
       "type": ["ground"],
@@ -1100,7 +1100,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "106",
+      "pokemonIndex": "106",
       "species": "Hitmonlee",
       "genus": "Tyrogue",
       "type": ["fighting"],
@@ -1110,7 +1110,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "107",
+      "pokemonIndex": "107",
       "species": "Hitmonchan",
       "genus": "Tyrogue",
       "type": ["fighting"],
@@ -1120,7 +1120,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "108",
+      "pokemonIndex": "108",
       "species": "Lickitung",
       "genus": "Lickitung",
       "type": ["normal"],
@@ -1130,7 +1130,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "109",
+      "pokemonIndex": "109",
       "species": "Koffing",
       "genus": "Koffing",
       "type": ["poison"],
@@ -1142,7 +1142,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "110",
+      "pokemonIndex": "110",
       "species": "Weezing",
       "genus": "Koffing",
       "type": ["poison"],
@@ -1151,7 +1151,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "111",
+      "pokemonIndex": "111",
       "species": "Rhyhorn",
       "genus": "Rhyhorn",
       "type": ["ground", "rock"],
@@ -1163,7 +1163,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "112",
+      "pokemonIndex": "112",
       "species": "Rhydon",
       "genus": "Rhyhorn",
       "type": ["ground", "rock"],
@@ -1172,7 +1172,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "113",
+      "pokemonIndex": "113",
       "species": "Chansey",
       "genus": "Chansey",
       "type": ["normal"],
@@ -1184,7 +1184,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "114",
+      "pokemonIndex": "114",
       "species": "Tangela",
       "genus": "Tangela",
       "type": ["grass"],
@@ -1194,7 +1194,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "115",
+      "pokemonIndex": "115",
       "species": "Kangaskhan",
       "genus": "Kangaskhan",
       "type": ["normal"],
@@ -1203,7 +1203,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "116",
+      "pokemonIndex": "116",
       "species": "Horsea",
       "genus": "Horsea",
       "type": ["water"],
@@ -1215,7 +1215,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "117",
+      "pokemonIndex": "117",
       "species": "Seadra",
       "genus": "Horsea",
       "type": ["water"],
@@ -1226,7 +1226,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "118",
+      "pokemonIndex": "118",
       "species": "Goldeen",
       "genus": "Goldeen",
       "type": ["water"],
@@ -1237,7 +1237,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "119",
+      "pokemonIndex": "119",
       "species": "Seaking",
       "genus": "Goldeen",
       "type": ["water"],
@@ -1246,7 +1246,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "120",
+      "pokemonIndex": "120",
       "species": "Staryu",
       "genus": "Staryu",
       "type": ["water"],
@@ -1257,7 +1257,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "121",
+      "pokemonIndex": "121",
       "species": "Starmie",
       "genus": "Staryu",
       "type": ["water"],
@@ -1266,7 +1266,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "122",
+      "pokemonIndex": "122",
       "species": "Mr. Mime",
       "genus": "Mr. Mime",
       "type": ["psychic", "fairy"],
@@ -1275,7 +1275,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "123",
+      "pokemonIndex": "123",
       "species": "Scyther",
       "genus": "Scyther",
       "type": ["bug", "flying"],
@@ -1287,7 +1287,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "124",
+      "pokemonIndex": "124",
       "species": "Jynx",
       "genus": "Jynx",
       "type": ["ice", "psychic"],
@@ -1296,7 +1296,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "125",
+      "pokemonIndex": "125",
       "species": "Electabuzz",
       "genus": "Electabuzz",
       "type": ["electric"],
@@ -1305,7 +1305,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "126",
+      "pokemonIndex": "126",
       "species": "Magmar",
       "genus": "Magmar",
       "type": ["fire"],
@@ -1314,7 +1314,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "127",
+      "pokemonIndex": "127",
       "species": "Pinsir",
       "genus": "Pinsir",
       "type": ["bug"],
@@ -1324,7 +1324,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "128",
+      "pokemonIndex": "128",
       "species": "Tauros",
       "genus": "Tauros",
       "type": ["normal"],
@@ -1333,7 +1333,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "129",
+      "pokemonIndex": "129",
       "species": "Magikarp",
       "genus": "Magikarp",
       "type": ["water"],
@@ -1345,7 +1345,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "130",
+      "pokemonIndex": "130",
       "species": "Gyarados",
       "genus": "Magikarp",
       "type": ["water", "flying"],
@@ -1354,7 +1354,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "131",
+      "pokemonIndex": "131",
       "species": "Lapras",
       "genus": "Lapras",
       "type": ["water", "ice"],
@@ -1364,7 +1364,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "132",
+      "pokemonIndex": "132",
       "species": "Ditto",
       "genus": "Ditto",
       "type": ["normal"],
@@ -1373,7 +1373,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "133",
+      "pokemonIndex": "133",
       "species": "Eevee",
       "genus": "Eevee",
       "type": ["normal"],
@@ -1385,7 +1385,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "134",
+      "pokemonIndex": "134",
       "species": "Vaporeon",
       "genus": "Eevee",
       "type": ["water"],
@@ -1394,7 +1394,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "135",
+      "pokemonIndex": "135",
       "species": "Jolteon",
       "genus": "Eevee",
       "type": ["electric"],
@@ -1403,7 +1403,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "136",
+      "pokemonIndex": "136",
       "species": "Flareon",
       "genus": "Eevee",
       "type": ["fire"],
@@ -1412,7 +1412,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "137",
+      "pokemonIndex": "137",
       "species": "Porygon",
       "genus": "Porygon",
       "type": ["normal"],
@@ -1424,7 +1424,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "138",
+      "pokemonIndex": "138",
       "species": "Omanyte",
       "genus": "Omanyte",
       "type": ["rock", "water"],
@@ -1436,7 +1436,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "139",
+      "pokemonIndex": "139",
       "species": "Omastar",
       "genus": "Omanyte",
       "type": ["rock", "water"],
@@ -1445,7 +1445,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "140",
+      "pokemonIndex": "140",
       "species": "Kabuto",
       "genus": "Kabuto",
       "type": ["rock", "water"],
@@ -1457,7 +1457,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "141",
+      "pokemonIndex": "141",
       "species": "Kabutops",
       "genus": "Kabuto",
       "type": ["rock", "water"],
@@ -1466,7 +1466,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "142",
+      "pokemonIndex": "142",
       "species": "Aerodactyl",
       "genus": "Aerodactyl",
       "type": ["rock", "flying"],
@@ -1476,7 +1476,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "143",
+      "pokemonIndex": "143",
       "species": "Snorlax",
       "genus": "Snorlax",
       "type": ["normal"],
@@ -1486,7 +1486,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "144",
+      "pokemonIndex": "144",
       "species": "Articuno",
       "genus": "Articuno",
       "type": ["ice", "flying"],
@@ -1496,7 +1496,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "145",
+      "pokemonIndex": "145",
       "species": "Zapdos",
       "genus": "Zapdos",
       "type": ["electric", "flying"],
@@ -1506,7 +1506,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "146",
+      "pokemonIndex": "146",
       "species": "Moltres",
       "genus": "Moltres",
       "type": ["fire", "flying"],
@@ -1516,7 +1516,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "147",
+      "pokemonIndex": "147",
       "species": "Dratini",
       "genus": "Dratini",
       "type": ["dragon"],
@@ -1528,7 +1528,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "148",
+      "pokemonIndex": "148",
       "species": "Dragonair",
       "genus": "Dratini",
       "type": ["dragon"],
@@ -1539,7 +1539,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "149",
+      "pokemonIndex": "149",
       "species": "Dragonite",
       "genus": "Dratini",
       "type": ["dragon", "flying"],
@@ -1548,7 +1548,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "150",
+      "pokemonIndex": "150",
       "species": "Mewtwo",
       "genus": "Mewtwo",
       "type": ["psychic"],
@@ -1558,7 +1558,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "151",
+      "pokemonIndex": "151",
       "species": "Mew",
       "genus": "Mew",
       "type": ["psychic"],
@@ -1568,7 +1568,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "152",
+      "pokemonIndex": "152",
       "species": "Chikorita",
       "genus": "Chikorita",
       "type": ["grass"],
@@ -1580,7 +1580,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "153",
+      "pokemonIndex": "153",
       "species": "Bayleef",
       "genus": "Chikorita",
       "type": ["grass"],
@@ -1591,7 +1591,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "154",
+      "pokemonIndex": "154",
       "species": "Meganium",
       "genus": "Chikorita",
       "type": [""],
@@ -1600,7 +1600,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "155",
+      "pokemonIndex": "155",
       "species": "Cyndaquil",
       "genus": "Cyndaquil",
       "type": ["fire"],
@@ -1612,7 +1612,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "156",
+      "pokemonIndex": "156",
       "species": "Quilava",
       "genus": "Cyndaquil",
       "type": ["fire"],
@@ -1623,7 +1623,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "157",
+      "pokemonIndex": "157",
       "species": "Typhlosion",
       "genus": "Cyndaquil",
       "type": ["fire"],
@@ -1632,7 +1632,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "158",
+      "pokemonIndex": "158",
       "species": "Totodile",
       "genus": "Totodile",
       "type": ["water"],
@@ -1644,7 +1644,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "159",
+      "pokemonIndex": "159",
       "species": "Croconaw",
       "genus": "Totodile",
       "type": ["water"],
@@ -1655,7 +1655,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "160",
+      "pokemonIndex": "160",
       "species": "Feraligatr",
       "genus": "Totodile",
       "type": ["water"],
@@ -1664,7 +1664,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "161",
+      "pokemonIndex": "161",
       "species": "Sentret",
       "genus": "Sentret",
       "type": ["normal"],
@@ -1675,7 +1675,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "162",
+      "pokemonIndex": "162",
       "species": "Furret",
       "genus": "Sentret",
       "type": ["normal"],
@@ -1684,7 +1684,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "163",
+      "pokemonIndex": "163",
       "species": "Hoothoot",
       "genus": "Hoothoot",
       "type": ["normal", "flying"],
@@ -1695,7 +1695,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "164",
+      "pokemonIndex": "164",
       "species": "Noctowl",
       "genus": "Hoothoot",
       "type": ["normal", "flying"],
@@ -1704,7 +1704,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "165",
+      "pokemonIndex": "165",
       "species": "Ledyba",
       "genus": "Ledyba",
       "type": ["bug", "flying"],
@@ -1715,7 +1715,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "166",
+      "pokemonIndex": "166",
       "species": "Ledian",
       "genus": "Ledyba",
       "type": ["bug", "flying"],
@@ -1724,7 +1724,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "167",
+      "pokemonIndex": "167",
       "species": "Spinarak",
       "genus": "Spinarak",
       "type": ["bug", "poison"],
@@ -1736,7 +1736,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "168",
+      "pokemonIndex": "168",
       "species": "Ariados",
       "genus": "Spinarak",
       "type": ["bug", "poison"],
@@ -1745,7 +1745,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "169",
+      "pokemonIndex": "169",
       "species": "Crobat",
       "genus": "Zubat",
       "type": ["poison", "flying"],
@@ -1754,7 +1754,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "170",
+      "pokemonIndex": "170",
       "species": "Chinchou",
       "genus": "Chinchou",
       "type": ["poison", "flying"],
@@ -1766,7 +1766,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "170",
+      "pokemonIndex": "170",
       "species": "Lanturn",
       "genus": "Chinchou",
       "type": [""],
@@ -1775,7 +1775,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "172",
+      "pokemonIndex": "172",
       "species": "Pichu",
       "genus": "Pikachu",
       "type": ["electric"],
@@ -1787,7 +1787,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "173",
+      "pokemonIndex": "173",
       "species": "Cleffa",
       "genus": "Cleffa",
       "type": ["fairy"],
@@ -1799,7 +1799,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "174",
+      "pokemonIndex": "174",
       "species": "Igglybuff",
       "genus": "Igglybuff",
       "type": ["normal", "fairy"],
@@ -1811,7 +1811,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "175",
+      "pokemonIndex": "175",
       "species": "Togepi",
       "genus": "Togepi",
       "type": ["fairy"],
@@ -1823,7 +1823,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "176",
+      "pokemonIndex": "176",
       "species": "Togetic",
       "genus": "Togepi",
       "type": ["fairy", "flying"],
@@ -1832,7 +1832,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "177",
+      "pokemonIndex": "177",
       "species": "Natu",
       "genus": "Natu",
       "type": ["psychic", "flying"],
@@ -1844,7 +1844,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "178",
+      "pokemonIndex": "178",
       "species": "Natu",
       "genus": "Xatu",
       "type": ["psychic", "flying"],
@@ -1853,7 +1853,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "179",
+      "pokemonIndex": "179",
       "species": "Mareep",
       "genus": "Mareep",
       "type": ["electric"],
@@ -1865,7 +1865,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "180",
+      "pokemonIndex": "180",
       "species": "Flaaffy",
       "genus": "Mareep",
       "type": ["electric"],
@@ -1876,7 +1876,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "181",
+      "pokemonIndex": "181",
       "species": "Ampharos",
       "genus": "Mareep",
       "type": ["electric"],
@@ -1885,7 +1885,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "182",
+      "pokemonIndex": "182",
       "species": "Bellossom",
       "genus": "Oddish",
       "type": ["grass"],
@@ -1894,7 +1894,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "183",
+      "pokemonIndex": "183",
       "species": "Marill",
       "genus": "Marill",
       "type": ["water", "fairy"],
@@ -1906,7 +1906,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "184",
+      "pokemonIndex": "184",
       "species": "Azumarill",
       "genus": "Marill",
       "type": ["water", "fairy"],
@@ -1915,7 +1915,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "185",
+      "pokemonIndex": "185",
       "species": "Sudowoodo",
       "genus": "Sudowoodo",
       "type": ["rock"],
@@ -1925,7 +1925,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "186",
+      "pokemonIndex": "186",
       "species": "Hoppip",
       "genus": "Hoppip",
       "type": ["grass", "flying"],
@@ -1937,7 +1937,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "188",
+      "pokemonIndex": "188",
       "species": "Skiploom",
       "genus": "Skiploom",
       "type": ["grass", "flying"],
@@ -1948,7 +1948,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "190",
+      "pokemonIndex": "190",
       "species": "Aipom",
       "genus": "Aipom",
       "type": ["normal"],
@@ -1958,7 +1958,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "191",
+      "pokemonIndex": "191",
       "species": "Sunkern",
       "genus": "Sunkern",
       "type": ["grass"],
@@ -1969,7 +1969,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "192",
+      "pokemonIndex": "192",
       "species": "Sunflora",
       "genus": "Sunkern",
       "type": ["grass"],
@@ -1978,7 +1978,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "193",
+      "pokemonIndex": "193",
       "species": "Yanma",
       "genus": "Yanma",
       "type": ["bug", "flying"],
@@ -1987,7 +1987,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "194",
+      "pokemonIndex": "194",
       "species": "Wooper",
       "genus": "Wooper",
       "type": ["water", "ground"],
@@ -1999,7 +1999,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "195",
+      "pokemonIndex": "195",
       "species": "Quagsire",
       "genus": "Quagsire",
       "type": ["water", "ground"],
@@ -2008,7 +2008,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "196",
+      "pokemonIndex": "196",
       "species": "Espeon",
       "genus": "Eevee",
       "type": ["psychic"],
@@ -2017,7 +2017,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "197",
+      "pokemonIndex": "197",
       "species": "Umbreon",
       "genus": "Eevee",
       "type": ["dark"],
@@ -2026,7 +2026,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "198",
+      "pokemonIndex": "198",
       "species": "Murkrow",
       "genus": "Murkrow",
       "type": ["dark", "flying"],
@@ -2035,7 +2035,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "199",
+      "pokemonIndex": "199",
       "species": "Slowking",
       "genus": "Slowbro",
       "type": ["water", "psychic"],
@@ -2044,7 +2044,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "200",
+      "pokemonIndex": "200",
       "species": "Misdreavus",
       "genus": "Misdreavus",
       "type": ["ghost"],
@@ -2053,7 +2053,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "201",
+      "pokemonIndex": "201",
       "species": "Unown",
       "genus": "Unown",
       "type": ["Psychic"],
@@ -2062,7 +2062,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "202",
+      "pokemonIndex": "202",
       "species": "Wobbuffet",
       "genus": "Wobbuffet",
       "type": ["Psychic"],
@@ -2072,7 +2072,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "203",
+      "pokemonIndex": "203",
       "species": "Girafarig",
       "genus": "Girafarig",
       "type": ["normal", "psychic"],
@@ -2082,7 +2082,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "204",
+      "pokemonIndex": "204",
       "species": "Pineco",
       "genus": "Pineco",
       "type": ["bug"],
@@ -2094,7 +2094,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "205",
+      "pokemonIndex": "205",
       "species": "Forretress",
       "genus": "Pineco",
       "type": ["bug", "steel"],
@@ -2103,7 +2103,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "206",
+      "pokemonIndex": "206",
       "species": "Dunsparce",
       "genus": "Dunsparce",
       "type": ["normal"],
@@ -2113,7 +2113,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "207",
+      "pokemonIndex": "207",
       "species": "Gligar",
       "genus": "Gligar",
       "type": ["ground", "flying"],
@@ -2123,7 +2123,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "208",
+      "pokemonIndex": "208",
       "species": "Steelix",
       "genus": "Onix",
       "type": ["steel"],
@@ -2132,7 +2132,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "209",
+      "pokemonIndex": "209",
       "species": "Snubbull",
       "genus": "Snubbull",
       "type": ["fairy"],
@@ -2144,7 +2144,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "210",
+      "pokemonIndex": "210",
       "species": "Granbull",
       "genus": "Snubbull",
       "type": ["fairy"],
@@ -2153,7 +2153,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "211",
+      "pokemonIndex": "211",
       "species": "Qwilfish",
       "genus": "Qwilfish",
       "type": ["water", "poison"],
@@ -2163,7 +2163,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "212",
+      "pokemonIndex": "212",
       "species": "Scizor",
       "genus": "Scyther",
       "type": ["bug"],
@@ -2172,7 +2172,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "213",
+      "pokemonIndex": "213",
       "species": "Shuckle",
       "genus": "Shuckle",
       "type": ["bug", "rock"],
@@ -2182,7 +2182,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "214",
+      "pokemonIndex": "214",
       "species": "Heracross",
       "genus": "Heracross",
       "type": ["bug"],
@@ -2191,7 +2191,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "215",
+      "pokemonIndex": "215",
       "species": "Sneasel",
       "genus": "Sneasel",
       "type": ["dark", "ice"],
@@ -2201,7 +2201,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "216",
+      "pokemonIndex": "216",
       "species": "Teddiursa",
       "genus": "Teddiursa",
       "type": ["normal"],
@@ -2213,7 +2213,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "217",
+      "pokemonIndex": "217",
       "species": "Ursaring",
       "genus": "Teddiursa",
       "type": ["normal"],
@@ -2222,7 +2222,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "218",
+      "pokemonIndex": "218",
       "species": "Slugma",
       "genus": "Slugma",
       "type": ["fire"],
@@ -2234,7 +2234,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "219",
+      "pokemonIndex": "219",
       "species": "Magcargo",
       "genus": "Slugma",
       "type": ["fire"],
@@ -2243,7 +2243,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "220",
+      "pokemonIndex": "220",
       "species": "Swinub",
       "genus": "Swinub",
       "type": ["ice", "ground"],
@@ -2255,7 +2255,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "221",
+      "pokemonIndex": "221",
       "species": "Piloswine",
       "genus": "Swinub",
       "type": ["ice", "ground"],
@@ -2264,7 +2264,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "222",
+      "pokemonIndex": "222",
       "species": "Corsola",
       "genus": "Corsola",
       "type": ["water", "rock"],
@@ -2273,7 +2273,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "223",
+      "pokemonIndex": "223",
       "species": "Remoraid",
       "genus": "Remoraid",
       "type": ["water"],
@@ -2285,7 +2285,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "224",
+      "pokemonIndex": "224",
       "species": "Octillery",
       "genus": "Remoraid",
       "type": ["water"],
@@ -2294,7 +2294,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "225",
+      "pokemonIndex": "225",
       "species": "Delibird",
       "genus": "Delibird",
       "type": ["ice", "flying"],
@@ -2303,7 +2303,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "226",
+      "pokemonIndex": "226",
       "species": "Mantine",
       "genus": "Mantine",
       "type": ["water"],
@@ -2313,7 +2313,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "227",
+      "pokemonIndex": "227",
       "species": "Skarmory",
       "genus": "Skarmory",
       "type": ["steel", "flying"],
@@ -2323,7 +2323,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "228",
+      "pokemonIndex": "228",
       "species": "Houndour",
       "genus": "Houndour",
       "type": ["dark", "fire"],
@@ -2335,7 +2335,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "229",
+      "pokemonIndex": "229",
       "species": "Houndoom",
       "genus": "Houndour",
       "type": ["dark", "fire"],
@@ -2344,7 +2344,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "230",
+      "pokemonIndex": "230",
       "species": "Kingdra",
       "genus": "Kingdra",
       "type": ["water", "dragon"],
@@ -2353,7 +2353,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "232",
+      "pokemonIndex": "232",
       "species": "Phanpy",
       "genus": "Phanpy",
       "type": ["ground"],
@@ -2365,7 +2365,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "232",
+      "pokemonIndex": "232",
       "species": "Donphan",
       "genus": "Phanpy",
       "type": ["ground"],
@@ -2374,7 +2374,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "233",
+      "pokemonIndex": "233",
       "species": "Porygon2",
       "genus": "Porygon2",
       "type": ["normal"],
@@ -2383,7 +2383,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "234",
+      "pokemonIndex": "234",
       "species": "Stantler",
       "genus": "Stantler",
       "type": ["normal"],
@@ -2393,7 +2393,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "236",
+      "pokemonIndex": "236",
       "species": "Tyrogue",
       "genus": "Tyrogue",
       "type": ["fighting"],
@@ -2405,7 +2405,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "237",
+      "pokemonIndex": "237",
       "species": "Hitmontop",
       "genus": "Tyrogue",
       "type": ["fighting"],
@@ -2414,7 +2414,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "238",
+      "pokemonIndex": "238",
       "species": "Smoochum",
       "genus": "Jynx",
       "type": ["ice"],
@@ -2426,7 +2426,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "239",
+      "pokemonIndex": "239",
       "species": "Elekid",
       "genus": "Electabuzz",
       "type": ["electric"],
@@ -2438,7 +2438,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "240",
+      "pokemonIndex": "240",
       "species": "Magby",
       "genus": "Magmar",
       "type": ["fire"],
@@ -2450,7 +2450,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "241",
+      "pokemonIndex": "241",
       "species": "Miltank",
       "genus": "Miltank",
       "type": ["normal"],
@@ -2460,7 +2460,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "242",
+      "pokemonIndex": "242",
       "species": "Blissey",
       "genus": "Chansey",
       "type": ["normal"],
@@ -2469,7 +2469,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "243",
+      "pokemonIndex": "243",
       "species": "Raikou",
       "genus": "Raikou",
       "type": ["electric"],
@@ -2479,7 +2479,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "244",
+      "pokemonIndex": "244",
       "species": "Entei",
       "genus": "Entei",
       "type": ["fire"],
@@ -2489,7 +2489,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "245",
+      "pokemonIndex": "245",
       "species": "Suicune",
       "genus": "Suicune",
       "type": ["water"],
@@ -2499,7 +2499,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "246",
+      "pokemonIndex": "246",
       "species": "Larvitar",
       "genus": "Larvitar",
       "type": ["rock", "ground"],
@@ -2511,7 +2511,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "247",
+      "pokemonIndex": "247",
       "species": "Pupitar",
       "genus": "Larvitar",
       "type": ["rock", "ground"],
@@ -2522,7 +2522,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "248",
+      "pokemonIndex": "248",
       "species": "Tyranitar",
       "genus": "Larvitar",
       "type": ["rock", "dark"],
@@ -2531,7 +2531,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "249",
+      "pokemonIndex": "249",
       "species": "Lugia",
       "genus": "Lugia",
       "type": ["psychic", "flying"],
@@ -2541,7 +2541,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "250",
+      "pokemonIndex": "250",
       "species": "Ho-Oh",
       "genus": "Ho-Oh",
       "type": ["fire", "flying"],
@@ -2551,7 +2551,7 @@ module.exports={
       "legendary": true
     },
     {
-      "index": "252",
+      "pokemonIndex": "252",
       "species": "Treecko",
       "genus": "Treecko",
       "type": ["grass"],
@@ -2563,7 +2563,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "253",
+      "pokemonIndex": "253",
       "species": "Grovyle",
       "genus": "Treecko",
       "type": ["grass"],
@@ -2574,7 +2574,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "254",
+      "pokemonIndex": "254",
       "species": "Sceptile",
       "genus": "Treecko",
       "type": ["grass"],
@@ -2583,7 +2583,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "255",
+      "pokemonIndex": "255",
       "species": "Torchic",
       "genus": "Torchic",
       "type": ["fire"],
@@ -2595,7 +2595,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "256",
+      "pokemonIndex": "256",
       "species": "Combusken",
       "genus": "Torchic",
       "type": ["fire", "fighting"],
@@ -2606,7 +2606,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "257",
+      "pokemonIndex": "257",
       "species": "Blaziken",
       "genus": "Torchic",
       "type": ["fire", "fighting"],
@@ -2615,7 +2615,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "258",
+      "pokemonIndex": "258",
       "species": "Mudkip",
       "genus": "Mudkip",
       "type": ["water"],
@@ -2627,7 +2627,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "259",
+      "pokemonIndex": "259",
       "species": "Marshtomp",
       "genus": "Mudkip",
       "type": ["water", "ground"],
@@ -2638,7 +2638,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "260",
+      "pokemonIndex": "260",
       "species": "Swampert",
       "genus": "Mudkip",
       "type": ["water", "ground"],
@@ -2647,7 +2647,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "261",
+      "pokemonIndex": "261",
       "species": "Poochyena",
       "genus": "Poochyena",
       "type": ["dark"],
@@ -2659,7 +2659,7 @@ module.exports={
       "eggDistance": 1
     },
     {
-      "index": "262",
+      "pokemonIndex": "262",
       "species": "Mightyena",
       "genus": "Poochyena",
       "type": ["dark"],
@@ -2668,7 +2668,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "263",
+      "pokemonIndex": "263",
       "species": "Zigzagoon",
       "genus": "Zigzagoon",
       "type": ["normal"],
@@ -2680,7 +2680,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "264",
+      "pokemonIndex": "264",
       "species": "Linoone",
       "genus": "Zigzagoon",
       "type": ["normal"],
@@ -2689,7 +2689,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "265",
+      "pokemonIndex": "265",
       "species": "Wurmple",
       "genus": "Wurmple",
       "type": ["bug"],
@@ -2701,7 +2701,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "266",
+      "pokemonIndex": "266",
       "species": "Silcoon",
       "genus": "Wurmple",
       "type": ["bug"],
@@ -2712,7 +2712,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "267",
+      "pokemonIndex": "267",
       "species": "Beautifly",
       "genus": "Wurmple",
       "type": ["bug", "flying"],
@@ -2721,7 +2721,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "268",
+      "pokemonIndex": "268",
       "species": "Cascoon",
       "genus": "Wurmple",
       "type": ["bug"],
@@ -2732,7 +2732,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "269",
+      "pokemonIndex": "269",
       "species": "Dustox",
       "genus": "Wurmple",
       "type": ["bug", "flying"],
@@ -2741,7 +2741,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "270",
+      "pokemonIndex": "270",
       "species": "Lotad",
       "genus": "Lotad",
       "type": ["water", "grass"],
@@ -2753,7 +2753,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "271",
+      "pokemonIndex": "271",
       "species": "Lombre",
       "genus": "Lotad",
       "type": ["water", "grass"],
@@ -2764,7 +2764,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "272",
+      "pokemonIndex": "272",
       "species": "Ludicolo",
       "genus": "Lotad",
       "type": ["water", "grass"],
@@ -2773,7 +2773,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "273",
+      "pokemonIndex": "273",
       "species": "Seedot",
       "genus": "Seedot",
       "type": ["grass"],
@@ -2785,7 +2785,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "274",
+      "pokemonIndex": "274",
       "species": "Nuzleaf",
       "genus": "Seedot",
       "type": ["grass", "dark"],
@@ -2796,7 +2796,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "275",
+      "pokemonIndex": "275",
       "species": "Shiftry",
       "genus": "Seedot",
       "type": ["grass", "dark"],
@@ -2805,7 +2805,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "276",
+      "pokemonIndex": "276",
       "species": "Taillow",
       "genus": "Taillow",
       "type": ["normal", "flying"],
@@ -2817,7 +2817,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "277",
+      "pokemonIndex": "277",
       "species": "Swellow",
       "genus": "Taillow",
       "type": ["normal", "flying"],
@@ -2826,7 +2826,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "278",
+      "pokemonIndex": "278",
       "species": "Wingull",
       "genus": "Wingull",
       "type": ["water", "flying"],
@@ -2838,7 +2838,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "279",
+      "pokemonIndex": "279",
       "species": "Pelipper",
       "genus": "Wingull",
       "type": ["water", "flying"],
@@ -2847,7 +2847,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "280",
+      "pokemonIndex": "280",
       "species": "Ralts",
       "genus": "Ralts",
       "type": ["psychic", "fairy"],
@@ -2859,7 +2859,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "281",
+      "pokemonIndex": "281",
       "species": "Kirlia",
       "genus": "Ralts",
       "type": ["psychic", "fairy"],
@@ -2870,7 +2870,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "282",
+      "pokemonIndex": "282",
       "species": "Gardevoir",
       "genus": "Ralts",
       "type": ["psychic", "fairy"],
@@ -2879,7 +2879,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "283",
+      "pokemonIndex": "283",
       "species": "Surskit",
       "genus": "Surskit",
       "type": ["bug", "water"],
@@ -2891,7 +2891,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "284",
+      "pokemonIndex": "284",
       "species": "Masquerain",
       "genus": "Surskit",
       "type": ["bug", "flying"],
@@ -2900,7 +2900,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "285",
+      "pokemonIndex": "285",
       "species": "Shroomish",
       "genus": "Shroomish",
       "type": ["grass"],
@@ -2912,7 +2912,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "286",
+      "pokemonIndex": "286",
       "species": "Breloom",
       "genus": "Shroomish",
       "type": ["grass", "fighting"],
@@ -2921,7 +2921,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "287",
+      "pokemonIndex": "287",
       "species": "Skaloth",
       "genus": "Skaloth",
       "type": ["normal"],
@@ -2933,7 +2933,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "288",
+      "pokemonIndex": "288",
       "species": "Vigoroth",
       "genus": "Skaloth",
       "type": ["normal"],
@@ -2944,7 +2944,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "289",
+      "pokemonIndex": "289",
       "species": "Slaking",
       "genus": "Skaloth",
       "type": ["normal"],
@@ -2953,7 +2953,7 @@ module.exports={
       "buddyDistance": 5
     },
     {
-      "index": "293",
+      "pokemonIndex": "293",
       "species": "Whismur",
       "genus": "Whismur",
       "type": ["normal"],
@@ -2965,7 +2965,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "294",
+      "pokemonIndex": "294",
       "species": "Loudred",
       "genus": "Whismur",
       "type": ["normal"],
@@ -2975,7 +2975,7 @@ module.exports={
       "region": "Hoenn"
     },
     {
-      "index": "295",
+      "pokemonIndex": "295",
       "species": "Exploud",
       "genus": "Whismur",
       "type": ["normal"],
@@ -2983,7 +2983,7 @@ module.exports={
       "region": "Hoenn"
     },
     {
-      "index": "296",
+      "pokemonIndex": "296",
       "species": "Makuhita",
       "genus": "Makuhita",
       "type": ["fighting"],
@@ -2995,7 +2995,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "297",
+      "pokemonIndex": "297",
       "species": "Hariyama",
       "genus": "Makuhita",
       "type": ["fighting"],
@@ -3004,7 +3004,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "298",
+      "pokemonIndex": "298",
       "species": "Azurill",
       "genus": "Marill",
       "type": ["normal"],
@@ -3016,7 +3016,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "299",
+      "pokemonIndex": "299",
       "species": "Nosepass",
       "genus": "Nosepass",
       "type": ["rock"],
@@ -3026,7 +3026,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "300",
+      "pokemonIndex": "300",
       "species": "Skitty",
       "genus": "Skitty",
       "type": ["normal"],
@@ -3038,7 +3038,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "301",
+      "pokemonIndex": "301",
       "species": "Delcatty",
       "genus": "Skitty",
       "type": ["normal"],
@@ -3048,7 +3048,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "302",
+      "pokemonIndex": "302",
       "species": "Sableye",
       "genus": "Sableye",
       "type": ["dark", "ghost"],
@@ -3058,7 +3058,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "303",
+      "pokemonIndex": "303",
       "species": "Mawile",
       "genus": "Mawile",
       "type": ["steel", "fairy"],
@@ -3068,7 +3068,7 @@ module.exports={
       "eggDistance": 10
     },
     {
-      "index": "304",
+      "pokemonIndex": "304",
       "species": "Aron",
       "genus": "Aron",
       "type": ["steel", "rock"],
@@ -3079,7 +3079,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "306",
+      "pokemonIndex": "306",
       "species": "Lairon",
       "genus": "Aron",
       "type": ["steel", "rock"],
@@ -3090,7 +3090,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-      "index": "307",
+      "pokemonIndex": "307",
       "species": "Meditite",
       "genus": "Meditite",
       "type": ["fighting", "psychic"],
@@ -3102,7 +3102,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "308",
+      "pokemonIndex": "308",
       "species": "Medicham",
       "genus": "Meditite",
       "type": ["fighting", "psychic"],
@@ -3111,7 +3111,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "309",
+      "pokemonIndex": "309",
       "species": "Electrike",
       "genus": "Electrike",
       "type": ["electric"],
@@ -3123,7 +3123,7 @@ module.exports={
       "eggDistance": 5
     },
     {
-      "index": "310",
+      "pokemonIndex": "310",
       "species": "Manectric",
       "genus": "Electrike",
       "type": ["electric"],
@@ -3132,7 +3132,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "311",
+      "pokemonIndex": "311",
       "species": "Plusle",
       "genus": "Plusle",
       "type": ["electric"],
@@ -3141,7 +3141,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "312",
+      "pokemonIndex": "312",
       "species": "Minun",
       "genus": "Minun",
       "type": ["electric"],
@@ -3150,7 +3150,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "313",
+      "pokemonIndex": "313",
       "species": "Volbeat",
       "genus": "Volbeat",
       "type": ["bug"],
@@ -3159,7 +3159,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "314",
+      "pokemonIndex": "314",
       "species": "Illumise",
       "genus": "Illumise",
       "type": ["bug"],
@@ -3168,7 +3168,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "315",
+      "pokemonIndex": "315",
       "species": "Roselia",
       "genus": "Roselia",
       "type": ["grass", "poison"],
@@ -3177,7 +3177,7 @@ module.exports={
       "buddyDistance": 3
     },
     {
-      "index": "316",
+      "pokemonIndex": "316",
       "species": "Gulpin",
       "genus": "Gulpin",
       "type": ["poison"],
@@ -3189,7 +3189,7 @@ module.exports={
       "eggDistance": 2
     },
     {
-      "index": "317",
+      "pokemonIndex": "317",
       "species": "Swalot",
       "genus": "Gulpin",
       "type": ["poison"],
@@ -3198,7 +3198,7 @@ module.exports={
       "buddyDistance": 1
     },
     {
-     "index": "318",
+     "pokemonIndex": "318",
      "species": "Carvanha",
      "genus": "Carvanha",
      "type": ["water", "dark"],
@@ -3209,7 +3209,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "319",
+     "pokemonIndex": "319",
      "species": "Sharpedo",
      "genus": "Carvanha",
      "type": ["water", "dark"],
@@ -3218,7 +3218,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "320",
+     "pokemonIndex": "320",
      "species": "Wailmer",
      "genus": "Wailmer",
      "type": ["water"],
@@ -3230,7 +3230,7 @@ module.exports={
      "eggDistance": 2
    },
     {
-     "index": "321",
+     "pokemonIndex": "321",
      "species": "Wailord",
      "genus": "Wailmer",
      "type": ["water"],
@@ -3239,7 +3239,7 @@ module.exports={
      "buddyDistance": 1
    },
    {
-    "index": "322",
+    "pokemonIndex": "322",
     "species": "Numel",
     "genus": "Numel",
     "type": ["fire", "ground"],
@@ -3251,7 +3251,7 @@ module.exports={
     "eggDistance": 5
     },
    {
-    "index": "323",
+    "pokemonIndex": "323",
     "species": "Camerupt",
     "genus": "Numel",
     "type": ["fire", "ground"],
@@ -3260,7 +3260,7 @@ module.exports={
     "buddyDistance": 3
     },
     {
-     "index": "324",
+     "pokemonIndex": "324",
      "species": "Torkoal",
      "genus": "Torkoal",
      "type": ["fire"],
@@ -3269,7 +3269,7 @@ module.exports={
      "buddyDistance": 3
    },
    {
-    "index": "325",
+    "pokemonIndex": "325",
     "species": "Spoink",
     "genus": "Spoink",
     "type": ["psychic"],
@@ -3281,7 +3281,7 @@ module.exports={
     "eggDistance": 2
     },
    {
-    "index": "326",
+    "pokemonIndex": "326",
     "species": "Grumpig",
     "genus": "Spoink",
     "type": ["psychic"],
@@ -3291,7 +3291,7 @@ module.exports={
     "buddyDistance": 1
     },
     {
-     "index": "328",
+     "pokemonIndex": "328",
      "species": "Trapinch",
      "genus": "Trapinch",
      "type": ["ground"],
@@ -3303,7 +3303,7 @@ module.exports={
      "eggDistance": 10
     },
     {
-     "index": "329",
+     "pokemonIndex": "329",
      "species": "Vibrava",
      "genus": "Trapinch",
      "type": ["ground", "dragon"],
@@ -3314,7 +3314,7 @@ module.exports={
      "buddyDistance": 5
     },
     {
-     "index": "330",
+     "pokemonIndex": "330",
      "species": "Flygon",
      "genus": "Trapinch",
      "type": ["ground", "dragon"],
@@ -3323,7 +3323,7 @@ module.exports={
      "buddyDistance": 5
     },
     {
-     "index": "331",
+     "pokemonIndex": "331",
      "species": "Cacnea",
      "genus": "Cacnea",
      "type": ["grass"],
@@ -3335,7 +3335,7 @@ module.exports={
      "eggDistance": 5
     },
     {
-     "index": "332",
+     "pokemonIndex": "332",
      "species": "Cacturne",
      "genus": "Cacnea",
      "type": ["grass", "dark"],
@@ -3344,7 +3344,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "333",
+     "pokemonIndex": "333",
      "species": "Swablu",
      "genus": "Swablu",
      "type": ["normal", "flying"],
@@ -3356,7 +3356,7 @@ module.exports={
      "eggDistance": 2
     },
     {
-     "index": "334",
+     "pokemonIndex": "334",
      "species": "Altaria",
      "genus": "Swablu",
      "type": ["dragon", "flying"],
@@ -3365,7 +3365,7 @@ module.exports={
      "buddyDistance": 1
     },
     {
-     "index": "335",
+     "pokemonIndex": "335",
      "species": "Zangoose",
      "genus": "Zangoose",
      "type": ["normal"],
@@ -3374,7 +3374,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "336",
+     "pokemonIndex": "336",
      "species": "Seviper",
      "genus": "Seviper",
      "type": ["poison"],
@@ -3383,7 +3383,7 @@ module.exports={
      "buddyDistance": 3
    },
    {
-    "index": "337",
+    "pokemonIndex": "337",
     "species": "Lunatone",
     "genus": "Lunatone",
     "type": ["rock", "psychic"],
@@ -3392,7 +3392,7 @@ module.exports={
     "buddyDistance": 3
     },
     {
-     "index": "338",
+     "pokemonIndex": "338",
      "species": "Solrock",
      "genus": "Solrock",
      "type": ["rock", "psychic"],
@@ -3401,7 +3401,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "339",
+     "pokemonIndex": "339",
      "species": "Barboach",
      "genus": "Barboach",
      "type": ["water", "ground"],
@@ -3413,7 +3413,7 @@ module.exports={
      "eggDistance": 2
     },
     {
-     "index": "340",
+     "pokemonIndex": "340",
      "species": "Whiscash",
      "genus": "Barboach",
      "type": ["water", "ground"],
@@ -3422,7 +3422,7 @@ module.exports={
      "buddyDistance": 1
     },
     {
-     "index": "341",
+     "pokemonIndex": "341",
      "species": "Corphish",
      "genus": "Corphish",
      "type": ["water"],
@@ -3434,7 +3434,7 @@ module.exports={
      "eggDistance": 5
     },
     {
-     "index": "342",
+     "pokemonIndex": "342",
      "species": "Crawdaunt",
      "genus": "Corphish",
      "type": ["water", "dark"],
@@ -3443,7 +3443,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "343",
+     "pokemonIndex": "343",
      "species": "Baltoy",
      "genus": "Baltoy",
      "type": ["ground", "psychic"],
@@ -3455,7 +3455,7 @@ module.exports={
      "eggDistance": 5
     },
     {
-     "index": "344",
+     "pokemonIndex": "344",
      "species": "Claydol",
      "genus": "Baltoy",
      "type": ["ground", "psychic"],
@@ -3464,7 +3464,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "345",
+     "pokemonIndex": "345",
      "species": "Lileep",
      "genus": "Lileep",
      "type": ["rock", "grass"],
@@ -3475,7 +3475,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "346",
+     "pokemonIndex": "346",
      "species": "Cradily",
      "genus": "Lileep",
      "type": ["rock", "grass"],
@@ -3484,7 +3484,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "347",
+     "pokemonIndex": "347",
      "species": "Anorith",
      "genus": "Anorith",
      "type": ["rock", "bug"],
@@ -3495,7 +3495,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "348",
+     "pokemonIndex": "348",
      "species": "Armaldo",
      "genus": "Anorith",
      "type": ["rock", "bug"],
@@ -3504,7 +3504,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "349",
+     "pokemonIndex": "349",
      "species": "Feebass",
      "genus": "Feebass",
      "type": ["water"],
@@ -3516,7 +3516,7 @@ module.exports={
      "eggDistance": 10
    },
     {
-     "index": "350",
+     "pokemonIndex": "350",
      "species": "Milotic",
      "genus": "Feebass",
      "type": ["water"],
@@ -3525,7 +3525,7 @@ module.exports={
      "buddyDistance": 5
    },
    {
-    "index": "351",
+    "pokemonIndex": "351",
     "species": "Castform",
     "genus": "Castform",
     "type": ["normal"],
@@ -3534,7 +3534,7 @@ module.exports={
     "buddyDistance": 5
     },
     {
-     "index": "353",
+     "pokemonIndex": "353",
      "species": "Shuppet",
      "genus": "Shuppet",
      "type": ["ghost"],
@@ -3546,7 +3546,7 @@ module.exports={
      "eggDistance": 5
     },
     {
-     "index": "354",
+     "pokemonIndex": "354",
      "species": "Banette",
      "genus": "Shuppet",
      "type": ["ghost"],
@@ -3555,7 +3555,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "355",
+     "pokemonIndex": "355",
      "species": "Duskull",
      "genus": "Duskull",
      "type": ["ghost"],
@@ -3567,7 +3567,7 @@ module.exports={
      "eggDistance": 5
     },
     {
-     "index": "356",
+     "pokemonIndex": "356",
      "species": "Dusclops",
      "genus": "Duskull",
      "type": ["ghost"],
@@ -3576,7 +3576,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "357",
+     "pokemonIndex": "357",
      "species": "Tropius",
      "genus": "Tropius",
      "type": ["grass", "flying"],
@@ -3585,7 +3585,7 @@ module.exports={
      "buddyDistance": 5
     },
     {
-     "index": "358",
+     "pokemonIndex": "358",
      "species": "Chimecho",
      "genus": "Chimecho",
      "type": ["Psychic"],
@@ -3595,7 +3595,7 @@ module.exports={
      "eggDistance": 10
     },
     {
-     "index": "359",
+     "pokemonIndex": "359",
      "species": "Absol",
      "genus": "Absol",
      "type": ["dark"],
@@ -3604,7 +3604,7 @@ module.exports={
      "buddyDistance": 5
    },
    {
-    "index": "360",
+    "pokemonIndex": "360",
     "species": "Wynaut",
     "genus": "Wynaut",
     "type": ["psychic"],
@@ -3616,7 +3616,7 @@ module.exports={
     "eggDistance": 5
     },
     {
-     "index": "361",
+     "pokemonIndex": "361",
      "species": "Snorunt",
      "genus": "Snorunt",
      "type": ["ice"],
@@ -3627,7 +3627,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "362",
+     "pokemonIndex": "362",
      "species": "Glalie",
      "genus": "Snorunt",
      "type": ["ice"],
@@ -3636,7 +3636,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "363",
+     "pokemonIndex": "363",
      "species": "Spheal",
      "genus": "Spheal",
      "type": ["ice", "water"],
@@ -3648,7 +3648,7 @@ module.exports={
      "eggDistance": 2
     },
     {
-     "index": "364",
+     "pokemonIndex": "364",
      "species": "Sealeo",
      "genus": "Spheal",
      "type": ["ice", "water"],
@@ -3659,7 +3659,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "365",
+     "pokemonIndex": "365",
      "species": "Walrein",
      "genus": "Spheal",
      "type": ["ice", "water"],
@@ -3668,7 +3668,7 @@ module.exports={
      "buddyDistance": 3
     },
     {
-     "index": "369",
+     "pokemonIndex": "369",
      "species": "Relicanth",
      "genus": "Relicanth",
      "type": ["water", "rock"],
@@ -3677,7 +3677,7 @@ module.exports={
      "buddyDistance": 5
     },
     {
-     "index": "370",
+     "pokemonIndex": "370",
      "species": "Luvdisc",
      "genus": "Luvdisc",
      "type": ["water"],
@@ -3687,7 +3687,7 @@ module.exports={
      "eggDistance": 2
     },
     {
-     "index": "371",
+     "pokemonIndex": "371",
      "species": "Bagon",
      "genus": "Bagon",
      "type": ["dragon"],
@@ -3699,7 +3699,7 @@ module.exports={
      "eggDistance": 10
    },
     {
-     "index": "372",
+     "pokemonIndex": "372",
      "species": "Shelgon",
      "genus": "Bagon",
      "type": ["dragon"],
@@ -3710,7 +3710,7 @@ module.exports={
      "buddyDistance": 5
    },
     {
-     "index": "373",
+     "pokemonIndex": "373",
      "species": "Salamence",
      "genus": "Bagon",
      "type": ["dragon", "flying"],
@@ -3719,7 +3719,7 @@ module.exports={
      "buddyDistance": 5
    },
    {
-    "index": "374",
+    "pokemonIndex": "374",
     "species": "Beldum",
     "genus": "Beldum",
     "type": ["steel"],
@@ -3731,7 +3731,7 @@ module.exports={
     "eggDistance": 10
     },
    {
-    "index": "375",
+    "pokemonIndex": "375",
     "species": "Metang",
     "genus": "Beldum",
     "type": ["steel"],
@@ -3742,7 +3742,7 @@ module.exports={
     "buddyDistance": 5
     },
    {
-    "index": "376",
+    "pokemonIndex": "376",
     "species": "Metagross",
     "genus": "Beldum",
     "type": ["steel"],
@@ -3754,18 +3754,138 @@ module.exports={
 }
 
 },{}],2:[function(require,module,exports){
-var script = require('./script.js');
-var util = require('./util.js');
 pokemonJson = require('../../pokemon.json');
 pokemon = pokemonJson.pokemon;
+var util = require('./util.js');
+var pokemonSelect = require('./pokemon-select.js');
+var pokemonEvolution = require('./pokemon-evolution.js');
+var script = require('./script.js');
+// selectedPokemon = $('body').attr('data-selection');
 
 var gulp = true;
 
-},{"../../pokemon.json":1,"./script.js":3,"./util.js":4}],3:[function(require,module,exports){
+},{"../../pokemon.json":1,"./pokemon-evolution.js":3,"./pokemon-select.js":4,"./script.js":5,"./util.js":6}],3:[function(require,module,exports){
+//Calculate # evolutions possible and XP gained
+calculateSum = function(selectedPokemon) {
+  var sum1 = 0;
+  var sum2 = 0;
+
+  $('.evolvesPossible').each(function() {
+    sum1 += parseInt($(this).html());
+
+    //Warn user that roughly 60 evolutions are possible within one luck egg activation
+    if (sum1 >= 60 ) {
+      $('#eggMessage').html('');
+      $('#eggMessage').append('<p class="egg-message">You can only evolve (roughly) 60 Pokémon during one Lucky Egg activation. <br>You may want to get another egg!</p> <a id="removeEggMessage" href="javascript:void(0)" onclick="removeEggMessage();">Got it!</a>');
+    } else if (sum1 < 60) {
+      $('#eggMessage').html('');
+    }
+  });
+  $('.xpGained').each(function() {
+    sum2 += parseInt($(this).html());
+  });
+
+  //Add calculations to Evolution Table
+  $('#total-1').html(sum1);
+  $('#total-2').html(sum2);
+  $('#total-3').html(sum2 * 2);
+}
+
+// Add Pokémon to Evolution table
+addPokemonSpecies = function(selectedPokemon) {
+  selectedPokemon = matchElements($('body').attr('data-selection'));
+
+  var tableInner = $('#finalDestination').find('tbody');
+
+  var numberOfPokemon = parseInt($('#pokemonNumber').val(), 10);
+  var numberOfCandyHeld = parseInt($('#candyNumber').val(), 10);
+  var candyNeeded = numberOfPokemon * selectedPokemon.candy;
+  var difCandyNeededHeld = Math.floor(numberOfCandyHeld / selectedPokemon.candy);
+  var evolutionsPossible = Math.min(difCandyNeededHeld, numberOfPokemon);
+
+
+  if (numberOfPokemon === selectedPokemon.candy + 1) {
+    $('#metaEvolution').css('display', 'block');
+    $('#metaNumCandy').append(selectedPokemon.candy + ' <span class="species-instance">' + selectedPokemon.species + '</span> candy');
+    $('#metaEvolveState').append('');
+  } else {
+    $('#metaEvolution').css('display', 'none');
+  }
+
+  //Check wether there's a new evolution taking place
+  if ($('#firstEvolve').is(':checked') && evolutionsPossible >= 1) {
+    $xpGained = evolutionsPossible * 500 + 500;
+  } else {
+    $xpGained = evolutionsPossible * 500;
+  }
+
+  var rowTemplate = '<tr><td>' + numberOfPokemon + '</td><td class="pokemon-avatar sprite-pokemon' + selectedPokemon.index + '"></td>' + '</td><td class="wide">' + candyNeeded + '</td><td class="wide">' + numberOfCandyHeld + '</td><td class="evolvesPossible">' + evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
+
+  tableInner.append(rowTemplate);
+  calculateSum(selectedPokemon);
+  resetForm();
+}
+
+getPokemonFamily = function(selectedPokemon) {
+  matchGenus(selectedPokemon);
+
+}
+
+calculateOptions = function(selectedPokemon, inventory) {
+  inventory = parseInt($('#candyNumber').val(), 10);
+  var genus = selectedPokemon.genus;
+    if(inventory > 0) {
+
+    }
+}
+
+// remove row on click
+$(document).on('click', '#removeRow', function() {
+  $(this).closest('tr').remove();
+});
+
+//Redo calculation if user removes a row from the Evolution table
+$(document).on('click', $('#removeRow'), function(selectedPokemon) {
+  calculateSum(selectedPokemon);
+});
+
+},{}],4:[function(require,module,exports){
+// ======================================
+//  Pokemon Selection Tool Functions
+// ======================================
+
+// Remove egg animation time warning
+removeEggMessage = function(selectedPokemon) {
+  $('#eggMessage').remove();
+}
+
+//Add Pokémon avatar
+pokemonAvatar = function(selectedPokemon) {
+  $("#pokemonAvatars").append('<li class="sprite-pokemon' + selectedPokemon.index + '">' + '</li>');
+};
+
+// Generate inputfield to select number of Pokémon to add
+pokemonNumberInput = function(selectedPokemon) {
+  $('.ui-widget').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + selectedPokemon.species + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
+}
+
+// Generate inputfield to select Pokémon candy in inventory
+pokemonCandyInput = function(selectedPokemon) {
+  $('.ui-widget').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + selectedPokemon.genus + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
+}
+
+// Generate checkbox to indicate a first evolution of the species
+pokemonFirstEvolution = function(selectedPokemon) {
+  $('.ui-widget').append('<div class="evolution-bonus"><span class="bonus">Adds<br>500 XP!</span><input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve"></label><span>Is this the first time you evolve a <span class="species-instance">' + selectedPokemon.species + '</span>?</span></div>')
+}
+
+},{}],5:[function(require,module,exports){
 // ======================================
 // Document Ready
 // ======================================
-$(document).ready(function() {
+$(document).ready(function(selectedPokemon) {
+
+
 
   // ======================================
   // Pokemon Input Autocomplete and Selection Process
@@ -3784,62 +3904,63 @@ $(document).ready(function() {
     }
   });
 
-  // Overrides the default autocomplete filter function to search only from the beginning of the string
-  $.ui.autocomplete.filter = function(array, term) {
-    var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
-    return $.grep(array, function(value) {
-      return matcher.test(value.label || value.value || value);
-    });
-  };
-
-  //Sort Pokémon Array in select alphabetically
-  function SortByName(a, b) {
-    var aName = a.species.toLowerCase();
-    var bName = b.species.toLowerCase();
-    return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
-  };
-
-  //Pokémon Selector
-  $('#pokemonSelect').on('change', function(e) {
+  // ======================================
+  // When a selection is made, this happens:
+  // ======================================
+  $('#pokemonSelect').on('change', function(e, selectedPokemon, genusArr) {
     selectedPokemon = matchElements(this);
-    console.log(selectedPokemon.species);
+    genusArr = matchGenus(selectedPokemon.genus);
+    $('body').attr('data-selection', selectedPokemon.species);
+
+    matchGenus(selectedPokemon);
+
+    var pokemonChoiceBox = $('#pokemonChoice');
 
     //Remove former selection
     $('#pokemon-desc, #addPokemonSpecies').remove();
-    $("#pokemonFields").html('');
+    $("#pokemonAvatars").html('');
 
     //Evolution is not possible on end states
     if (selectedPokemon.evolution == null) {
       resetForm();
-      pokemonAvatar(selectedPokemon); //Generate first Pokémon avatar
+      pokemonAvatar(selectedPokemon); // Generate first Pokémon avatar
 
-      $('#pokemonChoice').prepend('<h2>You chose <span class="species-instance">' + selectedPokemon.species + '! </span></h2><p id="pokemon-desc">Unfortunately <span class="species-instance">' + selectedPokemon.species + '</span> does not evolve. :(</p>'); //Inform user
+      pokemonChoiceBox.prepend('<h2>You chose <span class="species-instance">' + selectedPokemon.species + '! </span></h2><p id="pokemon-desc">Unfortunately <span class="species-instance">' + selectedPokemon.species + '</span> does not evolve. :(</p>'); //Inform user
       $('#pokemonSelect').val('');
 
       $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>')
       return false;
 
     }
+    else if (genusArr.length <= 2) {
+      resetForm();
+      $('.evolution2').addClass('hide');
+      for(var j = 0; j < genusArr.length; j++) {
+        genAvatar = $('.gen .avatar');
+        genSpecies = $('.gen h3');
+        genAvatar.eq(j).addClass('sprite-pokemon' + genusArr[j].pokemonIndex);
+        genSpecies.eq(j).html(genusArr[j].species);
+      }
+    }
     //Add multiple Pokémon of one species
     else {
       resetForm();
-      //Show first Pokémon avatar
-      pokemonAvatar(selectedPokemon);
+      for(var j = 0; j < genusArr.length; j++) {
+        genAvatar = $('.gen .avatar');
+        genSpecies = $('.gen h3');
+        genAvatar.eq(j).addClass('sprite-pokemon' + genusArr[j].pokemonIndex);
+        genSpecies.eq(j).html(genusArr[j].species);
+      }
 
-      //Add Pokémon choice + inputfields
-      $('#pokemonChoice').prepend('<p id="pokemon-desc"><h2>You chose <span class="species-instance">' + selectedPokemon.species + '!&nbsp;</span></h2>');
-
-
-      $('.ui-widget').append(pokemonNumberInput(selectedPokemon)).append(pokemonCandyInput(selectedPokemon)).append(pokemonFirstEvolution(selectedPokemon));
       //Generate buttons to reset selectionfield or to add Pokémon to evolution table
-      $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a><a id="addPokemonSpecies" href="javascript:void(0)" onclick="addPokemonSpecies(selectedPokemon);">Add Pokémon to Table</a>');
+      $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>');
     }
 
     //Generate Pokémon avatars based number selection in inputfield
     $('#pokemonNumber').on('keyup change', function() {
       var $numberPokemon = parseInt($("input[name='pokemonNumber']").val(), 10);
       //Reset avatars from previous selection
-      $("#pokemonFields").html("");
+      $("#pokemonAvatars").html("");
       //Number input loop
       for (i = 1; i <= $numberPokemon; i++) {
         pokemonAvatar(selectedPokemon);
@@ -3850,8 +3971,6 @@ $(document).ready(function() {
     if ($("input[name='pokemonNumber']").val() === 0) {
       resetForm();
     }
-
-
     return selectedPokemon;
   });
 
@@ -3864,86 +3983,15 @@ $(document).ready(function() {
     }
   });
 
-  // Add Pokémon to Evolution table
-  addPokemonSpecies = function(selectedPokemon) {
-
-    var tableInner = $('#finalDestination').find('tbody');
-    var numberOfPokemon = parseInt($('#pokemonNumber').val(), 10);
-    var numberOfCandyHeld = parseInt($('#candyNumber').val(), 10);
-    var candyNeeded = numberOfPokemon * selectedPokemon.candy;
-    var difCandyNeededHeld = Math.floor(numberOfCandyHeld / selectedPokemon.candy);
-    var evolutionsPossible = Math.min(difCandyNeededHeld, numberOfPokemon);
-
-
-    if (numberOfPokemon === selectedPokemon.candy + 1) {
-      $('#metaEvolution').css('display', 'block');
-      $('#metaNumCandy').append(selectedPokemon.candy + ' <span class="species-instance">' + selectedPokemon.species + '</span> candy');
-      $('#metaEvolveState').append('');
-    } else {
-      $('#metaEvolution').css('display', 'none');
-    }
-
-    //Check wether there's a new evolution taking place
-    if ($('#firstEvolve').is(':checked') && evolutionsPossible >= 1) {
-      $xpGained = evolutionsPossible * 500 + 500;
-    } else {
-      $xpGained = evolutionsPossible * 500;
-    }
-
-    var rowTemplate = '<tr><td>' + numberOfPokemon + '</td><td class="pokemon-avatar sprite-pokemon' + selectedPokemon.index + '"></td>' + '</td><td class="wide">' + candyNeeded + '</td><td class="wide">' + numberOfCandyHeld + '</td><td class="evolvesPossible">' + evolutionsPossible + '</td><td class="xpGained">' + $xpGained + '</td><td><a id="removeRow" class="circular-button">&#215;</a></td>"</tr>';
-
-    tableInner.append(rowTemplate);
-
-    // add unique id to each row -- do I need this?
-    $('#finalDestination tbody tr').attr('id', function(i) {
-      return 'pokemonRow' + (i + 1);
-    });
-
-    // remove row on click
-    $(document).on('click', '#removeRow', function() {
-      $(this).closest('tr').remove();
-    });
-
-    //Calculate # evolutions possible and XP gained
-    function calculateSum() {
-      var sum1 = 0;
-      var sum2 = 0;
-
-      $('.evolvesPossible').each(function() {
-        sum1 += parseInt($(this).html());
-
-        //Warn user that roughly 60 evolutions are possible within one luck egg activation
-        if (sum1 >= 60 ) {
-          $('#eggMessage').html('');
-          $('#eggMessage').append('<p class="egg-message">You can only evolve (roughly) 60 Pokémon during one Lucky Egg activation. <br>You may want to get another egg!</p> <a id="removeEggMessage" href="javascript:void(0)" onclick="removeEggMessage();">Got it!</a>');
-        } else if (sum1 < 60) {
-          $('#eggMessage').html('');
-        }
-      });
-      $('.xpGained').each(function() {
-        sum2 += parseInt($(this).html());
-      });
-
-      //Add calculations to Evolution Table
-      $('#total-1').html(sum1);
-      $('#total-2').html(sum2);
-      $('#total-3').html(sum2 * 2);
-    }
-    calculateSum();
-
-    //Redo calculation if user removes a row from the Evolution table
-    $(document).on('click', $('#removeRow'), function() {
-      calculateSum();
-    });
-
-    resetForm();
-  }
-
 }); // Document Ready End
 
-},{}],4:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 // ======================================
 // Util
+// ======================================
+
+// ======================================
+// Get JSON data and parse it towards Autocomplete
 // ======================================
 
  getMapKeyValue = function(obj, key) {
@@ -3969,9 +4017,105 @@ matchElements = function (el, selectedPokemon) {
       selectedPokemon = pokemon[i];
     }
   }
-  console.table(selectedPokemon);
+  // console.table(selectedPokemon);
   return selectedPokemon;
 }
+
+safeGet = function(obj, props, defaultValue) {
+  try {
+    return props.split('.').reduce(function(obj, p) {
+      return obj[p];
+    }, obj);
+  } catch(e) {
+    return defaultValue
+  }
+}
+
+// sortArrayCandy = function(a, b) {
+//   var aCandy = a.candy;
+//   var bCandy = b.candy;
+//   return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
+//   genusArr.sort(function(a, b, value){
+//     var aCandy = a.candy;
+//     var bCandy = b.candy;
+//     if(value === undefined) {
+//       // value = true;
+//       // value = (a.candy+ b.candy);
+//       // return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
+//       return true;
+//     }
+//     else {
+//       return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
+//     }
+//   });
+//   console.table(genusArr);
+// }
+
+// Match selected value with object in array
+matchGenus = function (genus, index) {
+  tempArr = [];
+
+  for(var i = 0; i < pokemon.length; i++) {
+    // console.log(pokemon[i].candy);
+    if(pokemon[i].genus == genus) {
+      tempArr.push(pokemon[i]);
+    }
+  }
+
+  // sort(genusArr.candy, genusArr);
+  // for('candy' in genusArr) {
+  //   console.log(Object.values('candy', genusArr));
+  // }
+  genusArr = $.makeArray(tempArr);
+  // console.table(genusArr);
+  console.table(genusArr);
+}
+
+
+sort = function (prop, arr) {
+    prop = prop.split('.');
+    var len = prop.length;
+
+    arr.sort(function (a, b) {
+        var i = 0;
+        var key;
+
+        while( i < len ) {
+            key = prop[i];
+
+            if(!a.hasOwnProperty(key)) return 1;
+            if(!b.hasOwnProperty(key)) return -1;
+
+            a = a[key];
+            b = b[key];
+            i++;
+        }
+        if (a < b) {
+            return -1;
+        } else if (a > b) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+    return arr;
+};
+
+// Overrides the default autocomplete filter function to search only from the beginning of the string
+$.ui.autocomplete.filter = function(array, term) {
+  var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+  return $.grep(array, function(value) {
+    return matcher.test(value.label || value.value || value);
+  });
+};
+
+//Sort Pokémon Array in select alphabetically
+function SortByName(a, b) {
+  var aName = a.species.toLowerCase();
+  var bName = b.species.toLowerCase();
+  return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+};
+
 
 // ======================================
 //  Reset Forms
@@ -3979,7 +4123,8 @@ matchElements = function (el, selectedPokemon) {
 
 resetForm = function() {
   $('#pokemonSelect, #pokemonNumber').val('');
-  $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, .candy-input__wrapper, #candyNumber, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
+  $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
+  $('.avatar').attr('class', 'avatar');
   return false;
 };
 
@@ -3991,41 +4136,6 @@ resetTable = function() {
 $('#resetPokemonSelect').on('click', function(e) { e.preventDefault(); resetForm(); });
 // Reset  table
 $('#resetTable').on('click', function(e) { e.preventDefault(); resetTable(); });
-
-
-// ======================================
-//  Pokemon Selection Tool Functions
-// ======================================
-
-// Remove egg animation time warning
-removeEggMessage = function(selectedPokemon) {
-  $('#eggMessage').remove();
-}
-
-//Add Pokémon avatar
-pokemonAvatar = function(selectedPokemon) {
-  $("#pokemonFields").append('<li class="pokemon-avatar sprite-pokemon' + selectedPokemon.index + '">' + '</li>');
-  $('#poke-img').addClass(selectedPokemon.index);
-  $('#poke-img').addClass('pokemon-avatar');
-  $('#pokemonFields li').attr('id', function(i) {
-    return 'pokemon' + (i + 1);
-  });
-};
-
-// Generate inputfield to select number of Pokémon to add
-pokemonNumberInput = function(selectedPokemon) {
-  $('.ui-widget').append('<div class="number-input__wrapper"><label for="pokemonNumber">Number of <span class="species-instance">' + selectedPokemon.species + ':</span></label> <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>');
-}
-
-// Generate inputfield to select Pokémon candy in inventory
-pokemonCandyInput = function(selectedPokemon) {
-  $('.ui-widget').append('<div class="candy-input__wrapper"><label for="candyNumber">Number of <span class="species-instance">' + selectedPokemon.genus + ' candy in inventory:</span></label> <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1"></div>')
-}
-
-// Generate checkbox to indicate a first evolution of the species
-pokemonFirstEvolution = function(selectedPokemon) {
-  $('.ui-widget').append('<div class="evolution-bonus"><span class="bonus">Adds<br>500 XP!</span><input type="checkbox" name="firstEvolve" id="firstEvolve"><label for="firstEvolve"></label><span>Is this the first time you evolve a <span class="species-instance">' + selectedPokemon.species + '</span>?</span></div>')
-}
 
 },{}]},{},[2])
 
