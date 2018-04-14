@@ -33,62 +33,9 @@ matchElements = function (el, selectedPokemon) {
   return selectedPokemon;
 }
 
-safeGet = function(obj, props, defaultValue) {
-  try {
-    return props.split('.').reduce(function(obj, p) {
-      return obj[p];
-    }, obj);
-  } catch(e) {
-    return defaultValue
-  }
-}
-
-// sortArrayCandy = function(a, b) {
-//   var aCandy = a.candy;
-//   var bCandy = b.candy;
-//   return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
-//   genusArr.sort(function(a, b, value){
-//     var aCandy = a.candy;
-//     var bCandy = b.candy;
-//     if(value === undefined) {
-//       // value = true;
-//       // value = (a.candy+ b.candy);
-//       // return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
-//       return true;
-//     }
-//     else {
-//       return ((aCandy < bCandy) ? -1 : ((aCandy > bCandy) ? 1 : 0));
-//     }
-//   });
-//   console.table(genusArr);
-// }
-
-// Match selected value with object in array
-matchGenus = function (genus, index) {
-  tempArr = [];
-
-  for(var i = 0; i < pokemon.length; i++) {
-    // console.log(pokemon[i].candy);
-    if(pokemon[i].genus == genus) {
-      tempArr.push(pokemon[i]);
-    }
-  }
-
-  // sort(genusArr.candy, genusArr);
-  // for('candy' in genusArr) {
-  //   console.log(Object.values('candy', genusArr));
-  // }
-  genusArr = $.makeArray(tempArr);
-  // console.table(genusArr);
-  console.table(genusArr);
-  return genusArr;
-}
-
-
 sort = function (prop, arr) {
     prop = prop.split('.');
     var len = prop.length;
-
     arr.sort(function (a, b) {
         var i = 0;
         var key;
@@ -113,6 +60,18 @@ sort = function (prop, arr) {
     });
     return arr;
 };
+
+// Match selected value with object in array
+matchGenus = function (genus, index) {
+  genusArr = [];
+  for(var i = 0; i < pokemon.length; i++) {
+    if(pokemon[i].genus == genus) {
+      genusArr.push(pokemon[i]);
+    }
+  }
+  sort('candy', genusArr);
+  return genusArr;
+}
 
 // Overrides the default autocomplete filter function to search only from the beginning of the string
 $.ui.autocomplete.filter = function(array, term) {
