@@ -9,7 +9,6 @@ $(document).ready(function(selectedPokemon) {
   // Pokemon Input Autocomplete and Selection Process
   // ======================================
   $("#pokemonSelect").autocomplete({
-    //Grab data from Pokémon Array
     autoFocus: true,
     minLength: 1,
     source: getMapKeyArray("species"),
@@ -23,82 +22,88 @@ $(document).ready(function(selectedPokemon) {
   });
 
   // ======================================
-  // When a selection is made, this happens:
+  // When a selection is made, return selected Pokemon Family
   // ======================================
   $('#pokemonSelect').on('change', function(e, selectedPokemon, genusArr) {
-    selectedPokemon = matchElements(this);
+    selectedPokemon = matchElements(selection);
+    $('#userChoice').attr('data-selection', selectedPokemon.species);
     genusArr = matchGenus(selectedPokemon.genus);
-    $('body').attr('data-selection', selectedPokemon.species);
 
-    matchGenus(selectedPokemon);
-
-    var pokemonChoiceBox = $('#pokemonChoice');
-
-    //Remove former selection
-    $('#pokemon-desc, #addPokemonSpecies').remove();
-    $("#pokemonAvatars").html('');
-
-    //Evolution is not possible on end states
-    if (selectedPokemon.evolution == null) {
+    if ( genusArr.length > 1 ) {
       resetForm();
-      pokemonAvatar(selectedPokemon); // Generate first Pokémon avatar
-
-      pokemonChoiceBox.prepend('<h2>You chose <span class="species-instance">' + selectedPokemon.species + '! </span></h2><p id="pokemon-desc">Unfortunately <span class="species-instance">' + selectedPokemon.species + '</span> does not evolve. :(</p>'); //Inform user
-      $('#pokemonSelect').val('');
-
-      $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>')
-      return false;
-
-    }
-    else if (genusArr.length <= 2) {
-      resetForm();
-      $('.evolution2').addClass('hide');
+      $('#familyTree').addClass('active');
+      if( genusArr.length > 2 ) {
+        $('.evolution2').addClass('active');
+      } else {
+        $('.evolution2').removeClass('active');
+      }
       for(var j = 0; j < genusArr.length; j++) {
         genAvatar = $('.gen .avatar');
         genSpecies = $('.gen h3');
         genAvatar.eq(j).addClass('sprite-pokemon' + genusArr[j].pokemonIndex);
         genSpecies.eq(j).html(genusArr[j].species);
       }
-    }
-    //Add multiple Pokémon of one species
-    else {
-      resetForm();
-      for(var j = 0; j < genusArr.length; j++) {
-        genAvatar = $('.gen .avatar');
-        genSpecies = $('.gen h3');
-        genAvatar.eq(j).addClass('sprite-pokemon' + genusArr[j].pokemonIndex);
-        genSpecies.eq(j).html(genusArr[j].species);
-      }
-
-      //Generate buttons to reset selectionfield or to add Pokémon to evolution table
-      $('.buttons').append('<a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>');
-    }
-
-    //Generate Pokémon avatars based number selection in inputfield
-    $('#pokemonNumber').on('keyup change', function() {
-      var $numberPokemon = parseInt($("input[name='pokemonNumber']").val(), 10);
-      //Reset avatars from previous selection
-      $("#pokemonAvatars").html("");
-      //Number input loop
-      for (i = 1; i <= $numberPokemon; i++) {
-        pokemonAvatar(selectedPokemon);
-      }
-    });
-
-    //Remove Pokémon avatar if value reaches 0
-    if ($("input[name='pokemonNumber']").val() === 0) {
-      resetForm();
-    }
-    return selectedPokemon;
-  });
-
-  //Add bonus bubble
-  $('#firstEvolve').on("change", function(){
-    if($(this).is(':checked')) {
-      $('.bonus').addClass('bonus-animated');
     } else {
-      $('.bonus').removeClass('bonus-animated').css('opacity', 0);
+      resetForm();
+      $('#noEvolution').addClass('active');
+      $('#noEvolution .avatar').addClass('sprite-pokemon' + selectedPokemon.pokemonIndex);
+      $('#noEvolution .species-instance').html(selectedPokemon.species);
+      $('#pokemonSelect').val('');
+      return false;
     }
   });
+
+  // ======================================
+  // Activate Avatars
+  // ======================================
+  activateAvatar($('#evolution0Storage'), $('.evolution0 .avatar'));
+  activateAvatar($('#evolution1Storage'), $('.evolution1 .avatar'));
+  activateAvatar($('#evolution2Storage'), $('.evolution2 .avatar'));
+
+  $('#pokemonSelect').on('change', function() {
+    calculateEvolution();
+  });
+  $('#evolution0Storage').on('change', function() {
+    calculateEvolution();
+  });
+
+  calculateEvolution = function(candyInventory, selection) {
+    selection = $('#userChoice').attr('data-selection');
+    candyInventory = parseInt($('#userChoice').attr('data-candy'));
+    candyRequirement1 = parseInt(genusArr[1].candy);
+    candyRequirement2 = parseInt(genusArr[2].candy);
+    babyInventory = $('#evolution0Storage').val();
+
+    if(selectedPokemon != undefined) {
+
+      if ( candyInventory >= candyRequirement1 &&  babyInventory > 0) {
+
+        evolutions = Math.floor(candyInventory / candyRequirement1) ;
+
+        if(babyInventory <= evolutions) {
+          evolutions = babyInventory
+        } 
+
+
+        $('.evolution1 .avatar').addClass('active');
+        $('.evolution1 .evolution-count').html(evolutions);
+
+        candyInventory -= genusArr[1].candy;
+        candyInventory++;
+
+      } else {
+        $('.evolution1 .avatar').removeClass('active');
+        $('.evolution1 .evolution-count').html(0);
+      }
+
+    }
+  }
+
+  $('#candyNumber').on('change, keyup', function() {
+    var candy = parseInt($('#candyNumber').val(), 10);
+    $('#userChoice').attr('data-candy', candy);
+    calculateEvolution();
+  });
+
 
 }); // Document Ready End

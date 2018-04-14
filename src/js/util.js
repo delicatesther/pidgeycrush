@@ -21,11 +21,10 @@ getMapKeyArray = function(key){
   return array;
 }
 
-// Match selected value with object in array
 matchElements = function (el, selectedPokemon) {
   var pokemonSpeciesArray = getMapKeyArray("species");
   for(var i = 0; i < pokemonSpeciesArray.length; i++) {
-    if(selection == pokemonSpeciesArray[i]) {
+    if(el == pokemonSpeciesArray[i]) {
       selectedPokemon = pokemon[i];
     }
   }
@@ -95,7 +94,9 @@ function SortByName(a, b) {
 
 resetForm = function() {
   $('#pokemonSelect, #pokemonNumber').val('');
-  $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, #pokemonChoice h2, #addPokemonSpecies, #resetPokemonSelect, .evolution-bonus').remove();
+  $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, #pokemonChoice h2, #addPokemonSpecies, .evolution-bonus').remove();
+  $('#familyTree').removeClass('active');
+  $('#noEvolution').removeClass('active');
   $('.avatar').attr('class', 'avatar');
   return false;
 };
@@ -108,3 +109,22 @@ resetTable = function() {
 $('#resetPokemonSelect').on('click', function(e) { e.preventDefault(); resetForm(); });
 // Reset  table
 $('#resetTable').on('click', function(e) { e.preventDefault(); resetTable(); });
+
+
+// ======================================
+//  Tool
+// ======================================
+
+activateAvatar = function(el, target) {
+  el.on('keyup change', function(){
+    num = parseInt(el.val(), 10);
+    if(num > 0) {
+      target.addClass('active');
+    } else if(target.hasClass('active')) {
+      return;
+    }
+    else {
+      target.removeClass('active');
+    }
+  });
+}
