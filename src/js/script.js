@@ -28,6 +28,7 @@ $(document).ready(function(selectedPokemon) {
     selectedPokemon = matchElements(selection);
     $('#userChoice').attr('data-selection', selectedPokemon.species);
     genusArr = matchGenus(selectedPokemon.genus);
+    $('.gen').removeClass('hide');
 
     if ( genusArr.length > 1 ) {
       resetForm();
@@ -62,28 +63,79 @@ $(document).ready(function(selectedPokemon) {
 
   $('#pokemonSelect').on('change', function() {
     calculateEvolution();
+    console.log(getPokemonHeld());
   });
-  $('#evolution0Storage').on('change', function() {
+
+  $('.number-storage').on('change', function() {
     calculateEvolution();
   });
+
+  removePokemon = function() {
+    $('.pokemon-delete').on('click', function(){
+      console.log('click');
+      $(this).parent('.gen').addClass('hide');
+      $(this).parent('.gen').find('.avatar').attr('class', 'avatar');
+      $(this).parent('.gen').find('h3').html('');
+      $(this).parent('.gen').find('.number-storage').val(0);
+    });
+    if(!$('.pokemon-delete').length) {
+      resetForm();
+    }
+  }
+
+  removePokemon();
+
+  getPokemonHeld = function() {
+    var gen0Storage = $('#evolution0Storage').val();
+    var gen1Storage = $('#evolution1Storage').val();
+    var gen2Storage = $('#evolution2Storage').val();
+    var pokemonHeld = [gen0Storage, gen1Storage, gen2Storage];
+    return pokemonHeld;
+  }
+  getPokemonWanted = function() {
+    var gen0Storage = $('#evolution0Storage').val();
+    var gen1Storage = $('#evolution1Storage').val();
+    var gen2Storage = $('#evolution2Storage').val();
+    var pokemonHeld = [gen0Storage, gen1Storage, gen2Storage];
+    return pokemonHeld;
+  }
 
   calculateEvolution = function(candyInventory, selection) {
     selection = $('#userChoice').attr('data-selection');
     candyInventory = parseInt($('#userChoice').attr('data-candy'));
+    var tempInventory;
+
     candyRequirement1 = parseInt(genusArr[1].candy);
     candyRequirement2 = parseInt(genusArr[2].candy);
+    candyRequirementBoth = candyRequirement1 + candyRequirement2;
+
     babyInventory = $('#evolution0Storage').val();
+    teenInventory = $('#evolution1Storage').val();
+    adultInventory = $('#evolution1Storage').val();
 
     if(selectedPokemon != undefined) {
 
-      if ( candyInventory >= candyRequirement1 &&  babyInventory > 0) {
+      if ( candyInventory >= candyRequirementBoth && babyInventory > 0 ) {
+        evolutions = Math.floor(candyInventory / candyRequirement2) ;
+        if( babyInventory <= evolutions ) {
+          evolutions = babyInventory;
+        }
 
+        $('.evolution2 .avatar').addClass('active');
+        $('.evolution2 .evolution-count').html(evolutions);
+      } else if ( candyInventory >= candyRequirement2 && teenInventory > 0 ) {
+          if ( teenInventory <= evolutions ) {
+            evolutions = teenInventory;
+          }
+        $('.evolution2 .avatar').addClass('active');
+        $('.evolution2 .evolution-count').html(evolutions);
+      }
+
+      else if ( candyInventory >= candyRequirement1 && babyInventory > 0 ) {
         evolutions = Math.floor(candyInventory / candyRequirement1) ;
-
         if(babyInventory <= evolutions) {
           evolutions = babyInventory
-        } 
-
+        }
 
         $('.evolution1 .avatar').addClass('active');
         $('.evolution1 .evolution-count').html(evolutions);
@@ -92,8 +144,8 @@ $(document).ready(function(selectedPokemon) {
         candyInventory++;
 
       } else {
-        $('.evolution1 .avatar').removeClass('active');
-        $('.evolution1 .evolution-count').html(0);
+        $('.evolution1 .avatar, .evolution2 .avatar').removeClass('active');
+        $('.evolution1 .evolution-count, .evolution2 .evolution-count').html(0);
       }
 
     }

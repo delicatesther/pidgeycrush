@@ -88,6 +88,9 @@
         opacity: 1;
       }
     }
+    &.hide {
+      display: none;
+    }
     .pokemon-delete {
       cursor: pointer;
       top: 10px;

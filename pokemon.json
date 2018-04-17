@@ -3078,12 +3078,21 @@
       "buddyDistance": 1
     },
     {
-      "pokemonIndex": "306",
+      "pokemonIndex": "305",
       "species": "Lairon",
       "genus": "Aron",
       "type": ["steel", "rock"],
       "candy": 100,
       "evolution": "Aggron",
+      "gen": 3,
+      "region": "Hoenn",
+      "buddyDistance": 1
+    },
+    {
+      "pokemonIndex": "306",
+      "species": "Aggron",
+      "genus": "Aron",
+      "type": ["steel", "rock"],
       "gen": 3,
       "region": "Hoenn",
       "buddyDistance": 1
