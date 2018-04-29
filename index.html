@@ -7,53 +7,57 @@
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"> </script> -->
   <!-- <script>
   window.jQuery || document.write('<script src="dest/js/vendor/jquery-2.1.4.min.js"><\/script>');
-  </script> -->
-  <script src="dest/js/vendor/jquery-2.1.4.min.js"></script>
-  <script src="dest/js/vendor/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="dest/js/vendor/jquery.ui.autocomplete.html.js" type="text/javascript"></script>
+</script> -->
+<script src="dest/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="dest/js/vendor/jquery-ui.min.js" type="text/javascript"></script>
+<script src="dest/js/vendor/jquery.ui.autocomplete.html.js" type="text/javascript"></script>
 
-  <link rel="stylesheet" type="text/css" href="dest/css/vendor/jquery-ui.min.css">
-  <link rel="stylesheet" type="text/css" href="dest/css/vendor/jquery-ui.structure.min.css">
-  <link rel="stylesheet" type="text/css" href="dest/css/vendor/jquery-ui.theme.min.css">
+<link rel="stylesheet" type="text/css" href="dest/css/vendor/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="dest/css/vendor/jquery-ui.structure.min.css">
+<link rel="stylesheet" type="text/css" href="dest/css/vendor/jquery-ui.theme.min.css">
 
 
-  <script src="dest/js/all.js" type="text/javascript"></script>
-  <link rel="stylesheet" type="text/css" href="dest/css/style.css">
+<script src="dest/js/all.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="dest/css/style.css">
 </head>
 <body>
-  <div id="userChoice" data-selection="" data-candy="">
-  </div>
   <div class="wrapper">
+  <header>
+    <h1>Pidgeycrush</h1>
+  </header>
+  <main class="main">
+      <div id="userChoice" data-selection="" data-candy="">
+      </div>
 
-  <form method="post">
-    <div class="initial-choices">
-      <div>
-        <label for="pokemonSelect"><h3>Pokémon:</h3></label>
-        <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species" type="text">
-      </div>
-      <div class="candy-input__wrapper">
-        <label for="candyNumber"><h3>Candy in inventory:</h3></label>
-        <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1">
-      </div>
-    </div>
-      <!-- </div> -->
+      <form method="post">
+        <div class="initial-choices">
+          <div>
+            <label for="pokemonSelect"><h3>Pokémon:</h3></label>
+            <input id="pokemonSelect" name="pokemonSelect" placeholder="Start typing Pokémon species" type="text">
+          </div>
+          <div class="candy-input__wrapper">
+            <label for="candyNumber"><h3>Candy in inventory:</h3></label>
+            <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1">
+          </div>
+        </div>
+        <!-- </div> -->
         <!-- <div class="number-input__wrapper">
-          <label for="pokemonNumber">Number of <span class="species-instance"></span></label>
-          <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>
-        </div> -->
+        <label for="pokemonNumber">Number of <span class="species-instance"></span></label>
+        <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>
+      </div> -->
 
 
-        <div id="pokemonChoice" class="pokemon-choice">
-          <ul id="pokemonAvatars" class="pokemon-avatars">
-            <!-- Pokémon Avatars spawn here -->
-          </ul>
-        </div>
+      <div id="pokemonChoice" class="pokemon-choice">
+        <ul id="pokemonAvatars" class="pokemon-avatars">
+          <!-- Pokémon Avatars spawn here -->
+        </ul>
+      </div>
 
-        <div id="noEvolution" class="no-evolution">
-          <h2>You chose <span class="species-instance"></span></h2>
-          <div class="avatar"></div>
-          <p>Unfortunately <span class="species-instance"></span> does not evolve. :(</p>
-        </div>
+      <div id="noEvolution" class="no-evolution">
+        <h2>You chose <span class="species-instance"></span></h2>
+        <div class="avatar"></div>
+        <p>Unfortunately <span class="species-instance"></span> does not evolve. :(</p>
+      </div>
 
       <div class="family-tree" id="familyTree">
         <div class="gen evolution0">
@@ -95,63 +99,65 @@
           </div>
           <div class="form-row">
             <div>
-            <label>In storage:</label>
-            <input type="number" value="0" min="0" class="number-storage" name="evolution2Storage" id="evolution2Storage">
-          </div>
-          <div>
-            <label>Wanted:</label>
-            <input type="number" value="0" class="number-wanted" name="evolution2Wanted" id="evolution2Wanted">
-          </div>
+              <label>In storage:</label>
+              <input type="number" value="0" min="0" class="number-storage" name="evolution2Storage" id="evolution2Storage">
+            </div>
+            <div>
+              <label>Wanted:</label>
+              <input type="number" value="0" class="number-wanted" name="evolution2Wanted" id="evolution2Wanted">
+            </div>
           </div>
           <div class="check-bonus">
             <label>In pokedex:</label>
             <input type="checkbox">
           </div>
         </div>
-    </div>
+      </div>
 
-    <a id="addPokemonSpecies" href="javascript:void(0)" onclick="resetForm();">Add to table</a>
-    <a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>
-  </form>
+      <a id="addPokemonSpecies" href="javascript:void(0)" onclick="resetForm();">Add to table</a>
+      <a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>
+    </form>
 
 
-  <div id="eggMessage" class="message"></div>
-  <h2>Evolution Table</h2>
-  <table id="finalDestination" class="final-destination">
-    <thead>
-      <tr>
-        <td>#</td>
-        <td>Species</td>
-        <td class="wide">Candy needed</td>
-        <td class="wide">Candy inventory</td>
-        <td># Evolutions possible</td>
-        <td>XP gained</td>
-        <td><span>Remove row</span></td>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-  <a id="resetTable" href="javascript:void(0)" onclick="resetTable();">Reset Table</a>
-  <table id="tally" class="tally">
-    <thead>
-      <tr>
-        <td>Total number of evolutions</td>
-        <td>Total XP gained</td>
-        <td>Total XP gained with Lucky Egg</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="total-1"></td>
-        <td id="total-2"></td>
-        <td id="total-3"></td>
-      </tr>
-    </tbody>
-  </table>
+    <div id="eggMessage" class="message"></div>
+    <h2>Evolution Table</h2>
+    <table id="finalDestination" class="final-destination">
+      <thead>
+        <tr>
+          <td>#</td>
+          <td>Species</td>
+          <td class="wide">Candy needed</td>
+          <td class="wide">Candy inventory</td>
+          <td># Evolutions possible</td>
+          <td>XP gained</td>
+          <td><span>Remove row</span></td>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <a id="resetTable" href="javascript:void(0)" onclick="resetTable();">Reset Table</a>
+    <table id="tally" class="tally">
+      <thead>
+        <tr>
+          <td>Total number of evolutions</td>
+          <td>Total XP gained</td>
+          <td>Total XP gained with Lucky Egg</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="total-1"></td>
+          <td id="total-2"></td>
+          <td id="total-3"></td>
+        </tr>
+      </tbody>
+    </table>
+</main>
 
+<footer>
   <p class="disclaimer">This calculator is based on the popular game Pokémon Go, developed by Niantic, Inc.<br> Any and all rights are belong to them.<br><br><small>Please don't sue me, guys. I just wanted to build a calculator. :(</small></p>
-</div>
+</footer>
 </div>
 </body>
 </html>

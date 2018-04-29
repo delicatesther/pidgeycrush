@@ -1,5 +1,15 @@
+h1 {
+  font-family: $base-font;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 20px 0;
+
+}
 h2 {
-  font-family: 'Roboto Condensed', 'Lato';
+  font-family: $base-font;
   display: block;
   text-transform: uppercase;
   text-align: center;
@@ -8,7 +18,7 @@ h2 {
   margin: 20px 0;
 }
 h3 {
-  font-family: 'Roboto Condensed', 'Lato';
+  font-family: $base-font;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
