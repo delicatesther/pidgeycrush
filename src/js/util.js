@@ -72,6 +72,11 @@ matchGenus = function (genus, index) {
   return genusArr;
 }
 
+populateGenusArr = function(selectedPokemon, genusArr) {
+  genusArr = matchGenus(selectedPokemon.genus);
+  return genusArr;
+}
+
 // Overrides the default autocomplete filter function to search only from the beginning of the string
 $.ui.autocomplete.filter = function(array, term) {
   var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
@@ -91,13 +96,28 @@ function SortByName(a, b) {
 // ======================================
 //  Reset Forms
 // ======================================
+removePokemon = function() {
+  $('.pokemon-delete').on('click', function(){
+    if( $(this).parent('.gen').hasClass('active') ) {
+      $(this).parent('.gen').removeClass('active');
+    }
+    $(this).parent('.gen').addClass('hide');
+    $(this).parent('.gen').find('.avatar').attr('class', 'avatar');
+    $(this).parent('.gen').find('h3').html('');
+    $(this).parent('.gen').find('.number-storage').val(0);
+  });
+  if(!$('.pokemon-delete').length) {
+    resetForm();
+  }
+}
 
 resetForm = function() {
   $('#pokemonSelect, #pokemonNumber').val('');
   $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, #pokemonChoice h2, #addPokemonSpecies, .evolution-bonus').remove();
   $('#familyTree').removeClass('active');
   $('#noEvolution').removeClass('active');
-  $('.avatar').attr('class', 'avatar');
+  // $('.avatar').attr('class', 'avatar');
+  
   return false;
 };
 
@@ -127,4 +147,30 @@ activateAvatar = function(el, target) {
       target.removeClass('active');
     }
   });
+}
+
+populateMenu = function(selectedPokemon, genusArr) {
+  $('.gen').removeClass('hide');
+  if ( genusArr.length > 1 ) {
+    resetForm();
+    $('#familyTree').addClass('active');
+    if( genusArr.length > 2 ) {
+      $('.evolution2').addClass('active');
+    } else {
+      $('.evolution2').removeClass('active');
+    }
+    for(var j = 0; j < genusArr.length; j++) {
+      genAvatar = $('.gen .avatar');
+      genSpecies = $('.gen h3');
+      genAvatar.eq(j).addClass('sprite-pokemon' + genusArr[j].pokemonIndex);
+      genSpecies.eq(j).html(genusArr[j].species);
+    }
+  } else {
+    resetForm();
+    $('#noEvolution').addClass('active');
+    $('#noEvolution .avatar').addClass('sprite-pokemon' + selectedPokemon.pokemonIndex);
+    $('#noEvolution .species-instance').html(selectedPokemon.species);
+    $('#pokemonSelect').val('');
+    return false;
+  }
 }

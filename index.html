@@ -26,7 +26,7 @@
     <h1>Pidgeycrush</h1>
   </header>
   <main class="main">
-      <div id="userChoice" data-selection="" data-candy="">
+      <div id="userChoice" data-selection="" data-genus="" data-candy="">
       </div>
 
       <form method="post">
@@ -40,12 +40,6 @@
             <input id="candyNumber" type="number" name="candyNumber" class="candy-number" min="0" value="1">
           </div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="number-input__wrapper">
-        <label for="pokemonNumber">Number of <span class="species-instance"></span></label>
-        <input id="pokemonNumber" type="number" name="pokemonNumber" class="pokemon-number" min="0" value="1"></div>
-      </div> -->
-
 
       <div id="pokemonChoice" class="pokemon-choice">
         <ul id="pokemonAvatars" class="pokemon-avatars">
@@ -61,15 +55,23 @@
 
       <div class="family-tree" id="familyTree">
         <div class="gen evolution0">
-          <span class="pokemon-delete"></span>
+          <span class="delete"></span>
           <div class="avatar"></div>
           <h3 data-type="pokemon-species"></h3>
           <div class="placeholder"></div>
-          <label>In storage:</label>
-          <input type="number" value="0" min="0" class="number-storage" name="evolution0Storage" id="evolution0Storage">
+          <div class="form-row">
+            <div>
+              <label>In storage:</label>
+              <input type="number" value="0" min="0" class="number-storage" name="evolution0Storage" id="evolution0Storage">
+            </div>
+            <div>
+              <label>Wanted:</label>
+              <input type="number" value="0" class="number-wanted" name="evolution0Wanted" id="evolution0Wanted">
+            </div>
+          </div>
         </div>
         <div class="gen evolution1">
-          <span class="pokemon-delete"></span>
+          <span class="delete"></span>
           <div class="avatar"></div>
           <h3 data-type="pokemon-species"></h3>
           <div class="possibility">
@@ -78,11 +80,11 @@
           <div class="form-row">
             <div>
               <label>In storage:</label>
-              <input type="number" value="0" min="0" class="number-storage" name="evolution1Storage" id="evolution1Storage" class="number-wanted" name="evolution1Wanted" id="evolution1Wanted">
+              <input type="number" value="0" min="0" class="number-storage" name="evolution1Storage" id="evolution1Storage">
             </div>
             <div>
               <label>Wanted:</label>
-              <input type="number" value="0">
+              <input type="number" value="0" class="number-wanted" name="evolution1Wanted" id="evolution1Wanted">
             </div>
           </div>
           <div class="check-bonus">
@@ -91,8 +93,8 @@
           </div>
         </div>
         <div class="gen evolution2 active">
-          <span class="pokemon-delete"></span>
-          <div class="avatar"></div>
+          <span class="delete"></span>
+          <div class="avatar pokemon"></div>
           <h3 data-type="pokemon-species"></h3>
           <div class="possibility">
             <span>Evolutions possible: </span><span class="evolution-count">0</span>
@@ -121,7 +123,37 @@
 
     <div id="eggMessage" class="message"></div>
     <h2>Evolution Table</h2>
-    <table id="finalDestination" class="final-destination">
+    <section class="evolution-table">
+      <header>
+        <h1>Pokémon Details</h1>
+        <p>Index</p>
+        <p>Species</p>
+        <p>Evolutions</p>
+        <p>XP gained</p>
+        <p>Remove</p>
+      </header>
+      <div class="pokemon-row">
+        <div>
+          <span>001</span>
+        </div>
+        <div>
+          <div class="avatar sprite-pokemon001"></div>
+          <span class="">Bulbasaur</span>
+        </div>
+        <div>
+          <span>40</span>
+        </div>
+        <div>
+          <span>20.500</span>
+          <span class="bonus">(+ first evolution bonus!)</span>
+        </div>
+        <div>
+          <span class="delete"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- <table id="finalDestination" class="final-destination">
       <thead>
         <tr>
           <td>#</td>
@@ -135,7 +167,8 @@
       </thead>
       <tbody>
       </tbody>
-    </table>
+    </table> -->
+
     <a id="resetTable" href="javascript:void(0)" onclick="resetTable();">Reset Table</a>
     <table id="tally" class="tally">
       <thead>
