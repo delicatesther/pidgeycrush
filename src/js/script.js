@@ -28,15 +28,35 @@ $(document).ready(function() {
     $('#userChoice').attr('data-genus', selectedPokemon.genus);
     populateGenusArr(selectedPokemon);
     populateMenu(selectedPokemon, genusArr);
+    displayPokemonChoice(selectedPokemon);
+
+    $('.gen').each(function(){
+      console.log($(this));
+      if( $(this).data('species') == selectedPokemon.species.toLowerCase() ) {
+        $(this).find('.avatar').addClass('active');
+        $(this).find('.number-storage').val(function(i, oldval){
+          return ++oldval;
+        })
+      }
+    });
     return selectedPokemon;
   });
 
   // ======================================
   // Activate Avatars
   // ======================================
-  activateAvatar($('#evolution0Storage'), $('.evolution0 .avatar'));
-  activateAvatar($('#evolution1Storage'), $('.evolution1 .avatar'));
-  activateAvatar($('#evolution2Storage'), $('.evolution2 .avatar'));
+  $('input[data-inventory="pokemon-held"]').each(function(){
+    $(this).on('keyup change', function() {
+      var num = parseInt($(this).val(), 10);
+      var target = $(this).parents('.gen').find('.avatar');
+      console.log(target);
+      if(num <= 0) {
+        target.removeClass('active');
+      } else {
+        target.addClass('active');
+      }
+    });
+  });
 
   $('.number-storage').on('change', function(selectedPokemon) {
     console.log(getPokemonHeld());

@@ -31,7 +31,12 @@
     text-transform: uppercase;
   }
 }
-
+.pokemon-choice {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
 .family-tree {
   display: none;
   &.active {

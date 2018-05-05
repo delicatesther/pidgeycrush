@@ -42,9 +42,7 @@
         </div>
 
       <div id="pokemonChoice" class="pokemon-choice">
-        <ul id="pokemonAvatars" class="pokemon-avatars">
-          <!-- Pokémon Avatars spawn here -->
-        </ul>
+        <h2>You chose <span class="species-instance"></span></h2>
       </div>
 
       <div id="noEvolution" class="no-evolution">
@@ -54,15 +52,15 @@
       </div>
 
       <div class="family-tree" id="familyTree">
-        <div class="gen evolution0">
+        <div class="gen evolution0" data-species="">
           <span class="delete"></span>
           <div class="avatar"></div>
-          <h3 data-type="pokemon-species"></h3>
+          <h3 data-inventory="pokemon-species"></h3>
           <div class="placeholder"></div>
           <div class="form-row">
             <div>
               <label>In storage:</label>
-              <input type="number" value="0" min="0" class="number-storage" name="evolution0Storage" id="evolution0Storage">
+              <input type="number" value="0" min="0" class="number-storage" name="evolution0Storage" id="evolution0Storage" data-inventory="pokemon-held">
             </div>
             <div>
               <label>Wanted:</label>
@@ -70,17 +68,17 @@
             </div>
           </div>
         </div>
-        <div class="gen evolution1">
+        <div class="gen evolution1" data-species="">
           <span class="delete"></span>
           <div class="avatar"></div>
-          <h3 data-type="pokemon-species"></h3>
+          <h3 data-inventory="pokemon-species"></h3>
           <div class="possibility">
             <span>Evolutions possible: </span><span class="evolution-count">0</span>
           </div>
           <div class="form-row">
             <div>
               <label>In storage:</label>
-              <input type="number" value="0" min="0" class="number-storage" name="evolution1Storage" id="evolution1Storage">
+              <input type="number" value="0" min="0" class="number-storage" name="evolution1Storage" id="evolution1Storage" data-inventory="pokemon-held">
             </div>
             <div>
               <label>Wanted:</label>
@@ -92,17 +90,17 @@
             <input type="checkbox">
           </div>
         </div>
-        <div class="gen evolution2 active">
+        <div class="gen evolution2 active" data-species="">
           <span class="delete"></span>
           <div class="avatar pokemon"></div>
-          <h3 data-type="pokemon-species"></h3>
+          <h3 data-inventory="pokemon-species"></h3>
           <div class="possibility">
             <span>Evolutions possible: </span><span class="evolution-count">0</span>
           </div>
           <div class="form-row">
             <div>
               <label>In storage:</label>
-              <input type="number" value="0" min="0" class="number-storage" name="evolution2Storage" id="evolution2Storage">
+              <input type="number" value="0" min="0" class="number-storage" name="evolution2Storage" id="evolution2Storage" data-inventory="pokemon-held">
             </div>
             <div>
               <label>Wanted:</label>
@@ -116,14 +114,14 @@
         </div>
       </div>
 
+      <a id="quickAdd" href="javascript:void(0)" onclick="quickAdd(this);">Quick add</a>
       <a id="addPokemonSpecies" href="javascript:void(0)" onclick="resetForm();">Add to table</a>
       <a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>
     </form>
 
 
-    <div id="eggMessage" class="message"></div>
     <h2>Evolution Table</h2>
-    <section class="evolution-table">
+    <section class="evolution-table" id="finalDestination">
       <header>
         <h1>Pokémon Details</h1>
         <p>Index</p>
@@ -132,60 +130,30 @@
         <p>XP gained</p>
         <p>Remove</p>
       </header>
-      <div class="pokemon-row">
-        <div>
-          <span>001</span>
+      <div class="data-container">
+        <!--Example Row-->
+        <!-- <div class="pokemon-row">
+          <div>
+            <span>001</span>
+          </div>
+          <div class="species">
+            <span class="">Bulbasaur</span>
+            <div class="image-container">
+              <div class="avatar sprite-pokemon001"></div>
+            </div>
+          </div>
+          <div>
+            <span>40</span>
+          </div>
+          <div>
+            <span>20.500 <span class="bonus">(+ first evolution bonus!)</span></span>
+          </div>
+          <div>
+            <span class="delete"></span>
+          </div>
         </div>
-        <div>
-          <div class="avatar sprite-pokemon001"></div>
-          <span class="">Bulbasaur</span>
-        </div>
-        <div>
-          <span>40</span>
-        </div>
-        <div>
-          <span>20.500</span>
-          <span class="bonus">(+ first evolution bonus!)</span>
-        </div>
-        <div>
-          <span class="delete"></span>
-        </div>
-      </div>
+      </div> -->
     </section>
-
-    <!-- <table id="finalDestination" class="final-destination">
-      <thead>
-        <tr>
-          <td>#</td>
-          <td>Species</td>
-          <td class="wide">Candy needed</td>
-          <td class="wide">Candy inventory</td>
-          <td># Evolutions possible</td>
-          <td>XP gained</td>
-          <td><span>Remove row</span></td>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table> -->
-
-    <a id="resetTable" href="javascript:void(0)" onclick="resetTable();">Reset Table</a>
-    <table id="tally" class="tally">
-      <thead>
-        <tr>
-          <td>Total number of evolutions</td>
-          <td>Total XP gained</td>
-          <td>Total XP gained with Lucky Egg</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td id="total-1"></td>
-          <td id="total-2"></td>
-          <td id="total-3"></td>
-        </tr>
-      </tbody>
-    </table>
 </main>
 
 <footer>

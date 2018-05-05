@@ -39,28 +39,36 @@ table {
 }
 
 .evolution-table {
-  background: rgba($white, 0.6);
+  background: rgba($white, 0.3);
+  box-shadow:  0 1px 2px 0px rgba($black, 0.2);
   padding: 20px 10px;
   width: 100%;
   border-radius: 20px;
   header {
     display: flex;
     flex-wrap: wrap;
+    font-family: $base-font;
+    font-weight: 600;
+    text-align: center;
   }
   h1 {
     font-size: 20px;
     text-align: center;
     flex: 1 0 100%;
     width: 100%;
+    border-bottom: 3px double $green--light;
+    padding-bottom: 5px;
   }
   .pokemon-row {
     display: flex;
     border-bottom: 1px solid $green--light;
     padding: 5px 0;
-    display: flex;
     width: 100%;
+    text-align: left;
     > div {
       flex: 1 1 20%;
+      padding: 2px;
+      height: 140px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -70,5 +78,25 @@ table {
   .bonus {
     font-size: 11px;
     margin: 5px;
+    display: block;
+  }
+  .species {
+    span {
+      margin-bottom: 10px;
+    }
+  }
+  .image-container {
+    border-radius: 50%;
+    border: 1px solid $green--dark;
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    position: relative;
+    .avatar {
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
