@@ -4095,11 +4095,24 @@ populateMenu = function(selectedPokemon, genusArr) {
 }
 
 
-quickAdd = function(el) {
+quickAdd = function(el, evolutions) {
   resetForm();
   el = $(el);
   var evolutionTable = $('#finalDestination .data-container');
-  evolutionTable.append('<div class="pokemon-row"> <div><span>'+ selectedPokemon.pokemonIndex +'</span></div><div class="species"><span>' + selectedPokemon.species +'</span><div class="image-container"><div class="avatar sprite-pokemon'+ selectedPokemon.pokemonIndex + '"></div></div> </div><div><span>???</span></div><div><span>???</span></div><div><a href="javascript:;" onclick="removeRow(this)"  class="delete"></a></div></div>');
+  var evolutions = quickCalc(selectedPokemon);
+  evolutionTable.append('<div class="pokemon-row"> <div><span>'+ selectedPokemon.pokemonIndex +'</span></div><div class="species"><span>' + selectedPokemon.species +'</span><div class="image-container"><div class="avatar sprite-pokemon'+ selectedPokemon.pokemonIndex + '"></div></div> </div><div><span class="evolution-count">'+ evolutions +'</span></div><div><span class="xp-gained">'+ (evolutions * 500) +'</span></div><div><a href="javascript:;" onclick="removeRow(this)"  class="delete"></a></div></div>');
+}
+
+quickCalc = function(selectedPokemon) {
+  var candyNumber = parseInt($('#candyNumber').val(), 10);
+  var candyRequired = selectedPokemon.candy;
+  var evolutions = 0;
+  for(var i = candyNumber; i > 0; i -= candyRequired) {
+    candyNumber -= candyRequired;
+    evolutions++;
+    candyNumber++;
+  }
+  return evolutions;
 }
 
 removeRow = function(el) {
