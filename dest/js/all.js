@@ -3866,12 +3866,13 @@ $(document).ready(function() {
       selection = obj[1][0].value;
       return selection;
     }
-  }).change();
+  });
 
   // ======================================
   // When a selection is made, return selected Pokemon Family
   // ======================================
   $('#pokemonSelect').on('autocompleteselect', function(e, selection) {
+    resetForm();
     selectedPokemon = matchElements(selection.item.value);
     $('#userChoice').attr('data-selection', selectedPokemon.species);
     $('#userChoice').attr('data-genus', selectedPokemon.genus);
@@ -3879,15 +3880,6 @@ $(document).ready(function() {
     populateMenu(selectedPokemon, genusArr);
     displayPokemonChoice(selectedPokemon);
 
-    $('.gen').each(function(){
-      console.log($(this));
-      if( $(this).data('species') == selectedPokemon.species.toLowerCase() ) {
-        $(this).find('.avatar').addClass('active');
-        $(this).find('.number-storage').val(function(i, oldval){
-          return ++oldval;
-        })
-      }
-    });
     return selectedPokemon;
   });
 
@@ -3898,7 +3890,6 @@ $(document).ready(function() {
     $(this).on('keyup change', function() {
       var num = parseInt($(this).val(), 10);
       var target = $(this).parents('.gen').find('.avatar');
-      console.log(target);
       if(num <= 0) {
         target.removeClass('active');
       } else {
@@ -4033,13 +4024,12 @@ removePokemon = function() {
 }
 
 resetForm = function() {
-  $('#pokemonSelect, #pokemonNumber').val('');
-  $('#pokemon-desc, .number-input__wrapper, .pokemon-avatar__wrapper li, #addPokemonSpecies, .evolution-bonus').remove();
+  $('#familyTree .avatar').attr('class', 'avatar');
+  $('input[data-inventory="pokemon-held"]').val(0);
   $('#pokemonChoice').removeClass('active');
   $('#pokemonChoice .species-instance').html('');
   $('#familyTree').removeClass('active');
   $('#noEvolution').removeClass('active');
-  $('#familyTree .avatar').attr('class', 'avatar');
 
   return false;
 };
@@ -4065,10 +4055,20 @@ activateAvatar = function(target) {
 displayPokemonChoice = function(selectedPokemon) {
   $('#pokemonChoice').addClass('active');
   $('#pokemonChoice .species-instance').html(selectedPokemon.species);
+  var selection = selectedPokemon.species.toLowerCase();
+  $('.gen').each( function() {
+      if ( $(this).hasClass(selection) ) {
+        $(this).children('.avatar').addClass('active');
+        $(this).find('.number-storage').val(function(i, oldval) {
+        return ++oldval;
+      });
+    }
+  });
 }
 
 populateMenu = function(selectedPokemon, genusArr) {
-  $('.gen').removeClass('hide');
+  gen = $('.gen');
+  gen.removeClass('hide');
   if ( genusArr.length > 1 ) {
     resetForm();
     $('#familyTree').addClass('active');
@@ -4078,12 +4078,11 @@ populateMenu = function(selectedPokemon, genusArr) {
       $('.evolution2').removeClass('active');
     }
     for(var j = 0; j < genusArr.length; j++) {
-      gen = $('.gen');
-      gen.eq(j).attr('data-species', genusArr[j].species.toLowerCase());
       genAvatar = $('.gen .avatar');
       genSpecies = $('.gen h3');
       genAvatar.eq(j).addClass('sprite-pokemon' + genusArr[j].pokemonIndex);
       genSpecies.eq(j).html(genusArr[j].species);
+      gen.eq(j).addClass(genusArr[j].species.toLowerCase());
     }
   } else {
     resetForm();
@@ -4095,11 +4094,12 @@ populateMenu = function(selectedPokemon, genusArr) {
   }
 }
 
+
 quickAdd = function(el) {
-  event.stopPropagation();
+  resetForm();
   el = $(el);
   var evolutionTable = $('#finalDestination .data-container');
-    evolutionTable.append('<div class="pokemon-row"> <div><span>'+ selectedPokemon.pokemonIndex +'</span></div><div class="species"><span>' + selectedPokemon.species +'</span><div class="image-container"><div class="avatar sprite-pokemon'+ selectedPokemon.pokemonIndex + '"></div></div> </div><div><span>???</span></div><div><span>???</span></div><div><a href="javascript:;" onclick="removeRow(this)"  class="delete"></a></div></div>');
+  evolutionTable.append('<div class="pokemon-row"> <div><span>'+ selectedPokemon.pokemonIndex +'</span></div><div class="species"><span>' + selectedPokemon.species +'</span><div class="image-container"><div class="avatar sprite-pokemon'+ selectedPokemon.pokemonIndex + '"></div></div> </div><div><span>???</span></div><div><span>???</span></div><div><a href="javascript:;" onclick="removeRow(this)"  class="delete"></a></div></div>');
 }
 
 removeRow = function(el) {

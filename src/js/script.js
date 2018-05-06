@@ -17,12 +17,13 @@ $(document).ready(function() {
       selection = obj[1][0].value;
       return selection;
     }
-  }).change();
+  });
 
   // ======================================
   // When a selection is made, return selected Pokemon Family
   // ======================================
   $('#pokemonSelect').on('autocompleteselect', function(e, selection) {
+    resetForm();
     selectedPokemon = matchElements(selection.item.value);
     $('#userChoice').attr('data-selection', selectedPokemon.species);
     $('#userChoice').attr('data-genus', selectedPokemon.genus);
@@ -30,15 +31,6 @@ $(document).ready(function() {
     populateMenu(selectedPokemon, genusArr);
     displayPokemonChoice(selectedPokemon);
 
-    $('.gen').each(function(){
-      console.log($(this));
-      if( $(this).data('species') == selectedPokemon.species.toLowerCase() ) {
-        $(this).find('.avatar').addClass('active');
-        $(this).find('.number-storage').val(function(i, oldval){
-          return ++oldval;
-        })
-      }
-    });
     return selectedPokemon;
   });
 
@@ -49,7 +41,6 @@ $(document).ready(function() {
     $(this).on('keyup change', function() {
       var num = parseInt($(this).val(), 10);
       var target = $(this).parents('.gen').find('.avatar');
-      console.log(target);
       if(num <= 0) {
         target.removeClass('active');
       } else {
