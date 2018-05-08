@@ -179,7 +179,7 @@ populateMenu = function(selectedPokemon, genusArr) {
 }
 
 
-quickAdd = function(el, evolutions) {
+quickAdd = function(el) {
   resetForm();
   el = $(el);
   var evolutionTable = $('#finalDestination .data-container');
@@ -191,11 +191,13 @@ quickCalc = function(selectedPokemon) {
   var candyNumber = parseInt($('#candyNumber').val(), 10);
   var candyRequired = selectedPokemon.candy;
   var evolutions = 0;
-  for(var i = candyNumber; i > 0; i -= candyRequired) {
+
+  while(candyNumber >= candyRequired) {
     candyNumber -= candyRequired;
     evolutions++;
     candyNumber++;
   }
+
   return evolutions;
 }
 
