@@ -10,6 +10,7 @@
     justify-content: space-evenly;
   }
 }
+
 // Pokémon Selector
 .pokemon-avatars {
   display: flex;
@@ -31,12 +32,14 @@
     text-transform: uppercase;
   }
 }
+
 .pokemon-choice {
   display: none;
   &.active {
     display: block;
   }
 }
+
 .family-tree {
   display: none;
   &.active {
@@ -78,7 +81,6 @@
     .delete {
       cursor: pointer;
       position: absolute;
-
       top: 10px;
       right: 10px;
       padding: 10px;

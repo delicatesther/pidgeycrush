@@ -41,7 +41,7 @@ $(document).ready(function() {
     $(this).on('keyup change', function() {
       var num = parseInt($(this).val(), 10);
       var target = $(this).parents('.gen').find('.avatar');
-      if(num <= 0) {
+      if(num == 0) {
         target.removeClass('active');
       } else {
         target.addClass('active');

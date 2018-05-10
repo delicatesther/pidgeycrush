@@ -44,20 +44,35 @@ table {
   padding: 20px 10px;
   width: 100%;
   border-radius: 20px;
+  max-width: 680px;
+  margin: 30px auto 0;
   header {
     display: flex;
     flex-wrap: wrap;
     font-family: $base-font;
     font-weight: 600;
+    flex: 1 0 100%;
+    text-align: center;
+    + div {
+      text-align: center;
+      flex: 1 0 100%;
+      width: 100%;
+      border-bottom: 3px double $green--light;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  p {
+    display: inline-block;
+  }
+  h1, h2 {
+    flex: 1 0 100%;
     text-align: center;
   }
-  h1 {
+  h2 {
     font-size: 20px;
-    text-align: center;
-    flex: 1 0 100%;
-    width: 100%;
-    border-bottom: 3px double $green--light;
-    padding-bottom: 5px;
+
   }
   .pokemon-row {
     display: flex;

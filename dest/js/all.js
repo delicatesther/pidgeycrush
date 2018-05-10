@@ -3890,7 +3890,7 @@ $(document).ready(function() {
     $(this).on('keyup change', function() {
       var num = parseInt($(this).val(), 10);
       var target = $(this).parents('.gen').find('.avatar');
-      if(num <= 0) {
+      if(num == 0) {
         target.removeClass('active');
       } else {
         target.addClass('active');
@@ -4024,15 +4024,31 @@ removePokemon = function() {
 }
 
 resetForm = function() {
+  var gen = $('#familyTree .gen');
+  resetGenClass();
   $('#familyTree .avatar').attr('class', 'avatar');
   $('input[data-inventory="pokemon-held"]').val(0);
   $('#pokemonChoice').removeClass('active');
   $('#pokemonChoice .species-instance').html('');
   $('#familyTree').removeClass('active');
   $('#noEvolution').removeClass('active');
-
+  $('#pokemonSelect').val('');
+  $('#candyNumber').val('');
   return false;
 };
+
+resetGenClass = function() {
+
+  $('.gen').each( function() {
+
+    if ( $(this).hasClass('third-evolution') ) {
+      $('.gen').attr('class', 'gen third-evolution active');
+    } else {
+      $('.gen').attr('class', 'gen');
+    }
+  });
+
+}
 
 resetTable = function() {
   $('#finalDestination').find('tbody').html('');
@@ -4047,10 +4063,6 @@ $('#resetTable').on('click', function(e) { e.preventDefault(); resetTable(); });
 // ======================================
 //  Tool
 // ======================================
-
-activateAvatar = function(target) {
-  target.toggleClass('active');
-}
 
 displayPokemonChoice = function(selectedPokemon) {
   $('#pokemonChoice').addClass('active');
@@ -4073,9 +4085,9 @@ populateMenu = function(selectedPokemon, genusArr) {
     resetForm();
     $('#familyTree').addClass('active');
     if( genusArr.length > 2 ) {
-      $('.evolution2').addClass('active');
+      $('.third-evolution').addClass('active');
     } else {
-      $('.evolution2').removeClass('active');
+      $('.third-evolution').removeClass('active');
     }
     for(var j = 0; j < genusArr.length; j++) {
       genAvatar = $('.gen .avatar');
@@ -4096,11 +4108,11 @@ populateMenu = function(selectedPokemon, genusArr) {
 
 
 quickAdd = function(el) {
-  resetForm();
   el = $(el);
   var evolutionTable = $('#finalDestination .data-container');
   var evolutions = quickCalc(selectedPokemon);
   evolutionTable.append('<div class="pokemon-row"> <div><span>'+ selectedPokemon.pokemonIndex +'</span></div><div class="species"><span>' + selectedPokemon.species +'</span><div class="image-container"><div class="avatar sprite-pokemon'+ selectedPokemon.pokemonIndex + '"></div></div> </div><div><span class="evolution-count">'+ evolutions +'</span></div><div><span class="xp-gained">'+ (evolutions * 500) +'</span></div><div><a href="javascript:;" onclick="removeRow(this)"  class="delete"></a></div></div>');
+  resetForm();
 }
 
 quickCalc = function(selectedPokemon) {
@@ -4108,20 +4120,11 @@ quickCalc = function(selectedPokemon) {
   var candyRequired = selectedPokemon.candy;
   var evolutions = 0;
 
-  // for(var i = candyNumber; i >= candyRequired; i -= candyRequired) {
-  //   candyNumber -= candyRequired;
-  //   evolutions++;
-  //   candyNumber++;
-  // }
-
   while(candyNumber >= candyRequired) {
     candyNumber -= candyRequired;
     evolutions++;
     candyNumber++;
   }
-  console.log(candyRequired);
-  console.log(evolutions);
-  console.log(candyNumber);
   return evolutions;
 }
 

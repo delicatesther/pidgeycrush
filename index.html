@@ -52,7 +52,7 @@
       </div>
 
       <div class="family-tree" id="familyTree">
-        <div class="gen evolution0" data-species="">
+        <div class="gen" data-species="">
           <span class="delete"></span>
           <div class="avatar"></div>
           <h3 data-inventory="pokemon-species"></h3>
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="gen evolution1" data-species="">
+        <div class="gen" data-species="">
           <span class="delete"></span>
           <div class="avatar"></div>
           <h3 data-inventory="pokemon-species"></h3>
@@ -90,7 +90,7 @@
             <input type="checkbox">
           </div>
         </div>
-        <div class="gen evolution2 active" data-species="">
+        <div class="gen third-evolution active" data-species="">
           <span class="delete"></span>
           <div class="avatar pokemon"></div>
           <h3 data-inventory="pokemon-species"></h3>
@@ -119,17 +119,18 @@
       <a id="resetPokemonSelect" href="javascript:void(0)" onclick="resetForm();">Reset Selection</a>
     </form>
 
-
-    <h2>Evolution Table</h2>
     <section class="evolution-table" id="finalDestination">
       <header>
-        <h1>Pokémon Details</h1>
+        <h1>Evolution Table</h1>
+        <h2>Pokémon Details</h2>
+      </header>
+      <div>
         <p>Index</p>
         <p>Species</p>
         <p>Evolutions</p>
         <p>XP gained</p>
         <p>Remove</p>
-      </header>
+      </div>
       <div class="data-container">
         <!--Example Row-->
         <!-- <div class="pokemon-row">
@@ -154,9 +155,19 @@
         </div>
       </div> -->
     </section>
+    <footer>
+      <div>
+        <p>Total Evolutions Possible</p>
+        <p>Total XP gained</p>
+      </div>
+      <div>
+        <span id="totalEvolutions"></span>
+        <span id="totalXP"></span>
+      </div>
+    </footer>
 </main>
 
-<footer>
+<footer class="footer">
   <p class="disclaimer">This calculator is based on the popular game Pokémon Go, developed by Niantic, Inc.<br> Any and all rights are belong to them.<br><br><small>Please don't sue me, guys. I just wanted to build a calculator. :(</small></p>
 </footer>
 </div>
